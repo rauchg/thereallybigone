@@ -9,8 +9,8 @@ The Really Big One
 ####What's included?
 
 1. Middleman prototyping setup using [Zurb Foundation](http://foundation.zurb.com/) Sass, via [Bower](http://bower.io/).
-3. [CodeShip](http://codeship.io/), for CI testing and automated deployment to our server
-4. [Slack](http://slack.com) configuration sensible preferences, to keep the team updated.
+2. [CodeShip](http://codeship.io/), for CI testing and automated deployment to our server
+3. [Slack](http://slack.com) configuration sensible preferences, to keep the team updated.
 
 
 ##Quickstart
