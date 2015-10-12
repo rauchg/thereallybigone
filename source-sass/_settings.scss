@@ -1,9 +1,9 @@
-// 
+//
 // FOUNDATION SETTINGS
 //
 
 // Uncomment to use rem-calc() in your settings
-// @import "foundation/functions";
+// @import "/bower_components/foundation/foundation/_functions.scss";
 
 // $experimental: true;
 
@@ -30,16 +30,18 @@
 
 // $include-html-grid-classes: $include-html-classes;
 
-// $row-width: rem-calc(1000);
+// $row-width: rem-calc(900);
+$row-width: 1200px;
 // $column-gutter: rem-calc(30);
 // $total-columns: 12;
 
 // We use these to control various global styles
-// $body-bg: #fff;
-// $body-font-color: #222;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-bg: #252525;
+$body-font-color: #eee;
+$body-font-family: Halant, Georgia, Rubik, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
+$header-font-color: #fff;
 
 // We use this to control font-smoothing
 // $font-smoothing: antialiased;

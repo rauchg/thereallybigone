@@ -1,19 +1,30 @@
 <!doctype html>
 <html class="no-js" lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= data.page.title || "TODO: The Middleman" %></title>
+
+    <title>The Really Big one</title>
+    <!-- TODO: Twitter/OG Meta tags -->
+
+    <!-- TODO: favicon -->
+
+    <!-- TODO: cachebust -->
+    <link href='https://fonts.googleapis.com/css?family=Anton|Rubik:400,700,500|Halant:400,500,600' rel='stylesheet' type='text/css'>
 
     <%= stylesheet_link_tag "app" %>
+
 
     <%= javascript_include_tag "modernizr" %>
   </head>
 
   <body class="<%= page_classes %>">
+
     <%= yield %>
 
     <%= javascript_include_tag  "all" %>
+
   </body>
+
 </html>
