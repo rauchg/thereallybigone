@@ -1,4 +1,4 @@
-// TODO: PICKFRAMEWORK: Remove this if you don't want Foundation
+// Initialise Foundation
 $(document).foundation();
 
 // Other code goes below

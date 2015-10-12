@@ -6,11 +6,8 @@
 compass_config do |config|
   # Require any additional compass plugins here.
 
-  # TODO: PICKFRAMEWORK: Choose the one you want, and comment out the other one
   # Foundation
   config.add_import_path "bower_components"
-  # Bootstrap
-  # config.add_import_path "bower_components/bootstrap-sass-official/assets"
 
   # Set this to the root of your project when deployed:
   config.http_path = "/"

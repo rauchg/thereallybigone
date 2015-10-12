@@ -1,14 +1,14 @@
-The Riggings
+The Really Big One
 =================
 
-[ ![Codeship Status for wearehanno/riggings](https://codeship.io/projects/62ff1160-09e4-0132-177d-4af473c3e2ac/status?branch=master)](https://codeship.io/projects/31635)
+[trbo.builtbyhanno.co](http://trbo.builtbyhanno.co)
 
-Prototype fast, and deploy to a server for feedback and staging! This is the internal repo we use at [Hanno](http://hanno.co/) for rapid prototyping.
+[ ![Codeship Status for wearehanno/thereallybigone](https://codeship.io/projects/62ff1160-09e4-0132-177d-4af473c3e2ac/status?branch=master)](TODO)
 
 
 ####What's included?
 
-1. Middleman prototyping setup using [Zurb Foundation](http://foundation.zurb.com/) Sass, via [Bower](http://bower.io/). Bootstrap is available as an alternative - just scroll down this README to the PICKFRAMEWORK section)
+1. Middleman prototyping setup using [Zurb Foundation](http://foundation.zurb.com/) Sass, via [Bower](http://bower.io/).
 3. [CodeShip](http://codeship.io/), for CI testing and automated deployment to our server
 4. [Slack](http://slack.com) configuration sensible preferences, to keep the team updated.
 
@@ -35,29 +35,6 @@ If you want to edit Sass, and have Middleman reload it for you, use `$ gulp watc
 You'll then be able to see the site at [localhost:4567](http://localhost:4567). For more help follow [Middleman's project template instructions](http://middlemanapp.com/getting-started/welcome/).
 
 
-##Picking a Framework (Bootstrap vs Foundation)
-
-Yup, we feel that way sometimes, too. Riggings is set up for Foundation but can easily be switched to Bootstrap.
-
-Search in this repo for `PICKFRAMEWORK`. There are sections in 6 files, which you'll need to modify. Even if you want to stick with Foundation, you should still follow these steps just to remove the Bootstrap references so that you have a clean repository:
-
-1. In `bower.json`, choose the framework you need and copy it into the dependencies
-2. In `config.rb` adjust the `config.add_import_path`
-3. In `all.js` change the framework JS file being included
-4. In `app.js` remove the Foundation initialisation at `$(document).foundation();`
-5. In `app.css.scss`, there are a few lines at the top to import the Sass components
-6. In `layout.erb` there's a call to Modernizr, which we don't need for Bootstrap
-
-Then, when you're done, we need to change the framework via Bower:
-
-	# Remove the unused bower components
-	$ bower prune
-	# Install the new ones
-	$ bower install
-
-And finally, don't forget to update the `source/layouts/layout.erb` file and other pages like `source/index.html.erb` to remove the Foundation-specific HTML grid and components.
-
-
 ##Deploying it to a server
 
 ###Configure the CodeShip setup and test commands
@@ -79,7 +56,7 @@ We use a few commands to load dependencies and get the Codeship build server con
 
 ####Test commands
 
-Here's where we build the app. 
+Here's where we build the app.
 
 	# Compile the sass and assets
 	gulp dist
