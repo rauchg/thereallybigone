@@ -15,7 +15,6 @@
 
     <%= stylesheet_link_tag "app" %>
 
-
     <%= javascript_include_tag "modernizr" %>
   </head>
 
@@ -24,6 +23,20 @@
     <%= yield %>
 
     <%= javascript_include_tag  "all" %>
+
+    <script src="/assets/javascripts/wow.min.js"></script>
+    <script>
+      wow = new WOW(
+        {
+          boxClass:     'wow',      // default
+          animateClass: 'animated', // default
+          offset:       0,          // default
+          mobile:       true,       // default
+          live:         true        // default
+        }
+      );
+      wow.init();
+    </script>
 
   </body>
 
