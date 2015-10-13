@@ -15,8 +15,9 @@ $(".quake-timer").click(function () {
 $(window).scroll(function () {
   $('.animation-test').each(function () {
       var Pos = $(this).offset().top;
-      var Height = 600;
+      var Height = 800;
       var topOfWindow = $(window).scrollTop();
+      // var bottomOfWindow = $(window).scrollTop() + $(window).height();
 
       if (Pos < topOfWindow + Height && Pos + Height > topOfWindow) {
         $(this).addClass(" fadeInDown animation-test--visible");

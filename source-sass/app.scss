@@ -86,16 +86,15 @@ section {
   }
 
   h2 {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     color: #fff;
 
     @media #{$medium-up} {
-      // margin-top: 3rem;
+      margin-top: 8rem;
     }
 
     @media #{$large-up} {
-      // margin-top: 4.5rem;
-      // margin-top: 7rem;
+      margin-top: 12rem;
     }
   }
 
