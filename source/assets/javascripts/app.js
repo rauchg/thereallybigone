@@ -6,7 +6,6 @@ $(document).foundation();
 // Button trigger for the quake duration progress bar
 $(".quake-timer").click(function () {
   $(".custom-meter").animate({width:"100%"});
-  console.log('xxx');
 });
 
 
@@ -15,7 +14,7 @@ $(".quake-timer").click(function () {
 $(window).scroll(function () {
   $('.animation-test').each(function () {
       var Pos = $(this).offset().top;
-      var Height = 800;
+      var Height = 600;
       var topOfWindow = $(window).scrollTop();
       // var bottomOfWindow = $(window).scrollTop() + $(window).height();
 
