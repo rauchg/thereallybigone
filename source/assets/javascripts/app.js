@@ -72,9 +72,23 @@ $(window).scroll(function () {
 
       // animation only happens until the threshold, after that is stays where it is
       if (topOfWindow < 2000) {
-        // this is how you would achieve parallax for any element (using negative position on fixed elements),
-        // replace 2 by any other number to define scroll speed
+        // this is how you would achieve parallax for any element (using negative position on fixed elements), replace 2 by any other number to define scroll speed
         $fixedHeader.css('top', -topOfWindow / 2);
+      }
+
+      // fade risk button in and out when surpassing treshold of 50px
+      // its important to remove the counterpart class of the animation before adding the animation
+      // (e.g. remove fadeOutdown before adding fadeInUp), otherwise it'll result in weird behaviour
+      if (topOfWindow > 50) {
+        // if fade-in class doesn't exist on element, remove fade-out class and add it
+        if ( ! $('.js-animate-risk').hasClass('fadeInUp')) {
+          $('.js-animate-risk').removeClass('fadeOutDown').addClass('animated fadeInUp');
+        }
+      } else {
+        // if fade-in class exists on element, then remove it and add fade-out class
+        if ($('.js-animate-risk').hasClass('fadeInUp')) {
+          $('.js-animate-risk').removeClass('fadeInUp').addClass('fadeOutDown');
+        }
       }
 
       // var bottomOfWindow = $(window).scrollTop() + $(window).height();

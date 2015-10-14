@@ -1,6 +1,7 @@
 // =======================================
 // Foundation
 @import "settings";
+@import "animate";
 @import "source/bower_components/foundation/scss/normalize.scss";
 @import "source/bower_components/foundation/scss/foundation.scss";
 
@@ -109,6 +110,13 @@ section {
     @media #{$large-up} {
       margin-top: 1.5rem;
     }
+  }
+}
+
+.js-animate-risk {
+  display: none;
+  &.animated {
+    display: block;
   }
 }
 
