@@ -1720,7 +1720,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     />
 
   </circle>
-
+<!--
   <animate attributeName="viewBox"
     from="0 0 1052.1 1048"
     to="0 450 1052.1 1048"
@@ -1755,5 +1755,5 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     begin="16"
     dur="5"
     repeatCount="1"
-    fill="freeze" />
+    fill="freeze" /> -->
 </svg>

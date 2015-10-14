@@ -6,7 +6,6 @@ title: The Really Big One
 <div class="fixed-header">
 </div>
 
-
 <!-- Landing / Hero -->
 <section class="hero">
 
@@ -29,14 +28,17 @@ title: The Really Big One
         <div class="columns medium-4">
 
           <p class="wow fadeInUp"  data-wow-delay="1.75s">
-            <button class="button large">Am I at risk?</button>
+            <button class="button large js-button-risk">Am I at risk?<span class="loading-indicator-location js-loading">Checking your location...</span></button>
           </p>
 
         </div>
         <div class="columns medium-6 end">
 
-          <div data-alert class="alert-box alert wow bounceIn" data-wow-delay="4.5s">
+          <div class="alert-box alert js-alert-box-danger">
             You're in the affected area. Please pay close attention to this information!
+          </div>
+          <div class="alert-box js-alert-box-safe">
+            You're not in the affected area. Please share this information with people you know how live there!
           </div>
 
         </div>
