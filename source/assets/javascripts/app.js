@@ -4,11 +4,6 @@ $(document).foundation();
 
 var geolocationAvailable = false;
 
-// Button trigger for the quake duration progress bar
-$(".quake-timer").click(function () {
-  $(".custom-meter").animate({width:"100%"});
-});
-
 // check if geolocation is available
 if (Modernizr.geolocation) {
   geolocationAvailable = true;
@@ -55,6 +50,13 @@ $('.js-button-risk').on('click', function() {
   });
 
 });
+
+
+// Button trigger for the quake duration progress bar
+$(".quake-timer").click(function () {
+  $(".custom-meter").animate({width:"100%"});
+});
+
 
 // Hiding and re-triggering animation of the elements
 // Makes animation also work in reverse
