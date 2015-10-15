@@ -1,6 +1,7 @@
 // =======================================
 // Foundation
 @import "settings";
+@import "animate";
 @import "source/bower_components/foundation/scss/normalize.scss";
 @import "source/bower_components/foundation/scss/foundation.scss";
 
@@ -112,6 +113,30 @@ section {
   }
 }
 
+.js-animate-risk {
+  display: none;
+  &.animated {
+    display: block;
+  }
+}
+
+.loading-indicator-location {
+  display: none;
+  position: absolute;
+  bottom: 12px;
+  left: 17px;
+  margin-bottom: -6px;
+  margin-top: 0px;
+  background: url(../images/loading.gif) 3px 4px no-repeat;
+  background-size: 10px 10px;
+  padding-left: 16px;
+  opacity: 0.75;
+  font-size: 12px;
+}
+
+.alert-box {
+  display: none;
+}
 
 .blog-grid--facts {
 
