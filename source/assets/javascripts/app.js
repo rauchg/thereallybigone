@@ -130,7 +130,7 @@ $(document).ready(function() {
 
     var minutes = 0;
     var seconds = 0;
-    var targetTime = 240;
+    var targetTime = 4;
     var $counter = $('.js-counter');
 
     var timerInterval = setInterval(function() {
@@ -138,11 +138,12 @@ $(document).ready(function() {
         seconds = 0;
         minutes++;
       }
-      if (time < targetTime) {
+      if (minutes < 4) {
         var counterVal = minutes + ':' + seconds;
         $counter.text(counterVal);
       }
       seconds++;
+
     }, 100);
   });
 
