@@ -2,6 +2,12 @@
 $(document).foundation();
 // -----------------------------------------------------------------------------
 
+function pad(n, width, z) {
+  z = z || '0';
+  n = n + '';
+  return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
+}
+
 var geolocationAvailable = false;
 
 // check if geolocation is available
@@ -100,6 +106,11 @@ $(document).ready(function() {
       }
     }
 
+    /* ---------- > 1640: ANIMATE SUBDUCTION PLATES ---------- */
+    if (topOfWindow > 1300) {
+      quakeTimer();
+    }
+
     /* ---------- 501px: ANIMATE SUBDUCTION DIV ---------- */
 
     // if (topOfWindow > 2000) {
@@ -126,7 +137,7 @@ $(document).ready(function() {
   // Timer animation
   // TODO: need to make the 'seconds' text animation run 4 times
   // Here's my fiddle: http://jsfiddle.net/v3oepawb/
-  $(".quake-timer").click(function() {
+  var quakeTimer = function() {
 
     var minutes = 0;
     var seconds = 0;
@@ -139,13 +150,13 @@ $(document).ready(function() {
         minutes++;
       }
       if (minutes < 4) {
-        var counterVal = minutes + ':' + seconds;
+        var counterVal = minutes + ':' + pad(seconds, 2);
         $counter.text(counterVal);
       }
       seconds++;
 
-    }, 100);
-  });
+    }, 25);
+  };
 
   // Button trigger for the quake duration progress bar
   // $(".quake-timer").click(function () {
@@ -194,6 +205,5 @@ $(document).ready(function() {
     });
 
   });
-
 
 });

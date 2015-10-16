@@ -48,6 +48,8 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       0,10 383.3,10 348.8,134.6 444.8,165.9 315.8,441.4 526.2,559.1"
       begin="8"
       dur="2"
+      repeatCount="1"
+      fill="freeze" />
     </polygon>
 
     <!-- JUAN DE FUCA PLATE -->
