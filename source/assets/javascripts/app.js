@@ -94,6 +94,7 @@ $(window).scroll(function () {
 
 // Timer animation
 // TODO: need to make the 'seconds' text animation run 4 times
+// Here's my fiddle: http://jsfiddle.net/v3oepawb/
 $(".quake-timer").click(function() {
   var targetone = 4;
   var targettwo = 59;
