@@ -64,72 +64,55 @@ $(window).scroll(function () {
 
   var $fixedHeader = $('.fixed-header');
 
-  $('.animation-test').each(function () {
-      var Pos = $(this).offset().top;
-      var Height = 600;
-      var topOfWindow = $(window).scrollTop();
+  var topOfWindow = $(window).scrollTop();
 
-      // topOfWindow is the current scroll position and can be seen in the console
-      console.log(topOfWindow);
+  // topOfWindow is the current scroll position and can be seen in the console
+  console.log(topOfWindow);
 
-      // animation only happens until the threshold, after that is stays where it is
-      if (topOfWindow < 2000) {
-        // this is how you would achieve parallax for any element (using negative position on fixed elements), replace 2 by any other number to define scroll speed
-        $fixedHeader.css('top', -topOfWindow / 2);
-      }
+  // animation only happens until the threshold, after that is stays where it is
+  if (topOfWindow < 2000) {
+    // this is how you would achieve parallax for any element (using negative position on fixed elements), replace 2 by any other number to define scroll speed
+    $fixedHeader.css('top', -topOfWindow / 2);
+  }
 
-      // fade risk button in and out when surpassing treshold of 50px
-      // its important to remove the counterpart class of the animation before adding the animation
-      // (e.g. remove fadeOutdown before adding fadeInUp), otherwise it'll result in weird behaviour
-      if (topOfWindow > 50) {
-        // if fade-in class doesn't exist on element, remove fade-out class and add it
-        if ( ! $('.js-animate-risk').hasClass('fadeInUp')) {
-          $('.js-animate-risk').removeClass('fadeOutDown').addClass('animated fadeInUp');
-        }
-      } else {
-        // if fade-in class exists on element, then remove it and add fade-out class
-        if ($('.js-animate-risk').hasClass('fadeInUp')) {
-          $('.js-animate-risk').removeClass('fadeInUp').addClass('fadeOutDown');
-        }
-      }
-
-      // var bottomOfWindow = $(window).scrollTop() + $(window).height();
-
-      // if (Pos < topOfWindow + Height && Pos + Height > topOfWindow) {
-      //   $(this).addClass(" fadeInDown animation-test--visible");
-      // } else {
-      //   $(this).removeClass("fadeInDown animation-test--visible");
-      //   // TODO: testing the 'out' animation
-      //   // $(this).stop(true, true).delay(1200).animate({opacity:"0"});
-      // }
-
-      // TODOs:
-      // 1. We need to be able to pass an animation class into this from HTML
-      // --
-      // 2. We need the animation class to get re-added again every time you
-      // scroll down past the element. Right now it's simply hiding and revealing
-      // the element with CSS visibility: visible/hidden.
-      // --
-      // 3. We need to be able to pass another custom animation class for when
-      // you scroll up past the element, so it animates out instead of just
-      // getting hidden.
-  });
+  // fade risk button in and out when surpassing treshold of 50px
+  // its important to remove the counterpart class of the animation before adding the animation
+  // (e.g. remove fadeOutdown before adding fadeInUp), otherwise it'll result in weird behaviour
+  if (topOfWindow > 50) {
+    // if fade-in class doesn't exist on element, remove fade-out class and add it
+    if ( ! $('.js-animate-risk').hasClass('fadeInUp')) {
+      $('.js-animate-risk').removeClass('fadeOutDown').addClass('animated fadeInUp');
+    }
+  } else {
+    // if fade-in class exists on element, then remove it and add fade-out class
+    if ($('.js-animate-risk').hasClass('fadeInUp')) {
+      $('.js-animate-risk').removeClass('fadeInUp').addClass('fadeOutDown');
+    }
+  }
 });
 
 
-// WOW settings (currently in layout.erb)
-// var wow = new WOW(
-//   {
-//     boxClass:     'wow',      // animated element css class (default is wow)
-//     animateClass: 'animated', // animation css class (default is animated)
-//     offset:       0,          // distance to the element when triggering the animation (default is 0)
-//     mobile:       true,       // trigger animations on mobile devices (default is true)
-//     live:         true,       // act on asynchronously loaded content (default is true)
-//     callback:     function(box) {
-//       // the callback is fired every time an animation is started
-//       // the argument that is passed in is the DOM node being animated
-//     },
-//     scrollContainer: null // optional scroll container selector, otherwise use window
-//   }
-// );
-// wow.init();
+// Timer animation
+// TODO: need to make the 'seconds' text animation run 4 times
+// Here's my fiddle: http://jsfiddle.net/v3oepawb/
+$(".quake-timer").click(function() {
+  var targetone = 4;
+  var targettwo = 59;
+  var numberone = 0;
+  var numbertwo = 00;
+
+  var intervalone = setInterval(function() {
+    $('#number-one').text(numberone);
+    if (numberone >= targetone) clearInterval(interval);
+    numberone++;
+  }, 1200);
+
+  for (var i = 0; i <= 4; i++) {
+    var intervaltwo = setInterval(function() {
+      $('#number-two').text(numbertwo);
+      if (numbertwo >= targettwo) clearInterval(interval);
+      numbertwo++;
+      // return false;
+    }, 120);
+  }
+});
