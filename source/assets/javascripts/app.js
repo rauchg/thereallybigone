@@ -2,6 +2,7 @@
 $(document).foundation();
 // -----------------------------------------------------------------------------
 
+/* ---------- helper functions ---------- */
 function pad(n, width, z) {
   z = z || '0';
   n = n + '';
@@ -11,6 +12,8 @@ function pad(n, width, z) {
 function numberWithPoints(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 }
+
+/* ---------- vars ---------- */
 
 var geolocationAvailable = false;
 var quakeTimerRunning = false;
@@ -27,9 +30,10 @@ var heroMap,
     $fixedHeader,
     $subductionLabels;
 
+// on document load
 $(document).ready(function() {
 
-  // Get the Object by ID
+  // Variables for SVG animations
   heroMap = $('#hero-map');
   heroMap[0].addEventListener('load', function() {
     svgDoc = heroMap.contents();
@@ -37,6 +41,7 @@ $(document).ready(function() {
     svgItemBackward = svgDoc.find("#NAplate-slide-backward");
   });
 
+  // get fixed header and subduction labels to control their position
   $fixedHeader = $('.fixed-header');
   $subductionLabels = $('.js-animate-subduction-labels');
 
@@ -44,7 +49,7 @@ $(document).ready(function() {
   $(window).scroll(function () {
 
     var topOfWindow = $(window).scrollTop();
-    console.log(topOfWindow);
+    // console.log(topOfWindow);
 
     // subduction plate labels position has to be kept sync to hero bg
     $subductionLabels.css('top', 750 - 333 - ((topOfWindow - 500) / 2));
@@ -111,14 +116,14 @@ $(document).ready(function() {
       }
     }
 
-    /* ---------- > 1640: ANIMATE SUBDUCTION PLATES ---------- */
+    /* ---------- > 1200px: Run quake timer ---------- */
     if (topOfWindow > 1200) {
       if ( ! quakeTimerRunning) {
         quakeTimer();
       }
     }
 
-    /* ---------- 501px: ANIMATE SUBDUCTION DIV ---------- */
+    /* ---------- 501px: ANIMATE SVGs ---------- */
 
     // if (topOfWindow > 2000) {
     //   $fixedHeader.css('top', -666 - ((topOfWindow-1000) / 2));
@@ -140,10 +145,6 @@ $(document).ready(function() {
 
 
   /* ---------- QUAKE TIMER ---------- */
-
-  // Timer animation
-  // TODO: need to make the 'seconds' text animation run 4 times
-  // Here's my fiddle: http://jsfiddle.net/v3oepawb/
   var quakeTimer = function() {
     quakeTimerRunning = true;
     var minutes = 0;
