@@ -92,3 +92,26 @@ $(window).scroll(function () {
 });
 
 
+// Timer animation
+// TODO: need to make the 'seconds' text animation run 4 times
+$(".quake-timer").click(function() {
+  var targetone = 4;
+  var targettwo = 59;
+  var numberone = 0;
+  var numbertwo = 00;
+
+  var intervalone = setInterval(function() {
+    $('#number-one').text(numberone);
+    if (numberone >= targetone) clearInterval(interval);
+    numberone++;
+  }, 1200);
+
+  for (var i = 0; i <= 4; i++) {
+    var intervaltwo = setInterval(function() {
+      $('#number-two').text(numbertwo);
+      if (numbertwo >= targettwo) clearInterval(interval);
+      numbertwo++;
+      // return false;
+    }, 120);
+  }
+});
