@@ -10,7 +10,7 @@
 	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
 	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
 ]>
-<svg version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+<svg preserveAspectRatio="none" version="1.1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1052.1 1048"
 enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" height="1048">
 
@@ -31,7 +31,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       0,10 383.3,10 348.8,134.6 444.8,165.9 315.8,441.4 526.2,559.1"
       to="442.3,793.1 312.7,785 254.7,789 203.7,785 76.7,793.1 60.7,785 -16,787.8 -16,4
       367.3,4 332.8,128.6 428.8,159.9 299.8,435.4 510.2,553.1"
-      begin="6"
+      begin="0"
       dur="3"
       repeatCount="1"
       fill="freeze"
@@ -50,7 +50,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       to="407.3,13 372.8,137.6 468.8,168.9 339.8,444.4 550.2,562.1 482.3,802.1
       563.4,809.6 589.9,822.1 618.8,838.1 630.9,819 730.8,838.1 762.6,856.1 821.5,856.1 891,910.1 921.7,910.1 942.2,917.6
       995.1,917.6 1023.2,935.6 1076.1,946.3 1076.1,13"
-      begin="6"
+      begin="0"
       dur="3"
       repeatCount="1"
       fill="freeze"
@@ -184,7 +184,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     <animate id="cascadiaFault-appear-forward" attributeName="opacity"
     from="0"
     to="1"
-    begin="6"
+    begin="indefinite"
     dur="1"
     repeatCount="1"
     fill="freeze"/>
@@ -213,7 +213,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     <animate id="subduction-line" attributeName="opacity"
     from="0"
     to="0"
-    begin="6"
+    begin="indefinite"
     dur="10"
     values="0;0.5;0;0.5;0;0.5;0;0.5;0;0.5;0"
     repeatCount="1"
@@ -507,7 +507,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     c1.4,0.2,2.8,0.3,4.2,0.3c1.1,0.1,2.2,0.1,3.3,0.1L1052.1,471.9z"
     keySplines="0.5 0 0.5 1"
     calcMode="spline"
-    begin="0"
+    begin="indefinite"
     dur="1"
     repeatCount="1"
     fill="freeze" />
@@ -701,7 +701,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     c1.4,0.2,2.8,0.3,4.2,0.3c1.1,0.1,2.2,0.1,3.3,0.1L1094.1,429.9z"
     keySplines="0.5 0 0.5 1"
     calcMode="spline"
-    begin="2"
+    begin="indefinite"
     dur="1"
     repeatCount="1"
     fill="freeze" />
@@ -892,7 +892,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     c0.8-0.2,1.5-0.4,2.2-0.6c0.7-0.2,1.4-0.3,2.1-0.4c0.7-0.1,1.4-0.2,2.1-0.2s1.3-0.1,2-0.1c1.6,0,3.1,0.1,4.6,0.4
     c1.5,0.2,3,0.6,4.4,0.9c1.5,0.4,2.9,0.8,4.4,1.3c1.5,0.5,2.9,1,4.5,1.5c1,0.3,2.1,0.6,3.4,0.9c1.2,0.2,2.5,0.4,3.9,0.6
     c1.4,0.2,2.8,0.3,4.2,0.3c1.1,0.1,2.2,0.1,3.3,0.1L1052.1,471.9z"
-    begin="6"
+    begin="indefinite"
     dur="3"
     repeatCount="1"
     fill="freeze" />
@@ -1156,7 +1156,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     c0.5,0.1,1,0.3,1.5,0.4c0.5,0.2,1.1,0.4,1.8,0.7c0.8,0.3,1.9,0.6,3.1,0.9c1.2,0.2,2.6,0.4,4.2,0.6c1.6,0.2,3.2,0.3,5,0.3
     c1.8,0.1,3.7,0.1,5.6,0.1c2.8,0,5.6-0.1,8.5-0.2c2.8-0.1,5.6-0.3,8.3-0.6c2.7-0.3,5.1-0.6,7.4-0.9c1.8-0.3,3.4-0.6,4.7-0.9V121.7
     L1046.9,82.7z"
-    begin="6"
+    begin="indefinite"
     dur="3"
     repeatCount="1"
     fill="freeze" />
@@ -1634,7 +1634,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       <animate attributeName="opacity"
       from="0"
       to="1"
-      begin="3"
+      begin="0"
       dur="0.2"
       repeatCount="1"
       fill="freeze" />
@@ -1727,7 +1727,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       M152.6,777.5h-3v-1h3V777.5z M146.6,777.5h-3v-1h3V777.5z M140.5,777.5h-3v-1h3V777.5z M134.5,777.5h-3v-1h3V777.5z
       M128.5,777.5h-3v-1h3V777.5z M122.5,777.5h-3v-1h3V777.5z M116.5,777.5h-3v-1h3V777.5z M110.5,777.5h-3v-1h3V777.5z
       M104.5,777.5h-3v-1h3V777.5z M98.5,777.5h-3v-1h3V777.5z"
-      begin="3"
+      begin="indefinite"
       dur="0.8"
       repeatCount="1"
       fill="freeze" />
@@ -1760,7 +1760,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
       <animate attributeName="opacity"
       from="0"
       to="1"
-      begin="4"
+      begin="0"
       dur="0.5"
       repeatCount="1"
       fill="freeze" />
@@ -1921,7 +1921,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
 			</radialGradient>
 			<circle opacity="0.12" fill="url(#SVGID_6_)" cx="765.8" cy="405.6" r="66.9"/>
       <animate attributeName="opacity"
-      from="1"
+      from="0"
       to="1"
       begin="0"
       dur="5"
@@ -2117,7 +2117,7 @@ enable-background="new 0 0 1052.1 1048" xml:space="preserve" width="1052.1" heig
     <animate attributeName="opacity"
     from="0"
     to="0"
-    begin="6"
+    begin="indefinite"
     dur="10"
     values="0;0.5;0;0.5;0;0.5;0;0.5;0;0.5;0"
     repeatCount="1"

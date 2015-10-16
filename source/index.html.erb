@@ -4,6 +4,7 @@ title: The Really Big One
 
 <!-- SVG background container -->
 <div class="fixed-header">
+  <object data="/assets/images/hero-map.svg" type="image/svg+xml" id="hero-map" width="100%" height="100%"></object>
 </div>
 
 <!-- Landing / Hero -->
@@ -52,7 +53,7 @@ title: The Really Big One
 
 
 <!-- Subduction -->
-<section class="subduction wow slideInLeft">
+<section class="subduction js-animate-subduction">
 
   <div class="row">
     <div class="columns medium-7 medium-offset-1 large-offset-0 text-center">
@@ -64,42 +65,39 @@ title: The Really Big One
       <br/>
 
       <h3 class="fact">
-
-          <span class="wow bounceIn" data-wow-delay="0.6s">
+          <span class="js-animate-subduction-number" data-wow-delay="0.6s">
           700
           </span>
-
           <br /><small>miles</small>
-
           <br/><br/>
           off the coast of the Pacific Northwest
       </h3>
 
-      <br/><br/><br/><br/><br/><br/><br/>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="columns medium-4 text-right wow slideInLeft" data-wow-delay="1s">
-      <img class="wow fadeInUp" data-wow-delay="1.5s" style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up-left.svg" width="100">
-      <p class="label-text wow fadeInUp" data-wow-delay="1.85s"><br/> Pacific Plate</p>
-    </div>
-    <div class="columns medium-5 text-center wow slideInUp" data-wow-delay="1s">
-      <img class="wow fadeInUp" data-wow-delay="1.5s" style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up.svg" width="100">
-      <p class="label-text wow fadeInUp" data-wow-delay="1.85s"><br/> Juan de Fuca plate</p>
-    </div>
-    <div class="columns medium-3 text-left wow slideInRight" data-wow-delay="1s">
-      <img class="wow fadeInUp" data-wow-delay="1.5s" style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up-left.svg" width="100">
-      <p class="label-text wow fadeInUp" data-wow-delay="1.85s"><br/> North American plate</p>
     </div>
   </div>
 
 </section>
 
+<section class="subduction-labels js-animate-subduction-labels">
+  <div class="row">
+    <div class="columns medium-4 text-right" data-wow-delay="1s">
+      <img style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up-left.svg" width="100">
+      <p class="label-text"><br/> Pacific Plate</p>
+    </div>
+    <div class="columns medium-5 text-center" data-wow-delay="1s">
+      <img style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up.svg" width="100">
+      <p class="label-text"><br/> Juan de Fuca plate</p>
+    </div>
+    <div class="columns medium-3 text-left" data-wow-delay="1s">
+      <img data-wow-delay="1.5s" style="margin-bottom: 1rem; margin-left: 1rem;" src="/assets/images/arrows/arrow-up-left.svg" width="100">
+      <p class="label-text"><br/> North American plate</p>
+    </div>
+  </div>
+</section>
+
 
 <!-- Earthquake -->
-<section class="earthquake text-center">
+<section class="earthquake text-center js-animate-earthquake-1">
 
   <div class="row">
     <div class="columns medium-7 medium-offset-1 large-offset-0">
@@ -117,7 +115,7 @@ title: The Really Big One
           <div class="columns small-2">
 
             <h3 class="fact">
-              <span style="color: salmon !important; position: relative; top: -1.75rem;">2:48</span>
+              <span class="js-counter" style="color: salmon !important; position: relative; top: -1.75rem;">2:48</span>
               <br/>
             </h3>
 
@@ -168,7 +166,7 @@ title: The Really Big One
 
 </section>
 
-<section class="earthquake text-center">
+<section class="earthquake text-center js-animate-earthquake-2">
 
   <div class="row">
     <div class="columns medium-7 medium-offset-1 large-offset-0">
@@ -186,7 +184,7 @@ title: The Really Big One
 
 </section>
 
-<section class="earthquake text-center">
+<section class="earthquake text-center js-animate-earthquake-3">
 
   <div class="row">
     <div class="columns medium-7 medium-offset-1 large-offset-0">
@@ -315,7 +313,7 @@ title: The Really Big One
 
 </section>
 
-<section class="earthquake text-center">
+<section class="earthquake text-center js-animate-earthquake-4">
 
   <div class="row">
     <div class="columns medium-10 medium-centered">
@@ -335,7 +333,7 @@ title: The Really Big One
 
 </section>
 
-<section>
+<section class="js-animate-info">
 
   <div class="row">
     <div class="columns">

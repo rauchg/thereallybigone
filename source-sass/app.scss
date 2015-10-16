@@ -68,6 +68,34 @@ section {
   }
 }
 
+section:not(.hero) {
+  position: relative;
+  min-height: 100%;
+  // height: 100%;
+  // height: 1000px;
+  padding: 12rem 0 0;
+  // background: url(../images/hero-map.svg) center 45% no-repeat;
+  // background-size: 100%;
+  background: none;
+
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: 1;
+  //   background: rgba(#10161c, 0.55);
+  // }
+
+  * {
+    position: relative;
+    z-index: 5;
+  }
+}
+
 .fixed-header {
   width: 100%;
   overflow: auto;
@@ -129,10 +157,13 @@ section {
   }
 }
 
-.js-animate-risk {
-  display: none;
+.js-animate-risk,
+.js-animate-subduction,
+.js-animate-earthquake,
+.js-animate-subduction-labels {
+  visibility: hidden;
   &.animated {
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -156,8 +187,8 @@ section {
 
 
 
-.subduction {
-
+section.subduction {
+  padding-top: 6em;
   .label-text {
     color: $dirty-blue;
     font-size: 1.25rem;
@@ -165,6 +196,19 @@ section {
   }
 }
 
+section.subduction-labels {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  row {
+    position: static;
+  }
+}
+
+section.earthquake {
+  padding-top: 12em;
+  padding-bottom: 48em;
+}
 
 .blog-grid--facts {
 
@@ -327,30 +371,3 @@ section {
 
 
 
-section:not(.hero) {
-  position: relative;
-  min-height: 100%;
-  // height: 100%;
-  // height: 1000px;
-  padding: 12rem 0 0;
-  // background: url(../images/hero-map.svg) center 45% no-repeat;
-  // background-size: 100%;
-  background: none;
-
-  // &:after {
-  //   content: '';
-  //   display: block;
-  //   width: 100%;
-  //   height: 100%;
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   z-index: 1;
-  //   background: rgba(#10161c, 0.55);
-  // }
-
-  * {
-    position: relative;
-    z-index: 5;
-  }
-}
