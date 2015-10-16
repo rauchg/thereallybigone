@@ -8,7 +8,12 @@ function pad(n, width, z) {
   return n.length >= width ? n : new Array(width - n.length + 1).join(z) + n;
 }
 
+function numberWithPoints(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+}
+
 var geolocationAvailable = false;
+var quakeTimerRunning = false;
 
 // check if geolocation is available
 if (Modernizr.geolocation) {
@@ -107,8 +112,10 @@ $(document).ready(function() {
     }
 
     /* ---------- > 1640: ANIMATE SUBDUCTION PLATES ---------- */
-    if (topOfWindow > 1300) {
-      quakeTimer();
+    if (topOfWindow > 1200) {
+      if ( ! quakeTimerRunning) {
+        quakeTimer();
+      }
     }
 
     /* ---------- 501px: ANIMATE SUBDUCTION DIV ---------- */
@@ -138,13 +145,19 @@ $(document).ready(function() {
   // TODO: need to make the 'seconds' text animation run 4 times
   // Here's my fiddle: http://jsfiddle.net/v3oepawb/
   var quakeTimer = function() {
-
+    quakeTimerRunning = true;
     var minutes = 0;
     var seconds = 0;
+    var ticks = 0;
     var targetTime = 4;
-    var $counter = $('.js-counter');
+    var $counter = $('.js-quake-counter');
+    var $energy = $('.js-quake-energy');
+    var $people = $('.js-quake-people');
+    var $miles = $('.js-quake-miles');
+    var $meter = $('.custom-meter');
 
     var timerInterval = setInterval(function() {
+
       if (seconds === 60) {
         seconds = 0;
         minutes++;
@@ -153,15 +166,23 @@ $(document).ready(function() {
         var counterVal = minutes + ':' + pad(seconds, 2);
         $counter.text(counterVal);
       }
+
+      if (minutes === 4) {
+        clearInterval(timerInterval);
+        $counter.text('4:00');
+      }
+
+      $energy.text( Math.round (ticks / 240 * 30)  + ' x');
+      $people.text( numberWithPoints(Math.round (ticks / 240 * 7000000)));
+      $miles.text( numberWithPoints(Math.round (ticks / 240 * 14000)));
+
+      $meter.css('width', ticks / 240 * 100 + "%");
+
       seconds++;
+      ticks++;
 
     }, 25);
   };
-
-  // Button trigger for the quake duration progress bar
-  // $(".quake-timer").click(function () {
-  //   $(".custom-meter").animate({width:"100%"});
-  // });
 
   /* ---------- RISK BUTTON ---------- */
   // risk button check if user is within affected area
