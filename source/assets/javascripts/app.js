@@ -91,14 +91,14 @@ $(document).ready(function() {
 
     /* ---------- > 400px: ANIMATE SUBDUCTION DIV ---------- */
     if (topOfWindow > 400) {
-      if ( ! $('.js-animate-subduction').hasClass('slideInLeft')) {
-        $('.js-animate-subduction').removeClass('slideOutLeft').addClass('animated slideInLeft');
+      if ( ! $('.js-animate-subduction').hasClass('slideInUp')) {
+        $('.js-animate-subduction').removeClass('fadeOut').addClass('animated slideInUp');
       }
     }
 
     else {
-      if ($('.js-animate-subduction').hasClass('slideInLeft')) {
-        $('.js-animate-subduction').removeClass('slideInLeft').addClass('slideOutLeft');
+      if ($('.js-animate-subduction').hasClass('slideInUp')) {
+        $('.js-animate-subduction').removeClass('slideInUp').addClass('fadeOut');
       }
     }
 

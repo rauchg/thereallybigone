@@ -98,7 +98,7 @@ section:not(.hero) {
 
 .fixed-header {
   width: 100%;
-  overflow: auto;
+  overflow: hidden;
   min-height: 100%;
   // height: 100%;
   height: 1332px;
@@ -155,6 +155,17 @@ section:not(.hero) {
       margin-top: 1.5rem;
     }
   }
+
+  p {
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+    color: #777;
+
+    img {
+      display: inline-block;
+      opacity: 0.3;
+    }
+  }
 }
 
 .js-animate-risk,
@@ -170,14 +181,14 @@ section:not(.hero) {
 .loading-indicator-location {
   display: none;
   position: absolute;
-  bottom: 12px;
-  left: 17px;
+  bottom: 10px;
+  left: 15px;
   margin-bottom: -6px;
   margin-top: 0px;
   background: url(../images/loading.gif) 3px 4px no-repeat;
   background-size: 10px 10px;
   padding-left: 16px;
-  opacity: 0.75;
+  opacity: 0.65;
   font-size: 12px;
 }
 
