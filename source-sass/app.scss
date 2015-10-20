@@ -5,6 +5,8 @@
 @import "source/bower_components/foundation/scss/normalize.scss";
 @import "source/bower_components/foundation/scss/foundation.scss";
 
+// TODO
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #333 url('http://files.mimoymima.com/images/loading.gif') no-repeat center center; }
 
 // Vars
 
