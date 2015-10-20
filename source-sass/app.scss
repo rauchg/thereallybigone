@@ -125,8 +125,8 @@ section:not(.hero) {
 
 
 .hero {
-  // min-height: 100%;
-  // height: 100%;
+  min-height: 100%;
+  height: 100%;
 
   h1 {
     margin-top: 17vh;
@@ -394,3 +394,251 @@ section.earthquake {
 
 
 
+
+
+// Japan polaroids
+.japan {
+  position: relative;
+  overflow: hidden;
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.japan__polaroids {
+
+  a {
+    // background: $dark-blue;
+    display: inline-block;
+    // float: left;
+    margin: 0 0 27px 30px;
+    width: auto;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    // box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
+
+    position: relative;
+    z-index: 1;
+
+    img {
+      opacity: 0.3;
+      -webkit-filter: grayscale(50%);
+    }
+  }
+
+  .medium-3:first-of-type {
+
+    a {
+
+      &:first-of-type {
+        top: -100px;
+      }
+
+      &:nth-of-type(2) {
+        top: -50px;
+        left: 80px;
+
+        img {
+          opacity: 0.15;
+        }
+      }
+
+      &:nth-of-type(2n-1) {
+        left: 120px;
+      }
+
+      &:last-of-type {
+
+        img {
+          opacity: 0.22;
+        }
+      }
+    }
+  }
+
+  .medium-6 {
+
+    .row {
+      position: relative;
+      z-index: 5;
+    }
+
+    a {
+      left: -20px;
+
+      &:first-of-type {
+        top: -10px;
+
+        img {
+          opacity: 0.1;
+        }
+      }
+
+      &:last-of-type {
+        top: 10px;
+
+        img {
+          opacity: 0.1;
+        }
+      }
+    }
+  }
+
+  .medium-3:last-of-type {
+
+    a {
+
+      &:first-of-type {
+        top: -105px;
+      }
+
+      &:nth-of-type(2) {
+        top: -45px;
+        right: 90px;
+
+        img {
+          opacity: 0.15;
+        }
+      }
+
+      &:nth-of-type(2n-1) {
+        right: 160px;
+      }
+
+      &:last-of-type {
+
+        img {
+          opacity: 0.22;
+        }
+      }
+    }
+  }
+}
+
+.polaroids {
+  // position: absolute;
+  // top: 60px;
+  // left: 0;
+  // right: 0;
+  // opacity: 0.3;
+
+  // li {
+  //   display: inline;
+  //   position: absolute;
+  //   z-index: 2;
+
+  //   &:first-of-type {
+  //     top: -150px;
+  //     left: 30px;
+  //   }
+
+  //   &:nth-of-type(2) {
+  //     top: -180px;
+  //     left: 33%;
+  //   }
+
+  //   &:nth-of-type(3) {
+  //     top: -120px;
+  //     right: 30px;
+  //   }
+
+  //   &:nth-of-type(4) {
+  //     top: 180px;
+  //     left: -80px;
+  //     z-index: 3;
+  //   }
+
+  //   &:nth-of-type(5) {
+  //     top: 430px;
+  //     left: 35%;
+  //   }
+
+  //   &:nth-of-type(6) {
+  //     top: 180px;
+  //     right: -80px;
+  //     z-index: 3;
+  //   }
+
+  //   &:nth-of-type(7) {
+  //     top: 440px;
+  //     left: 60px;
+  //   }
+
+  //   &:nth-of-type(8) {
+  //     top: 600px;
+  //     left: 35%;
+  //     opacity: 0;
+  //   }
+
+  //   &:nth-of-type(9) {
+  //     top: 470px;
+  //     right: 20px;
+  //   }
+  // }
+
+  // a {
+  //   background: #fff;
+  //   display: inline;
+  //   float: left;
+  //   margin: 0 0 27px 30px;
+  //   width: auto;
+  //   padding: 10px;
+  //   text-align: center;
+  //   text-decoration: none;
+  //   color: #333;
+  //   font-size: 18px;
+  //   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+  // }
+
+  // a:after {
+  //   content: attr(title);
+  // }
+
+  // img {
+  //   display: block;
+  //   width: 360px;
+  //   margin-bottom: 12px;
+  // }
+}
+
+// By default, we tilt all our images -2 degrees
+// ul.polaroids a {
+//   transform: rotate(-2deg);
+// }
+
+// Rotate all even images 2 degrees
+// ul.polaroids li:nth-child(even) a {
+//   transform: rotate(2deg);
+// }
+
+// Don't rotate every third image, but offset its position
+// ul.polaroids li:nth-child(3n) a {
+//   transform: none;
+//   position: relative;
+//   top: -5px;
+// }
+
+// Rotate every fifth image by 5 degrees and offset it
+// ul.polaroids li:nth-child(5n) a {
+//   transform: rotate(5deg);
+//   position: relative;
+//   right: 5px;
+// }
+
+// Keep default rotate for every eighth, but offset it
+// ul.polaroids li:nth-child(8n) a {
+//   position: relative;
+//   top: 8px;
+//   right: 5px;
+// }
+
+// Keep default rotate for every eleventh, but offset it
+// ul.polaroids li:nth-child(11n) a {
+//   position: relative;
+//   top: 3px;
+//   left: -5px;
+// }
