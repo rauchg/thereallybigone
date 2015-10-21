@@ -642,3 +642,24 @@ section.earthquake {
 //   top: 3px;
 //   left: -5px;
 // }
+
+
+.video-container {
+  position: relative;
+  z-index: 10;
+  max-width: 100%;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
