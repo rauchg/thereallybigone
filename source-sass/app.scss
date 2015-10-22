@@ -578,7 +578,33 @@ section.earthquake {
   background-size: cover;
 }
 
+.quote {
+  min-height: 0;
+  margin: 10vh 0;
+  padding: 25vh 0 !important;
+  background: url(/media/skull.jpg) center center no-repeat;
+  background-size: cover;
 
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border: none;
+
+    h2 {
+      color: $light-orange;
+    }
+
+    cite {
+      margin-top: 5vh;
+      font-style: normal;
+      color: $dirty-blue;
+    }
+  }
+
+  &:after {
+    // display: none;
+  }
+}
 
 
 
@@ -588,6 +614,11 @@ section.earthquake {
   text-align: center;
   border: 2px solid $juicy-blue;
   background: rgba($juicy-blue, 0.5);
+
+  h4 {
+    color: #fff;
+    color: $off-white;
+  }
 
   a {
     margin-top: 1.5rem;
