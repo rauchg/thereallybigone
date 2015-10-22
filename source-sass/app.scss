@@ -80,31 +80,47 @@ body {
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 2.5em;
   font-family: $header-font;
   text-transform: uppercase;
   line-height: 1;
   color: $juicy-orange;
+
+  @media #{$medium-up} {
+    font-size: 4.25em;
+  }
+
+  @media #{$medium-up} {
+    font-size: 5.25em;
+  }
 }
 
 h2 {
   font-weight: 500;
-  font-size: 1.875rem;
+  font-size: 1.5em;
+  line-height: 1.3;
 
   @media #{$medium-up} {
-    font-size: 2rem;
-    line-height: 1.3;
+    font-size: 2.25em;
   }
 
   @media #{$large-up} {
-    font-size: 2.875rem;
+    font-size: 2.875em;
   }
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1em;
   color: #96acbd;
   color: #8c949e;
+
+  @media #{$medium-up} {
+    font-size: 1.125em;
+  }
+
+  @media #{$large-up} {
+    font-size: 1.275em;
+  }
 }
 
 h4 {
@@ -154,10 +170,18 @@ section:not(.hero) {
   // min-height: 100%;
   // height: 100%;
   // height: 1000px;
-  padding: 12rem 0 0;
+  padding: 3rem 0 0;
   // background: url(../images/hero-map.svg) center 45% no-repeat;
   // background-size: 100%;
   // background: none;
+
+  @media #{$medium-up} {
+    padding: 6rem 0 0;
+  }
+
+  @media #{$large-up} {
+    padding: 12rem 0 0;
+  }
 }
 
 
@@ -187,14 +211,16 @@ section:not(.hero) {
   }
 
   h1 {
-    margin-top: 21vh;
+    margin-top: 30vh;
     margin-bottom: 7vh;
-    font-size: 525%;
-    font-size: 11vh;
     line-height: 1;
     // color: #888;
     color: #fff;
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
+
+    @media #{$medium-up} {
+      margin-top: 21vh;
+    }
 
     strong {
       // color: #fff;
@@ -448,13 +474,34 @@ section.earthquake {
 .japan {
   position: relative;
   overflow: hidden;
-  margin-top: 12rem;
-  margin-bottom: 12rem;
-  padding-top: 50%;
-  padding-bottom: 50%;
+
+  @media #{$medium-up} {
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  h2 {
+    margin-bottom: 5vh;
+
+    @media #{$medium-up} {
+      margin-bottom: 8vh;
+    }
+
+    @media #{$large-up} {
+      margin-bottom: 10vh;
+    }
+  }
 }
 
 .japan__polaroids {
+
+  @media #{$large-up} {
+    width: 120%;
+    max-width: 120%;
+    margin: 0 0 0 -10%;
+  }
 
   a {
     // background: $dark-blue;
@@ -509,6 +556,10 @@ section.earthquake {
   }
 
   .medium-6 {
+
+    @media #{$medium-up} {
+      margin-top: -5rem;
+    }
 
     .row {
       position: relative;
@@ -568,8 +619,13 @@ section.earthquake {
 }
 
 
-.hollywood {
+// .hollywood {
+.subduction {
 
+  @media #{$small-only} {
+    background: url(/media/san-andreas-poster-hq.jpg) center center no-repeat;
+    background-size: cover;
+  }
 }
 
 
