@@ -402,6 +402,8 @@ section.earthquake {
     &:after {
       content: "";
       display: block;
+      position: relative;
+      z-index: 8;
       width: 75%;
       height: 0;
       padding-bottom: 75%;
@@ -464,7 +466,60 @@ section.earthquake {
     //   line-height: 1.2;
     //   margin-top: -15%;
     // }
+
+    .dot {
+      border: 5px solid $light-orange;
+      background: transparent;
+      border-radius: 50%;
+      height: 175px;
+      width: 175px;
+      animation: pulse 3s ease-out infinite;
+      position: absolute;
+      top: -45px;
+      left: -45px;
+      // z-index: 1;
+      opacity: 0;
+
+      // &:after {
+      //   content: '';
+      //   display: block;
+      //   border: 100px solid $juicy-orange;
+      //   background: transparent;
+      //   border-radius: 50%;
+      //   height: 150px;
+      //   width: 150px;
+      //   animation: pulse 4s ease-out infinite;
+      //   position: absolute;
+      //   top: -35px;
+      //   left: -35px;
+      //   // z-index: 1;
+      //   opacity: 0;
+      // }
+    }
+
+    &.circle-container--large .dot {
+      width: 225px;
+      height: 225px;
+      top: -60px;
+      left: -60px;
+      border-width: 7px;
+    }
   }
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
 
 
 
@@ -485,12 +540,20 @@ section.earthquake {
   h2 {
     margin-bottom: 5vh;
 
-    @media #{$medium-up} {
-      margin-bottom: 8vh;
-    }
+    // @media #{$medium-up} {
+    //   margin-bottom: 8vh;
+    // }
 
-    @media #{$large-up} {
-      margin-bottom: 10vh;
+    // @media #{$large-up} {
+    //   margin-bottom: 10vh;
+    // }
+  }
+
+  p {
+    margin-bottom: 0;
+
+    &:last-of-type {
+      margin-bottom: 5vh;
     }
   }
 }
@@ -534,7 +597,7 @@ section.earthquake {
       }
 
       &:nth-of-type(2) {
-        top: -50px;
+        top: -70px;
         left: 80px;
 
         img {
@@ -636,8 +699,8 @@ section.earthquake {
 
 .quote {
   min-height: 0;
-  margin: 10vh 0;
-  padding: 25vh 0 !important;
+  margin: 5vh 0;
+  padding: 15vh 0 !important;
   background: url(/media/skull.jpg) center center no-repeat;
   background-size: cover;
 
@@ -688,6 +751,34 @@ section.earthquake {
 
 
 
+.cascadia-journey {
+  position: relative;
+  // min-height: 5000px;
+  // background: url(/media/map/journey-map-test.jpg) center top no-repeat;
+  // background-size: 100%;
+
+  &:after {
+    display: none;
+  }
+}
+
+  .cascadia-journey__content {
+    position: absolute;
+    top: 300px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    .row {
+      margin: 15rem 0;
+    }
+  }
+
+  .cascadia-journey__timer {
+    position: absolute;
+    top: 15vh;
+    right: 100px;
+  }
 
 
 
