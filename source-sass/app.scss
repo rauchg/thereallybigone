@@ -29,6 +29,19 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // Now on to the other bits
 // =======================================
 
+.button {
+  // -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  // clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
+  -webkit-clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%);
+          clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%);
+  outline: 0;
+
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
 // TODO
 .js #preloader {
   position: fixed;
@@ -244,9 +257,6 @@ section:not(.hero) {
   h3 {
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300;
-    // color: $dirty-blue;
-
-    // color: $grey;
 
     @media #{$medium-up} {
       margin-top: 0.75rem;
@@ -298,37 +308,29 @@ section:not(.hero) {
   display: none;
 }
 
+// section.subduction {
+//   padding-top: 6em;
+//   .label-text {
+//     color: $dirty-blue;
+//     font-size: 1.25rem;
+//     letter-spacing: 0.25px;
+//   }
+// }
 
+// section.subduction-labels {
+//   position: fixed;
+//   width: 100%;
+//   top: 0;
 
-section.subduction {
-  padding-top: 6em;
-  .label-text {
-    color: $dirty-blue;
-    font-size: 1.25rem;
-    letter-spacing: 0.25px;
-  }
-}
+//   .row {
+//     position: static;
+//   }
+// }
 
-section.subduction-labels {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  row {
-    position: static;
-  }
-}
-
-section.earthquake {
-  padding-top: 12em;
-  padding-bottom: 48em;
-}
-
-.blog-grid--facts {
-
-  li {
-    // line-height: 15rem;
-  }
-}
+// section.earthquake {
+//   padding-top: 12em;
+//   padding-bottom: 48em;
+// }
 
 .fact {
   display: inline-block;
@@ -434,13 +436,16 @@ section.earthquake {
 
     &.orange:after {
       background: $juicy-orange;
+      // background: none;
       box-shadow: 0 0 0 12px $dark-blue, 0 0 0 14px $light-orange;
+      box-shadow: none;
     }
 
     .content {
       position: absolute;
       top: 30%;
       left: 40%;
+      z-index: 10;
       transform: translate3d(-50%, 0, 0);
       text-align: center;
       font-family: $header-font;
@@ -473,35 +478,19 @@ section.earthquake {
       border-radius: 50%;
       height: 175px;
       width: 175px;
-      animation: pulse 3s ease-out infinite;
       position: absolute;
-      top: -45px;
-      left: -45px;
-      // z-index: 1;
+      top: -50%;
+      left: -50%;
+      z-index: 1;
+      animation: pulse 3s ease-out infinite;
       opacity: 0;
-
-      // &:after {
-      //   content: '';
-      //   display: block;
-      //   border: 100px solid $juicy-orange;
-      //   background: transparent;
-      //   border-radius: 50%;
-      //   height: 150px;
-      //   width: 150px;
-      //   animation: pulse 4s ease-out infinite;
-      //   position: absolute;
-      //   top: -35px;
-      //   left: -35px;
-      //   // z-index: 1;
-      //   opacity: 0;
-      // }
     }
 
     &.circle-container--large .dot {
-      width: 225px;
-      height: 225px;
-      top: -60px;
-      left: -60px;
+       width: 150%;
+      height: 150%;
+      top: -25%;
+      left: -25%;
       border-width: 7px;
     }
   }
@@ -583,8 +572,10 @@ section.earthquake {
     z-index: 1;
 
     img {
-      opacity: 0.3;
-      -webkit-filter: grayscale(50%);
+      opacity: 0.45;
+      -webkit-filter: grayscale(20%);
+      -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
+              clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
     }
   }
 
@@ -601,7 +592,7 @@ section.earthquake {
         left: 80px;
 
         img {
-          opacity: 0.15;
+          opacity: 0.25;
         }
       }
 
@@ -612,7 +603,7 @@ section.earthquake {
       &:last-of-type {
 
         img {
-          opacity: 0.22;
+          opacity: 0.32;
         }
       }
     }
@@ -636,7 +627,7 @@ section.earthquake {
         top: -10px;
 
         img {
-          opacity: 0.1;
+          opacity: 0.2;
         }
       }
 
@@ -644,7 +635,7 @@ section.earthquake {
         top: 10px;
 
         img {
-          opacity: 0.1;
+          opacity: 0.2;
         }
       }
     }
@@ -663,7 +654,7 @@ section.earthquake {
         right: 90px;
 
         img {
-          opacity: 0.15;
+          opacity: 0.25;
         }
       }
 
@@ -674,7 +665,7 @@ section.earthquake {
       &:last-of-type {
 
         img {
-          opacity: 0.22;
+          opacity: 0.32;
         }
       }
     }
@@ -692,7 +683,8 @@ section.earthquake {
 }
 
 
-.cascadia {
+.cascadiax,
+.subduction {
   background: url(/media/cascadia.jpg) center center no-repeat;
   background-size: cover;
 }
@@ -749,6 +741,28 @@ section.earthquake {
   }
 }
 
+
+.cascadia-hands {
+  min-height: 0;
+  text-align: center;
+  padding: 2rem 0 !important;
+  margin: 0;
+  background: $dark-blue;
+
+  h4 {
+    margin: 0;
+    color: #fff;
+  }
+
+  .button {
+    margin: 0 0 0 1rem;
+    background: $juicy-blue;
+  }
+
+  &:after {
+    display: none;
+  }
+}
 
 
 .cascadia-journey {

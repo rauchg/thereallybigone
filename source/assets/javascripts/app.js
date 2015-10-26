@@ -34,16 +34,16 @@ var heroMap,
 $(document).ready(function() {
 
   // Variables for SVG animations
-  heroMap = $('#hero-map');
-  heroMap[0].addEventListener('load', function() {
-    svgDoc = heroMap.contents();
-    svgItemForward = svgDoc.find("#NAplate-slide-forward");
-    svgItemBackward = svgDoc.find("#NAplate-slide-backward");
-  });
+  // heroMap = $('#hero-map');
+  // heroMap[0].addEventListener('load', function() {
+  //   svgDoc = heroMap.contents();
+  //   svgItemForward = svgDoc.find("#NAplate-slide-forward");
+  //   svgItemBackward = svgDoc.find("#NAplate-slide-backward");
+  // });
 
   // get fixed header and subduction labels to control their position
-  $fixedHeader = $('.fixed-header');
-  $subductionLabels = $('.js-animate-subduction-labels');
+  // $fixedHeader = $('.fixed-header');
+  // $subductionLabels = $('.js-animate-subduction-labels');
 
   // Hiding and re-triggering animation of the elements
   $(window).scroll(function () {
@@ -52,7 +52,7 @@ $(document).ready(function() {
     // console.log(topOfWindow);
 
     // subduction plate labels position has to be kept sync to hero bg
-    $subductionLabels.css('top', 750 - 333 - ((topOfWindow - 500) / 2));
+    // $subductionLabels.css('top', 750 - 333 - ((topOfWindow - 500) / 2));
 
     /* ---------- > 50px: RISK BUTTON ---------- */
     if (topOfWindow > 50) {
@@ -69,24 +69,24 @@ $(document).ready(function() {
 
     /* ---------- < 500px: HERO is moving at 2/3 of the scroll speed ---------- */
     if (topOfWindow < 500) {
-      $fixedHeader.css('top', -topOfWindow * 0.66);
+      // $fixedHeader.css('top', -topOfWindow * 0.66);
     }
 
     /* ---------- < 500px: HERO is moving at 1/2 of the scroll speed ---------- */
     if (topOfWindow > 500) {
       // -333 is the current top position at this point
-      $fixedHeader.css('top', -333 - ((topOfWindow - 500) * 0.5));
+      // $fixedHeader.css('top', -333 - ((topOfWindow - 500) * 0.5));
     }
 
     /* ---------- > 1000px: HERO is moving at 2/3 of the scroll speed, changing direction ---------- */
     if (topOfWindow > 1000 && topOfWindow < 1640) {
       // -583 is the current top position at this point
-      $fixedHeader.css('top', -583 + ((topOfWindow - 1000) * 0.66));
+      // $fixedHeader.css('top', -583 + ((topOfWindow - 1000) * 0.66));
     }
 
     /* ---------- > 1640: HERO is not moving any longer ---------- */
     if (topOfWindow > 1640) {
-      $fixedHeader.css('top', -160);
+      // $fixedHeader.css('top', -160);
     }
 
     /* ---------- > 400px: ANIMATE SUBDUCTION DIV ---------- */
