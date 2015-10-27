@@ -767,6 +767,8 @@ section:not(.hero) {
 
 .cascadia-journey {
   position: relative;
+  width: 100%;
+  min-width: 100%;
   // min-height: 5000px;
   // background: url(/media/map/journey-map-test.jpg) center top no-repeat;
   // background-size: 100%;
@@ -775,6 +777,25 @@ section:not(.hero) {
     display: none;
   }
 }
+
+  .cascadia-journey__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .helicopter {
+    background-attachment: static;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    z-index: 999;
+    width: 150px;
+  }
 
   .cascadia-journey__content {
     position: absolute;

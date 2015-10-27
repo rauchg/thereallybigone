@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="146px" height="173px" viewBox="0 0 146 173" style="enable-background:new 0 0 146 173;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2E3134;}
+	.st1{fill:#999999;}
+	.st2{opacity:0.8;fill:url(#SVGID_1_);}
+	.st3{opacity:0.8;fill:url(#SVGID_2_);}
+	.st4{opacity:0.8;fill:url(#SVGID_3_);}
+	.st5{opacity:0.15;fill:url(#SVGID_4_);}
+	.st6{opacity:0.15;fill:url(#SVGID_5_);}
+	.st7{opacity:0.3;fill:url(#SVGID_6_);}
+	.st8{fill:#72777F;}
+	.st9{fill:#6E6E6E;}
+	.st10{fill:#FF784C;}
+	.st11{fill:#DE470C;}
+	.st12{fill:#5B646F;}
+	.st13{fill:#283442;}
+	.st14{fill:#414B57;}
+	.st15{fill:#192534;}
+	.st16{opacity:0.7;fill:url(#Backlight_1_);}
+	.st17{fill:#E75E39;}
+	.st18{opacity:0.5;fill:url(#SVGID_7_);}
+	.st19{fill:#35AF30;}
+	.st20{opacity:0.5;fill:url(#SVGID_8_);}
+	.st21{opacity:0.5;fill:url(#SVGID_9_);}
+	.st22{opacity:0.5;fill:url(#SVGID_10_);}
+	.st23{opacity:0.1;fill:#999999;}
+	.st24{opacity:0.19;fill:#999999;}
+	.st25{opacity:0.4;fill:url(#SVGID_11_);}
+	.st26{fill:#BFBFBF;}
+	.st27{fill:#808080;}
+	.st28{fill:#636370;}
+	.st29{fill:#50505E;}
+</style>
+<!-- <rect class="st0" width="146" height="173"/> -->
+<path class="st1" d="M89,121.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+	c0.3,0,0.5,0.2,0.5,0.5V121.5z"/>
+<path class="st1" d="M58,121.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+	c0.3,0,0.5,0.2,0.5,0.5V121.5z"/>
+<g id="Bottomlight">
+	<radialGradient id="SVGID_1_" cx="73" cy="95" r="28" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<circle class="st2" cx="73" cy="95" r="28"/>
+	<radialGradient id="SVGID_2_" cx="88.5" cy="100.5" r="15.2069" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<path class="st3" d="M89,121.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+		c0.3,0,0.5,0.2,0.5,0.5V121.5z"/>
+	<radialGradient id="SVGID_3_" cx="57.5" cy="100.5" r="15.2069" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<path class="st4" d="M58,121.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+		c0.3,0,0.5,0.2,0.5,0.5V121.5z"/>
+  <animate attributeName="opacity"
+    from="0"
+    to="0"
+    begin="0"
+    dur="2"
+    values="0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0"
+    repeatCount="indefinite" />
+</g>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="72.6518" y1="134.1041" x2="72.9609" y2="156.206">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</linearGradient>
+<polygon class="st5" points="73,133 47,159 99,159 "/>
+<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="72.4372" y1="132.7579" x2="72.9372" y2="168.5079">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</linearGradient>
+<polygon class="st6" points="75,131 73,131 71,131 29,173 73,173 117,173 "/>
+<radialGradient id="SVGID_6_" cx="73" cy="139" r="28" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</radialGradient>
+<circle class="st7" cx="73" cy="139" r="28"/>
+<rect x="81" y="113" class="st8" width="7" height="1"/>
+<rect x="81" y="87" class="st8" width="7" height="1"/>
+<rect x="58" y="113" class="st8" width="7" height="1"/>
+<rect x="58" y="87" class="st8" width="7" height="1"/>
+<g>
+	<path class="st9" d="M81.7,120.5c-2.5,1-5.1,1.5-7.7,1.5v12c2.5,0,4.8-1.2,6.2-3.3L82,128l0,0c0.3-2.3,0.7-5,1-8L81.7,120.5z"/>
+	<path class="st10" d="M77.8,62.9C77.3,61.8,76.2,61,75,61h-2v78h3c2.4,0,4.4-1.7,4.8-4c0.3-1.8,0.8-4.2,1.2-7c0.3-2.3,0.7-5,1-8
+		c0.6-5.7,1-12.5,1-20C84,81.7,79.6,67.8,77.8,62.9z"/>
+</g>
+<path class="st11" d="M68.2,62.9c0.4-1.2,1.5-1.9,2.8-1.9h2v78h-3c-2.4,0-4.4-1.7-4.8-4c-0.3-1.8-0.8-4.2-1.2-7c-0.3-2.3-0.7-5-1-8
+	c-0.6-5.7-1-12.5-1-20C62,81.7,66.4,67.8,68.2,62.9z"/>
+<rect x="74" y="11" class="st10" width="4" height="1"/>
+<rect x="74" y="10" class="st11" width="4" height="1"/>
+<rect x="75" y="27" class="st11" width="14" height="2"/>
+<rect x="75" y="29" class="st10" width="14" height="2"/>
+<rect x="57" y="27" class="st11" width="14" height="2"/>
+<rect x="57" y="29" class="st10" width="14" height="2"/>
+<g>
+	<path class="st11" d="M88.7,17.4L88.7,17.4c-0.4,1.7-0.7,3.5-0.7,5.3V32c0,0.6,0.4,1,1,1V17.1C88.8,17.1,88.7,17.2,88.7,17.4z"/>
+	<path class="st10" d="M89.3,17.4L89.3,17.4c0-0.2-0.2-0.3-0.3-0.3V33c0.6,0,1-0.4,1-1v-9.3C90,20.9,89.8,19.1,89.3,17.4z"/>
+</g>
+<g>
+	<path class="st11" d="M56.7,17.4L56.7,17.4c-0.4,1.7-0.7,3.5-0.7,5.3V32c0,0.6,0.4,1,1,1V17.1C56.8,17.1,56.7,17.2,56.7,17.4z"/>
+	<path class="st10" d="M57.3,17.4L57.3,17.4c0-0.2-0.2-0.3-0.3-0.3V33c0.6,0,1-0.4,1-1v-9.3C58,20.9,57.8,19.1,57.3,17.4z"/>
+</g>
+<g>
+	<path class="st11" d="M71.9,9l-0.5,5.2c-0.3,2.6-0.4,5.1-0.4,7.7V61h2V8C72.4,8,72,8.4,71.9,9z"/>
+	<path class="st10" d="M74.6,14.2L74.1,9C74,8.4,73.6,8,73,8v53h2V21.9C75,19.3,74.9,16.7,74.6,14.2z"/>
+</g>
+<rect x="78" y="0" class="st1" width="1" height="22"/>
+<g>
+	<path class="st12" d="M74,122v2l6.4,6.4l1.2-1.8L75,122C74.6,122,74.3,122,74,122z"/>
+	<path class="st13" d="M74,134c2.5,0,4.8-1.2,6.2-3.3l0.2-0.3L74,124V134z"/>
+	<path class="st13" d="M83,120l-1.3,0.5c-0.8,0.3-1.6,0.6-2.4,0.8l3.2,3.2C82.7,123.1,82.8,121.6,83,120z"/>
+	<path class="st12" d="M82.5,124.5l-3.2-3.2c-0.5,0.1-1.1,0.3-1.6,0.4l4.6,4.6C82.3,125.7,82.4,125.1,82.5,124.5z"/>
+	<path class="st13" d="M82,128c0.1-0.5,0.2-1.1,0.2-1.7l-4.6-4.6c-0.9,0.2-1.8,0.2-2.7,0.3l6.6,6.6L82,128L82,128z"/>
+</g>
+<g>
+	<path class="st14" d="M72,122v2l-6.4,6.4l-1.2-1.8L71,122C71.4,122,71.7,122,72,122z"/>
+	<path class="st15" d="M72,134c-2.5,0-4.8-1.2-6.2-3.3l-0.2-0.3L72,124V134z"/>
+	<path class="st15" d="M63,120l1.3,0.5c0.8,0.3,1.6,0.6,2.4,0.8l-3.2,3.2C63.3,123.1,63.2,121.6,63,120z"/>
+	<path class="st14" d="M63.5,124.5l3.2-3.2c0.5,0.1,1.1,0.3,1.6,0.4l-4.6,4.6C63.7,125.7,63.6,125.1,63.5,124.5z"/>
+	<path class="st15" d="M64,128c-0.1-0.5-0.2-1.1-0.2-1.7l4.6-4.6c0.9,0.2,1.8,0.2,2.7,0.3l-6.6,6.6L64,128L64,128z"/>
+</g>
+<g>
+  <radialGradient id="Backlight_1_" cx="73" cy="23" r="11" gradientUnits="userSpaceOnUse">
+	   <stop  offset="0" style="stop-color:#FFC900"/>
+	   <stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+  </radialGradient>
+  <circle id="Backlight" class="st16" cx="73" cy="23" r="11"/>
+  <animate attributeName="opacity"
+    from="0"
+    to="0"
+    begin="0"
+    dur="2"
+    values="0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0"
+    repeatCount="indefinite" />
+</g>
+<g id="Redlight">
+	<circle class="st17" cx="89" cy="32" r="1"/>
+	<radialGradient id="SVGID_7_" cx="89" cy="32" r="10" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#E1492C"/>
+		<stop  offset="1" style="stop-color:#E1492C;stop-opacity:0"/>
+	</radialGradient>
+	<circle class="st18" cx="89" cy="32" r="10"/>
+</g>
+<g id="Greenlight">
+	<circle class="st19" cx="57" cy="32" r="1"/>
+	<radialGradient id="SVGID_8_" cx="57" cy="32" r="10" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</radialGradient>
+	<circle class="st20" cx="57" cy="32" r="10"/>
+	<radialGradient id="SVGID_9_" cx="72" cy="34.5" r="18.7517" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</radialGradient>
+	<path class="st21" d="M71.9,9l-0.5,5.2c-0.3,2.6-0.4,5.1-0.4,7.7V61h2V8C72.4,8,72,8.4,71.9,9z"/>
+	<linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="58" y1="30" x2="71" y2="30">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</linearGradient>
+	<rect x="58" y="29" class="st22" width="13" height="2"/>
+</g>
+<g id="Blur2">
+	<path class="st23" d="M2.8,76.2c-1.6,6-2.5,12.3-2.5,18.8c0,6.5,0.9,12.8,2.5,18.8L73,95L2.8,76.2z"/>
+  <path class="st24" d="M54.2,24.8c-25,6.7-44.7,26.4-51.4,51.4L73,95L54.2,24.8z"/>
+  <path class="st23" d="M91.8,24.8c-6-1.6-12.3-2.5-18.8-2.5s-12.8,0.9-18.8,2.5L73,95L91.8,24.8z"/>
+  <path class="st24" d="M143.2,76.2c-6.7-25-26.4-44.7-51.4-51.4L73,95L143.2,76.2z"/>
+  <path class="st23" d="M54.2,165.2c6,1.6,12.3,2.5,18.8,2.5s12.8-0.9,18.8-2.5L73,95L54.2,165.2z"/>
+  <path class="st23" d="M143.2,76.2L73,95l70.2,18.8c1.6-6,2.5-12.3,2.5-18.8C145.7,88.5,144.8,82.2,143.2,76.2z"/>
+  <path class="st24" d="M91.8,165.2c25-6.7,44.7-26.4,51.4-51.4L73,95L91.8,165.2z"/>
+  <path class="st24" d="M2.8,113.8c6.7,25,26.4,44.7,51.4,51.4L73,95L2.8,113.8z"/>
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 73,95 0"
+    to="360 73,95 0"
+    begin="0"
+    dur="1.6"
+    repeatCount="indefinite" />
+</g>
+<g id="Blur">
+	<path class="st23" d="M34.3,34.1c-5.2,3.3-10.1,7.3-14.4,12.1s-8,10-10.8,15.4L73,95L34.3,34.1z"/>
+  <path class="st24" d="M106.4,31C83.6,19.1,56,20.3,34.3,34.1L73,95L106.4,31z"/>
+  <path class="st23" d="M133.9,56.3c-3.3-5.2-7.3-10.1-12.1-14.4s-10-8-15.4-10.8L73,95L133.9,56.3z"/>
+  <path class="st24" d="M137,128.4c11.9-22.8,10.7-50.4-3.1-72.1L73,95L137,128.4z"/>
+  <path class="st23" d="M12.1,133.7c3.3,5.2,7.3,10.1,12.1,14.4c4.8,4.4,10,8,15.4,10.8L73,95L12.1,133.7z"/>
+  <path class="st23" d="M137,128.4L73,95l38.7,60.9c5.2-3.3,10.1-7.3,14.4-12.1C130.5,139,134.1,133.8,137,128.4z"/>
+  <path class="st24" d="M39.6,159c22.8,11.9,50.4,10.7,72.1-3.1L73,95L39.6,159z"/>
+  <path class="st24" d="M9,61.6C-2.9,84.4-1.7,112,12.1,133.7L73,95L9,61.6z"/>
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 73,95 0"
+    to="-360 73,95 0"
+    begin="0"
+    dur="1.2"
+    repeatCount="indefinite" />
+</g>
+<g id="Wings">
+	<radialGradient id="SVGID_11_" cx="73.1875" cy="95.9655" r="11.3739" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#283442"/>
+		<stop  offset="1" style="stop-color:#283442;stop-opacity:0"/>
+	</radialGradient>
+	<polygon class="st25" points="83,100 83,112 77,106 77,103 73,99 69,103 69,106 63,112 63,100 64,99 66,99 69,96 65,92 64,92
+		63,92 64,81 69,86 69,88 73,92 77,88 77,86 82,81 83,92 82,92 81,92 77,96 80,99 82,99 	"/>
+	<polygon class="st1" points="73,95 73,93 75,95 	"/>
+	<polygon class="st1" points="73,97 75,95 73,95 	"/>
+	<polygon class="st1" points="71,95 73,93 73,95 	"/>
+	<polygon class="st1" points="73,97 71,95 73,95 	"/>
+
+		<rect x="73" y="90.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 195.2939 102.1066)" class="st28" width="7.1" height="2.8"/>
+	<polygon opacity="0.2" class="st26" points="80,90 81,90 125,46 124,44 79,89 	"/>
+	<polygon opacity="0.2" class="st1" points="79,89 78,88 78,87 122,43 124,44 	"/>
+
+		<rect x="77.1" y="88.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 86.2782 -29.2939)" class="st29" width="2.8" height="1.4"/>
+
+		<rect x="73" y="97.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 60.9436 222.2437)" class="st28" width="7.1" height="2.8"/>
+	<polygon opacity="0.2" class="st26" points="78,102 78,103 122,147 124,146 79,101 	"/>
+	<polygon opacity="0.2" class="st1" points="79,101 80,100 81,100 125,144 124,146 	"/>
+
+		<rect x="77.1" y="99.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 205.0721 116.0564)" class="st29" width="2.8" height="1.4"/>
+	<rect x="66" y="97.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -49.2939 77.9939)" class="st28" width="7.1" height="2.8"/>
+	<polygon opacity="0.2" class="st1" points="66,100 65,100 21,144 22,146 67,101 	"/>
+	<polygon opacity="0.2" class="st26" points="67,101 68,102 68,103 24,147 22,146 	"/>
+
+		<rect x="66.1" y="99.8" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 44.1655 219.2939)" class="st29" width="2.8" height="1.4"/>
+	<rect x="66" y="90.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 85.0564 -22.3442)" class="st28" width="7.1" height="2.8"/>
+	<polygon opacity="0.2" class="st26" points="68,88 68,87 24,43 22,44 67,89 	"/>
+	<polygon opacity="0.2" class="st1" points="67,89 66,90 65,90 21,46 22,44 	"/>
+
+		<rect x="66.1" y="88.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -43.5158 73.9436)" class="st29" width="2.8" height="1.4"/>
+  <animateTransform
+    attributeName="transform"
+    type="rotate"
+    from="0 73,95 0"
+    to="-360 73,95 0"
+    begin="0"
+    dur="0.6"
+    repeatCount="indefinite" />
+</g>
+</svg>
