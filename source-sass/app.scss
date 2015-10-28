@@ -818,7 +818,56 @@ section:not(.hero) {
     right: 100px;
   }
 
+.cities {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  top: 0;
+  object {
+    width: 100%;
+  }
+}
 
+.cities-trigger {
+  border-top: 1px solid #F00;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.cities-trigger--vancouver {
+  top: 40vw;
+}
+
+.cities-trigger--seattle {
+  top: 139vw;
+}
+
+.cities-trigger--olympia {
+  top: 202vw;
+}
+
+.cities-trigger--portland {
+  top: 291vw;
+}
+
+.cities-trigger--salem {
+  top: 323vw;
+}
+
+.cities-trigger--eugene {
+  top: 381vw;
+}
+
+.cities-trigger--grantspass {
+  top: 435vw;
+}
+
+.cities-trigger--redding {
+  top: 542vw;
+}
 
 // .video-container {
 //   position: relative;

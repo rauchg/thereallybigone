@@ -23,98 +23,194 @@ if (Modernizr.geolocation) {
   geolocationAvailable = true;
 }
 
-var heroMap,
-    svgDoc,
-    svgItemForward,
-    svgItemBackward,
-    $fixedHeader,
-    $subductionLabels;
+var cities = [
+  {
+    name: 'vancouver',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2000
+      },
+      {
+        id: 'animation3',
+        begin: 2000
+      },
+      {
+        id: 'animation4',
+        begin: 2000
+      }
+    ]
+  },
+  {
+    name: 'seattle',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2000
+      },
+      {
+        id: 'animation3',
+        begin: 3500
+      }
+    ]
+  },
+  {
+    name: 'olympia',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2000
+      },
+      {
+        id: 'animation3',
+        begin: 2500
+      }
+    ]
+  },
+  {
+    name: 'portland',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 1500
+      },
+      {
+        id: 'animation2',
+        begin: 1500
+      },
+      {
+        id: 'animation3',
+        begin: 4000
+      },
+      {
+        id: 'animation4',
+        begin: 4400
+      }
+    ]
+  },
+  {
+    name: 'salem',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2000
+      },
+      {
+        id: 'animation3',
+        begin: 2500
+      }
+    ]
+  },
+  {
+    name: 'eugene',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2000
+      }
+    ]
+  },
+  {
+    name: 'grantspass',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      },
+      {
+        id: 'animation2',
+        begin: 2900
+      },
+      {
+        id: 'animation3',
+        begin: 2000
+      }
+    ]
+  },
+  {
+    name: 'redding',
+    animations: [
+      {
+        id: 'animation1',
+        begin: 2000
+      }
+    ]
+  }
+];
 
 // on document load
 $(document).ready(function() {
 
-  // Variables for SVG animations
-  // heroMap = $('#hero-map');
-  // heroMap[0].addEventListener('load', function() {
-  //   svgDoc = heroMap.contents();
-  //   svgItemForward = svgDoc.find("#NAplate-slide-forward");
-  //   svgItemBackward = svgDoc.find("#NAplate-slide-backward");
-  // });
+  // go through cities to trigger animations
+  cities.forEach(function(city, index) {
 
-  // get fixed header and subduction labels to control their position
-  // $fixedHeader = $('.fixed-header');
-  // $subductionLabels = $('.js-animate-subduction-labels');
+    var $city = $('.js-cities-' + city.name + ' object');
+    var $trigger = $('.js-cities-trigger-' + city.name);
+    var hasTriggered = false;
 
-  // Hiding and re-triggering animation of the elements
+    $city[0].addEventListener('load', function() {
+
+      // check http://imakewebthings.com/waypoints/ for documentation
+      $trigger.waypoint({
+
+        handler: function() {
+
+          console.log("Trigger " + city.name);
+
+          if (hasTriggered) return;
+          hasTriggered = true;
+          var svgDoc = $city.contents();
+
+          // if animations array is not empty, use these...
+          if (city.animations.length) {
+            city.animations.forEach(function(animation) {
+              var el = svgDoc.find('#' + animation.id);
+              setTimeout(function() {
+                el[0].beginElement();
+              }, animation.begin);
+            });
+            return;
+          }
+
+          // otherwise, loop over array elements and animate them
+          var animations = svgDoc.find('animate');
+          animations.each(function(index, animation) {
+            animation.beginElement();
+          });
+
+        },
+        offset: 'bottom-in-view'
+      });
+
+    });
+
+  });
+
+  // scroll position
   $(window).scroll(function () {
 
     var topOfWindow = $(window).scrollTop();
     // console.log(topOfWindow);
-
-    // subduction plate labels position has to be kept sync to hero bg
-    // $subductionLabels.css('top', 750 - 333 - ((topOfWindow - 500) / 2));
-
-    /* ---------- > 50px: RISK BUTTON ---------- */
-    if (topOfWindow > 50) {
-      // if fade-in class doesn't exist on element, remove fade-out class and add it
-      if ( ! $('.js-animate-risk').hasClass('fadeInUp')) {
-        $('.js-animate-risk').removeClass('fadeOutDown').addClass('animated fadeInUp');
-      }
-    } else {
-      // if fade-in class exists on element, then remove it and add fade-out class
-      if ($('.js-animate-risk').hasClass('fadeInUp')) {
-        $('.js-animate-risk').removeClass('fadeInUp').addClass('fadeOutDown');
-      }
-    }
-
-    /* ---------- < 500px: HERO is moving at 2/3 of the scroll speed ---------- */
-    if (topOfWindow < 500) {
-      // $fixedHeader.css('top', -topOfWindow * 0.66);
-    }
-
-    /* ---------- < 500px: HERO is moving at 1/2 of the scroll speed ---------- */
-    if (topOfWindow > 500) {
-      // -333 is the current top position at this point
-      // $fixedHeader.css('top', -333 - ((topOfWindow - 500) * 0.5));
-    }
-
-    /* ---------- > 1000px: HERO is moving at 2/3 of the scroll speed, changing direction ---------- */
-    if (topOfWindow > 1000 && topOfWindow < 1640) {
-      // -583 is the current top position at this point
-      // $fixedHeader.css('top', -583 + ((topOfWindow - 1000) * 0.66));
-    }
-
-    /* ---------- > 1640: HERO is not moving any longer ---------- */
-    if (topOfWindow > 1640) {
-      // $fixedHeader.css('top', -160);
-    }
-
-    /* ---------- > 400px: ANIMATE SUBDUCTION DIV ---------- */
-    if (topOfWindow > 400) {
-      if ( ! $('.js-animate-subduction').hasClass('slideInUp')) {
-        $('.js-animate-subduction').removeClass('fadeOut').addClass('animated slideInUp');
-      }
-    }
-
-    else {
-      if ($('.js-animate-subduction').hasClass('slideInUp')) {
-        $('.js-animate-subduction').removeClass('slideInUp').addClass('fadeOut');
-      }
-    }
-
-    /* ---------- > 400px: ANIMATE SUBDUCTION PLATES ---------- */
-    if (topOfWindow > 400 && topOfWindow < 1000) {
-
-      if ( ! $('.js-animate-subduction-labels').hasClass('fadeInUp')) {
-        $('.js-animate-subduction-labels').removeClass('fadeOutDown').addClass('animated fadeInUp');
-      }
-    }
-
-    else {
-      if ($('.js-animate-subduction-labels').hasClass('fadeInUp')) {
-        $('.js-animate-subduction-labels').removeClass('fadeInUp').addClass('fadeOutDown');
-      }
-    }
 
     /* ---------- > 1200px: Run quake timer ---------- */
     if (topOfWindow > 1200) {
@@ -122,24 +218,6 @@ $(document).ready(function() {
         quakeTimer();
       }
     }
-
-    /* ---------- 501px: ANIMATE SVGs ---------- */
-
-    // if (topOfWindow > 2000) {
-    //   $fixedHeader.css('top', -666 - ((topOfWindow-1000) / 2));
-    // }
-
-    // if (topOfWindow > 100) {
-    //   if ( ! heroMap.hasClass('moveForward')) {
-    //     heroMap.addClass('moveForward');
-    //     svgItemForward[0].beginElement();
-    //   }
-    // } else {
-    //   if ( heroMap.hasClass('moveForward')) {
-    //     heroMap.removeClass('moveForward');
-    //     svgItemBackward[0].beginElement();
-    //   }
-    // }
 
   });
 

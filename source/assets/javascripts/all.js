@@ -3,6 +3,7 @@
 
 //= require jquery/dist/jquery
 //= require foundation/js/foundation.min
+//= require waypoints/lib/jquery.waypoints.min
 
 //= require app
 //= require script
