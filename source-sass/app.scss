@@ -819,7 +819,7 @@ section:not(.hero) {
   }
 
 /* cities svgs and trigger lines */
-.cities {
+.cities, .tsunamis {
   position: absolute;
   width: 100%;
   height: auto;
@@ -868,6 +868,11 @@ section:not(.hero) {
 
 .cities-trigger--redding {
   top: 542vw;
+}
+
+/* tsunamis */
+.tsunamis {
+
 }
 
 // .video-container {
