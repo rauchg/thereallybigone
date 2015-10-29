@@ -22,6 +22,9 @@
 
     <%= yield %>
 
+    <!-- SVG animations polyfill (https://leunen.me/fakesmile/) -->
+    <script type="text/ecmascript" xlink:href="/assets/javascripts/vendor/smil.user.js"></script>
+
     <%= javascript_include_tag  "all" %>
 
     <script type="text/javascript">
