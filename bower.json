@@ -12,6 +12,7 @@
     "modernizr": "~3.1.0"
   },
   "resolutions": {
-    "jquery-placeholder": "~2.0.8"
+    "jquery-placeholder": "~2.0.8",
+    "modernizr": "~2.8.3"
   }
 }
