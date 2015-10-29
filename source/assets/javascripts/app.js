@@ -158,6 +158,240 @@ var cities = [
   }
 ];
 
+var tsunamis = [
+  {
+    name: 'wave-1',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 1500
+      },
+      {
+        'id': 'animation4',
+        'begin': 2000
+      },
+      {
+        'id': 'animation5',
+        'begin': 2000
+      },
+      {
+        'id': 'animation6',
+        'begin': 2000
+      },
+      {
+        'id': 'animation7',
+        'begin': 1500
+      }
+    ]
+  },
+  {
+    name: 'wave-2',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 1500
+      },
+      {
+        'id': 'animation4',
+        'begin': 1500
+      },
+      {
+        'id': 'animation5',
+        'begin': 1500
+      }
+    ]
+  },
+  {
+    name: 'wave-3',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 500
+      },
+      {
+        'id': 'animation2',
+        'begin': 500
+      },
+      {
+        'id': 'animation3',
+        'begin': 1000
+      },
+      {
+        'id': 'animation4',
+        'begin': 0
+      },
+      {
+        'id': 'animation5',
+        'begin': 0
+      },
+      {
+        'id': 'animation6',
+        'begin': 0
+      },
+      {
+        'id': 'animation7',
+        'begin': 0
+      }
+    ]
+  },
+  {
+    name: 'wave-4',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 2500
+      },
+      {
+        'id': 'animation4',
+        'begin': 2500
+      },
+      {
+        'id': 'animation5',
+        'begin': 1500
+      }
+    ]
+  },
+  {
+    name: 'wave-5',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 1500
+      },
+      {
+        'id': 'animation4',
+        'begin': 1500
+      },
+      {
+        'id': 'animation5',
+        'begin': 2000
+      },
+      {
+        'id': 'animation6',
+        'begin': 2000
+      },
+      {
+        'id': 'animation7',
+        'begin': 2500
+      },
+      {
+        'id': 'animation8',
+        'begin': 2500
+      },
+      {
+        'id': 'animation9',
+        'begin': 3000
+      },
+      {
+        'id': 'animation10',
+        'begin': 3000
+      },
+      {
+        'id': 'animation11',
+        'begin': 1500
+      }
+    ]
+  },
+  {
+    name: 'wave-6',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 2000
+      },
+      {
+        'id': 'animation4',
+        'begin': 2000
+      },
+      {
+        'id': 'animation5',
+        'begin': 2500
+      },
+      {
+        'id': 'animation6',
+        'begin': 2500
+      },
+      {
+        'id': 'animation7',
+        'begin': 1500
+      }
+    ]
+  },
+  {
+    name: 'wave-7',
+    animations: [
+      {
+        'id': 'animation1',
+        'begin': 0
+      },
+      {
+        'id': 'animation2',
+        'begin': 0
+      },
+      {
+        'id': 'animation3',
+        'begin': 2000
+      },
+      {
+        'id': 'animation4',
+        'begin': 2000
+      },
+      {
+        'id': 'animation5',
+        'begin': 1500
+      },
+      {
+        'id': 'animation6',
+        'begin': 1500
+      },
+      {
+        'id': 'animation7',
+        'begin': 1500
+      }
+    ]
+  }
+];
+
 // on document load
 $(document).ready(function() {
 
@@ -184,6 +418,51 @@ $(document).ready(function() {
           // if animations array is not empty, use these...
           if (city.animations.length) {
             city.animations.forEach(function(animation) {
+              var el = svgDoc.find('#' + animation.id);
+              setTimeout(function() {
+                el[0].beginElement();
+              }, animation.begin);
+            });
+            return;
+          }
+
+          // otherwise, loop over array elements and animate them
+          var animations = svgDoc.find('animate');
+          animations.each(function(index, animation) {
+            animation.beginElement();
+          });
+
+        },
+        offset: 'bottom-in-view'
+      });
+
+    });
+
+  });
+
+  // go through tsunamis to trigger animations
+  tsunamis.forEach(function(tsunami, index) {
+
+    var $tsunami = $('.js-tsunamis-' + tsunami.name + ' object');
+    var $trigger = $('.js-tsunamis-trigger-' + tsunami.name);
+    var hasTriggered = false;
+
+    $tsunami[0].addEventListener('load', function() {
+
+      // check http://imakewebthings.com/waypoints/ for documentation
+      $trigger.waypoint({
+
+        handler: function() {
+
+          console.log("Trigger " + tsunami.name);
+
+          if (hasTriggered) return;
+          hasTriggered = true;
+          var svgDoc = $tsunami.contents();
+
+          // if animations array is not empty, use these...
+          if (tsunami.animations.length) {
+            tsunami.animations.forEach(function(animation) {
               var el = svgDoc.find('#' + animation.id);
               setTimeout(function() {
                 el[0].beginElement();

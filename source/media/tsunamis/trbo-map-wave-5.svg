@@ -123,12 +123,12 @@
 	<path id="_x35_th_wave" class="st68" d="M130.2,0.2c97.4,193.9,138,143.2,122.5,322.8c-15.5,179.6,88.4,162.4-34.9,248.4
 		S166.3,709.8,166.3,709.8V0.2H218.2z">
 
-    <animate attributeName="d"
+    <animate id="animation1" attributeName="d"
       from="M218.2,0.2c97.4,193.9,138,143.2,122.5,322.8c-15.5,179.6,88.4,162.4-34.9,248.4
     S166.3,709.8,166.3,709.8V0.2H218.2"
       to="M218.2,0.2c97.4,193.9,138,143.2,122.5,322.8c-15.5,179.6,88.4,162.4-34.9,248.4
     S166.3,709.8,166.3,709.8V0.2H218.2"
-      begin="0"
+      begin="indefinite"
       dur="4"
       repeatCount="1"
       fill="freeze"
@@ -141,10 +141,10 @@
     />
   </path>
 
-  <animate attributeName="opacity"
+  <animate id="animation2" attributeName="opacity"
     from="0"
     to="0"
-    begin="0"
+    begin="indefinite"
     dur="4"
     repeatCount="1"
     fill="freeze"
@@ -200,10 +200,10 @@
 				/>
 		</g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation3" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="1.5"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -211,10 +211,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation4" attributeName="opacity"
       from="0"
       to="0"
-      begin="1.5"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -261,10 +261,10 @@
 				"/>
 		</g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation5" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="2"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -272,10 +272,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation6" attributeName="opacity"
       from="0"
       to="0"
-      begin="2"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -321,10 +321,10 @@
         />
     </g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation7" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="2.5"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -332,10 +332,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation8" attributeName="opacity"
       from="0"
       to="0"
-      begin="2.5"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -380,10 +380,10 @@
 				c0.1,0,0.2,0,0.2-0.1c0,0,0-0.1,0-0.3v-1c0-0.1,0-0.2,0-0.2c0,0,0-0.1-0.1-0.1C344.9,457.8,344.8,457.8,344.7,457.8z"/>
 		</g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation9" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="3"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -391,10 +391,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation10" attributeName="opacity"
       from="0"
       to="0"
-      begin="3"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -404,10 +404,10 @@
       />
 	</g>
 
-  <animate attributeName="opacity"
+  <animate id="animation11" attributeName="opacity"
     from="0"
     to="0"
-    begin="1.5"
+    begin="indefinite"
     dur="0.5"
     repeatCount="1"
     fill="freeze"

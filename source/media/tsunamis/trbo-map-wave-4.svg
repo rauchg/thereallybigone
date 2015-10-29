@@ -123,12 +123,12 @@
 	<path id="_x34_th_wave" class="st69" d="M200.9-0.1c10.7,55.7,113.2,109.5,52.6,170.4s14.1,123.3-72.6,166.3s-110,125.8-110,125.8
 		h-53.3V108.7V-0.1H337.9z">
 
-    <animate attributeName="d"
+    <animate id="animation1" attributeName="d"
       from="M337.9-0.1c10.7,55.7,113.2,109.5,52.6,170.4s14.1,123.3-72.6,166.3s-110,125.8-110,125.8
     h-53.3V108.7V-0.1H337.9z"
       to="M337.9-0.1c10.7,55.7,113.2,109.5,52.6,170.4s14.1,123.3-72.6,166.3s-110,125.8-110,125.8
     h-53.3V108.7V-0.1H337.9z"
-      begin="0"
+      begin="indefinite"
       dur="4"
       repeatCount="1"
       fill="freeze"
@@ -141,10 +141,10 @@
     />
   </path>
 
-  <animate attributeName="opacity"
+  <animate id="animation2" attributeName="opacity"
     from="0"
     to="0"
-    begin="0"
+    begin="indefinite"
     dur="4"
     repeatCount="1"
     fill="freeze"
@@ -195,10 +195,10 @@
 				c0.2,0,0.3,0,0.3-0.1c0-0.1,0.1-0.2,0.1-0.5v-1.7c0-0.2,0-0.3,0-0.4c0-0.1,0-0.1-0.1-0.1C381.9,146,381.8,146,381.7,146z"/>
 		</g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation3" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="2.5"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -206,10 +206,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation4" attributeName="opacity"
       from="0"
       to="0"
-      begin="2.5"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -219,10 +219,10 @@
       />
 	</g>
 
-  <animate attributeName="opacity"
+  <animate id="animation5" attributeName="opacity"
     from="0"
     to="0"
-    begin="1.5"
+    begin="indefinite"
     dur="0.5"
     repeatCount="1"
     fill="freeze"

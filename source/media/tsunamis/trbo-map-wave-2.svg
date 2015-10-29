@@ -121,10 +121,10 @@
 	</linearGradient>
 	<path id="_x32_nd_wave" class="st71" d="M130.2,516.2h115.5c0,0,2.5-58,70.5-130s92-146,76-230s-165-156-165-156h-97V516.2z">
 
-    <animate attributeName="d"
+    <animate id="animation1" attributeName="d"
       from="M243.2,516.2h115.5c0,0,2.5-58,70.5-130s92-146,76-230s-165-156-165-156h-97V516.2z"
       to="M243.2,516.2h115.5c0,0,2.5-58,70.5-130s92-146,76-230s-165-156-165-156h-97V516.2z"
-      begin="0"
+      begin="indefinite"
       dur="4"
       repeatCount="1"
       fill="freeze"
@@ -135,10 +135,10 @@
     />
   </path>
 
-  <animate attributeName="opacity"
+  <animate id="animation2" attributeName="opacity"
     from="0"
     to="0"
-    begin="0"
+    begin="indefinite"
     dur="4"
     repeatCount="1"
     fill="freeze"
@@ -190,10 +190,10 @@
 				"/>
 		</g>
 
-    <animateTransform attributeName="transform"
+    <animateTransform id="animation3" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
-      begin="1.5"
+      begin="indefinite"
       dur="0.2"
       repeatCount="1"
       fill="freeze"
@@ -201,10 +201,10 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate attributeName="opacity"
+    <animate id="animation4" attributeName="opacity"
       from="0"
       to="0"
-      begin="1.5"
+      begin="indefinite"
       dur="0.5"
       repeatCount="1"
       fill="freeze"
@@ -214,10 +214,10 @@
       />
 	</g>
 
-  <animate attributeName="opacity"
+  <animate id="animation5" attributeName="opacity"
     from="0"
     to="0"
-    begin="1.5"
+    begin="indefinite"
     dur="0.5"
     repeatCount="1"
     fill="freeze"
