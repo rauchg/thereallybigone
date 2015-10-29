@@ -114,6 +114,48 @@
 	.st107{fill:#50505E;}
 </style>
 
+<g id="Tsunami_waves" opacity="0">
+
+  <linearGradient id="_x33_rd_wave_1_" gradientUnits="userSpaceOnUse" x1="302.5073" y1="479.3476" x2="382.5073" y2="485.3476">
+    <stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+    <stop  offset="1" style="stop-color:#FFFFFF"/>
+  </linearGradient>
+  <path id="_x33_rd_wave" class="st70" d="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
+    s-160,312.1-160,312.1h-53V-0.1H285.7z">
+
+    <animate id="animation1" attributeName="d"
+      from="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
+    s-160,312.1-160,312.1h-53V-0.1H285.7z"
+      to="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
+    s-160,312.1-160,312.1h-53V-0.1H285.7z"
+      begin="indefinite"
+      dur="4"
+      repeatCount="1"
+      fill="freeze"
+      values="M185.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
+    s-160,312.1-160,312.1h-53V-0.1H285.7z;
+      M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
+    s-160,312.1-160,312.1h-53V-0.1H285.7z"
+      calcMode="spline"
+      keySplines="0.5 0 0.5 1"
+    />
+  </path>
+
+  <animate id="animation2" attributeName="opacity"
+    from="0"
+    to="0"
+    begin="indefinite"
+    dur="4"
+    repeatCount="1"
+    fill="freeze"
+    values="0;0.8;1;0.4"
+    calcMode="spline"
+    keySplines="0.5 0 0.5 1;
+                0.5 0 0.5 1;
+                0.5 0 0.5 1"
+    />
+</g>
+
 <g id="Highgrounds" opacity="0">
 	<path class="st76" d="M438.2,247.8c-22.8,2.4-27,34.7-17.7,46.7c9.3,12,11.7,11,6,19.3c-5.7,8.3-15,17.8-2,25.9
 		c13,8.1,15-32.6,24.3-40.6C458.2,291.2,454.2,246.2,438.2,247.8z"/>
@@ -156,7 +198,7 @@
 				/>
 		</g>
 
-    <animateTransform id="animation1" attributeName="transform"
+    <animateTransform id="animation3" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
       begin="indefinite"
@@ -167,7 +209,7 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate id="animation2" attributeName="opacity"
+    <animate id="animation4" attributeName="opacity"
       from="0"
       to="0"
       begin="indefinite"
@@ -216,7 +258,7 @@
 				/>
 		</g>
 
-    <animateTransform id="animation3" attributeName="transform"
+    <animateTransform id="animation5" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
       begin="indefinite"
@@ -227,7 +269,7 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate id="animation4" attributeName="opacity"
+    <animate id="animation6" attributeName="opacity"
       from="0"
       to="0"
       begin="indefinite"
@@ -276,7 +318,7 @@
 				"/>
 		</g>
 
-    <animateTransform id="animation5" attributeName="transform"
+    <animateTransform id="animation7" attributeName="transform"
       type="translate"
       values="0 -15;0 0"
       begin="indefinite"
@@ -287,7 +329,7 @@
       keySplines="0.5 0 1 1"
       />
 
-    <animate id="animation6" attributeName="opacity"
+    <animate id="animation8" attributeName="opacity"
       from="0"
       to="0"
       begin="indefinite"
@@ -300,7 +342,7 @@
       />
 	</g>
 
-  <animate id="animation7" attributeName="opacity"
+  <animate id="animation9" attributeName="opacity"
     from="0"
     to="0"
     begin="indefinite"

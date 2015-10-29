@@ -115,7 +115,7 @@
 </style>
 
 <g id="Tsunami_waves">
-	<linearGradient id="_x32_nd_wave_1_" gradientUnits="userSpaceOnUse" x1="350.9055" y1="283.1883" x2="428.9055" y2="297.1883">
+	<linearGradient id="_x32_nd_wave_1_" gradientUnits="userSpaceOnUse" x1="250.9055" y1="283.1883" x2="590.9055" y2="297.1883">
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>

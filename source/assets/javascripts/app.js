@@ -222,31 +222,39 @@ var tsunamis = [
     animations: [
       {
         'id': 'animation1',
-        'begin': 500
+        'begin': 0
       },
       {
         'id': 'animation2',
-        'begin': 500
+        'begin': 0
       },
       {
         'id': 'animation3',
-        'begin': 1000
+        'begin': 2000
       },
       {
         'id': 'animation4',
-        'begin': 0
+        'begin': 2000
       },
       {
         'id': 'animation5',
-        'begin': 0
+        'begin': 2500
       },
       {
         'id': 'animation6',
-        'begin': 0
+        'begin': 2500
       },
       {
         'id': 'animation7',
-        'begin': 0
+        'begin': 1500
+      },
+      {
+        'id': 'animation8',
+        'begin': 1500
+      },
+      {
+        'id': 'animation9',
+        'begin': 1500
       }
     ]
   },
