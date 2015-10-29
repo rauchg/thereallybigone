@@ -29,19 +29,19 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation3',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation4',
-        begin: 2000
+        begin: 0
       }
     ]
   },
@@ -50,15 +50,15 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation3',
-        begin: 3500
+        begin: 1500
       }
     ]
   },
@@ -67,15 +67,15 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation3',
-        begin: 2500
+        begin: 500
       }
     ]
   },
@@ -84,19 +84,19 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 1500
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 1500
+        begin: 0
       },
       {
         id: 'animation3',
-        begin: 4000
+        begin: 2500
       },
       {
         id: 'animation4',
-        begin: 4400
+        begin: 2900
       }
     ]
   },
@@ -105,15 +105,15 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation3',
-        begin: 2500
+        begin: 500
       }
     ]
   },
@@ -122,11 +122,11 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2000
+        begin: 0
       }
     ]
   },
@@ -135,15 +135,15 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       },
       {
         id: 'animation2',
-        begin: 2900
+        begin: 900
       },
       {
         id: 'animation3',
-        begin: 2000
+        begin: 0
       }
     ]
   },
@@ -152,7 +152,7 @@ var cities = [
     animations: [
       {
         id: 'animation1',
-        begin: 2000
+        begin: 0
       }
     ]
   }
