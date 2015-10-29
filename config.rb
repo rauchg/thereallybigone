@@ -93,7 +93,7 @@ configure :build do
 
   # Enable cache buster
   activate :asset_hash do |config|
-    config.ignore = ['assets/stylesheets/app.css']
+    config.ignore = ['assets/stylesheets/app.css', 'assets/javascripts/smil.user.js']
   end
 
   # Use relative URLs
