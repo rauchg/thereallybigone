@@ -214,13 +214,13 @@ section:not(.hero) {
 .hero {
   min-height: 100%;
   height: 100%;
-  background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
-  background-size: cover !important;
+  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
+  // background-size: cover !important;
 
   &:after {
-    // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
-    // opacity: 0.7;
-    display: none;
+    background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
+    opacity: 0.7;
+    // display: none;
   }
 
   h1 {
@@ -281,23 +281,39 @@ section:not(.hero) {
 
 .title-logo {
   display: block;
+  width: 180px;
+  margin: -4rem auto 0;
+  // position: absolute;
+  // top: 1.5rem;
   text-align: center;
-  width: 100%;
-  top: 1.5rem;
+
+  img {
+    width: 150px;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.credit-logo {
   position: absolute;
+  // width: 13%;
+  width: 150px;
+  opacity: 0.25;
+  // -webkit-filter: grayscale(100%);
+          // filter: grayscale(100%);
 }
 
 .credit-logo--left {
-  position: absolute;
-  width: 13%;
-  top: 3.3rem;
+  width: 175px;
+  top: 3.15rem;
   left: 3rem;
 }
 
 .credit-logo--right {
-  position: absolute;
-  width: 13%;
-  top: 3rem;
+  top: 2rem;
   right: 3rem;
 }
 
