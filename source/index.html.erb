@@ -24,8 +24,7 @@ title: The Really Big One
       </h1>
 
       <h3 class="wow fadeIn" data-wow-delay="1.5s" data-wow-duration="1.25s">
-          It’s not a question of "if", but "<strong>when</strong>".
-          <!-- "The region will suffer the worst natural disaster in the history of North America." -->
+          It’s not a question of if, but when.
       </h3>
 
       <!-- <a style="display: block; margin: 0 auto; margin-top: 7vh;" class="wow fadeIn" data-wow-delay="3s" href="#js-japan">&darr;</a> -->
@@ -61,11 +60,11 @@ title: The Really Big One
       <div class="row">
         <div class="columns text-center">
 
-          <h2 class="wow fadeIn" data-wow-delay="1.5s">Remember the massive quake and tsunami that hit Japan in 2011, causing nuclear meltdown and horrific damage?</h2>
+          <h2 class="wow fadeIn" data-wow-delay="0.5s">Remember the massive quake and tsunami that hit Japan in 2011, causing nuclear meltdown and horrific damage?</h2>
 
-          <p class="wow fadeIn" data-wow-delay="2.5s">If we’re lucky, the quake that’s due to hit the Pacific Northwest will be of a similar size.</p>
+          <p class="wow fadeIn" data-wow-delay="1s">If we’re lucky, the quake that’s due to hit the Pacific Northwest will be of a similar size.</p>
 
-          <p class="wow fadeIn" data-wow-delay="4s">If we’re not, it’s going to be a whole lot worse.</p>
+          <p class="wow fadeIn" data-wow-delay="0.5s">If we’re not, it’s going to be a whole lot worse.</p>
 
         </div>
       </div>
@@ -441,30 +440,29 @@ title: The Really Big One
   <!-- Journey background image -->
   <img class="cascadia-journey__background" src="/media/map/trbo-map-base.svg">
 
+  <!-- TODO: position this at the beginning of the journey -->
   <!-- Helicopter -->
   <img class="helicopter" src="/media/map/helicopter.svg">
 
+  <div class="cascadia-journey__content cascadia-journey__quake js-animate-earthquake-1">
 
-  <div class="cascadia-journey__content js-animate-earthquake-1">
+    <div class="cascadia-journey__timer">
+      <h1 class="js-quake-counter">0:00</h1>
+
+      <div class="progress radius alert">
+        <span class="meter custom-meter" style="width: 0%;"></span>
+      </div>
+
+      <small>TODO: should be visible only during the earthquake animation</small>
+    </div>
 
     <div class="row">
-      <div class="medium-8 columns">
-
-        <h1>TODO: Chapter 1: Earthquake<br/>from Vancouver to Seattle</h1>
+      <div class="medium-8 medium-offset-1 large-7 columns">
+        <!-- <h1>TODO: Chapter 1: Earthquake<br/>from Vancouver to Seattle</h1> -->
 
         <h2>TODO: Timer starts</h2>
-        <div class="cascadia-journey__timer">
-          <h3 class="fact">
-            <span class="js-quake-counter" style="color: salmon !important; position: relative; top: -1.75rem;">0:00</span>
-            <br/>
-          </h3>
 
-          <div class="progress radius alert">
-            <span class="meter custom-meter" style="width: 0%;"></span>
-          </div>
-        </div>
-
-        <h2>TODO: EQ Trivia</h2>
+        <!-- <h2>TODO: EQ Trivia</h2> -->
         <p>Animals are able to sense the seismic waves. Before the earthquake starts, dogs will start barking and animals will go crazy.</p>
 
         <p>TODO: One more bit of EQ trivia?</p>

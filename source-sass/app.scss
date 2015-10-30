@@ -792,12 +792,12 @@ section:not(.hero) {
   }
 
   .helicopter {
-    background-attachment: static;
-    position: absolute;
+    // background-attachment: static;
+    position: fixed;
     top: 100px;
     right: 100px;
     z-index: 999;
-    width: 150px;
+    width: 250px;
   }
 
   .cascadia-journey__content {
@@ -808,14 +808,24 @@ section:not(.hero) {
     // bottom: 0;
 
     .row {
-      margin: 15rem 0;
+      margin: 5% 0;
     }
   }
 
+.cascadia-journey__quake {
+  position: relative;
+}
+
   .cascadia-journey__timer {
-    position: absolute;
-    top: 15vh;
-    right: 100px;
+    // background-attachment: static;
+    width: 20rem;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 0.5rem;
+    background: rgba($dark-blue, 0.85);
+    border: 2px solid $juicy-blue;
+    text-align: center;
   }
 
 /* cities svgs and trigger lines */
