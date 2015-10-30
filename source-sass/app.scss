@@ -830,6 +830,10 @@ section:not(.hero) {
   }
 
   .helicopter {
+    // TODO:
+    display: none;
+
+
     // background-attachment: static;
     position: fixed;
     top: 100px;
@@ -855,6 +859,10 @@ section:not(.hero) {
 }
 
   .cascadia-journey__timer {
+
+    // TODO:
+    display: none;
+
     // background-attachment: static;
     width: 20rem;
     position: fixed;
