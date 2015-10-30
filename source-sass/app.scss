@@ -125,6 +125,7 @@ h2 {
 
 p {
   font-size: 1em;
+  line-height: 1.3;
   color: #96acbd;
   color: #8c949e;
 
@@ -854,6 +855,10 @@ section:not(.hero) {
 
     .row {
       margin: 5% 0;
+    }
+
+    .wow {
+      margin: 10% 0;
     }
   }
 
