@@ -64,12 +64,13 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
   overflow: visible;
   text-align: center;
   vertical-align: middle;
+  background: $dark-blue;
   // background: url(http://files.mimoymima.com/images/loading.gif) no-repeat center center, rgba($dark-blue, 0.98);
-  background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
-  background-size: cover !important;
+  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
+  // background-size: cover !important;
 
   h1 {
-    margin-top: 10rem;
+    margin-top: 25vh;
     color: #fff;
   }
 }
@@ -89,17 +90,18 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 
 @keyframes blinkAlt {
   0% { opacity: 1.0; }
-  15% { opacity: 0.43; }
-  25% { opacity: 0.1; }
-  28% { opacity: 0.25; }
-  31% { opacity: 0.1; }
-  45% { opacity: 0.55; }
-  60% { opacity: 0.1; }
-  63% { opacity: 0.25; }
-  63% { opacity: 0.1; }
-  75% { opacity: 0.67; }
-  85% { opacity: 0.1; }
-  100% { opacity: 1.0; }
+  // 15% { opacity: 0.43; }
+  // 25% { opacity: 0.1; }
+  // 28% { opacity: 0.25; }
+  // 31% { opacity: 0.1; }
+  // 45% { opacity: 0.55; }
+  65% { opacity: 0; }
+  // 60% { opacity: 0.1; }
+  // 63% { opacity: 0.25; }
+  // 63% { opacity: 0.1; }
+  // 75% { opacity: 0.67; }
+  // 85% { opacity: 0.1; }
+  100% { opacity: 0; }
 }
 
 
@@ -123,7 +125,8 @@ h1 {
   font-family: $header-font;
   text-transform: uppercase;
   line-height: 1;
-  color: $yellow;
+  // color: $yellow;
+  color: #fff;
 
   @media #{$medium-up} {
     font-size: 4.25em;
@@ -149,17 +152,22 @@ h2 {
 }
 
 p {
-  font-size: 1em;
+  font-size: 1.125em;
   line-height: 1.3;
   color: #96acbd;
   color: #8c949e;
 
   @media #{$medium-up} {
-    font-size: 1.125em;
+    font-size: 1.375em;
   }
 
   @media #{$large-up} {
-    font-size: 1.275em;
+    font-size: 1.6125em;
+  }
+
+  strong {
+    font-weight: normal;
+    color: #fff;
   }
 }
 
@@ -583,27 +591,23 @@ section:not(.hero) {
 
 // Japan polaroids
 section.japan {
-  // position: relative;
-  // overflow: hidden;
-  background: url(/media/destruction.jpg) no-repeat;
-  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  // background: url(/media/destruction.jpg) no-repeat;
+  // background-size: cover;
 
   &:after {
-    background: linear-gradient(to bottom, #10161c 5%, rgba(#10161c, 0.3) 50%, #10161c 80%);
-    opacity: 1;
+    // background: linear-gradient(to bottom, #10161c 5%, rgba(#10161c, 0.3) 50%, #10161c 80%);
+    // opacity: 1;
+    display: none;
   }
 
-  @media #{$medium-up} {
-    // margin-top: 12rem;
-    // margin-bottom: 12rem;
-    // padding-top: 50%;
-    // padding-bottom: 50%;
-  }
-
-  h2 {
+  h1 {
     position: relative;
     margin-top: 10vh;
     margin-bottom: 5vh;
+    // TODO:
+    color: #fff;
 
     &:before {
       content: '';
@@ -614,10 +618,12 @@ section.japan {
       border-radius: 50%;
       background: #f12500;
       background: red;
+      background: rgba(red, 0.25);
       // box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.125);
       box-shadow: 0 0 0 20px rgba(red, 0.25);
-      // animation: pulse 4s infinite linear;
-      animation: blinkAlt 7s infinite ease-out;
+      // animation: pulse 2s infinite linear;
+      animation: blinkAlt 1.5s infinite ease-out;
+      // animation: heartbeat 3s infinite ease-out;
       position: absolute;
       top: -175px;
       left: 0;
@@ -633,8 +639,9 @@ section.japan {
       border-radius: 50%;
       background: #f12500;
       background: red;
-      animation: blinkAlt 2s infinte ease-out;
+      // animation: blinkAlt 2s infinte ease-out;
       // animation: pulse 5s infinite linear;
+      animation: heartbeat 1.5s infinite ease-out;
       position: absolute;
       top: -175px;
       left: 0;
@@ -659,17 +666,28 @@ section.japan {
   }
 }
 
+@keyframes heartbeat {
+  // 0%  { transform: scale(1); }
+  // 14% { transform: scale(1.2); }
+  // 28% { transform: scale(1); }
+  // 42% { transform: scale(1.2); }
+  // 70% { transform: scale(1); }
+  0% { transform: scale(1.05); }
+  65% { transform: scale(0.925); }
+  100% { transform: scale(1); }
+}
+
 .japan__polaroids {
 
   img {
     // TODO:
-    display: none !important;
+    // display: none !important;
   }
 
   @media #{$large-up} {
-    // width: 120%;
-    // max-width: 120%;
-    // margin: 0 0 0 -10%;
+    width: 120%;
+    max-width: 120%;
+    margin: 0 0 0 -10%;
   }
 
   a {
@@ -702,12 +720,12 @@ section.japan {
     a {
 
       &:first-of-type {
-        // top: -100px;
+        top: -100px;
       }
 
       &:nth-of-type(2) {
-        // top: -70px;
-        // left: 80px;
+        top: -70px;
+        left: 80px;
 
         img {
           opacity: 0.25;
@@ -715,7 +733,7 @@ section.japan {
       }
 
       &:nth-of-type(2n-1) {
-        // left: 120px;
+        left: 120px;
       }
 
       &:last-of-type {
@@ -730,7 +748,7 @@ section.japan {
   .medium-6 {
 
     @media #{$medium-up} {
-      // margin-top: -5rem;
+      margin-top: -5rem;
     }
 
     .row {
@@ -739,10 +757,10 @@ section.japan {
     }
 
     a {
-      // left: -20px;
+      left: -20px;
 
       &:first-of-type {
-        // top: -10px;
+        top: -10px;
 
         img {
           opacity: 0.2;
@@ -750,7 +768,7 @@ section.japan {
       }
 
       &:last-of-type {
-        // top: 10px;
+        top: 10px;
 
         img {
           opacity: 0.2;
@@ -764,12 +782,12 @@ section.japan {
     a {
 
       &:first-of-type {
-        // top: -105px;
+        top: -105px;
       }
 
       &:nth-of-type(2) {
-        // top: -45px;
-        // right: 90px;
+        top: -45px;
+        right: 90px;
 
         img {
           opacity: 0.25;
@@ -777,7 +795,7 @@ section.japan {
       }
 
       &:nth-of-type(2n-1) {
-        // right: 160px;
+        right: 160px;
       }
 
       &:last-of-type {
@@ -798,18 +816,10 @@ section.japan {
     background: url(/media/san-andreas-poster-hq.jpg) center center no-repeat;
     background-size: cover;
   }
-}
 
-
-.cascadiax,
-.subduction {
-  // background: url(/media/cascadia.jpg) center center no-repeat;
-  // background-size: cover;
-
-  // &:after {
-  //   background: linear-gradient(to bottom, $dark-blue 15%, rgba($dark-blue, 0.9) 50%, $dark-blue 85%);
-  //   opacity: 1;
-  // }
+  h1 {
+    margin-bottom: 7vh;
+  }
 }
 
 .quote {
@@ -1082,3 +1092,17 @@ section.japan {
 //     width: 100%;
 //     height: 100%;
 // }
+
+.has-tip {
+  color: $yellow;
+  font-weight: normal;
+  text-decoration: underline;
+  border: none;
+  // padding-bottom: 0;
+  // border-bottom: 1px solid $yellow;
+
+  &:hover {
+    color: $juicy-orange;
+    border: none;
+  }
+}
