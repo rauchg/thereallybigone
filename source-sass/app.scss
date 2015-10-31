@@ -682,6 +682,7 @@ section.japan {
   img {
     // TODO:
     // display: none !important;
+    opacity: 0.25 !important;
   }
 
   @media #{$large-up} {
