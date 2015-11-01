@@ -135,6 +135,15 @@ h1 {
   @media #{$medium-up} {
     font-size: 5.25em;
   }
+
+  small {
+    display: block;
+    margin: 2rem 0 1.5rem;
+    font-size: 35%;
+    font-family: $body-font-family;
+    text-transform: none;
+    color: #8c949e;
+  }
 }
 
 h2 {
@@ -154,7 +163,7 @@ h2 {
 p {
   font-size: 1.125em;
   line-height: 1.3;
-  color: #96acbd;
+  // color: #96acbd;
   color: #8c949e;
 
   @media #{$medium-up} {
@@ -930,10 +939,8 @@ section.japan {
 
   .helicopter {
     // TODO:
-    display: none;
+    // display: none;
 
-
-    // background-attachment: static;
     position: fixed;
     top: 100px;
     right: 100px;
@@ -966,6 +973,10 @@ section.japan {
 
     .wow {
       margin: 15% 0;
+    }
+
+    p {
+      color: lighten(#8c949e, 22%);
     }
   }
 
@@ -1014,7 +1025,7 @@ section.japan {
 }
 
 .cities-trigger--vancouver {
-  top: 40vw;
+  top: 60vw;
 }
 
 .cities-trigger--seattle {
@@ -1074,26 +1085,6 @@ section.japan {
   top: 540vw;
 }
 
-// .video-container {
-//   position: relative;
-//   z-index: 10;
-//   max-width: 100%;
-//   padding-bottom: 56.25%;
-//   padding-top: 30px;
-//   height: 0;
-//   overflow: hidden;
-// }
-
-// .video-container iframe,
-// .video-container object,
-// .video-container embed {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-// }
-
 .has-tip {
   color: $yellow;
   font-weight: normal;
@@ -1105,5 +1096,33 @@ section.japan {
   &:hover {
     color: $juicy-orange;
     border: none;
+  }
+}
+
+.alert-box {
+  margin: 0;
+  padding: 2rem;
+  background: none;
+  border: 2px solid $juicy-blue;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: $off-white;
+  }
+}
+
+.alert-box--safe {
+
+}
+
+.alert-box--danger {
+  border-color: red;
+
+  h2 {
+    color: $juicy-orange;
+  }
+
+  p {
+    color: #fff;
   }
 }
