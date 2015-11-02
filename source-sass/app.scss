@@ -112,6 +112,7 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // }
 
 body {
+  background: #161f29;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
@@ -176,17 +177,17 @@ h2 {
 
 p,
 li {
-  font-size: 1.125em;
+  font-size: 1.125rem;
   line-height: 1.3;
   // color: #96acbd;
   color: #8c949e;
 
   @media #{$medium-up} {
-    font-size: 1.375em;
+    font-size: 1.375rem;
   }
 
   @media #{$large-up} {
-    font-size: 1.6125em;
+    font-size: 1.6125rem;
   }
 
   strong {
@@ -277,6 +278,7 @@ section:not(.hero) {
   // background-size: cover !important;
   background: $dark-blue;
   background: #10161c;
+  background: #161f29;
 
   &:after {
     // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
@@ -734,9 +736,7 @@ section.japan {
 .japan__polaroids {
 
   img {
-    // TODO:
-    // display: none !important;
-    opacity: 0.25 !important;
+    opacity: 0.5 !important;
   }
 
   @media #{$medium-up} {
@@ -763,8 +763,9 @@ section.japan {
     z-index: 1;
 
     img {
-      opacity: 0.65;
-      -webkit-filter: grayscale(20%);
+      // -webkit-filter: grayscale(20%);
+      -webkit-filter: grayscale(50%);
+              filter: grayscale(50%);
       // -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
               // clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
     }
