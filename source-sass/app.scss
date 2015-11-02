@@ -709,6 +709,7 @@ section.japan {
   .medium-3:first-of-type {
 
     a {
+      left: 60px !important;
 
       &:first-of-type {
         top: -100px;
@@ -716,7 +717,9 @@ section.japan {
 
       &:nth-of-type(2) {
         top: -80px;
-        left: 90px;
+        left: 115px;
+
+        left: 50px !important;
 
         img {
           opacity: 0.25;
@@ -725,11 +728,15 @@ section.japan {
 
       &:nth-of-type(2n-1) {
         left: 205px;
+
+        // TODO:
       }
 
       &:last-of-type {
         top: -60px;
         left: 65px;
+
+        left: 40px !important;
 
         img {
           opacity: 0.32;
@@ -741,7 +748,8 @@ section.japan {
   .medium-6 {
 
     @media #{$medium-up} {
-      margin-top: -10rem;
+      // margin-top: -10rem;
+      margin-top: 5rem;
     }
 
     .row {
@@ -777,6 +785,7 @@ section.japan {
   .medium-3:last-of-type {
 
     a {
+      right: 60px !important;
 
       &:first-of-type {
         top: -125px;
@@ -784,7 +793,9 @@ section.japan {
 
       &:nth-of-type(2) {
         top: -105px;
-        right: 120px;
+        right: 140px;
+
+        right: 50px !important;
 
         img {
           opacity: 0.25;
@@ -798,6 +809,8 @@ section.japan {
       &:last-of-type {
         top: -85px;
         right: 85px;
+
+        right: 40px !important;
 
         img {
           opacity: 0.32;
