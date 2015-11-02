@@ -32,13 +32,7 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 
 .button {
   background: $dark-blue;
-  // -webkit-clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-  // clip-path: polygon(5% 0%, 100% 0%, 95% 100%, 0% 100%);
-  // -webkit-clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%);
-          // clip-path: polygon(50% 0%, 100% 15%, 100% 85%, 50% 100%, 0% 85%, 0% 15%);
   outline: 0;
-  // border: 1px solid $juicy-blue;
-  // border-radius: 1px;
   box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
   animation: blink 2s infinte ease-out;
 
@@ -90,26 +84,9 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 
 @keyframes blinkAlt {
   0% { opacity: 1.0; }
-  // 15% { opacity: 0.43; }
-  // 25% { opacity: 0.1; }
-  // 28% { opacity: 0.25; }
-  // 31% { opacity: 0.1; }
-  // 45% { opacity: 0.55; }
   65% { opacity: 0; }
-  // 60% { opacity: 0.1; }
-  // 63% { opacity: 0.25; }
-  // 63% { opacity: 0.1; }
-  // 75% { opacity: 0.67; }
-  // 85% { opacity: 0.1; }
   100% { opacity: 0; }
 }
-
-
-// body {
-//   background: url(../images/hero-map.svg) no-repeat;
-//   background-attachment: fixed;
-//   background-size: cover;
-// }
 
 body {
   background: #161f29;
@@ -126,7 +103,6 @@ h1 {
   font-family: $header-font;
   text-transform: uppercase;
   line-height: 1;
-  // color: $yellow;
   color: #fff;
 
   @media #{$medium-up} {
@@ -179,7 +155,6 @@ p,
 li {
   font-size: 1.125rem;
   line-height: 1.3;
-  // color: #96acbd;
   color: #8c949e;
 
   @media #{$medium-up} {
@@ -240,13 +215,7 @@ section {
 
 section:not(.hero) {
   position: relative;
-  // min-height: 100%;
-  // height: 100%;
-  // height: 1000px;
   padding: 3rem 0 0;
-  // background: url(../images/hero-map.svg) center 45% no-repeat;
-  // background-size: 100%;
-  // background: none;
 
   @media #{$medium-up} {
     padding: 6rem 0 0;
@@ -258,19 +227,6 @@ section:not(.hero) {
 }
 
 
-// .fixed-header {
-//   width: 100%;
-//   overflow: hidden;
-//   min-height: 100%;
-//   // height: 100%;
-//   height: 1332px;
-//   padding: 0;
-//   // background: url(../images/hero-map.svg) right top no-repeat;
-//   background-size: cover;
-//   position: fixed;
-// }
-
-
 .hero {
   min-height: 100%;
   height: 100%;
@@ -280,17 +236,16 @@ section:not(.hero) {
   background: #10161c;
   background: #161f29;
 
-  &:after {
+  // &:after {
     // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
     // opacity: 0.7;
     // display: none;
-  }
+  // }
 
   h1 {
     margin-top: 30vh;
     margin-bottom: 7vh;
     line-height: 1;
-    // color: #888;
     color: #fff;
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
@@ -299,7 +254,6 @@ section:not(.hero) {
     }
 
     strong {
-      // color: #fff;
       font-weight: 400;
     }
   }
@@ -346,8 +300,6 @@ section:not(.hero) {
   display: block;
   width: 180px;
   margin: 0 auto;
-  // position: absolute;
-  // top: 1.5rem;
   text-align: center;
 
   @media #{$medium-up} {
@@ -366,11 +318,8 @@ section:not(.hero) {
 
 .credit-logo {
   position: absolute;
-  // width: 13%;
   width: 150px;
   opacity: 0.25;
-  // -webkit-filter: grayscale(100%);
-          // filter: grayscale(100%);
 }
 
 .credit-logo--left {
@@ -385,9 +334,7 @@ section:not(.hero) {
 }
 
 .js-animate-risk,
-.js-animate-subduction,
-.js-animate-earthquake,
-.js-animate-subduction-labels {
+.js-animate-earthquake {
   visibility: hidden;
 
   &.animated {
@@ -411,31 +358,33 @@ section:not(.hero) {
 
 .alert-box {
   display: none;
+  margin: 0;
+  padding: 2rem;
+  background: none;
+  border: 2px solid $juicy-blue;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: $off-white;
+  }
 }
 
-// section.subduction {
-//   padding-top: 6em;
-//   .label-text {
-//     color: $dirty-blue;
-//     font-size: 1.25rem;
-//     letter-spacing: 0.25px;
-//   }
-// }
+  .alert-box--safe {
 
-// section.subduction-labels {
-//   position: fixed;
-//   width: 100%;
-//   top: 0;
+  }
 
-//   .row {
-//     position: static;
-//   }
-// }
+  .alert-box--danger {
+    border-color: red;
 
-// section.earthquake {
-//   padding-top: 12em;
-//   padding-bottom: 48em;
-// }
+    h2 {
+      color: $juicy-orange;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
 
 .fact {
   display: inline-block;
@@ -449,13 +398,9 @@ section:not(.hero) {
     font-family: Anton, Rubik, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
     line-height: 1;
-    // padding: 1rem 0.5rem 1rem 1.5rem;
-    // border: 2px solid $light-orange;
     display: block;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    // border-radius: 50%;
-    // text-align: center;
   }
 
   small {
@@ -492,19 +437,10 @@ section:not(.hero) {
 
   .circle-container {
     position: relative;
-    // display: table;
     display: block;
-    // width: 6rem;
-    // height: 6rem;
     width: 50%;
     color: $dark-blue;
     margin: 0 auto;
-    // height: 0;
-    // padding-bottom: 50%;
-    // border-radius: 50%;
-    // color: $dark-blue;
-    // background: $off-white;
-    // box-shadow: 0 0 0 12px $dark-blue, 0 0 0 14px $juicy-orange;
 
     &:after {
       content: "";
@@ -540,6 +476,11 @@ section:not(.hero) {
       color: #fff;
     }
 
+    &.orange {
+      color: darken($juicy-orange, 35%);
+      text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+    }
+
     &.blue:after {
       background: $juicy-blue;
       box-shadow: 0 0 0 8px $dark-blue, 0 0 0 10px $dirty-blue;
@@ -547,9 +488,9 @@ section:not(.hero) {
 
     &.orange:after {
       background: $juicy-orange;
-      // background: none;
-      box-shadow: 0 0 0 12px $dark-blue, 0 0 0 14px $light-orange;
+      // box-shadow: 0 0 0 12px $dark-blue, 0 0 0 14px $light-orange;
       box-shadow: none;
+      box-shadow: inset 0 0 10px 10px darken($juicy-orange, 10%);
     }
 
     .content {
@@ -635,8 +576,6 @@ section:not(.hero) {
 
 
 
-
-
 // Japan polaroids
 section.japan {
   position: relative;
@@ -653,8 +592,6 @@ section.japan {
   h1 {
     position: relative;
     margin: 5vh auto 2.5vh;
-    // TODO:
-    color: #fff;
 
     &:before {
       content: '';
@@ -666,11 +603,8 @@ section.japan {
       background: #f12500;
       background: red;
       background: rgba(red, 0.25);
-      // box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.125);
       box-shadow: 0 0 0 20px rgba(red, 0.25);
-      // animation: pulse 2s infinite linear;
       animation: blinkAlt 1.5s infinite ease-out;
-      // animation: heartbeat 3s infinite ease-out;
       position: absolute;
       top: -150px;
       left: 0;
@@ -686,8 +620,6 @@ section.japan {
       border-radius: 50%;
       background: #f12500;
       background: red;
-      // animation: blinkAlt 2s infinte ease-out;
-      // animation: pulse 5s infinite linear;
       animation: heartbeat 1.5s infinite ease-out;
       position: absolute;
       top: -150px;
@@ -703,14 +635,6 @@ section.japan {
         top: -175px;
       }
     }
-
-    // @media #{$medium-up} {
-    //   margin-bottom: 8vh;
-    // }
-
-    // @media #{$large-up} {
-    //   margin-bottom: 10vh;
-    // }
   }
 
   p {
@@ -719,24 +643,24 @@ section.japan {
     &:last-of-type {
       margin-bottom: 5vh;
     }
+
+    // strong {
+    //   color: $light-orange;
+    // }
   }
 }
 
 @keyframes heartbeat {
-  // 0%  { transform: scale(1); }
-  // 14% { transform: scale(1.2); }
-  // 28% { transform: scale(1); }
-  // 42% { transform: scale(1.2); }
-  // 70% { transform: scale(1); }
   0% { transform: scale(1.05); }
   65% { transform: scale(0.925); }
   100% { transform: scale(1); }
 }
 
+
 .japan__polaroids {
 
   img {
-    opacity: 0.5 !important;
+    opacity: 0.35 !important;
   }
 
   @media #{$medium-up} {
@@ -762,10 +686,21 @@ section.japan {
     position: relative;
     z-index: 1;
 
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba($light-orange, 0.15);
+    }
+
     img {
-      // -webkit-filter: grayscale(20%);
-      -webkit-filter: grayscale(50%);
-              filter: grayscale(50%);
+      -webkit-filter: grayscale(100%);
+              filter: grayscale(100%);
       // -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
               // clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
     }
@@ -873,18 +808,17 @@ section.japan {
 }
 
 
-// .hollywood {
 .subduction {
   text-align: center;
-
-  // @media #{$small-only} {
-  //   background: url(/media/san-andreas-poster-hq.jpg) center center no-repeat;
-  //   background-size: cover;
-  // }
 
   @media #{$medium-up} {
     text-align: left;
   }
+
+  // TODO:
+  // h1 {
+  //   color: $juicy-orange;
+  // }
 }
 
 
@@ -892,10 +826,26 @@ section.japan {
 
   h1 {
     overflow: hidden;
+
+    @media #{$medium-up} {
+      margin-top: 3rem;
+    }
   }
 
   .circle-container {
     margin-bottom: 1rem;
+
+    &:last-of-type {
+      margin-top: 3rem;
+    }
+  }
+
+  h4 {
+    color: $light-orange;
+    font-size: 1.25rem;
+    font-family: $header-font;
+    font-weight: normal;
+    text-transform: uppercase;
   }
 }
 
@@ -942,6 +892,14 @@ section.japan {
 }
 
 
+.fancy-headline {
+  // TODO:
+  // color: $juicy-orange;
+
+  small {
+    color: $off-white;
+  }
+}
 
 
 .deep-dive-panel {
@@ -993,16 +951,9 @@ section.japan {
   padding: 0 !important;
   position: relative;
   overflow: hidden;
-  // width: 100%;
-  // min-width: 100%;
-  // height: 100%;
-  // min-height: 100%;
-  // min-height: 5000px;
-  // background: url(/media/map/journey-map-test.jpg) center top no-repeat;
-  // background-size: 100%;
 
   &:after {
-    // background: linear-gradient(to bottom, #10161c 200px, rgba(#10161c, 0) 400px);
+    z-index: 1005;
     background: linear-gradient(to right, $dark-blue 35%, rgba($dark-blue, 0) 80%);
   }
 }
@@ -1019,9 +970,6 @@ section.japan {
   }
 
   .helicopter {
-    // TODO:
-    // display: none;
-
     position: fixed;
     top: 65px;
     right: 65px;
@@ -1031,24 +979,7 @@ section.japan {
 
   .cascadia-journey__content {
     position: relative;
-    z-index: 1000;
-    // position: absolute;
-    // top: 300px;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-
-    // &:after {
-    //   content: '';
-    //   display: block;
-    //   width: 100%;
-    //   height: 100%;
-    //   position: absolute;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: 1;
-    //   background: linear-gradient(to right, $dark-blue 35%, rgba($dark-blue, 0) 80%);
-    // }
+    z-index: 1010;
 
     .row {
       margin: 15% 0;
@@ -1072,7 +1003,6 @@ section.japan {
     // TODO:
     display: none;
 
-    // background-attachment: static;
     width: 20rem;
     position: fixed;
     bottom: 50px;
@@ -1082,6 +1012,7 @@ section.japan {
     border: 2px solid $juicy-blue;
     text-align: center;
   }
+
 
 /* cities svgs and trigger lines */
 .cities, .tsunamis {
@@ -1169,44 +1100,15 @@ section.japan {
   top: 540vw;
 }
 
+
 .has-tip {
   color: $yellow;
   font-weight: normal;
   text-decoration: underline;
   border: none;
-  // padding-bottom: 0;
-  // border-bottom: 1px solid $yellow;
 
   &:hover {
     color: $juicy-orange;
     border: none;
-  }
-}
-
-.alert-box {
-  margin: 0;
-  padding: 2rem;
-  background: none;
-  border: 2px solid $juicy-blue;
-
-  h2 {
-    margin-bottom: 1rem;
-    color: $off-white;
-  }
-}
-
-.alert-box--safe {
-
-}
-
-.alert-box--danger {
-  border-color: red;
-
-  h2 {
-    color: $juicy-orange;
-  }
-
-  p {
-    color: #fff;
   }
 }
