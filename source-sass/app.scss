@@ -594,6 +594,7 @@ section:not(.hero) {
 section.japan {
   position: relative;
   overflow: hidden;
+  padding-bottom: 0;
   // background: url(/media/destruction.jpg) no-repeat;
   // background-size: cover;
 
@@ -849,7 +850,8 @@ section.japan {
 }
 
 
-.prediction {
+section.prediction {
+  padding: 0;
 
   h1 {
     overflow: hidden;
@@ -885,6 +887,10 @@ section.japan {
     p {
       font-size: 1.325rem;
     }
+  }
+
+  object {
+    opacity: 0.675;
   }
 }
 
@@ -1077,7 +1083,7 @@ section.japan {
   .cascadia-journey__timer {
 
     // TODO:
-    // display: none;
+    display: none;
 
     width: 20rem;
     position: fixed;
