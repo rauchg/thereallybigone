@@ -176,7 +176,7 @@ li {
   }
 
   @media #{$large-up} {
-    font-size: 1.6125rem;
+    font-size: 1.5rem;
   }
 
   strong {
@@ -986,6 +986,21 @@ section.japan {
 }
 
 
+.hero,
+.subduction,
+.prediction,
+.japan,
+.at-risk,
+.preparedness,
+.sharing,
+.footer {
+  background: #161f29;
+  position: relative;
+  z-index: 1001;
+}
+
+
+
 .cascadia-journey {
   padding: 0 !important;
   position: relative;
@@ -1012,7 +1027,7 @@ section.japan {
     position: fixed;
     top: 65px;
     right: 65px;
-    z-index: 999;
+    z-index: 1000;
     width: 150px;
   }
 
@@ -1068,6 +1083,7 @@ section.japan {
     position: fixed;
     bottom: 50px;
     right: 50px;
+    z-index: 999;
     padding: 0.5rem;
     background: rgba($dark-blue, 0.85);
     border: 2px solid $juicy-blue;
