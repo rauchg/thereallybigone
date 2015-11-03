@@ -406,8 +406,6 @@ $(document).ready(function() {
   // go through cities to trigger animations
   cities.forEach(function(city, index) {
 
-    return;
-
     var $city = $('.js-cities-' + city.name + ' object');
     var $trigger = $('.js-cities-trigger-' + city.name);
     var hasTriggered = false;
