@@ -1152,6 +1152,9 @@ section.prediction {
 
 .cascadia-journey__quake {
   position: relative;
+  width: 100%;
+  float: left;
+  background: linear-gradient(to bottom, $dark-blue 50px, rgba($dark-blue, 0) 500px);
 }
 
   .cascadia-journey__timer {
