@@ -4,7 +4,7 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="720px"
 	 height="417px" viewBox="0 0 720 417" style="enable-background:new 0 0 720 417;" xml:space="preserve">
   <!-- SVG animations polyfill (https://leunen.me/fakesmile/) -->
-
+  <script type="text/ecmascript" xlink:href="/assets/javascripts/vendor/smil.user.js"></script>
 <style type="text/css">
 	.st50{opacity:0.3;fill:none;stroke:#000000;stroke-miterlimit:10;}
 	.st51{fill:#FFC900;}
