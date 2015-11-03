@@ -500,7 +500,8 @@ $(document).ready(function() {
     // console.log(topOfWindow);
 
     /* ---------- > 1200px: Run quake timer ---------- */
-    if (topOfWindow > 1200) {
+    // TODO: repurpose for the new timer
+    if (topOfWindow > 6560) {
       if ( ! quakeTimerRunning) {
         quakeTimer();
       }
