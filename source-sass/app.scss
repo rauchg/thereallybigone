@@ -1096,7 +1096,7 @@ section.prediction {
 
   &:after {
     z-index: 1005;
-    background: linear-gradient(to right, $dark-blue 35%, rgba($dark-blue, 0) 80%);
+    background: linear-gradient(to right, $dark-blue 0, rgba($dark-blue, 0.88) 30%, rgba($dark-blue, 0.5) 65%, rgba($dark-blue, 0) 100%);
   }
 }
 
