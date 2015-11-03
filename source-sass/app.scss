@@ -95,7 +95,7 @@ ol {
 }
 
 body {
-  background: #161f29;
+  background: $dark-blue;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 
@@ -121,9 +121,13 @@ h1 {
     font-size: 5.25em;
   }
 
+  // @media screen and (min-width: 1440px) {
+  //   font-size: 6em;
+  // }
+
   small {
     display: block;
-    margin: 2rem 0 1.5rem;
+    margin: 1rem 0 0.75rem;
     font-family: $body-font-family;
     text-transform: none;
     font-size: 1.125rem;
@@ -228,7 +232,7 @@ bold {
 
 section {
   position: relative;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
 
   &:after {
     content: '';
@@ -250,56 +254,65 @@ section {
 
   @media #{$medium-up} {
     min-height: 100%;
-    padding: 3.5rem 0;
+    padding: 2.75rem 0;
   }
 
   @media #{$large-up} {
-    padding: 6.5rem 0;
+    padding: 5rem 0;
   }
 }
 
 section:not(.hero) {
   position: relative;
-  padding: 3rem 0 0;
+  padding: 1.5rem 0 0;
 
   @media #{$medium-up} {
-    padding: 6rem 0 0;
+    padding: 4.5rem 0 0;
   }
 
   @media #{$large-up} {
-    padding: 12rem 0 0;
+    padding: 9rem 0 0;
   }
 }
 
 
 .hero {
   z-index: 1001;
-  min-height: 100%;
-  height: 100%;
-  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
-  // background-size: cover !important;
-  background: $dark-blue;
-  background: #10161c;
-  background: #161f29;
+  // min-height: 100%;
+  // height: 100%;
+  background: url(/media/seismic-waves.svg) center 5% no-repeat, $dark-blue;
+  background-size: 1100px 200px;
 
-  background: url(/media/seismic-waves.svg) 100% 120% no-repeat, #161f29;
-  background-size: 1200px 1200px;
+  @media #{$medium-up} {
+    height: 100%;
+    background-position: center 7%;
+    background-size: 1100px 250px;
+  }
+
+  @media #{$large-up} {
+    background-position: center 10%;
+    background-size: 1100px 300px;
+  }
 
   &:after {
-    // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
-    // opacity: 0.7;
+    // TODO:
     display: none;
   }
 
   h1 {
-    margin-top: 30vh;
-    margin-bottom: 7vh;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
     line-height: 1;
     color: #fff;
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
     @media #{$medium-up} {
-      margin-top: 21vh;
+      margin-top: 15vh;
+      margin-bottom: 3vh;
+    }
+
+    @media #{$large-up} {
+      margin-top: 20vh;
     }
 
     strong {
@@ -347,22 +360,28 @@ section:not(.hero) {
 
 .title-logo {
   display: block;
-  width: 180px;
+  width: 100px;
   margin: 0 auto;
   text-align: center;
 
   @media #{$medium-up} {
+    width: 140px;
+    margin-top: -2rem;
+  }
+
+  @media #{$large-up} {
+    width: 160px;
     margin-top: -4rem;
   }
 
   img {
-    width: 150px;
-    opacity: 0.5;
+    width: 100%;
+    // opacity: 0.5;
   }
 
-  &:hover {
-    opacity: 1;
-  }
+  // &:hover {
+  //   opacity: 1;
+  // }
 }
 
 .credit-logo {
@@ -445,7 +464,8 @@ section:not(.hero) {
   line-height: 1;
 
   span {
-    color: #fc6500;
+    // color: #fc6500;
+    color: $light-orange;
     font-size: 2.5rem;
     font-family: Anton, Rubik, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
     text-transform: uppercase;
@@ -632,7 +652,7 @@ section:not(.hero) {
 section.japan {
   position: relative;
   overflow: hidden;
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
   // background: url(/media/destruction.jpg) no-repeat;
   // background-size: cover;
 
@@ -880,7 +900,7 @@ section.japan {
   position: relative;
   z-index: 1001;
   text-align: center;
-  background: #161f29;
+  background: $dark-blue;
 
   img {
     width: 90%;
@@ -889,8 +909,8 @@ section.japan {
   }
 
   @media #{$large-up} {
-    background: url(/media/subduction-zone.svg) 95% 100% no-repeat, #161f29;
-    background-size: 55%;
+    background: url(/media/subduction-zone.svg) 95% 175px no-repeat, $dark-blue;
+    background-size: 780px;
   }
 
   &:after {
@@ -900,7 +920,10 @@ section.japan {
 
 
 section.prediction {
-  // padding: 0;
+
+  &.prediction--scenario {
+    padding-top: 0 !important;
+  }
 
   h1 {
     overflow: hidden;
@@ -921,10 +944,11 @@ section.prediction {
   h4 {
     color: $light-orange;
     // color: $yellow;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
     font-family: $header-font;
     font-weight: normal;
     text-transform: uppercase;
+    letter-spacing: 2px;
 
     strong {
       display: block;
@@ -936,6 +960,7 @@ section.prediction {
   }
 
   ul {
+    margin-top: 10vh;
 
     h4 {
       margin-top: 1.5rem;
@@ -1055,7 +1080,7 @@ section.prediction {
 .preparedness,
 .sharing,
 .footer {
-  background: #161f29;
+  background: $dark-blue;
   position: relative;
   z-index: 1001;
 }
@@ -1106,7 +1131,7 @@ section.prediction {
       margin: 8% 0;
     }
 
-    .wow {
+    div.wow {
       margin: 8% 0;
     }
 
@@ -1129,6 +1154,32 @@ section.prediction {
       li {
         margin-bottom: 1rem;
         line-height: 1.2 !important;
+      }
+
+      &.icon-grid {
+
+        li {
+          // padding: 1rem 0;
+          padding: 0 0.5rem;
+          margin: 0;
+          // margin: 0 0.75rem 0 0;
+          // border: 1px solid $light-orange;
+          // border-radius: 2px;
+
+          &:first-of-type {
+            margin-left: -5%;
+          }
+        }
+
+        // li {
+        //   padding-left: 0;
+        // }
+      }
+
+      object {
+        display: block;
+        width: 90px;
+        margin: 0 auto 0.5rem;
       }
     }
 
@@ -1154,7 +1205,7 @@ section.prediction {
   position: relative;
   width: 100%;
   float: left;
-  background: linear-gradient(to bottom, $dark-blue 50px, rgba($dark-blue, 0) 500px);
+  background: linear-gradient(to bottom, $dark-blue 0%, rgba($dark-blue, 0) 20%);
 }
 
   .cascadia-journey__timer {

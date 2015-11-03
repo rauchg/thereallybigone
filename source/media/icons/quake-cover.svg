@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px"
+	 height="170px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF4D00;}
+	.st1{fill:none;}
+	.st2{fill:#3398E5;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FF4E15;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:url(#SVGID_1_);}
+	.st7{fill:url(#SVGID_2_);}
+	.st8{fill:url(#SVGID_3_);}
+	.st9{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linecap:square;stroke-miterlimit:10;}
+	.st10{opacity:0.5;}
+	.st11{fill:#FF7C52;}
+	.st12{fill:#631700;}
+	.st13{opacity:0.5;fill:#FF7C52;}
+	.st14{fill:#FF4E15;}
+	.st15{fill:none;stroke:#631700;stroke-width:10;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#631700;stroke-width:5;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3">
+</g>
+<g id="Layer_2">
+	<g>
+		<radialGradient id="SVGID_1_" cx="85" cy="85" r="80" gradientUnits="userSpaceOnUse">
+			<stop  offset="0.85" style="stop-color:#FF4E15"/>
+			<stop  offset="1" style="stop-color:#E13700"/>
+		</radialGradient>
+		<circle class="st6" cx="85" cy="85" r="80"/>
+	</g>
+	<polygon class="st13" points="86.8,34.5 83.2,38.1 89.6,44.4 74.4,44.4 74.4,49.4 89.6,49.4 83.2,55.7 86.8,59.3 99.1,46.9 	"/>
+	<polygon class="st12" points="86.8,32 83.2,35.6 89.6,41.9 74.4,41.9 74.4,46.9 89.6,46.9 83.2,53.2 86.8,56.8 99.1,44.4 	"/>
+	<g class="st10">
+		<rect x="35" y="125" class="st11" width="100" height="5"/>
+	</g>
+	<g>
+		<rect x="35" y="122.5" class="st12" width="100" height="5"/>
+	</g>
+	<g class="st10">
+		<polygon class="st11" points="62.9,102.5 62.5,102.5 62.5,102.9 		"/>
+		<path class="st11" d="M112,87.5c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S117.5,87.5,112,87.5z"/>
+		<path class="st11" d="M55,67.5v10h2.5V92c-0.9-0.3-1.8-0.9-2.5-1.6L43.5,79L36.5,86l11.5,11.5c2.6,2.6,6,4.3,9.6,4.8v5.6l-2.5,2.5
+			c-1.3,1.3-3.1,2.1-5,2.1H35v10h15c2.6,0,5.2-0.6,7.5-1.7v1.7h5v-5.4L75,104.6v12.9h10v-15h5v20h10v-20c0-5.5-4.5-10-10-10H75h-2.1
+			H62.5v-15h65v45h5v-45h2.5v-10H55z M62.9,102.5l-0.4,0.4v-0.4H62.9z"/>
+	</g>
+	<g>
+		<polygon class="st1" points="62.9,100 62.5,100 62.5,100.4 		"/>
+		<path class="st12" d="M112,85c-5.5,0-10,4.5-10,10s4.5,10,10,10s10-4.5,10-10S117.5,85,112,85z"/>
+		<path class="st12" d="M55,65v10h2.5v14.5c-0.9-0.3-1.8-0.9-2.5-1.6L43.5,76.5l-7.1,7.1L47.9,95c2.6,2.6,6,4.3,9.6,4.8v5.6
+			l-2.5,2.5c-1.3,1.3-3.1,2.1-5,2.1H35v10h15c2.6,0,5.2-0.6,7.5-1.7v1.7h5v-5.4L75,102.1V115h10v-15h5v20h10v-20c0-5.5-4.5-10-10-10
+			H75h-2.1H62.5V75h65v45h5V75h2.5V65H55z M62.9,100l-0.4,0.4V100H62.9z"/>
+	</g>
+</g>
+</svg>

@@ -2,10 +2,10 @@
 title: The Really Big One
 ---
 
-<div id="preloader">
+<!-- <div id="preloader">
   <h1 class="blink">The Really Big One Is Coming &hellip;</h1>
   <a href="http://github.hubspot.com/pace/docs/welcome/">I'd like to implement an idicator like the tiny red loading bar at the top on YouTube. This should be quick and easy: http://github.hubspot.com/pace/docs/welcome/</a>
-</div>
+</div> -->
 
 <!-- Landing / Hero -->
 <section class="hero">
@@ -19,14 +19,11 @@ title: The Really Big One
   <img class="hide-for-small credit-logo credit-logo--right" src="/assets/images/arc-logo.svg" onerror="this.onerror=null; this.src='/assets/images/arc-logo.png'" width="160" />
 
   <div class="row">
-    <!-- TODO: -->
-    <div class="columns medium-10 medium-offset-1 text-center">
+    <div class="columns medium-10 medium-centered text-center">
 
-      <h1 class="wow fadeIn" data-wow-delay="0.25s" data-wow-duration="1.25s">An <strong>earthquake will destroy</strong> a sizable portion of the <strong>Pacific Northwest</strong>.</h1>
+      <h1 class="wow fadeIn" data-wow-delay="0.35s">An <strong>earthquake will destroy</strong> a sizable portion of the <strong>Pacific Northwest</strong>.</h1>
 
-      <h3 class="wow fadeIn" data-wow-delay="0.5s" data-wow-duration="1.25s">It’s not a question of if, but when.</h3>
-
-      <!-- <object data="/media/seismic-waves.svg" type="image/svg+xml" width="700"></object> -->
+      <p class="wow fadeIn" data-wow-delay="0.5s">It’s not a question of if, but when.</p>
 
       <a style="display: block; margin: 0 auto; margin-top: 7vh; color: red;" class="wow fadeIn" data-wow-delay="1s" href="#subduction"><span class="blink">&darr;</span></a>
 
@@ -40,7 +37,7 @@ title: The Really Big One
 <section id="subduction" class="subduction js-animate-subductionx">
 
   <div class="row">
-    <div class="medium-10 medium-centered large-5 large-uncentered columns">
+    <div class="medium-11 medium-centered large-5 large-uncentered columns">
 
       <h1 class="wow fadeInUp"><small class="subtitle">Meet The</small>Cascadia <small class="subtitle subtitle--bottom">Subduction Zone</small></h1>
 
@@ -51,6 +48,8 @@ title: The Really Big One
 
         <p><strong>Cascadia has the potential to create <span class="emph">30 times</span> the energy of the San Andreas fault.</strong></p>
       </div>
+
+      <a style="display: block; margin: 0 auto; margin-top: 7vh; color: red;" class="wow fadeIn" data-wow-delay="1s" href="#prediction"><span class="blink">&darr;</span></a>
 
     </div>
   </div>
@@ -131,7 +130,7 @@ title: The Really Big One
           <h1 class="wow fadeInUp"><small>Okay, so let's put that into context...</small> Remember Japan<br>in 2011?</h1>
 
           <div class="row">
-            <div class="medium-11 medium-centered large-10 columns">
+            <div class="medium-11 medium-centered columns">
 
               <p class="wow fadeIn" data-wow-delay="0.125s">That quake was of magnitude <span class="emph">9.0</span>.</p>
               <p class="wow fadeIn" data-wow-delay="0.25s">We're at real risk of an even more powerful quake from Cascadia.</p>
@@ -166,7 +165,7 @@ title: The Really Big One
 </section>
 
 
-<section class="prediction">
+<section class="prediction prediction--scenario">
 
   <div class="row text-center">
     <div class="columns">
@@ -176,7 +175,7 @@ title: The Really Big One
       <ul class="medium-block-grid-3">
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/trbo-icon-eq.svg" type="image/svg+xml" width="165"></object>
+          <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/scenario-eq.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.25s">
             <h4>A huge earthquake</h4>
@@ -185,7 +184,7 @@ title: The Really Big One
         </li>
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.4s" data="/media/trbo-icon-tsunami.svg" type="image/svg+xml" width="165"></object>
+          <object class="wow bounceIn" data-wow-delay="0.4s" data="/media/icons/scenario-tsunami.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.4s">
             <h4>A devastating tsunami</h4>
@@ -194,7 +193,7 @@ title: The Really Big One
         </li>
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.6s" data="/media/trbo-icon-aftershock.svg" type="image/svg+xml" width="165"></object>
+          <object class="wow bounceIn" data-wow-delay="0.6s" data="/media/icons/scenario-aftershock.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.6s">
             <h4>Aftershocks</h4>
@@ -204,7 +203,7 @@ title: The Really Big One
 
       </ul>
 
-      <h1><small>The following information may save your life.</small>Here's how it will all unfold.</h1>
+      <h1 class="wow fadeIn" data-wow-delay="0.25s"><small>The following information may save your life.</small> Here's how it will all unfold</h1>
 
     </div>
   </div>
@@ -217,11 +216,11 @@ title: The Really Big One
   <!-- cities trigger points -->
   <div class="cities-trigger cities-trigger--vancouver js-cities-trigger-vancouver"></div>
   <div class="cities-trigger cities-trigger--seattle js-cities-trigger-seattle"></div>
-  <div class="cities-trigger cities-trigger--olympia js-cities-trigger-olympia"></div>
+  <div class="cities-trigger cities-trigger--olympia js-cities-trigger-olympia hide-for-small"></div>
   <div class="cities-trigger cities-trigger--portland js-cities-trigger-portland"></div>
-  <div class="cities-trigger cities-trigger--salem js-cities-trigger-salem"></div>
+  <div class="cities-trigger cities-trigger--salem js-cities-trigger-salem hide-for-small"></div>
   <div class="cities-trigger cities-trigger--eugene js-cities-trigger-eugene"></div>
-  <div class="cities-trigger cities-trigger--grantspass js-cities-trigger-grantspass"></div>
+  <div class="cities-trigger cities-trigger--grantspass js-cities-trigger-grantspass hide-for-small"></div>
   <div class="cities-trigger cities-trigger--redding js-cities-trigger-redding"></div>
 
   <!-- cities -->
@@ -317,27 +316,26 @@ title: The Really Big One
 
     <div class="row">
       <div class="small-9 medium-8 medium-offset-1 columns">
-        <!-- <h1>TODO: Chapter 1: Earthquake<br/>from Vancouver to Seattle</h1> -->
+
         <!-- <h2>TODO: Timer starts</h2> -->
 
         <div class="wow fadeIn">
 
-          <!-- <h2>TODO: EQ Trivia</h2> -->
+          <div class="row">
+            <!-- <div class="medium-3 large-2 columns">
+              <object class="wow bounceIn" data="/media/icons/quake-dogs.svg" type="image/svg+xml" width="110"></object>
+            </div> -->
+            <div class="medium-9 large-10 columns text-center">
+              <object class="wow bounceIn" data="/media/icons/quake-dogs.svg" type="image/svg+xml" width="110"></object>
+              <p>Animals are able to sense the seismic waves before we feel the shaking. If all of a sudden dogs start barking unusually loud and intense, immediately take action:</p>
+            </div>
+          </div>
 
-          <!-- <h1><small>The following information may save your life.</small>Here's how it will all unfold.</h1> -->
-
-          <p>Animals are able to sense the seismic waves before we feel the shaking.</p>
-          <p>Dogs will start barking and animals will start acting crazy.</p>
-
-          <!-- <p>TODO: That's not a timely warning as it only happens a few seconds before, but it's a definite sign (?)</p> -->
-
-          <p>TODO: An illustration/animation of dogs barking?</p>
         </div>
 
-        <div class="wow fadeIn">
-          <!-- <p>TODO: One more bit of EQ trivia?</p> -->
-          <h3>When you realise the EQ is happening, here's what you need to do:</h3>
-        </div>
+        <!-- <div class="wow fadeIn"> -->
+          <!-- <h3>When you realise the EQ is happening, here's what you need to do:</h3> -->
+        <!-- </div> -->
 
         <!-- <div class="wow fadeIn">
           <h2>Earthquakes don’t kill people, buildings and their contents do.</h2>
@@ -347,43 +345,41 @@ title: The Really Big One
 
           [TODO: icon]
           <!-- <h3>If you're indoors when it happens</h3> -->
-          <h1>Indoors</h1>
+          <h1>Indoors <small style="display: inline; position: relative; top: -20px;">&mdash; Don't rush to the exit!</small></h1>
 
-          <h3>&mdash; Earthquakes don’t kill people, buildings <!-- and their contents --> do.</h3>
+          <!-- <h3>&mdash; Earthquakes don’t kill people, buildings (and their contents) do.</h3> -->
 
-          <br/><br/>
+          <div class="row">
+            <div class="large-9 columns left">
 
-          <p>Don't rush to the exit! Drop, cover and hold on!</p>
+              <ul class="medium-block-grid-3 icon-grid text-center">
+                <li>
+                  <object class="wow rollIn" data-wow-delay="0.25s" data="/media/icons/quake-drop.svg" type="image/svg+xml" width="90"></object>
+                  Hide under a sturdy table
+                </li>
+                <li>
+                  <object class="wow rollIn" data-wow-delay="0.25s" data="/media/icons/quake-cover.svg" type="image/svg+xml" width="90"></object>
+                  Cover your head &amp; neck
+                </li>
+                <li>
+                  <object class="wow rollIn" data-wow-delay="0.25s" data="/media/icons/quake-hold.svg" type="image/svg+xml" width="90"></object>
+                  Hold on until the shaking stops
+                </li>
+              </ul>
 
-          <small>TODO: Drop, Cover and Hold On illo</small>
+            </div>
+          </div>
+
+          <p>If there’s no table, go to an inside wall, corner of the room,<br/> or lay down next to a couch.</p>
+
           <br/>
-          <img src="TODO" alt="Drop, Cover and Hold On" height="100">
-          <br/><br/>
 
-          <ol>
-            <li>Hide under a sturdy table</li>
-            <li>Cover your head &amp; neck</li>
-            <li>Hold on until the shaking stops</li>
-          </ol>
+          <!-- TODO: don't remove -->
+          <!-- <div class="alert-box warning show-for-medium-up"><p><small>[TODO: icon] Tip: You should practice the “DROP, COVER AND HOLD ON” method at work and at home at least twice a year.</small></p></div> -->
 
-          <p>If there’s no table, go to an inside wall, corner of the room, or lay down next to a couch.</p>
 
-          <br/>
-
-          <div class="alert-box warning show-for-medium-up"><p><small>[TODO: icon] Tip: You should practice the “DROP, COVER AND HOLD ON” method at work and at home at least twice a year.</small></p></div>
-
-          <!-- <p><small>[TODO: icon] Tip: You should practice the “DROP, COVER AND HOLD ON” method at work and at home at least twice a year.</small></p> -->
-
-          <!-- <ul> -->
-            <!-- <li>Don’t go outside</li> -->
-            <!-- <li>Watch out for objects that could fall</li> -->
-            <!-- <li>Don’t rush to the exit</li> -->
-            <!-- <li>Hide under a sturdy table, cover your head &amp; neck, hold on until the shaking stops</li> -->
-            <!-- <li>Grab onto the table leg and hold on until shaking stops</li> -->
-            <!-- <li>If there’s no table, go to an inside wall, corner of the room, or lay down next to a couch</li> -->
-          <!-- </ul> -->
-
-          <!-- <p>TODO: YOU ARE SAFER PRACTICING THE “DROP, COVER, AND HOLD ON” maneuver under a sturdy piece of furniture like a strong desk or table. If indoors, stay there. Drop to the floor, make yourself small and get under a desk or table or stand in a corner. If outdoors, get into an open area away from trees, buildings, walls and power lines. If in a high-rise building, stay away from windows and outside walls, stay out of elevators, and get under a table. If driving, pull over to the side of the road and stop. Avoid overpasses and power lines. Stay inside your car until the shaking is over. If in a crowded public place, do not rush for the doors. Crouch and cover your head and neck with your hands and arms. You should practice the “DROP, COVER AND HOLD ON” method at work and at home at least twice a year.</p> -->
+          <!-- TODO: can remove all of the below -->
+          <!-- <p>YOU ARE SAFER PRACTICING THE “DROP, COVER, AND HOLD ON” maneuver under a sturdy piece of furniture like a strong desk or table. If indoors, stay there. Drop to the floor, make yourself small and get under a desk or table or stand in a corner. If outdoors, get into an open area away from trees, buildings, walls and power lines. If in a high-rise building, stay away from windows and outside walls, stay out of elevators, and get under a table. If driving, pull over to the side of the road and stop. Avoid overpasses and power lines. Stay inside your car until the shaking is over. If in a crowded public place, do not rush for the doors. Crouch and cover your head and neck with your hands and arms. You should practice the “DROP, COVER AND HOLD ON” method at work and at home at least twice a year.</p> -->
 
         </div>
 
@@ -438,13 +434,11 @@ title: The Really Big One
           <p>Afte shaking has stopped, you'll have 15 minutes to get to the high ground because the tsunami will follow</p>
         </div>
 
-        <br/>
-
-        <div class="alert-box alert show-for-medium-up"><p><small>[TODO: icon] Warning: If you’re at the epicentre you’ll only have a few minutes until the first wave hits</small></p></div>
+        <div class="alert-box alert show-for-medium-up"><p><small>[TODO: icon] Warning: If you’re at the epicentre you’ll only have a few minutes until the first wave hits!</small></p></div>
 
         <div class="wow fadeIn">
 
-          <h3>&mdash; Of all natural disasters tsunamis are the hardest to survive...</h3>&mdash;
+          <!-- <h3>&mdash; Of all natural disasters tsunamis are the hardest to survive...</h3>&mdash; -->
 
           <p>Waves will be as high as 100ft in some areas, and will come 3 miles inland</p>
           <p>There are 71000 people in the inundation zone of the tsunami</p>
@@ -471,53 +465,49 @@ title: The Really Big One
       <div class="small-9 medium-8 medium-offset-1 columns">
 
         <div class="wow fadeIn">
-          <h2>By the time the shaking has ceased and the tsunami has receded, the region will be unrecognizable</h2>
+          <h3>By the time the shaking has ceased and the tsunami has receded, the region will be unrecognizable</h3>
         </div>
 
         <div class="wow fadeIn">
 
+          <p style="opacity: 0.4;">TODO: Reduce animation duration by a lot</p>
+
           <ul class="block-grid medium-block-grid-2 blog-grid--facts">
 
-            <p>TODO: Reduce animation duration by a lot</p>
-
-            <li>
+            <li class="text-center">
               <p>[TODO: Cross/Tombstone ICON]</p>
               <h3 class="fact fact--large">
-                <span class="js-quake-energy">0</span>
-
-                <p>TODO: animate from 0 to 13000</p>
-                <small>dead</small>
+                <span class="js-quake-dead">0</span>
               </h3>
+              <br/>
+              <span class="emph">dead</span>
             </li>
 
-            <li>
+            <li class="text-center">
               <p>[TODO: Medical ICON]</p>
-              <h3 class="fact">
-                <span class="js-quake-people">0</span>
-
-                <p>TODO: animate from 0 to 27000</p>
-                <small>injured</small>
+              <h3 class="fact fact--large">
+                <span class="js-quake-injured">0</span>
               </h3>
+              <br/>
+              <span class="emph">injured</span>
             </li>
 
-            <li>
+            <li class="text-center">
               <p>[TODO: Broken House ICON]</p>
               <h3 class="fact fact--small">
-                <span class="js-quake-miles">0</span>
-
-                <p>TODO: animate from 0 to 1,000,000</p>
-                <small>misplaced</small>
+                <span class="js-quake-misplaced">0</span>
               </h3>
+              <br/>
+              <span class="emph">misplaced</span>
             </li>
 
-            <li>
+            <li class="text-center">
               <p>[TODO: No supplies ICON]</p>
               <h3 class="fact fact--small">
-                <span class="js-quake-miles">0</span>
-
-                <p>TODO: animate from 0 to 2,500,000</p>
-                <small>with no access to food or water</small>
+                <span class="js-quake-nowater">0</span>
               </h3>
+              <br/>
+              <span class="emph">with no access<br/> to food or water</span>
             </li>
 
           </ul>
@@ -590,6 +580,14 @@ title: The Really Big One
 
   </div>
 
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
+  <br/><br/><br/><br/><br/><br/><br/><br/>
   <br/><br/><br/><br/><br/><br/><br/><br/>
   <br/><br/><br/><br/><br/><br/><br/><br/>
   <br/><br/><br/><br/><br/><br/><br/><br/>

@@ -518,8 +518,10 @@ $(document).ready(function() {
     var targetTime = 4;
     var $counter = $('.js-quake-counter');
     var $energy = $('.js-quake-energy');
-    var $people = $('.js-quake-people');
-    var $miles = $('.js-quake-miles');
+    var $injured = $('.js-quake-injured');
+    var $dead = $('.js-quake-dead');
+    var $misplaced = $('.js-quake-misplaced');
+    var $nowater = $('.js-quake-nowater');
     var $meter = $('.custom-meter');
 
     var timerInterval = setInterval(function() {
@@ -539,8 +541,10 @@ $(document).ready(function() {
       }
 
       $energy.text( Math.round (ticks / 240 * 30)  + ' x');
-      $people.text( numberWithPoints(Math.round (ticks / 240 * 7000000)));
-      $miles.text( numberWithPoints(Math.round (ticks / 240 * 14000)));
+      $injured.text( numberWithPoints(Math.round (ticks / 240 * 27000)));
+      $dead.text( numberWithPoints(Math.round (ticks / 240 * 13000)));
+      $misplaced.text( numberWithPoints(Math.round (ticks / 240 * 1000000)));
+      $nowater.text( numberWithPoints(Math.round (ticks / 240 * 2500000)));
 
       $meter.css('width', ticks / 240 * 100 + "%");
 

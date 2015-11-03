@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="190px"
+	 height="190px" viewBox="0 0 190 190" style="enable-background:new 0 0 190 190;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF4D00;}
+	.st1{fill:none;}
+	.st2{fill:#3398E5;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FF4E15;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:url(#SVGID_1_);}
+	.st7{fill:url(#SVGID_2_);}
+	.st8{fill:url(#SVGID_3_);}
+	.st9{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linecap:square;stroke-miterlimit:10;}
+	.st10{opacity:0.5;}
+	.st11{fill:#FF7C52;}
+	.st12{fill:#631700;}
+	.st13{opacity:0.5;fill:#FF7C52;}
+	.st14{fill:#FF4E15;}
+	.st15{fill:none;stroke:#631700;stroke-width:10;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#631700;stroke-width:5;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3">
+</g>
+<g id="Layer_2">
+	<circle class="st5" cx="95" cy="95" r="80"/>
+	<path class="st5" d="M95,190l0-23.8c0-13.6,5.4-26.6,15-36.2l0,0l35-35h-25l20-20c5.5-5.5,5.5-14.5,0-20l0,0l-10-10l-30,30L90,65
+		L74.4,80.6c-6,6-14.2,9.4-22.7,9.4H35l25,25"/>
+	<path class="st5" d="M50,105v8.8c0,13.6-5.4,26.6-15,36.2l0,0"/>
+	<line class="st5" x1="90" y1="80" x2="85" y2="85"/>
+	<line class="st5" x1="95" y1="0" x2="95" y2="35"/>
+	<line class="st5" x1="95" y1="40" x2="95" y2="45"/>
+</g>
+</svg>
