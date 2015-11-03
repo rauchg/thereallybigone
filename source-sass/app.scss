@@ -105,6 +105,8 @@ body {
 }
 
 h1 {
+  position: relative;
+  left: -2px;
   font-size: 2.5em;
   font-family: $header-font;
   text-transform: uppercase;
@@ -140,6 +142,29 @@ h1 {
       font-weight: normal;
       color: #fff;
     }
+
+    &.subtitle {
+      position: relative;
+      left: 5px;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+      font-family: $header-font;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: normal;
+
+      @media #{$medium-up} {
+        font-size: 1.125rem;
+      }
+
+      @media #{$medium-up} {
+        font-size: 1.25rem;
+      }
+    }
+
+    &.subtitle--bottom {
+      margin-top: 0.25rem;
+    }
   }
 }
 
@@ -173,16 +198,16 @@ h3 {
 
 p,
 li {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.3;
   color: #8c949e;
 
   @media #{$medium-up} {
-    font-size: 1.375rem;
+    font-size: 1.275rem;
   }
 
   @media #{$large-up} {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   strong {
@@ -666,15 +691,11 @@ section.japan {
   }
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 
     &:last-of-type {
-      margin-bottom: 5vh;
+      margin-top: 10vh;
     }
-
-    // strong {
-    //   color: $light-orange;
-    // }
   }
 }
 
@@ -692,9 +713,13 @@ section.japan {
   }
 
   @media #{$medium-up} {
-    width: 120%;
-    max-width: 120%;
-    margin: 0 0 0 -10%;
+    // width: 120%;
+    // max-width: 120%;
+    // margin: 0 0 0 -10%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    left: -125px;
   }
 
   a {
@@ -851,21 +876,30 @@ section.japan {
 
 
 .subduction {
+  position: relative;
+  z-index: 1001;
   text-align: center;
+  background: #161f29;
 
-  @media #{$medium-up} {
-    text-align: left;
+  img {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  // TODO:
-  // h1 {
-  //   color: $juicy-orange;
-  // }
+  @media #{$large-up} {
+    background: url(/media/subduction-zone.svg) 95% 100% no-repeat, #161f29;
+    background-size: 55%;
+  }
+
+  &:after {
+    display: none;
+  }
 }
 
 
 section.prediction {
-  padding: 0;
+  // padding: 0;
 
   h1 {
     overflow: hidden;
@@ -885,10 +919,19 @@ section.prediction {
 
   h4 {
     color: $light-orange;
+    // color: $yellow;
     font-size: 1.25rem;
     font-family: $header-font;
     font-weight: normal;
     text-transform: uppercase;
+
+    strong {
+      display: block;
+    }
+  }
+
+  .emph {
+    display: block;
   }
 
   ul {
@@ -1005,7 +1048,6 @@ section.prediction {
   }
 }
 
-.subduction,
 .prediction,
 .japan,
 .at-risk,
@@ -1043,10 +1085,16 @@ section.prediction {
 
   .helicopter {
     position: fixed;
-    top: 65px;
-    right: 65px;
+    top: 25px;
+    right: 15px;
     z-index: 1000;
-    width: 150px;
+    width: 65px;
+
+    @media #{$medium-up} {
+      top: 65px;
+      right: 65px;
+      width: 150px;
+    }
   }
 
   .cascadia-journey__content {
@@ -1091,7 +1139,8 @@ section.prediction {
     }
 
     li {
-      color: $yellow;
+      // color: $yellow;
+      color: $light-orange;
     }
 
     blockquote {
@@ -1209,7 +1258,8 @@ section.prediction {
 
 
 .has-tip {
-  color: $yellow;
+  // color: $yellow;
+  color: $light-orange;
   font-weight: normal;
   text-decoration: underline;
   border: none;
@@ -1248,4 +1298,15 @@ section.prediction {
   p {
     color: lighten(red, 35%);
   }
+}
+
+
+
+.emph {
+  font-family: $header-font;
+  color: $light-orange;
+  // color: $yellow;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 115%;
 }
