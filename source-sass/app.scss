@@ -105,6 +105,8 @@ body {
 }
 
 h1 {
+  position: relative;
+  left: -2px;
   font-size: 2.5em;
   font-family: $header-font;
   text-transform: uppercase;
@@ -140,6 +142,29 @@ h1 {
       font-weight: normal;
       color: #fff;
     }
+
+    &.subtitle {
+      position: relative;
+      left: 5px;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+      font-family: $header-font;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      font-weight: normal;
+
+      @media #{$medium-up} {
+        font-size: 1.125rem;
+      }
+
+      @media #{$medium-up} {
+        font-size: 1.25rem;
+      }
+    }
+
+    &.subtitle--bottom {
+      margin-top: 0.25rem;
+    }
   }
 }
 
@@ -173,16 +198,16 @@ h3 {
 
 p,
 li {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.3;
   color: #8c949e;
 
   @media #{$medium-up} {
-    font-size: 1.375rem;
+    font-size: 1.275rem;
   }
 
   @media #{$large-up} {
-    font-size: 1.5rem;
+    font-size: 1.375rem;
   }
 
   strong {
@@ -248,6 +273,7 @@ section:not(.hero) {
 
 
 .hero {
+  z-index: 1001;
   min-height: 100%;
   height: 100%;
   // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
@@ -256,11 +282,14 @@ section:not(.hero) {
   background: #10161c;
   background: #161f29;
 
-  // &:after {
+  background: url(/media/seismic-waves.svg) 100% 120% no-repeat, #161f29;
+  background-size: 1200px 1200px;
+
+  &:after {
     // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
     // opacity: 0.7;
-    // display: none;
-  // }
+    display: none;
+  }
 
   h1 {
     margin-top: 30vh;
@@ -615,7 +644,7 @@ section.japan {
 
   h1 {
     position: relative;
-    margin: 5vh auto 2.5vh;
+    margin: 18vh auto 2.5vh;
 
     &:before {
       content: '';
@@ -662,15 +691,11 @@ section.japan {
   }
 
   p {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
 
     &:last-of-type {
-      margin-bottom: 5vh;
+      margin-top: 10vh;
     }
-
-    // strong {
-    //   color: $light-orange;
-    // }
   }
 }
 
@@ -684,13 +709,18 @@ section.japan {
 .japan__polaroids {
 
   img {
-    opacity: 0.35 !important;
+    // opacity: 0.35 !important;
+    opacity: 0.55 !important;
   }
 
   @media #{$medium-up} {
-    width: 120%;
-    max-width: 120%;
-    margin: 0 0 0 -10%;
+    // width: 120%;
+    // max-width: 120%;
+    // margin: 0 0 0 -10%;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    left: -125px;
   }
 
   a {
@@ -719,18 +749,19 @@ section.japan {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba($light-orange, 0.15);
+      // background: rgba($light-orange, 0.15);
     }
 
     img {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%);
+              // filter: grayscale(100%);
       // -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
               // clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
     }
   }
 
-  .medium-3:first-of-type {
+  .medium-3:first-of-type,
+  .medium-4 {
 
     a {
       left: 60px !important;
@@ -743,7 +774,7 @@ section.japan {
         top: -80px;
         left: 115px;
 
-        left: 50px !important;
+        left: 45px !important;
 
         img {
           opacity: 0.25;
@@ -760,7 +791,7 @@ section.japan {
         top: -60px;
         left: 65px;
 
-        left: 40px !important;
+        left: 15px !important;
 
         img {
           opacity: 0.32;
@@ -846,21 +877,30 @@ section.japan {
 
 
 .subduction {
+  position: relative;
+  z-index: 1001;
   text-align: center;
+  background: #161f29;
 
-  @media #{$medium-up} {
-    text-align: left;
+  img {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  // TODO:
-  // h1 {
-  //   color: $juicy-orange;
-  // }
+  @media #{$large-up} {
+    background: url(/media/subduction-zone.svg) 95% 100% no-repeat, #161f29;
+    background-size: 55%;
+  }
+
+  &:after {
+    display: none;
+  }
 }
 
 
 section.prediction {
-  padding: 0;
+  // padding: 0;
 
   h1 {
     overflow: hidden;
@@ -880,10 +920,19 @@ section.prediction {
 
   h4 {
     color: $light-orange;
+    // color: $yellow;
     font-size: 1.25rem;
     font-family: $header-font;
     font-weight: normal;
     text-transform: uppercase;
+
+    strong {
+      display: block;
+    }
+  }
+
+  .emph {
+    display: block;
   }
 
   ul {
@@ -898,9 +947,9 @@ section.prediction {
     }
   }
 
-  object {
-    opacity: 0.675;
-  }
+  // object {
+  //   opacity: 0.675;
+  // }
 }
 
 
@@ -978,11 +1027,33 @@ section.prediction {
 }
 
 
-.hero,
-.subduction,
+.cascadia-hands {
+  min-height: 0;
+  text-align: center;
+  padding: 2rem 0 !important;
+  margin: 0;
+  background: $dark-blue;
+
+  h4 {
+    margin: 0;
+    color: #fff;
+  }
+
+  .button {
+    margin: 0 0 0 1rem;
+    background: $juicy-blue;
+  }
+
+  &:after {
+    display: none;
+  }
+}
+
 .prediction,
 .japan,
+.at-risk,
 .preparedness,
+.sharing,
 .footer {
   background: #161f29;
   position: relative;
@@ -1015,10 +1086,16 @@ section.prediction {
 
   .helicopter {
     position: fixed;
-    top: 65px;
-    right: 65px;
+    top: 25px;
+    right: 15px;
     z-index: 1000;
-    width: 150px;
+    width: 65px;
+
+    @media #{$medium-up} {
+      top: 65px;
+      right: 65px;
+      width: 150px;
+    }
   }
 
   .cascadia-journey__content {
@@ -1026,16 +1103,16 @@ section.prediction {
     z-index: 1010;
 
     .row {
-      margin: 15% 0;
+      margin: 8% 0;
     }
 
     .wow {
-      margin: 15% 0;
+      margin: 8% 0;
     }
 
     h1 {
       margin-bottom: 1rem;
-      color: $light-orange;
+      // color: $light-orange;
 
       @media #{$medium-up} {
         margin-bottom: 2rem;
@@ -1063,7 +1140,13 @@ section.prediction {
     }
 
     li {
-      color: $yellow;
+      // color: $yellow;
+      color: $light-orange;
+    }
+
+    blockquote {
+      border: none;
+      padding: 0;
     }
   }
 
@@ -1176,7 +1259,8 @@ section.prediction {
 
 
 .has-tip {
-  color: $yellow;
+  // color: $yellow;
+  color: $light-orange;
   font-weight: normal;
   text-decoration: underline;
   border: none;
@@ -1187,7 +1271,8 @@ section.prediction {
   }
 }
 
-.alert-box.warning {
+.alert-box.warning,
+.alert-box.alert {
   padding: 1rem 2rem 1.25rem;
   background: rgba($yellow, 0.05);
   border: 1px solid $yellow;
@@ -1205,4 +1290,24 @@ section.prediction {
       line-height: 1;
     }
   }
+}
+
+.alert-box.alert {
+  background: rgba(red, 0.05);
+  border: 1px solid red;
+
+  p {
+    color: lighten(red, 35%);
+  }
+}
+
+
+
+.emph {
+  font-family: $header-font;
+  color: $light-orange;
+  // color: $yellow;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 115%;
 }
