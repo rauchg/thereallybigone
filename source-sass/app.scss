@@ -709,7 +709,8 @@ section.japan {
 .japan__polaroids {
 
   img {
-    opacity: 0.35 !important;
+    // opacity: 0.35 !important;
+    opacity: 0.55 !important;
   }
 
   @media #{$medium-up} {
@@ -748,12 +749,12 @@ section.japan {
       right: 0;
       bottom: 0;
       left: 0;
-      background: rgba($light-orange, 0.15);
+      // background: rgba($light-orange, 0.15);
     }
 
     img {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%);
+              // filter: grayscale(100%);
       // -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
               // clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
     }
@@ -763,7 +764,7 @@ section.japan {
   .medium-4 {
 
     a {
-      left: 50px !important;
+      left: 60px !important;
 
       &:first-of-type {
         top: -100px;
@@ -1102,11 +1103,11 @@ section.prediction {
     z-index: 1010;
 
     .row {
-      margin: 15% 0;
+      margin: 8% 0;
     }
 
     .wow {
-      margin: 15% 0;
+      margin: 8% 0;
     }
 
     h1 {
