@@ -248,6 +248,7 @@ section:not(.hero) {
 
 
 .hero {
+  z-index: 1001;
   min-height: 100%;
   height: 100%;
   // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
@@ -256,11 +257,14 @@ section:not(.hero) {
   background: #10161c;
   background: #161f29;
 
-  // &:after {
+  background: url(/media/seismic-waves.svg) 100% 120% no-repeat, #161f29;
+  background-size: 1200px 1200px;
+
+  &:after {
     // background-image: linear-gradient(to bottom, rgba($dark-blue, 0.6) 50%, $dark-blue 100%);
     // opacity: 0.7;
-    // display: none;
-  // }
+    display: none;
+  }
 
   h1 {
     margin-top: 30vh;
@@ -1000,8 +1004,6 @@ section.prediction {
   }
 }
 
-
-.hero,
 .subduction,
 .prediction,
 .japan,
