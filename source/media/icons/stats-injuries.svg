@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="170px"
+	 height="170px" viewBox="0 0 170 170" style="enable-background:new 0 0 170 170;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF4D00;}
+	.st1{fill:none;}
+	.st2{fill:#3398E5;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#FF4E15;stroke-width:5;stroke-miterlimit:10;}
+	.st6{fill:url(#SVGID_1_);}
+	.st7{fill:url(#SVGID_2_);}
+	.st8{fill:url(#SVGID_3_);}
+	.st9{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linecap:square;stroke-miterlimit:10;}
+	.st10{opacity:0.5;}
+	.st11{fill:#FF7C52;}
+	.st12{fill:#631700;}
+	.st13{opacity:0.5;fill:#FF7C52;}
+	.st14{fill:#FF4E15;}
+	.st15{fill:none;stroke:#631700;stroke-width:10;stroke-miterlimit:10;}
+	.st16{fill:none;stroke:#631700;stroke-width:5;stroke-miterlimit:10;}
+	.st17{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g id="Layer_3">
+</g>
+<g id="Layer_2">
+	<circle class="st5" cx="85" cy="85" r="80"/>
+	<path class="st5" d="M130,150l0-40c0-8.3-6.7-15-15-15h0H85H60h0c-8.3,0-15,6.7-15,15v45"/>
+	<line class="st5" x1="115" y1="115" x2="115" y2="160"/>
+	<polyline class="st5" points="60,115 60,150 105,150 105,95 	"/>
+	<path class="st5" d="M105,70c0,8.3-6.7,15-15,15H80h0c-8.3,0-15-6.7-15-15V50c0-8.3,6.7-15,15-15h10c8.3,0,15,6.7,15,15V70z"/>
+	<line class="st5" x1="100" y1="40" x2="65" y2="75"/>
+	<line class="st5" x1="90" y1="35" x2="65" y2="60"/>
+	<line class="st5" x1="105" y1="163.4" x2="105" y2="150"/>
+	<line class="st5" x1="89.6" y1="150" x2="74.6" y2="165"/>
+	<line class="st5" x1="105" y1="150" x2="90" y2="165"/>
+	<line class="st5" x1="75.4" y1="149.5" x2="62.9" y2="162"/>
+	<polyline class="st9" points="55,155 60,150 103.1,106.9 	"/>
+</g>
+</svg>
