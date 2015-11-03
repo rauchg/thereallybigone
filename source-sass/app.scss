@@ -619,7 +619,7 @@ section.japan {
 
   h1 {
     position: relative;
-    margin: 5vh auto 2.5vh;
+    margin: 18vh auto 2.5vh;
 
     &:before {
       content: '';
@@ -734,10 +734,11 @@ section.japan {
     }
   }
 
-  .medium-3:first-of-type {
+  .medium-3:first-of-type,
+  .medium-4 {
 
     a {
-      left: 60px !important;
+      left: 50px !important;
 
       &:first-of-type {
         top: -100px;
@@ -747,7 +748,7 @@ section.japan {
         top: -80px;
         left: 115px;
 
-        left: 50px !important;
+        left: 45px !important;
 
         img {
           opacity: 0.25;
@@ -764,7 +765,7 @@ section.japan {
         top: -60px;
         left: 65px;
 
-        left: 40px !important;
+        left: 15px !important;
 
         img {
           opacity: 0.32;
@@ -1062,7 +1063,7 @@ section.prediction {
 
     h1 {
       margin-bottom: 1rem;
-      color: $light-orange;
+      // color: $light-orange;
 
       @media #{$medium-up} {
         margin-bottom: 2rem;
@@ -1091,6 +1092,11 @@ section.prediction {
 
     li {
       color: $yellow;
+    }
+
+    blockquote {
+      border: none;
+      padding: 0;
     }
   }
 
@@ -1214,7 +1220,8 @@ section.prediction {
   }
 }
 
-.alert-box.warning {
+.alert-box.warning,
+.alert-box.alert {
   padding: 1rem 2rem 1.25rem;
   background: rgba($yellow, 0.05);
   border: 1px solid $yellow;
@@ -1231,5 +1238,14 @@ section.prediction {
       font-size: 60%;
       line-height: 1;
     }
+  }
+}
+
+.alert-box.alert {
+  background: rgba(red, 0.05);
+  border: 1px solid red;
+
+  p {
+    color: lighten(red, 35%);
   }
 }
