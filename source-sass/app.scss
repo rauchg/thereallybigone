@@ -94,8 +94,6 @@ ol {
   100% { opacity: 0; }
 }
 
-html { overflow: auto; }
-
 body {
   background: $dark-blue;
   text-rendering: optimizeLegibility;
@@ -104,6 +102,10 @@ body {
   * {
     box-sizing: border-box;
   }
+}
+
+.wow {
+  visibility: hidden;
 }
 
 h1 {
@@ -604,7 +606,8 @@ section:not(.hero) {
       top: 30%;
       left: 40%;
       z-index: 10;
-      transform: translate3d(-50%, 0, 0);
+      transform: translate(-50%, 0, 0);
+      -ms-transform: translate(-50%);
       text-align: center;
       font-family: $header-font;
       font-size: 1.5em;
@@ -614,7 +617,8 @@ section:not(.hero) {
     &.circle-container--large .content {
       top: 25%;
       left: 50%;
-      transform: translate3d(-50%, 50%, 0);
+      transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
       font-size: 1em;
     }
 
@@ -623,7 +627,8 @@ section:not(.hero) {
       &.circle-container--large .content {
         top: 50%;
         left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         font-size: 2em;
       }
     }
