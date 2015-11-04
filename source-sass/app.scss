@@ -282,23 +282,32 @@ section:not(.hero) {
   z-index: 1501;
   // min-height: 100%;
   // height: 100%;
-  background: url(/media/seismic-waves.svg) center 5% no-repeat, $dark-blue;
-  background-size: 1100px 200px;
+  background: $dark-blue;
+  text-align: center;
+
+  .seismic-wave {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 0;
+    z-index: 1502;
+    margin: 0 auto;
+  }
+
+  .row {
+    position: relative;
+    z-index: 1503;
+  }
 
   @media #{$medium-up} {
     height: 100%;
-    background-position: center 7%;
-    background-size: 1100px 250px;
-  }
-
-  @media #{$large-up} {
-    background-position: center 10%;
-    background-size: 1100px 300px;
   }
 
   &:after {
     // TODO:
     display: none;
+    // background: linear-gradient(45deg, #222325 30%, #c24f32 100%);
+    // opacity: 0.3;
   }
 
   h1 {
@@ -358,6 +367,11 @@ section:not(.hero) {
       opacity: 0.3;
     }
   }
+}
+
+.title-logo,
+.credit-logo {
+  z-index: 1503;
 }
 
 .title-logo {
@@ -434,7 +448,7 @@ section:not(.hero) {
   margin: 0;
   padding: 2rem;
   background: none;
-  border: 2px solid $juicy-blue;
+  // border: 2px solid $juicy-blue;
 
   h2 {
     margin-bottom: 1rem;
@@ -447,7 +461,7 @@ section:not(.hero) {
   }
 
   .alert-box--danger {
-    border-color: red;
+    // border-color: red;
 
     h2 {
       color: $juicy-orange;
@@ -955,11 +969,11 @@ section.japan {
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
-  }
 
-  @media #{$large-up} {
-    background: url(/media/subduction-zone.svg) 95% 0 no-repeat, $dark-blue;
-    background-size: 780px;
+    @media #{$large-up} {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &:after {
@@ -1457,11 +1471,15 @@ section.prediction {
   }
 }
 
+.alert-box {
+  border: none !important;
+}
+
 .alert-box.warning,
 .alert-box.alert {
   padding: 1rem 2rem 1.25rem;
   background: rgba($yellow, 0.05);
-  border: 1px solid $yellow;
+  // border: 1px solid $yellow;
   border-radius: 5px;
   line-height: 1.3;
 
@@ -1480,7 +1498,7 @@ section.prediction {
 
 .alert-box.alert {
   background: rgba(red, 0.05);
-  border: 1px solid red;
+  // border: 1px solid red;
 
   p {
     color: lighten(red, 35%);
@@ -1527,28 +1545,61 @@ section.prediction {
 .pie {
   position: relative;
   width: 100px;
+  height: 100px;
   line-height: 100px;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  background: $light-orange;
-  background-image:
-    linear-gradient(to right, transparent 50%, $juicy-orange 0);
+  background: darken($juicy-orange, 15%);
+  background-image: linear-gradient(to right, transparent 50%, darken($juicy-orange, 7%) 0);
   color: transparent;
   text-align: center;
+  box-shadow: 0 0 15px 0 rgba($dark-blue, 0.1);
+
+  @media #{$medium-up} {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  @media #{$medium-up} {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $header-font;
+    color: darken($juicy-orange, 35%);
+    // color: #fff;
+    text-shadow: 1px 1px 1px $juicy-orange;
+
+    @media #{$large-up} {
+      font-size: 3rem;
+    }
+  }
 }
 
 @keyframes spin {
   to { transform: rotate(.5turn); }
 }
 @keyframes bg {
-  50% { background: $juicy-orange; }
+  50% { background: darken($juicy-orange, 7%); }
 }
 
 .pie::before {
   content: '';
   position: absolute;
-  top: 0; left: 50%;
-  width: 50%; height: 100%;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
   border-radius: 0 100% 100% 0 / 50%;
   background-color: inherit;
   transform-origin: left;
@@ -1556,4 +1607,21 @@ section.prediction {
              bg 100s step-end infinite;
   animation-play-state: paused;
   animation-delay: inherit;
+}
+
+
+
+
+.fact-badge {
+  display: inline-block;
+  margin: 0 auto 1rem;
+  padding: 0.625rem 1rem 0.575rem;
+  border-radius: 5px;
+  font-size: 1.75rem;
+  font-family: $header-font;
+  color: darken($juicy-orange, 35%);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+  background: $juicy-orange;
+  box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
 }
