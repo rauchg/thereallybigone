@@ -479,11 +479,23 @@ section:not(.hero) {
 
   small {
     display: block;
-    margin-top: 2rem;
-    margin-bottom: 0;
+    margin: 0;
     font-family: $body-font-family;
     text-transform: none;
     color: #eee;
+  }
+}
+
+.block-grid--facts {
+
+  .fact + .emph {
+    display: block;
+    margin-top: -0.5rem;
+    color: #fff;
+  }
+
+  .fact span {
+    color: $light-orange !important;
   }
 }
 
@@ -492,6 +504,10 @@ section:not(.hero) {
     span {
       font-size: 2.2125rem;
     }
+  }
+
+  .fact--small + .emph {
+    font-size: 70%;
   }
 
   .fact--large {
@@ -666,40 +682,43 @@ section.japan {
 
   h1 {
     position: relative;
-    margin: 18vh auto 2.5vh;
+    margin: 0 auto 2.5vh;
 
-    &:before {
-      content: '';
-      display: block;
-      width: 120px;
-      height: 120px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background: #f12500;
-      background: red;
-      background: rgba(red, 0.25);
-      box-shadow: 0 0 0 20px rgba(red, 0.25);
-      animation: blinkAlt 1.5s infinite ease-out;
-      position: absolute;
-      top: -150px;
-      left: 0;
-      right: 0;
-    }
+    @media #{$medium-up} {
 
-    &:after {
-      content: '';
-      display: block;
-      width: 120px;
-      height: 120px;
-      margin: 0 auto;
-      border-radius: 50%;
-      background: #f12500;
-      background: red;
-      animation: heartbeat 1.5s infinite ease-out;
-      position: absolute;
-      top: -150px;
-      left: 0;
-      right: 0;
+      &:before {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: #f12500;
+        background: red;
+        background: rgba(red, 0.25);
+        box-shadow: 0 0 0 20px rgba(red, 0.25);
+        animation: blinkAlt 1.5s infinite ease-out;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: #f12500;
+        background: red;
+        animation: heartbeat 1.5s infinite ease-out;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0;
+      }
     }
 
     @media #{$medium-up} {
@@ -716,7 +735,24 @@ section.japan {
     margin-bottom: 1.5rem;
 
     &:last-of-type {
-      margin-top: 10vh;
+      margin-top: 1.5rem;
+
+      @media #{$medium-up} {
+        margin-top: 4.5rem;
+      }
+
+      @media #{$large-up} {
+        // margin-top: 6rem;
+      }
+    }
+  }
+
+  @media #{$small-only} {
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 2rem;
     }
   }
 }
@@ -750,19 +786,22 @@ section.japan {
     background: #fff;
     display: inline-block;
     float: left;
-    margin: 0 0 27px 30px;
-    margin-bottom: 0;
     width: auto;
-    padding: 15px 15px 55px;
+    margin: 0 0 0 10px;
+    padding: 5px 5px 20px;
     border-radius: 1px;
     text-align: center;
     text-decoration: none;
     color: #333;
     font-size: 18px;
     box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
-
     position: relative;
     z-index: 1;
+
+    @media #{$medium-up} {
+      margin: 0 0 0 30px;
+      padding: 15px 15px 55px;
+    }
 
     &:after {
       content: '';
@@ -948,7 +987,10 @@ section.prediction {
     }
   }
 
-  h4 {
+  h4,
+  ul .emph {
+    margin-top: 0.75rem;
+    margin-bottom: 0.5rem;
     color: $light-orange;
     font-size: 1.125rem;
     font-family: $header-font;
@@ -965,16 +1007,10 @@ section.prediction {
     display: block;
   }
 
-  ul {
-    // margin-top: 10vh;
+  ul object {
 
-    h4 {
-      margin-top: 1.5rem;
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1.325rem;
+    @media #{$small-only} {
+      width: 100px;
     }
   }
 }
@@ -1137,6 +1173,10 @@ section.prediction {
       margin: 8% 0;
     }
 
+    .block-grid--facts {
+      margin-left: -16%;
+    }
+
     h1 {
       margin-bottom: 1rem;
       // color: $light-orange;
@@ -1180,7 +1220,6 @@ section.prediction {
 
       object {
         display: block;
-        width: 90px;
         margin: 0 auto 0.5rem;
       }
     }
@@ -1199,6 +1238,27 @@ section.prediction {
     blockquote {
       border: none;
       padding: 0;
+
+      h2 {
+        color: $light-orange;
+        // color: $juicy-orange;
+        line-height: 1.2;
+      }
+
+      cite,
+      p {
+        font-style: normal;
+        font-size: 1rem;
+        color: $grey;
+      }
+
+      a {
+        color: $yellow;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -1395,4 +1455,31 @@ section.prediction {
   text-transform: uppercase;
   font-weight: normal;
   font-size: 115%;
+}
+
+[class*="block-grid-"] > li {
+
+  @media #{$small-only} {
+    float: none;
+  }
+}
+
+[class*="small-block-grid-"] > li {
+
+  @media #{$small-only} {
+    float: left;
+  }
+}
+
+
+.small-icon {
+  width: 65px;
+
+  @media #{$medium-up} {
+    width: 85px;
+  }
+
+  @media #{$large-up} {
+    width: 100px;
+  }
 }
