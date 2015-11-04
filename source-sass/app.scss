@@ -99,6 +99,10 @@ ol {
   100% { opacity: 0; }
 }
 
+.wow {
+  visibility: hidden;
+}
+
 h1 {
   position: relative;
   left: -2px;
@@ -593,7 +597,8 @@ section:not(.hero) {
       top: 30%;
       left: 40%;
       z-index: 10;
-      transform: translate3d(-50%, 0, 0);
+      transform: translate(-50%, 0, 0);
+      -ms-transform: translate(-50%);
       text-align: center;
       font-family: $header-font;
       font-size: 1.5em;
@@ -603,7 +608,8 @@ section:not(.hero) {
     &.circle-container--large .content {
       top: 25%;
       left: 50%;
-      transform: translate3d(-50%, 50%, 0);
+      transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
       font-size: 1em;
     }
 
@@ -612,7 +618,8 @@ section:not(.hero) {
       &.circle-container--large .content {
         top: 50%;
         left: 50%;
-        transform: translate3d(-50%, -50%, 0);
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         font-size: 2em;
       }
     }
@@ -1143,6 +1150,7 @@ section.prediction {
   padding: 0 !important;
   position: relative;
   overflow: hidden;
+  width:100vw;
 
   &:after {
     z-index: 1005;
@@ -1332,13 +1340,16 @@ section.prediction {
   height: auto;
   z-index: 999;
   top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
   object {
     width: 100%;
   }
 }
 
-.cities--vancouver {
+.cities--vancouver object {
   top: 28.9vw;
 }
 
