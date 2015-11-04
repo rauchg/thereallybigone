@@ -732,7 +732,8 @@ section.japan {
 
   img {
     // opacity: 0.35 !important;
-    opacity: 0.55 !important;
+    // opacity: 0.55 !important;
+    opacity: 1 !important;
   }
 
   @media #{$medium-up} {
@@ -746,18 +747,19 @@ section.japan {
   }
 
   a {
-    // background: $dark-blue;
+    background: #fff;
     display: inline-block;
-    // float: left;
+    float: left;
     margin: 0 0 27px 30px;
     margin-bottom: 0;
     width: auto;
-    // padding: 10px;
+    padding: 15px 15px 55px;
+    border-radius: 1px;
     text-align: center;
     text-decoration: none;
     color: #333;
     font-size: 18px;
-    // box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
+    box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
 
     position: relative;
     z-index: 1;
@@ -786,17 +788,19 @@ section.japan {
   .medium-4 {
 
     a {
-      left: 60px !important;
+      left: 160px !important;
 
       &:first-of-type {
         top: -100px;
+        transform: rotate(1deg);
       }
 
       &:nth-of-type(2) {
         top: -80px;
         left: 115px;
 
-        left: 45px !important;
+        left: 145px !important;
+        transform: rotate(-2deg);
 
         img {
           opacity: 0.25;
@@ -813,7 +817,8 @@ section.japan {
         top: -60px;
         left: 65px;
 
-        left: 15px !important;
+        left: 175px !important;
+        transform: rotate(-1deg);
 
         img {
           opacity: 0.32;
@@ -945,7 +950,6 @@ section.prediction {
 
   h4 {
     color: $light-orange;
-    // color: $yellow;
     font-size: 1.125rem;
     font-family: $header-font;
     font-weight: normal;
@@ -962,7 +966,7 @@ section.prediction {
   }
 
   ul {
-    margin-top: 10vh;
+    // margin-top: 10vh;
 
     h4 {
       margin-top: 1.5rem;
@@ -973,10 +977,6 @@ section.prediction {
       font-size: 1.325rem;
     }
   }
-
-  // object {
-  //   opacity: 0.675;
-  // }
 }
 
 
@@ -1193,7 +1193,6 @@ section.prediction {
     }
 
     li {
-      // color: $yellow;
       color: $light-orange;
     }
 
@@ -1347,7 +1346,6 @@ section.prediction {
 
 
 .has-tip {
-  // color: $yellow;
   color: $light-orange;
   font-weight: normal;
   text-decoration: underline;
@@ -1394,7 +1392,6 @@ section.prediction {
 .emph {
   font-family: $header-font;
   color: $light-orange;
-  // color: $yellow;
   text-transform: uppercase;
   font-weight: normal;
   font-size: 115%;
