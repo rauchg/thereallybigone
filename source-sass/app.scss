@@ -307,12 +307,12 @@ section:not(.hero) {
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
     @media #{$medium-up} {
-      margin-top: 15vh;
+      margin-top: 17vh;
       margin-bottom: 3vh;
     }
 
     @media #{$large-up} {
-      margin-top: 20vh;
+      margin-top: 24vh;
     }
 
     strong {
@@ -947,6 +947,7 @@ section.japan {
   z-index: 1001;
   text-align: center;
   background: $dark-blue;
+  padding-top: 0 !important;
 
   img {
     width: 90%;
@@ -955,7 +956,7 @@ section.japan {
   }
 
   @media #{$large-up} {
-    background: url(/media/subduction-zone.svg) 95% 175px no-repeat, $dark-blue;
+    background: url(/media/subduction-zone.svg) 95% 0 no-repeat, $dark-blue;
     background-size: 780px;
   }
 
@@ -1015,6 +1016,10 @@ section.prediction {
   }
 }
 
+
+.prediction--chance {
+  padding-top: 0;
+}
 
 .subduction,
 .prediction {
@@ -1168,13 +1173,25 @@ section.prediction {
     .row {
       margin: 5% 0 10%;
 
+      @media #{$medium-up} {
+        margin: 7% 0 12%;
+      }
+
+      @media #{$large-up} {
+        margin: 10% 0 15%;
+      }
+
       .row {
         margin: 0;
       }
     }
 
     div.wow {
-      margin: 10% 0;
+      margin: 7% 0;
+
+      @media #{$large-up} {
+        margin: 14% 0;
+      }
     }
 
     // .block-grid--facts {
