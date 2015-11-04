@@ -1521,28 +1521,61 @@ section.prediction {
 .pie {
   position: relative;
   width: 100px;
+  height: 100px;
   line-height: 100px;
   border-radius: 50%;
   margin: 0 auto 1rem;
-  background: $light-orange;
-  background-image:
-    linear-gradient(to right, transparent 50%, $juicy-orange 0);
+  background: darken($juicy-orange, 15%);
+  background-image: linear-gradient(to right, transparent 50%, darken($juicy-orange, 7%) 0);
   color: transparent;
   text-align: center;
+  box-shadow: 0 0 15px 0 rgba($dark-blue, 0.1);
+
+  @media #{$medium-up} {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+  }
+
+  @media #{$medium-up} {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $header-font;
+    color: darken($juicy-orange, 35%);
+    // color: #fff;
+    text-shadow: 1px 1px 1px $juicy-orange;
+
+    @media #{$large-up} {
+      font-size: 3rem;
+    }
+  }
 }
 
 @keyframes spin {
   to { transform: rotate(.5turn); }
 }
 @keyframes bg {
-  50% { background: $juicy-orange; }
+  50% { background: darken($juicy-orange, 7%); }
 }
 
 .pie::before {
   content: '';
   position: absolute;
-  top: 0; left: 50%;
-  width: 50%; height: 100%;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
   border-radius: 0 100% 100% 0 / 50%;
   background-color: inherit;
   transform-origin: left;
@@ -1550,4 +1583,21 @@ section.prediction {
              bg 100s step-end infinite;
   animation-play-state: paused;
   animation-delay: inherit;
+}
+
+
+
+
+.fact-badge {
+  display: inline-block;
+  margin: 0 auto 1rem;
+  padding: 0.625rem 1rem 0.575rem;
+  border-radius: 5px;
+  font-size: 1.75rem;
+  font-family: $header-font;
+  color: darken($juicy-orange, 35%);
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+  background: $juicy-orange;
+  box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
 }
