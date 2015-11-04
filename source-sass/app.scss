@@ -1164,6 +1164,7 @@ section.prediction {
   .cascadia-journey__content {
     position: relative;
     z-index: 1010;
+    text-align: center;
 
     .row {
       margin: 8% 0;
@@ -1209,7 +1210,7 @@ section.prediction {
           // border-radius: 2px;
 
           &:first-of-type {
-            margin-left: -5%;
+            // margin-left: -5%;
           }
         }
 
@@ -1231,9 +1232,9 @@ section.prediction {
       color: lighten(#8c949e, 22%);
     }
 
-    li {
-      color: $light-orange;
-    }
+    // li {
+    //   color: $light-orange;
+    // }
 
     blockquote {
       border: none;
