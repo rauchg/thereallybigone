@@ -280,23 +280,32 @@ section:not(.hero) {
   z-index: 1501;
   // min-height: 100%;
   // height: 100%;
-  background: url(/media/seismic-waves.svg) center 5% no-repeat, $dark-blue;
-  background-size: 1100px 200px;
+  background: $dark-blue;
+  text-align: center;
+
+  .seismic-wave {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    left: 0;
+    z-index: 1502;
+    margin: 0 auto;
+  }
+
+  .row {
+    position: relative;
+    z-index: 1503;
+  }
 
   @media #{$medium-up} {
     height: 100%;
-    background-position: center 7%;
-    background-size: 1100px 250px;
-  }
-
-  @media #{$large-up} {
-    background-position: center 10%;
-    background-size: 1100px 300px;
   }
 
   &:after {
     // TODO:
     display: none;
+    // background: linear-gradient(45deg, #222325 30%, #c24f32 100%);
+    // opacity: 0.3;
   }
 
   h1 {
@@ -356,6 +365,11 @@ section:not(.hero) {
       opacity: 0.3;
     }
   }
+}
+
+.title-logo,
+.credit-logo {
+  z-index: 1503;
 }
 
 .title-logo {
@@ -432,7 +446,7 @@ section:not(.hero) {
   margin: 0;
   padding: 2rem;
   background: none;
-  border: 2px solid $juicy-blue;
+  // border: 2px solid $juicy-blue;
 
   h2 {
     margin-bottom: 1rem;
@@ -445,7 +459,7 @@ section:not(.hero) {
   }
 
   .alert-box--danger {
-    border-color: red;
+    // border-color: red;
 
     h2 {
       color: $juicy-orange;
@@ -953,11 +967,11 @@ section.japan {
     width: 90%;
     max-width: 600px;
     margin: 0 auto;
-  }
 
-  @media #{$large-up} {
-    background: url(/media/subduction-zone.svg) 95% 0 no-repeat, $dark-blue;
-    background-size: 780px;
+    @media #{$large-up} {
+      width: 100%;
+      max-width: 100%;
+    }
   }
 
   &:after {
@@ -1451,11 +1465,15 @@ section.prediction {
   }
 }
 
+.alert-box {
+  border: none !important;
+}
+
 .alert-box.warning,
 .alert-box.alert {
   padding: 1rem 2rem 1.25rem;
   background: rgba($yellow, 0.05);
-  border: 1px solid $yellow;
+  // border: 1px solid $yellow;
   border-radius: 5px;
   line-height: 1.3;
 
@@ -1474,7 +1492,7 @@ section.prediction {
 
 .alert-box.alert {
   background: rgba(red, 0.05);
-  border: 1px solid red;
+  // border: 1px solid red;
 
   p {
     color: lighten(red, 35%);
