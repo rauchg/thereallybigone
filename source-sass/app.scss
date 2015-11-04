@@ -6,30 +6,40 @@
 @import "source/bower_components/foundation/scss/normalize.scss";
 @import "source/bower_components/foundation/scss/foundation.scss";
 
-
 // =======================================
 // Vars
 // =======================================
 
 $dark-blue: #161f29;
 $dirty-blue: #7fa5c1;
-$juicy-blue: #3a9ae2;
+// $juicy-blue: #3a9ae2;
+
 $yellow: #ffbf42;
+// $orange: #ff7b22;
+$light-orange: #ff9b58;
+$juicy-orange: #ff4e15;
 
 $grey: #65768a;
 $off-white: #c2d2de;
 
-$orange: #ff7b22;
-$light-orange: #ff9b58;
-$juicy-orange: #ff4e15;
-
 $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-
 
 // =======================================
 // Now on to the other bits
 // =======================================
 
+body {
+  background: $dark-blue;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+
+// TODO: style buttons
 .button {
   background: $dark-blue;
   outline: 0;
@@ -53,7 +63,7 @@ ol {
   list-style-position: inside;
 }
 
-// TODO
+// TODO: better style preloader
 .js #preloader {
   position: fixed;
   left: 0;
@@ -65,14 +75,9 @@ ol {
   text-align: center;
   vertical-align: middle;
   background: $dark-blue;
-  // background: url(http://files.mimoymima.com/images/loading.gif) no-repeat center center, rgba($dark-blue, 0.98);
+  // TODO: Use the huge FB OG image Arnas made as the preloader
   // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
   // background-size: cover !important;
-
-  h1 {
-    margin-top: 25vh;
-    color: #fff;
-  }
 }
 
 .blink {
@@ -94,16 +99,6 @@ ol {
   100% { opacity: 0; }
 }
 
-body {
-  background: $dark-blue;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-
-  * {
-    box-sizing: border-box;
-  }
-}
-
 h1 {
   position: relative;
   left: -2px;
@@ -120,10 +115,6 @@ h1 {
   @media #{$medium-up} {
     font-size: 5.25em;
   }
-
-  // @media screen and (min-width: 1440px) {
-  //   font-size: 6em;
-  // }
 
   small {
     display: block;
