@@ -94,6 +94,8 @@ ol {
   100% { opacity: 0; }
 }
 
+html { overflow: auto; }
+
 body {
   background: $dark-blue;
   text-rendering: optimizeLegibility;
@@ -1138,6 +1140,7 @@ section.prediction {
   padding: 0 !important;
   position: relative;
   overflow: hidden;
+  width:100vw;
 
   &:after {
     z-index: 1005;
@@ -1327,13 +1330,16 @@ section.prediction {
   height: auto;
   z-index: 999;
   top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
 
   object {
     width: 100%;
   }
 }
 
-.cities--vancouver {
+.cities--vancouver object {
   top: 28.9vw;
 }
 
