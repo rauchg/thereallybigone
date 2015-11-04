@@ -1164,19 +1164,22 @@ section.prediction {
   .cascadia-journey__content {
     position: relative;
     z-index: 1010;
-    text-align: center;
 
     .row {
-      margin: 8% 0;
+      margin: 5% 0 10%;
+
+      .row {
+        margin: 0;
+      }
     }
 
     div.wow {
-      margin: 8% 0;
+      margin: 10% 0;
     }
 
-    .block-grid--facts {
-      margin-left: -16%;
-    }
+    // .block-grid--facts {
+    //   margin-left: -16%;
+    // }
 
     h1 {
       margin-bottom: 1rem;
@@ -1189,6 +1192,15 @@ section.prediction {
 
     h1 + ul {
       margin-bottom: 3rem;
+    }
+
+    // TODO:
+
+    div.icon-grid {
+
+      @media #{$medium-up} {
+        margin-left: -8% !important;
+      }
     }
 
     ul {

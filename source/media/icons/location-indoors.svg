@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px"
+	 height="76px" viewBox="0 0 144 76" style="enable-background:new 0 0 144 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{display:inline;fill:#10151C;}
+	.st3{display:inline;fill:#171F29;}
+	.st4{display:inline;fill:#161F29;}
+	.st5{display:inline;fill:#17202A;}
+	.st6{fill:#631700;}
+	.st7{fill:#FF4E15;}
+	.st8{fill:#E13700;}
+	.st9{fill:none;}
+	.st10{fill:#FF4D00;}
+	.st11{fill:#3398E5;}
+	.st12{fill:#FFFFFF;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#FF4E15;stroke-width:5;stroke-miterlimit:10;}
+	.st15{fill:url(#SVGID_1_);}
+	.st16{fill:url(#SVGID_2_);}
+	.st17{fill:url(#SVGID_3_);}
+	.st18{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linecap:square;stroke-miterlimit:10;}
+	.st19{opacity:0.5;}
+	.st20{fill:#FF7C52;}
+	.st21{opacity:0.5;fill:#FF7C52;}
+	.st22{fill:none;stroke:#631700;stroke-width:10;stroke-miterlimit:10;}
+	.st23{fill:none;stroke:#631700;stroke-width:5;stroke-miterlimit:10;}
+	.st24{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+</g>
+<g id="Layer_3" class="st0">
+	<g class="st1">
+		
+			<image style="overflow:visible;" width="1786" height="1254" id="QQF9UK_1_" xlink:href="3BBC6DEFBD25E9C8.png"  transform="matrix(0.5 0 0 0.5 -83 -91)">
+		</image>
+	</g>
+	<rect x="-38" y="6" class="st3" width="395" height="70"/>
+</g>
+<g id="Layer_4">
+	<path class="st6" d="M144,76l-8-8h-35.1c1.9-2.1,3.1-4.9,3.1-8c0-5.9-4.3-10.8-9.9-11.8L94,47.4c-0.3-2.2-0.9-4.4-1.9-6.5
+		C88.5,33,80.6,28,72,28s-16.5,5-20.1,12.8c-0.6,1.3-1.1,2.7-1.4,4.2L36,16H16L0,48h20v20H8l-8,8h72v-8h11.1c2.2,2.4,5.4,4,8.9,4h8
+		v4H144z"/>
+	<polygon class="st7" points="8,76 12,72 132,72 136,76 	"/>
+	<rect x="24" y="48" class="st7" width="4" height="24"/>
+	<polygon class="st7" points="8,44 44,44 32,20 20,20 	"/>
+	<polygon class="st8" points="28,52 24,56 24,44 28,44 	"/>
+	<polygon class="st8" points="28,72 24,76 8,76 12,72 	"/>
+	<polygon class="st8" points="24,20 12,44 8,44 20,20 	"/>
+	<g>
+		<path class="st7" d="M88.4,42.5C85.5,36.3,79.2,32,72,32s-13.5,4.3-16.4,10.5c4.3-4,10.1-6.5,16.4-6.5S84.1,38.5,88.4,42.5z"/>
+		<path class="st8" d="M52,64h40l-2-16.1c-0.2-1.9-0.8-3.7-1.5-5.4C84.1,38.5,78.4,36,72,36s-12.1,2.5-16.4,6.5
+			c-0.8,1.7-1.3,3.5-1.5,5.4L52,64z"/>
+	</g>
+	<g>
+		<path class="st7" d="M84,64c0-1.5,0.4-2.8,1.1-4H84c-7.8-2.6-16.2-2.6-24,0h-1.1c0.7,1.2,1.1,2.5,1.1,4c0,4.4-3.6,8-8,8
+			c-1.5,0-2.8-0.4-4-1.1V72v4h48v-4v-1.1c-1.2,0.7-2.5,1.1-4,1.1C87.6,72,84,68.4,84,64z"/>
+		<path class="st8" d="M60,64c0-1.5-0.4-2.8-1.1-4H48v10.9c1.2,0.7,2.5,1.1,4,1.1C56.4,72,60,68.4,60,64z"/>
+		<path class="st8" d="M85.1,60c-0.7,1.2-1.1,2.5-1.1,4c0,4.4,3.6,8,8,8c1.5,0,2.8-0.4,4-1.1V60H85.1z"/>
+	</g>
+	<circle class="st7" cx="52" cy="60" r="8"/>
+	<circle class="st7" cx="92" cy="60" r="8"/>
+	<g>
+		<path class="st8" d="M52,60c1.5,0,2.8,0.8,3.4,2c0.3-0.6,0.6-1.3,0.6-2c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,0.7,0.2,1.4,0.6,2
+			C49.2,60.8,50.5,60,52,60z"/>
+	</g>
+	<g>
+		<path class="st8" d="M92,60c1.5,0,2.8,0.8,3.4,2c0.3-0.6,0.6-1.3,0.6-2c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,0.7,0.2,1.4,0.6,2
+			C89.2,60.8,90.5,60,92,60z"/>
+	</g>
+	<rect x="48" y="68" class="st8" width="48" height="4"/>
+	<rect x="100" y="44" class="st6" width="4" height="24"/>
+	<rect x="132" y="44" class="st6" width="4" height="24"/>
+	<rect x="96" y="36" class="st6" width="44" height="8"/>
+	<polygon class="st6" points="124,36 120,28 132,28 128,36 	"/>
+	<circle class="st6" cx="126" cy="26" r="2"/>
+	<circle class="st6" cx="126" cy="22" r="2"/>
+	<rect x="100" y="32" class="st6" width="16" height="4"/>
+	<rect x="124" y="44" class="st6" width="4" height="20"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>

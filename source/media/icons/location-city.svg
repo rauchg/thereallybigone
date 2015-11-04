@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="144px"
+	 height="76px" viewBox="0 0 144 76" style="enable-background:new 0 0 144 76;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;}
+	.st2{display:inline;fill:#10151C;}
+	.st3{display:inline;fill:#171F29;}
+	.st4{display:inline;fill:#161F29;}
+	.st5{display:inline;fill:#17202A;}
+	.st6{fill:#631700;}
+	.st7{fill:#FF4E15;}
+	.st8{fill:#E13700;}
+	.st9{fill:none;}
+	.st10{fill:#FF4D00;}
+	.st11{fill:#3398E5;}
+	.st12{fill:#FFFFFF;}
+	.st13{fill:none;stroke:#FFFFFF;stroke-width:5;stroke-miterlimit:10;}
+	.st14{fill:none;stroke:#FF4E15;stroke-width:5;stroke-miterlimit:10;}
+	.st15{fill:url(#SVGID_1_);}
+	.st16{fill:url(#SVGID_2_);}
+	.st17{fill:url(#SVGID_3_);}
+	.st18{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linecap:square;stroke-miterlimit:10;}
+	.st19{opacity:0.5;}
+	.st20{fill:#FF7C52;}
+	.st21{opacity:0.5;fill:#FF7C52;}
+	.st22{fill:none;stroke:#631700;stroke-width:10;stroke-miterlimit:10;}
+	.st23{fill:none;stroke:#631700;stroke-width:5;stroke-miterlimit:10;}
+	.st24{fill:none;stroke:#FF4E15;stroke-width:5;stroke-linejoin:bevel;stroke-miterlimit:10;}
+</style>
+<g id="Layer_1" class="st0">
+</g>
+<g id="Layer_3" class="st0">
+	<g class="st1">
+		
+			<image style="overflow:visible;" width="1824" height="1022" id="iiANOD_1_" xlink:href="3BB402E303179581.png"  transform="matrix(0.5 0 0 0.5 -72 -63)">
+		</image>
+	</g>
+	<rect x="4" y="-24" class="st4" width="324" height="104"/>
+</g>
+<g id="Layer_4">
+	<path class="st6" d="M136,68V44h-8V28c0-2.2-1.8-4-4-4h0v-8h-4v8v12l-4,4V8h-4v0c0-2.2-1.8-4-4-4h0h0c-2.2,0-4,1.8-4,4v0h-4v12
+		l-4-4V4L80,20v8h-4V12h-8v0c0-2.2-1.8-4-4-4h0v4h-4v20h32v36H136z"/>
+	<circle class="st6" cx="40" cy="60" r="8"/>
+	<circle class="st6" cx="96" cy="60" r="8"/>
+	<path class="st6" d="M0,76l8-8h12V36l-4-12H8l12-12h12l12,12h-8l-4,12v24h4V40c0-4.4,3.6-8,8-8h0h48h0c4.4,0,8,3.6,8,8v12v16h36
+		l8,8H0z"/>
+	<polygon class="st7" points="8,76 12,72 132,72 136,76 	"/>
+	<rect x="24" y="36" class="st7" width="4" height="36"/>
+	<polygon class="st8" points="28,40 24,44 24,32 28,32 	"/>
+	<polygon class="st8" points="28,72 24,76 8,76 12,72 	"/>
+	<polygon class="st7" points="24,32 28,32 32,20 20,20 	"/>
+	<polygon class="st8" points="24,32 24,20 20,20 	"/>
+	<polygon class="st8" points="28,32 32,20 28,20 	"/>
+	<polygon class="st7" points="16,20 36,20 32,16 20,16 	"/>
+	<rect x="24" y="20" class="st8" width="4" height="4"/>
+	<path class="st7" d="M96,40H40v0c0-2.2,1.8-4,4-4h48C94.2,36,96,37.8,96,40L96,40z"/>
+	<rect x="40" y="40" class="st8" width="56" height="4"/>
+	<rect x="40" y="48" class="st7" width="56" height="4"/>
+	<rect x="40" y="56" class="st7" width="56" height="4"/>
+	<path class="st7" d="M44,36L44,36l0,36h-4V40C40,37.8,41.8,36,44,36z"/>
+	<path class="st7" d="M92,36L92,36c2.2,0,4,1.8,4,4v32h-4V36z"/>
+	<g>
+		<path class="st7" d="M40,56c-2.2,0-4,1.8-4,4h8C44,57.8,42.2,56,40,56z"/>
+		<path class="st7" d="M96,56c-2.2,0-4,1.8-4,4h8C100,57.8,98.2,56,96,56z"/>
+		<path class="st8" d="M92,60H44h-8c0,2.2,1.8,4,4,4h56c2.2,0,4-1.8,4-4H92z"/>
+	</g>
+	<polygon class="st8" points="44,68 40,72 40,64 44,64 	"/>
+	<polygon class="st8" points="92,64 92,72 96,68 96,64 	"/>
+</g>
+<g id="Layer_2">
+</g>
+</svg>
