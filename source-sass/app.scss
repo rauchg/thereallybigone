@@ -216,12 +216,21 @@ bold {
 
 // TODO: style buttons
 .button {
-  background: $dark-blue;
+  background: none;
+  color: $juicy-orange;
+  // color: darken($juicy-orange, 35%);
+  // text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+  border: 2px solid $juicy-orange;
   outline: 0;
   // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
   animation: blink 2s infinte ease-out;
+  font-family: $header-font;
+  text-transform: uppercase;
 
   &:hover {
+    color: #fff;
+    background: $juicy-orange;
+    text-shadow: none;
     // background: darken($juicy-blue, 10%);
     // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.1), 0 0 4px 2px rgba($juicy-blue, 0.4);
   }
@@ -556,14 +565,6 @@ bold {
 
   p {
     margin-bottom: 1.5rem;
-
-    &:last-of-type {
-      margin-top: 1.5rem;
-
-      @media #{$medium-up} {
-        margin-top: 3rem;
-      }
-    }
   }
 
   @media #{$small-only} {
@@ -633,4 +634,24 @@ bold {
       margin-top: 5rem;
     }
   }
+}
+
+
+.preparedness {
+
+  .row {
+    position: relative;
+    z-index: 1505;
+  }
+}
+
+.at-risk {
+  padding: 20vh 0;
+
+  // Arnas TOOD:
+}
+
+.button--risk {
+  margin-top: 1.5rem;
+  // Arnas TOOD:
 }
