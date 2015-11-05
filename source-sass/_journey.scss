@@ -8,12 +8,10 @@
 // }
 
 .cascadia-journey {
-  padding: 0 !important;
+  padding: 0;
   position: relative;
   overflow: hidden;
   width: 100vw;
-
-  // TODO: overflow not working
 
   &:after {
     z-index: 1005;
@@ -191,8 +189,8 @@
   }
 }
 
-.cities--vancouver object {
-  top: 28.9vw;
+.cities--vancouver {
+  top: 29vw;
 }
 
 .cities--seattle {
@@ -224,7 +222,7 @@
 }
 
 .cities-trigger, .tsunamis-trigger {
-  border-top: 1px solid #F00;
+  border-top: 1px solid #f00;
   position: absolute;
   top: 0;
   width: 100%;
