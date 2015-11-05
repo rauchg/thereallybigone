@@ -628,9 +628,13 @@ bold {
 
 .alert-box--safe,
 .alert-box--danger {
-  background: rgba(255, 255, 255, 0.05);
+  // background: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
   margin-top: 5rem;
+
+  p {
+    color: #fff;
+  }
 }
 
 .at-risk__CTA {
