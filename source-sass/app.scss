@@ -3,29 +3,28 @@
 // =======================================
 @import "settings";
 @import "animate";
+@import "journey";
+@import "elements";
 @import "source/bower_components/foundation/scss/normalize.scss";
 @import "source/bower_components/foundation/scss/foundation.scss";
 
 // =======================================
-// Vars
+// Colours
 // =======================================
 
 $dark-blue: #161f29;
 $dirty-blue: #7fa5c1;
-// $juicy-blue: #3a9ae2;
 
 $yellow: #ffbf42;
-// $orange: #ff7b22;
 $light-orange: #ff9b58;
 $juicy-orange: #ff4e15;
 
 $grey: #65768a;
 $off-white: #c2d2de;
 
-$header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 // =======================================
-// Now on to the other bits
+// Globals
 // =======================================
 
 body {
@@ -38,24 +37,7 @@ body {
   }
 }
 
-
-// TODO: style buttons
-.button {
-  background: $dark-blue;
-  outline: 0;
-  // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
-  animation: blink 2s infinte ease-out;
-
-  &:hover {
-    // background: darken($juicy-blue, 10%);
-    // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.1), 0 0 4px 2px rgba($juicy-blue, 0.4);
-  }
-
-  &:focus,
-  &:active {
-    outline: 0;
-  }
-}
+// Reset
 
 ul,
 ol {
@@ -63,45 +45,45 @@ ol {
   list-style-position: inside;
 }
 
-// TODO: better style preloader
-.js #preloader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  text-align: center;
-  vertical-align: middle;
+// Vertical spacing etc
+
+section {
+  position: relative;
+  padding: 1.25rem 0;
+
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  @media #{$medium-up} {
+    min-height: 100%;
+    padding: 3rem 0;
+  }
+
+  @media #{$large-up} {
+    padding: 6rem 0;
+  }
+}
+
+section:not(.cascadia-journey) {
   background: $dark-blue;
-  // TODO: Use the huge FB OG image Arnas made as the preloader
-  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
-  // background-size: cover !important;
+  position: relative;
+  z-index: 1501;
 }
 
-.blink {
-  animation-name: blink;
-  animation-duration: 2s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
 
-@keyframes blink {
-  0% { opacity: 1.0; }
-  50% { opacity: 0.0; }
-  100% { opacity: 1.0; }
-}
+// =======================================
+// Typography
+// =======================================
 
-@keyframes blinkAlt {
-  0% { opacity: 1.0; }
-  65% { opacity: 0; }
-  100% { opacity: 0; }
-}
-
-.wow {
-  visibility: hidden;
-}
+$header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 h1 {
   position: relative;
@@ -220,41 +202,104 @@ h4 {
 }
 
 bold {
-  font-weight: 500;
+  font-weight: normal;
 }
 
 
+// =======================================
+// Links and buttons
+// =======================================
 
-section {
-  position: relative;
-  padding: 1.25rem 0;
+// TODO: style buttons
+.button {
+  background: $dark-blue;
+  outline: 0;
+  // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
+  animation: blink 2s infinte ease-out;
 
-  &:after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  &:hover {
+    // background: darken($juicy-blue, 10%);
+    // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.1), 0 0 4px 2px rgba($juicy-blue, 0.4);
   }
 
-  // * {
-  //   position: relative;
-  //   z-index: 5;
-  // }
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+
+
+// =======================================
+// Header
+// =======================================
+
+// TODO: better style preloader
+.js #preloader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  text-align: center;
+  vertical-align: middle;
+  background: $dark-blue;
+  // TODO: Use the huge FB OG image Arnas made as the preloader
+  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
+  // background-size: cover !important;
+}
+
+
+// Logos
+
+.title-logo,
+.credit-logo {
+  z-index: 1503;
+}
+
+.title-logo {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  text-align: center;
 
   @media #{$medium-up} {
-    min-height: 100%;
-    padding: 3rem 0;
+    width: 140px;
+    margin-top: -2rem;
   }
 
   @media #{$large-up} {
-    padding: 6rem 0;
+    width: 160px;
+    margin-top: -4rem;
+  }
+
+  img {
+    width: 100%;
   }
 }
 
+.credit-logo {
+  position: absolute;
+  width: 150px;
+  opacity: 0.25;
+}
+
+  .credit-logo--left {
+    width: 175px;
+    top: 3.15rem;
+    left: 3rem;
+  }
+
+  .credit-logo--right {
+    top: 2.3rem;
+    right: 3rem;
+  }
+
+
+// =======================================
+// Landing / Hero
+// =======================================
 
 .hero {
   z-index: 1501;
@@ -340,506 +385,10 @@ section {
   }
 }
 
-.title-logo,
-.credit-logo {
-  z-index: 1503;
-}
 
-.title-logo {
-  display: block;
-  width: 100px;
-  margin: 0 auto;
-  text-align: center;
-
-  @media #{$medium-up} {
-    width: 140px;
-    margin-top: -2rem;
-  }
-
-  @media #{$large-up} {
-    width: 160px;
-    margin-top: -4rem;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
-.credit-logo {
-  position: absolute;
-  width: 150px;
-  opacity: 0.25;
-}
-
-  .credit-logo--left {
-    width: 175px;
-    top: 3.15rem;
-    left: 3rem;
-  }
-
-  .credit-logo--right {
-    top: 2.3rem;
-    right: 3rem;
-  }
-
-
-
-.fact {
-  display: inline-block;
-  vertical-align: middle;
-  color: #888;
-  line-height: 1;
-
-  span {
-    // color: #fc6500;
-    // color: $light-orange;
-    color: $juicy-orange;
-    // color: #fff;
-    font-size: 2.5rem;
-    font-family: Anton, Rubik, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-    text-transform: uppercase;
-    line-height: 1;
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-
-  small {
-    display: block;
-    margin: 0;
-    font-family: $body-font-family;
-    text-transform: none;
-    color: #eee;
-  }
-}
-
-.block-grid--facts {
-
-  .fact + .emph {
-    display: block;
-    margin-top: -0.5rem;
-    color: #fff;
-  }
-
-  .fact span {
-    color: $light-orange !important;
-  }
-}
-
-  .fact--small {
-
-    span {
-      font-size: 2.2125rem;
-    }
-  }
-
-  .fact--small + .emph {
-    font-size: 70%;
-  }
-
-  .fact--large {
-
-    span {
-      font-size: 4.6125rem;
-    }
-  }
-
-  .fact--huge {
-
-    span {
-      font-size: 6rem;
-    }
-  }
-
-
-  .circle-container {
-    position: relative;
-    display: block;
-    width: 50%;
-    color: $dark-blue;
-    margin: 0 auto;
-
-    &:after {
-      content: "";
-      display: block;
-      position: relative;
-      z-index: 8;
-      width: 75%;
-      height: 0;
-      margin: 0 auto;
-      padding-bottom: 75%;
-      border-radius: 50%;
-      background: $off-white;
-      box-shadow: 0 0 0 12px $dark-blue, 0 0 0 14px $juicy-orange;
-    }
-
-    &.circle-container--large:after {
-      width: 50%;
-      padding-bottom: 50%;
-
-      @media #{$medium-up} {
-        width: 100%;
-        padding-bottom: 100%;
-      }
-    }
-
-    &.orange {
-      color: darken($juicy-orange, 35%);
-      text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
-    }
-
-    &.orange:after {
-      background: $juicy-orange;
-      box-shadow: none;
-      box-shadow: inset 0 0 10px 10px darken($juicy-orange, 10%);
-    }
-
-    .content {
-      position: absolute;
-      top: 30%;
-      left: 40%;
-      z-index: 10;
-      transform: translate(-50%, 0, 0);
-      -ms-transform: translate(-50%);
-      text-align: center;
-      font-family: $header-font;
-      font-size: 1.5em;
-    }
-
-    &.circle-container--large .content {
-      top: 25%;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      -ms-transform: translate(-50%, 50%);
-      font-size: 1em;
-    }
-
-    @media #{$medium-up} {
-
-      &.circle-container--large .content {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        font-size: 2em;
-      }
-    }
-
-    .dot {
-      border: 5px solid $light-orange;
-      background: transparent;
-      border-radius: 50%;
-      height: 175px;
-      width: 175px;
-      position: absolute;
-      top: -50%;
-      left: 0;
-      z-index: 1;
-      animation: pulse 3s ease-out infinite;
-      opacity: 0;
-
-      @media #{$medium-up} {
-        top: -50%;
-        left: -50%;
-      }
-    }
-
-    &.circle-container--large .dot {
-
-      @media #{$medium-up} {
-        width: 150%;
-        height: 150%;
-        top: -25%;
-        left: -25%;
-        border-width: 7px;
-      }
-    }
-  }
-
-@keyframes pulse {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  25% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0;
-  }
-}
-
-
-// Japan polaroids
-section.japan {
-  position: relative;
-  overflow: hidden;
-  padding-bottom: 0 !important;
-
-  h1 {
-    position: relative;
-    margin: 0 auto 2.5vh;
-
-    @media #{$medium-up} {
-
-      &:before {
-        content: '';
-        display: block;
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-        border-radius: 50%;
-        background: #f12500;
-        background: red;
-        background: rgba(red, 0.25);
-        box-shadow: 0 0 0 20px rgba(red, 0.25);
-        animation: blinkAlt 1.5s infinite ease-out;
-        position: absolute;
-        top: -150px;
-        left: 0;
-        right: 0;
-      }
-
-      &:after {
-        content: '';
-        display: block;
-        width: 120px;
-        height: 120px;
-        margin: 0 auto;
-        border-radius: 50%;
-        background: #f12500;
-        background: red;
-        animation: heartbeat 1.5s infinite ease-out;
-        position: absolute;
-        top: -150px;
-        left: 0;
-        right: 0;
-      }
-    }
-
-    @media #{$medium-up} {
-      margin: 10vh auto 5vh;
-
-      &:before,
-      &:after {
-        top: -175px;
-      }
-    }
-  }
-
-  p {
-    margin-bottom: 1.5rem;
-
-    &:last-of-type {
-      margin-top: 1.5rem;
-
-      @media #{$medium-up} {
-        margin-top: 4.5rem;
-      }
-
-      @media #{$large-up} {
-        // margin-top: 6rem;
-      }
-    }
-  }
-
-  @media #{$small-only} {
-
-    img {
-      width: 100%;
-      max-width: 300px;
-      margin: 0 auto 2rem;
-    }
-  }
-}
-
-@keyframes heartbeat {
-  0% { transform: scale(1.05); }
-  65% { transform: scale(0.925); }
-  100% { transform: scale(1); }
-}
-
-
-.japan__polaroids {
-
-  img {
-    // opacity: 0.35 !important;
-    // opacity: 0.55 !important;
-    opacity: 1 !important;
-  }
-
-  @media #{$medium-up} {
-    // width: 120%;
-    // max-width: 120%;
-    // margin: 0 0 0 -10%;
-    width: 100%;
-    max-width: 100%;
-    position: relative;
-    left: -125px;
-  }
-
-  a {
-    background: #fff;
-    display: inline-block;
-    float: left;
-    width: auto;
-    margin: 0 0 0 10px;
-    padding: 5px 5px 20px;
-    border-radius: 1px;
-    text-align: center;
-    text-decoration: none;
-    color: #333;
-    font-size: 18px;
-    box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
-    position: relative;
-    z-index: 1;
-
-    @media #{$medium-up} {
-      margin: 0 0 0 30px;
-      padding: 15px 15px 55px;
-    }
-
-    &:after {
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      // background: rgba($light-orange, 0.15);
-    }
-
-    img {
-      // -webkit-filter: grayscale(100%);
-              // filter: grayscale(100%);
-      // -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
-              // clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0% 80%, 0% 20%);
-    }
-  }
-
-  .medium-3:first-of-type,
-  .medium-4 {
-
-    a {
-      left: 160px !important;
-
-      &:first-of-type {
-        top: -100px;
-        transform: rotate(1deg);
-      }
-
-      &:nth-of-type(2) {
-        top: -80px;
-        left: 115px;
-
-        left: 145px !important;
-        transform: rotate(-2deg);
-
-        img {
-          opacity: 0.25;
-        }
-      }
-
-      &:nth-of-type(2n-1) {
-        left: 205px;
-
-        // TODO:
-      }
-
-      &:last-of-type {
-        top: -60px;
-        left: 65px;
-
-        left: 175px !important;
-        transform: rotate(-1deg);
-
-        img {
-          opacity: 0.32;
-        }
-      }
-    }
-  }
-
-  .medium-6 {
-
-    @media #{$medium-up} {
-      // margin-top: -10rem;
-      margin-top: 5rem;
-    }
-
-    .row {
-      position: relative;
-      z-index: 5;
-    }
-
-    a {
-      left: -20px;
-
-      &:first-of-type {
-        top: -10px;
-
-        @media #{$medium-up} {
-          margin-bottom: 5rem;
-        }
-
-        img {
-          opacity: 0.2;
-        }
-      }
-
-      &:last-of-type {
-        top: 10px;
-
-        img {
-          opacity: 0.2;
-        }
-      }
-    }
-  }
-
-  .medium-3:last-of-type {
-
-    a {
-      right: 60px !important;
-
-      &:first-of-type {
-        top: -125px;
-      }
-
-      &:nth-of-type(2) {
-        top: -105px;
-        right: 140px;
-
-        right: 50px !important;
-
-        img {
-          opacity: 0.25;
-        }
-      }
-
-      &:nth-of-type(2n-1) {
-        right: 250px;
-      }
-
-      &:last-of-type {
-        top: -85px;
-        right: 85px;
-
-        right: 40px !important;
-
-        img {
-          opacity: 0.32;
-        }
-      }
-    }
-  }
-}
-
+// =======================================
+// Meet Cascadia
+// =======================================
 
 .subduction {
   position: relative;
@@ -865,15 +414,12 @@ section.japan {
 }
 
 
-section.prediction {
 
-  &.prediction--scenario {
-    padding-top: 0 !important;
+// =======================================
+// Prediction
+// =======================================
 
-    ul {
-      margin-bottom: 10vw;
-    }
-  }
+.prediction {
 
   h1 {
     overflow: hidden;
@@ -919,9 +465,16 @@ section.prediction {
   }
 }
 
-
 .prediction--chance {
-  padding-top: 0 !important;
+  padding-top: 0;
+}
+
+.prediction--scenario {
+  padding-top: 0;
+
+  ul {
+    margin-bottom: 10vw;
+  }
 }
 
 .subduction,
@@ -937,576 +490,146 @@ section.prediction {
 }
 
 
-.quote {
-  min-height: 0;
-  margin: 5vh 0;
-  padding: 15vh 0 !important;
-  background: url(/media/skull.jpg) center center no-repeat;
-  background-size: cover;
+// =======================================
+// Japan
+// =======================================
 
-  blockquote {
-    margin: 0;
-    padding: 0;
-    border: none;
+.japan {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0;
 
-    h2 {
-      color: $light-orange;
+  h1 {
+    position: relative;
+    margin: 0 auto 2.5vh;
+
+    @media #{$medium-up} {
+
+      // Blinking red halo
+      &:before {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: rgba(red, 0.25);
+        box-shadow: 0 0 0 20px rgba(red, 0.25);
+        animation: blinkAlt 1.5s infinite ease-out;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0;
+      }
+
+      // Pusling red dot
+      &:after {
+        content: '';
+        display: block;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: red;
+        animation: heartbeat 1.5s infinite ease-out;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        right: 0;
+      }
     }
 
-    cite {
-      margin-top: 5vh;
-      font-style: normal;
-      color: $dirty-blue;
+    @media #{$medium-up} {
+      margin: 10vh auto 5vh;
+
+      &:before,
+      &:after {
+        top: -175px;
+      }
     }
   }
 
-  &:after {
-    // display: none;
+  p {
+    margin-bottom: 1.5rem;
+
+    &:last-of-type {
+      margin-top: 1.5rem;
+
+      @media #{$medium-up} {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  @media #{$small-only} {
+
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto 2rem;
+    }
   }
 }
 
+// Japan photos
+.japan__polaroids {
 
-.fancy-headline {
-  // TODO:
-  // color: $juicy-orange;
-
-  small {
-    color: $off-white;
-  }
-}
-
-
-.deep-dive-panel {
-  padding: 2rem;
-  text-align: center;
-  border: 2px solid $juicy-blue;
-  background: rgba($juicy-blue, 0.5);
-
-  h4 {
-    color: #fff;
-    color: $off-white;
+  @media #{$medium-up} {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    left: -125px;
   }
 
   a {
-    margin-top: 1.5rem;
-  }
-
-  .button {
-    background: $juicy-blue;
-    border-radius: 2px;
-  }
-}
-
-
-.cascadia-hands {
-  min-height: 0;
-  text-align: center;
-  padding: 2rem 0 !important;
-  margin: 0;
-  background: $dark-blue;
-
-  h4 {
-    margin: 0;
-    color: #fff;
-  }
-
-  .button {
-    margin: 0 0 0 1rem;
-    background: $juicy-blue;
-  }
-
-  &:after {
-    display: none;
-  }
-}
-
-.prediction,
-.japan,
-.at-risk,
-.preparedness,
-.sharing,
-.footer {
-  background: $dark-blue;
-  position: relative;
-  z-index: 1501;
-}
-
-
-
-.cascadia-journey {
-  padding: 0 !important;
-  position: relative;
-  overflow: hidden;
-  width: 100vw;
-
-  // TODO: overflow not working
-
-  &:after {
-    z-index: 1005;
-    background: linear-gradient(to right, $dark-blue 0, rgba($dark-blue, 0.88) 30%, rgba($dark-blue, 0.5) 65%, rgba($dark-blue, 0) 100%);
-  }
-}
-
-  .cascadia-journey__background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-  }
-
-  .helicopter {
-    position: fixed;
-    top: 25px;
-    right: 15px;
-    z-index: 1200;
-    width: 65px;
+    background: #fff;
+    display: inline-block;
+    float: left;
+    width: auto;
+    margin: 0 0 0 10px;
+    padding: 5px 5px 20px;
+    border-radius: 1px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    box-shadow: 0 3px 6px rgba($dirty-blue, 0.5);
+    position: relative;
+    z-index: 1;
 
     @media #{$medium-up} {
-      top: 65px;
-      right: 65px;
-      width: 150px;
-    }
-  }
-
-  .cascadia-journey__content {
-    position: relative;
-    z-index: 1010;
-
-    .row {
-      margin: 5% 0 10%;
-
-      @media #{$medium-up} {
-        margin: 7% 0 12%;
-      }
-
-      @media #{$large-up} {
-        margin: 10% 0 15%;
-      }
-
-      .row {
-        margin: 0;
-      }
+      margin: 0 0 0 30px;
+      padding: 15px 15px 55px;
     }
 
-    div.wow {
-      margin: 7% 0;
-
-      @media #{$large-up} {
-        margin: 14% 0;
-      }
+    // Scatter the polaroids around
+    &:first-of-type {
+      top: -100px;
+      left: 160px;
+      transform: rotate(1deg);
     }
 
-    // .block-grid--facts {
-    //   margin-left: -16%;
-    // }
-
-    h1 {
-      margin-bottom: 1rem;
-      // color: $light-orange;
-
-      @media #{$medium-up} {
-        margin-bottom: 2rem;
-      }
+    &:nth-of-type(2) {
+      top: -80px;
+      left: 145px;
+      transform: rotate(-2deg);
     }
 
-    h1 + ul {
-      margin-bottom: 3rem;
-    }
+    &:last-of-type {
+      top: -60px;
+      left: 175px;
+      transform: rotate(-1deg);
 
-    // TODO:
-
-    div.icon-grid {
-
-      @media #{$medium-up} {
-        margin-left: -8% !important;
-      }
-    }
-
-    ul {
-      margin-top: 1.5rem;
-
-      li {
-        margin-bottom: 1rem;
-        line-height: 1.2 !important;
-      }
-
-      &.icon-grid {
-
-        li {
-          // padding: 1rem 0;
-          padding: 0 0.5rem;
-          margin: 0;
-          // margin: 0 0.75rem 0 0;
-          // border: 1px solid $light-orange;
-          // border-radius: 2px;
-
-          &:first-of-type {
-            // margin-left: -5%;
-          }
-        }
-
-        // li {
-        //   padding-left: 0;
-        // }
-      }
-
-      object {
-        display: block;
-        margin: 0 auto 0.5rem;
-      }
-    }
-
-    h2,
-    h3,
-    p,
-    li {
-      color: lighten(#8c949e, 22%);
-    }
-
-    // li {
-    //   color: $light-orange;
-    // }
-
-    blockquote {
-      border: none;
-      padding: 0;
-
-      h2 {
-        color: $light-orange;
-        // color: $juicy-orange;
-        line-height: 1.2;
-      }
-
-      cite,
-      p {
-        font-style: normal;
-        font-size: 1rem;
-        color: $grey;
-      }
-
-      a {
-        color: $yellow;
-
-        &:hover {
-          text-decoration: underline;
-        }
+      img {
+        opacity: 0.32;
       }
     }
   }
 
-.cascadia-journey__quake {
-  position: relative;
-  width: 100%;
-  float: left;
-  background: linear-gradient(to bottom, $dark-blue 0%, rgba($dark-blue, 0) 20%);
-}
+  h1 {
 
-  .cascadia-journey__timer {
-
-    // TODO:
-    display: none;
-
-    width: 20rem;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 999;
-    padding: 0.5rem;
-    background: rgba($dark-blue, 0.85);
-    border: 2px solid $juicy-blue;
-    text-align: center;
-  }
-
-
-/* cities svgs and trigger lines */
-.cities, .tsunamis {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  z-index: 999;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-
-  object {
-    width: 100%;
-  }
-}
-
-.cities--vancouver object {
-  top: 28.9vw;
-}
-
-.cities--seattle {
-  top: 128.8vw;
-}
-
-.cities--olympia {
-  top: 193.2vw;
-}
-
-.cities--portland {
-  top: 254.85vw;
-}
-
-.cities--salem {
-  top: 315.25vw;
-}
-
-.cities--eugene {
-  top: 374.3vw;
-}
-
-.cities--grantspass {
-  top: 427.2vw;
-}
-
-.cities--redding {
-  top: 536.2vw;
-}
-
-.cities-trigger, .tsunamis-trigger {
-  border-top: 1px solid #F00;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 1px;
-}
-
-.tsunamis-trigger {
-  border-top: 1px solid #0F0;
-}
-
-.cities-trigger--vancouver {
-  top: 60vw;
-}
-
-.cities-trigger--seattle {
-  top: 139vw;
-}
-
-.cities-trigger--olympia {
-  top: 202vw;
-}
-
-.cities-trigger--portland {
-  top: 291vw;
-}
-
-.cities-trigger--salem {
-  top: 323vw;
-}
-
-.cities-trigger--eugene {
-  top: 381vw;
-}
-
-.cities-trigger--grantspass {
-  top: 435vw;
-}
-
-.cities-trigger--redding {
-  top: 542vw;
-}
-
-/* tsunamis */
-.tsunamis-trigger--wave-1 {
-  top: 270vw;
-}
-
-.tsunamis-trigger--wave-2 {
-  top: 300vw;
-}
-
-.tsunamis-trigger--wave-3 {
-  top: 350vw;
-}
-
-.tsunamis-trigger--wave-4 {
-  top: 410vw;
-}
-
-.tsunamis-trigger--wave-5 {
-  top: 450vw;
-}
-
-.tsunamis-trigger--wave-6 {
-  top: 510vw;
-}
-
-.tsunamis-trigger--wave-7 {
-  top: 540vw;
-}
-
-
-.has-tip {
-  color: $light-orange;
-  font-weight: normal;
-  text-decoration: underline;
-  border: none;
-
-  &:hover {
-    color: $juicy-orange;
-    border: none;
-  }
-}
-
-.alert-box {
-  border: none !important;
-}
-
-.alert-box.warning,
-.alert-box.alert {
-  padding: 1rem 2rem 1.25rem;
-  background: rgba($yellow, 0.05);
-  // border: 1px solid $yellow;
-  border-radius: 5px;
-  line-height: 1.3;
-
-  p {
-    font-size: 2rem;
-    margin: 0;
-    line-height: 1;
-    color: lighten($yellow, 20%);
-
-    small {
-      font-size: 60%;
-      line-height: 1;
+    @media #{$medium-up} {
+      margin-top: 5rem;
     }
   }
-}
-
-.alert-box.alert {
-  background: rgba(red, 0.05);
-  // border: 1px solid red;
-
-  p {
-    color: lighten(red, 35%);
-  }
-}
-
-
-
-.emph {
-  font-family: $header-font;
-  color: $light-orange;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: 115%;
-}
-
-[class*="block-grid-"] > li {
-
-  @media #{$small-only} {
-    float: none;
-  }
-}
-
-[class*="small-block-grid-"] > li {
-
-  @media #{$small-only} {
-    float: left;
-  }
-}
-
-
-.small-icon {
-  width: 65px;
-
-  @media #{$medium-up} {
-    width: 85px;
-  }
-
-  @media #{$large-up} {
-    width: 100px;
-  }
-}
-
-.pie {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  border-radius: 50%;
-  margin: 0 auto 1rem;
-  background: darken($juicy-orange, 15%);
-  background-image: linear-gradient(to right, transparent 50%, darken($juicy-orange, 7%) 0);
-  color: transparent;
-  text-align: center;
-  box-shadow: 0 0 15px 0 rgba($dark-blue, 0.1);
-
-  @media #{$medium-up} {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-  }
-
-  @media #{$medium-up} {
-    width: 140px;
-    height: 140px;
-    line-height: 140px;
-  }
-
-  span {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    font-size: 2rem;
-    font-family: $header-font;
-    color: darken($juicy-orange, 35%);
-    // color: #fff;
-    text-shadow: 1px 1px 1px $juicy-orange;
-
-    @media #{$large-up} {
-      font-size: 3rem;
-    }
-  }
-}
-
-@keyframes spin {
-  to { transform: rotate(.5turn); }
-}
-@keyframes bg {
-  50% { background: darken($juicy-orange, 7%); }
-}
-
-.pie::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 50%;
-  height: 100%;
-  border-radius: 0 100% 100% 0 / 50%;
-  background-color: inherit;
-  transform-origin: left;
-  animation: spin 50s linear infinite,
-             bg 100s step-end infinite;
-  animation-play-state: paused;
-  animation-delay: inherit;
-}
-
-
-
-
-.fact-badge {
-  display: inline-block;
-  margin: 0 auto 1rem;
-  padding: 0.625rem 1rem 0.575rem;
-  border-radius: 5px;
-  font-size: 1.75rem;
-  font-family: $header-font;
-  color: darken($juicy-orange, 35%);
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
-  background: $juicy-orange;
-  box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
 }

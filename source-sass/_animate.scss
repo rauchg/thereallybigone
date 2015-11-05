@@ -1,5 +1,48 @@
 @charset "UTF-8";
 
+.wow {
+  visibility: hidden;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  25% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% { opacity: 1.0; }
+  50% { opacity: 0.0; }
+  100% { opacity: 1.0; }
+}
+
+.blink {
+  animation: blink 2s infinite linear;
+}
+
+@keyframes blinkAlt {
+  0% { opacity: 1.0; }
+  65% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1.05); }
+  65% { transform: scale(0.925); }
+  100% { transform: scale(1); }
+}
+
+
+
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT

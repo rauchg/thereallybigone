@@ -1,0 +1,297 @@
+// .js-animate-risk,
+// .js-animate-earthquakex {
+//   visibility: hidden;
+
+//   &.animated {
+//     visibility: visible;
+//   }
+// }
+
+.cascadia-journey {
+  padding: 0 !important;
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+
+  // TODO: overflow not working
+
+  &:after {
+    z-index: 1005;
+    background: linear-gradient(to right, $dark-blue 0, rgba($dark-blue, 0.88) 30%, rgba($dark-blue, 0.5) 65%, rgba($dark-blue, 0) 100%);
+  }
+}
+
+  .cascadia-journey__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .helicopter {
+    position: fixed;
+    top: 25px;
+    right: 15px;
+    z-index: 1200;
+    width: 65px;
+
+    @media #{$medium-up} {
+      top: 65px;
+      right: 65px;
+      width: 150px;
+    }
+  }
+
+  .cascadia-journey__timer {
+
+    // TODO:
+    display: none;
+
+    width: 20rem;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 999;
+    padding: 0.5rem;
+    background: rgba($dark-blue, 0.85);
+    border: 2px solid $juicy-blue;
+    text-align: center;
+  }
+
+
+  .cascadia-journey__content {
+    position: relative;
+    z-index: 1010;
+
+    .row {
+      margin: 5% 0 10%;
+
+      @media #{$medium-up} {
+        margin: 7% 0 12%;
+      }
+
+      @media #{$large-up} {
+        margin: 10% 0 15%;
+      }
+
+      .row {
+        margin: 0;
+      }
+    }
+
+    div.wow {
+      margin: 7% 0;
+
+      @media #{$large-up} {
+        margin: 14% 0;
+      }
+    }
+
+    h1 {
+      margin-bottom: 1rem;
+
+      @media #{$medium-up} {
+        margin-bottom: 2rem;
+      }
+    }
+
+    h1 + ul {
+      margin-bottom: 3rem;
+    }
+
+    // TODO:
+
+    div.icon-grid {
+
+      @media #{$medium-up} {
+        margin-left: -8% !important;
+      }
+    }
+
+    ul {
+      margin-top: 1.5rem;
+
+      li {
+        margin-bottom: 1rem;
+        line-height: 1.2 !important;
+      }
+
+      &.icon-grid {
+
+        li {
+          padding: 0 0.5rem;
+          margin: 0;
+        }
+      }
+
+      object {
+        display: block;
+        margin: 0 auto 0.5rem;
+      }
+    }
+
+    h2,
+    h3,
+    p,
+    li {
+      color: lighten(#8c949e, 22%);
+    }
+
+    blockquote {
+      border: none;
+      padding: 0;
+
+      h2 {
+        color: $light-orange;
+        line-height: 1.2;
+      }
+
+      cite,
+      p {
+        font-style: normal;
+        font-size: 1rem;
+        color: $grey;
+      }
+
+      a {
+        color: $yellow;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+.cascadia-journey__quake {
+  position: relative;
+  width: 100%;
+  float: left;
+  background: linear-gradient(to bottom, $dark-blue 0%, rgba($dark-blue, 0) 20%);
+}
+
+
+/* cities svgs and trigger lines */
+.cities, .tsunamis {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+
+  object {
+    width: 100%;
+  }
+}
+
+.cities--vancouver object {
+  top: 28.9vw;
+}
+
+.cities--seattle {
+  top: 128.8vw;
+}
+
+.cities--olympia {
+  top: 193.2vw;
+}
+
+.cities--portland {
+  top: 254.85vw;
+}
+
+.cities--salem {
+  top: 315.25vw;
+}
+
+.cities--eugene {
+  top: 374.3vw;
+}
+
+.cities--grantspass {
+  top: 427.2vw;
+}
+
+.cities--redding {
+  top: 536.2vw;
+}
+
+.cities-trigger, .tsunamis-trigger {
+  border-top: 1px solid #F00;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+
+.tsunamis-trigger {
+  border-top: 1px solid #0F0;
+}
+
+.cities-trigger--vancouver {
+  top: 60vw;
+}
+
+.cities-trigger--seattle {
+  top: 139vw;
+}
+
+.cities-trigger--olympia {
+  top: 202vw;
+}
+
+.cities-trigger--portland {
+  top: 291vw;
+}
+
+.cities-trigger--salem {
+  top: 323vw;
+}
+
+.cities-trigger--eugene {
+  top: 381vw;
+}
+
+.cities-trigger--grantspass {
+  top: 435vw;
+}
+
+.cities-trigger--redding {
+  top: 542vw;
+}
+
+/* tsunamis */
+.tsunamis-trigger--wave-1 {
+  top: 270vw;
+}
+
+.tsunamis-trigger--wave-2 {
+  top: 300vw;
+}
+
+.tsunamis-trigger--wave-3 {
+  top: 350vw;
+}
+
+.tsunamis-trigger--wave-4 {
+  top: 410vw;
+}
+
+.tsunamis-trigger--wave-5 {
+  top: 450vw;
+}
+
+.tsunamis-trigger--wave-6 {
+  top: 510vw;
+}
+
+.tsunamis-trigger--wave-7 {
+  top: 540vw;
+}
