@@ -77,6 +77,23 @@
 }
 
 
+.alert-box--safe {
+  background: rgba(lightgreen, 0.05);
+
+  h2 {
+    color: lightgreen;
+  }
+}
+
+.alert-box--danger {
+  background: rgba($light-orange, 0.05);
+
+  h2 {
+    color: $juicy-orange;
+  }
+}
+
+
 .has-tip {
   color: $light-orange;
   font-weight: normal;
