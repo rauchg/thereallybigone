@@ -10,7 +10,7 @@ function pad(n, width, z) {
 }
 
 function numberWithPoints(x) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 /* ---------- vars ---------- */
@@ -451,8 +451,6 @@ $(document).ready(function() {
   // go through tsunamis to trigger animations
   tsunamis.forEach(function(tsunami, index) {
 
-    return;
-
     var $tsunami = $('.js-tsunamis-' + tsunami.name + ' object');
     var $trigger = $('.js-tsunamis-trigger-' + tsunami.name);
     var hasTriggered = false;
@@ -554,7 +552,7 @@ $(document).ready(function() {
       seconds++;
       ticks++;
 
-    }, 25);
+    }, 10);
   };
 
   /* ---------- RISK BUTTON ---------- */
