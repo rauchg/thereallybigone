@@ -221,11 +221,13 @@ bold {
   // color: darken($juicy-orange, 35%);
   // text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
   border: 2px solid $juicy-orange;
+  border-radius: 5px;
   outline: 0;
   // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
   animation: blink 2s infinte ease-out;
   font-family: $header-font;
   text-transform: uppercase;
+  letter-spacing: 1.5px;
 
   &:hover {
     color: #fff;
@@ -646,12 +648,19 @@ bold {
 }
 
 .at-risk {
-  padding: 20vh 0;
+  padding: 10vh 0 5vh;
+}
 
-  // Arnas TOOD:
+.at-risk__CTA {
+  padding: 8rem 0;
+  background-image: url(/media/trbo-CTA-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 95%;
+  background-position: center center;
 }
 
 .button--risk {
   margin-top: 1.5rem;
-  // Arnas TOOD:
+  background: $dark-blue;
+  box-shadow: 0 0 26px 5px $dark-blue;
 }
