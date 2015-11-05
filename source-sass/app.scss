@@ -645,3 +645,54 @@ bold {
   background: $dark-blue;
   box-shadow: 0 0 26px 5px $dark-blue;
 }
+
+.button--twitter,
+.button--facebook,
+.button--email {
+  font-size: 1.8rem;
+  width: 100%;
+  transition: all 0.2s ease-in;
+
+  img {
+    width: 40px;
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    box-shadow: inset 0 0 7px 4px rgba(255, 255, 255, 0.1);
+  }
+}
+
+.button--twitter {
+  border-color: #55acee;
+  color: #fff;
+  background-color: #55acee;
+  box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
+
+  &:hover {
+    background-color: #55acee;
+    color: #fff;
+  }
+}
+
+.button--facebook {
+  border-color: #3b5998;
+  color: #fff;
+  background-color: #3b5998;
+  box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
+
+    &:hover {
+      background-color: #3b5998;
+      color: #fff;
+    }
+}
+
+.button--email {
+  color: #621800;
+  background-color: $primary-color;
+  box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
+
+      &:hover {
+      color: #621800;
+    }
+}
