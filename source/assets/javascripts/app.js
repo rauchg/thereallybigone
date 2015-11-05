@@ -588,12 +588,12 @@ $(document).ready(function() {
       // if geolocation is within bounds, show warning
       if (nwBoundLat > lat > seBoundLat &&
           nwBoundLng < lng < seBoundLng) {
-        $('.js-alert-box-danger').show();
+        $('.js-alert-box-danger').show().css('display', 'inline-block');
       }
 
       // show information when user is not in area
       else {
-        $('.js-alert-box-safe').show();
+        $('.js-alert-box-safe').show().css('display', 'inline-block');
       }
 
     });

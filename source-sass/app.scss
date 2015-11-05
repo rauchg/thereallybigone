@@ -617,6 +617,19 @@ bold {
 
 .at-risk {
   padding: 10vh 0 5vh;
+
+  .area-safe,
+  .area-affected {
+    width: 110px;
+    margin-top: 1rem;
+  }
+}
+
+.alert-box--safe,
+.alert-box--danger {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  margin-top: 5rem;
 }
 
 .at-risk__CTA {
