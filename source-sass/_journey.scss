@@ -198,6 +198,21 @@
 .cities--grantspass { top: 427.2vw; }
 .cities--redding    { top: 536.2vw; }
 
+// TODO: hide (remove colours) before ship
+.cities-trigger,
+.tsunamis-trigger {
+  border-top: 1px solid #f00;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+}
+
+// TODO: hide (remove colours) before ship
+.tsunamis-trigger {
+  border-top: 1px solid #0f0;
+}
+
 // Trigger city animations (distance from the top of the screen)
 .cities-trigger--vancouver  { top: 80vw; }
 .cities-trigger--seattle    { top: 170vw; }
@@ -216,19 +231,3 @@
 .tsunamis-trigger--wave-5 { top: 450vw; }
 .tsunamis-trigger--wave-6 { top: 510vw; }
 .tsunamis-trigger--wave-7 { top: 540vw; }
-
-
-// TODO: remove before ship
-.cities-trigger,
-.tsunamis-trigger {
-  border-top: 1px solid #f00;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 1px;
-}
-
-// TODO: remove before ship
-.tsunamis-trigger {
-  border-top: 1px solid #0f0;
-}
