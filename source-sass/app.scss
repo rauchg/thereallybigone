@@ -259,7 +259,8 @@ bold {
 
 .title-logo,
 .credit-logo {
-  z-index: 1503;
+  position: relative;
+  z-index: 1510;
 }
 
 .title-logo {
@@ -501,7 +502,6 @@ bold {
 
 .japan {
   position: relative;
-  overflow: hidden;
   padding-bottom: 0;
 
   h1 {
@@ -624,10 +624,6 @@ bold {
       top: -60px;
       left: 175px;
       transform: rotate(-1deg);
-
-      img {
-        opacity: 0.32;
-      }
     }
   }
 
