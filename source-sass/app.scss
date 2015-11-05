@@ -187,17 +187,16 @@ li {
   line-height: 1.3;
   color: #8c949e;
 
+
   @media #{$medium-up} {
     font-size: 1.275rem;
+    margin-bottom: 1rem;
+
   }
 
   @media #{$large-up} {
+    margin-bottom: 1.25rem;
     font-size: 1.375rem;
-  }
-
-  strong {
-    font-weight: normal;
-    color: #fff;
   }
 }
 
@@ -205,8 +204,10 @@ h4 {
   color: #8c949e;
 }
 
+strong,
 bold {
   font-weight: normal;
+  color: #fff;
 }
 
 
@@ -250,17 +251,20 @@ bold {
 .js #preloader {
   position: fixed;
   left: 0;
+  right: 0;
   top: 0;
+  bottom: 0;
   z-index: 9999;
   width: 100%;
   height: 100%;
-  overflow: visible;
-  text-align: center;
-  vertical-align: middle;
   background: $dark-blue;
-  // TODO: Use the huge FB OG image Arnas made as the preloader
-  // background: url(/media/destruction-5.jpg) center center no-repeat, $dark-blue !important;
-  // background-size: cover !important;
+  // overflow: visible;
+  text-align: center;
+
+  @media #{$medium-up} {
+    background: url(/media/banners/trbo-banner-low.jpg) center center no-repeat;
+    background-size: cover;
+  }
 }
 
 
@@ -317,8 +321,8 @@ bold {
 
 .hero {
   z-index: 1501;
-  // min-height: 100%;
-  // height: 100%;
+  min-height: 100%;
+  height: 100%;
   background: $dark-blue;
   text-align: center;
 
@@ -342,23 +346,19 @@ bold {
   }
 
   h1 {
-    margin-top: 10vh;
+    margin-top: 35%;
     margin-bottom: 5vh;
     line-height: 1;
     color: #fff;
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
     @media #{$medium-up} {
-      margin-top: 17vh;
+      margin-top: 20vh;
       margin-bottom: 3vh;
     }
 
     @media #{$large-up} {
-      margin-top: 24vh;
-    }
-
-    strong {
-      font-weight: 400;
+      margin-top: 25vh;
     }
   }
 
@@ -429,7 +429,6 @@ bold {
 }
 
 
-
 // =======================================
 // Prediction
 // =======================================
@@ -438,44 +437,17 @@ bold {
 
   h1 {
     overflow: hidden;
-
-    @media #{$medium-up} {
-      margin-top: 3rem;
-    }
   }
 
   .circle-container {
-    margin-bottom: 1rem;
-
-    &:last-of-type {
-      margin-top: 3rem;
-    }
+    margin: 1.25rem auto 0.6125rem;
   }
 
-  h4,
-  ul .emph {
-    margin-top: 0.75rem;
-    margin-bottom: 0.5rem;
-    color: $light-orange;
-    font-size: 1.125rem;
-    font-family: $header-font;
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  object {
+    margin-bottom: 0.6125rem;
 
-    strong {
-      display: block;
-    }
-  }
-
-  .emph {
-    display: block;
-  }
-
-  ul object {
-
-    @media #{$small-only} {
-      width: 100px;
+    @media #{$medium-up} {
+      margin-bottom: 1.25rem;
     }
   }
 }
@@ -515,9 +487,10 @@ bold {
 
   h1 {
     position: relative;
-    margin: 0 auto 2.5vh;
+    margin: 0 auto 1.5rem;
 
     @media #{$medium-up} {
+      margin: 2rem auto;
 
       // Blinking red halo
       &:before {
@@ -531,7 +504,7 @@ bold {
         box-shadow: 0 0 0 20px rgba(red, 0.25);
         animation: blinkAlt 1.5s infinite ease-out;
         position: absolute;
-        top: -150px;
+        top: -175px;
         left: 0;
         right: 0;
       }
@@ -547,19 +520,14 @@ bold {
         background: red;
         animation: heartbeat 1.5s infinite ease-out;
         position: absolute;
-        top: -150px;
+        top: -175px;
         left: 0;
         right: 0;
       }
     }
 
-    @media #{$medium-up} {
-      margin: 10vh auto 5vh;
-
-      &:before,
-      &:after {
-        top: -175px;
-      }
+    @media #{$large-up} {
+      margin: 3rem auto;
     }
   }
 

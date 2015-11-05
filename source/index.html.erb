@@ -3,10 +3,12 @@ title: The Really Big One
 ---
 
 <!-- TODO: -->
-<!-- <div id="preloader">
-  <h1 class="blink">The Really Big One Is Coming &hellip;</h1>
-  <a href="http://github.hubspot.com/pace/docs/welcome/">I'd like to implement an idicator like the tiny red loading bar at the top on YouTube. This should be quick and easy: http://github.hubspot.com/pace/docs/welcome/</a>
-</div> -->
+<div id="preloader">
+  <div class="show-for-small-only">
+    <h1 class="blink">The Really Big One Is Coming &hellip;</h1>
+    <a href="http://github.hubspot.com/pace/docs/welcome/">I'd like to implement an idicator like the tiny red loading bar at the top on YouTube. This should be quick and easy: http://github.hubspot.com/pace/docs/welcome/</a>
+  </div>
+</div>
 
 <!-- Landing / Hero -->
 <section class="hero">
@@ -45,7 +47,7 @@ title: The Really Big One
 
       <h1 class="wow fadeInUp"><small class="subtitle">Meet The</small>Cascadia <small class="subtitle subtitle--bottom">Subduction Zone</small></h1>
 
-      <img class="hide-for-large-up wow fadeIn" data-wow-delay="0.15s" src="/media/subduction-zone.svg" width="360">
+      <object class="hide-for-large-up wow fadeIn" data-wow-delay="0.15s" data="/media/subduction-zone.svg" type="image/svg+xml" width="360"></object>
 
       <div class="wow fadeIn" data-wow-delay="0.3s">
         <p>You might think that San Andreas is the only thing we have to worry about. You’d be wrong: There’s a 700 mile fault line stretching from Vancouver to Northern California off the Pacific coast.</p>
@@ -59,7 +61,7 @@ title: The Really Big One
     </div>
     <div class="large-7 columns show-for-large-up text-right">
 
-      <img class="wow fadeIn" data-wow-delay="0.25s" src="/media/subduction-zone.svg" width="780">
+      <object class="wow fadeIn" data-wow-delay="0.25s" data="/media/subduction-zone.svg" type="image/svg+xml" width="780"></object>
 
     </div>
   </div>
@@ -82,20 +84,20 @@ title: The Really Big One
   <div class="row text-center">
     <div class="medium-8 medium-centered large-6 columns">
 
-      <ul class="block-grid medium-block-grid-2">
+      <ul class="block-grid small-block-grid-2">
         <li>
-          <span class="circle-container circle-container--large wow bounceIn orange" data-wow-delay="0.25s">
+          <span class="circle-container wow bounceIn" data-wow-delay="0.25s">
             <span class="content wow fadeIn" data-wow-delay="0.35s">30%</span>
             <div class="dot"></div>
           </span>
-          <p class="wow fadeInUp" data-wow-delay="0.45s">Chance of a <span class="emph">magnitude 8.5+</span> earthquake</p>
+          <p class="wow fadeInUp" data-wow-delay="0.45s">Chance of a <span class="emph emph--block">magnitude 8.5+</span> earthquake</p>
         </li>
         <li>
-          <span class="circle-container circle-container--large wow bounceIn orange" data-wow-delay="0.35s">
+          <span class="circle-container wow bounceIn" data-wow-delay="0.35s">
             <span class="content wow fadeIn" data-wow-delay="0.45s">10%</span>
             <div class="dot"></div>
           </span>
-          <p class="wow fadeInUp" data-wow-delay="0.45s">Chance of a <span class="emph">magnitude 9+</span> earthquake</p>
+          <p class="wow fadeInUp" data-wow-delay="0.45s">Chance of a <span class="emph emph--block">magnitude 9+</span> earthquake</p>
         </li>
       </ul>
 
@@ -131,13 +133,13 @@ title: The Really Big One
       </div>
 
       <!-- TODO: -->
-      <br/><br/>
+      <!-- <br/><br/> -->
 
       <div class="row">
         <div class="medium-11 medium-centered columns">
 
-          <p class="wow fadeIn" data-wow-delay="0.1s">That quake was of magnitude <span class="emph">9.0</span> and unleashed a devastating tsunami.</p>
-          <p class="wow fadeIn" data-wow-delay="0.2s">We're at real risk of an even more powerful quake from Cascadia.</p>
+          <p class="wow fadeInUp" data-wow-delay="0.1s">That quake was of magnitude <span class="emph">9.0</span> and unleashed a devastating tsunami.</p>
+          <p class="wow fadeInUp" data-wow-delay="0.2s">We're at real risk of an even more powerful quake from Cascadia.</p>
 
         </div>
       </div>
@@ -164,7 +166,7 @@ title: The Really Big One
       <ul class="block-grid medium-block-grid-3">
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/scenario-eq.svg" type="image/svg+xml" width="165"></object>
+          <object class="large-icon wow bounceIn" data-wow-delay="0.25s" data="/media/icons/scenario-eq.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.25s">
             <span class="emph">A huge earthquake</span>
@@ -173,7 +175,7 @@ title: The Really Big One
         </li>
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.4s" data="/media/icons/scenario-tsunami.svg" type="image/svg+xml" width="165"></object>
+          <object class="large-icon wow bounceIn" data-wow-delay="0.4s" data="/media/icons/scenario-tsunami.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.4s">
             <span class="emph">A devastating tsunami</span>
@@ -182,7 +184,7 @@ title: The Really Big One
         </li>
 
         <li>
-          <object class="wow bounceIn" data-wow-delay="0.6s" data="/media/icons/scenario-aftershock.svg" type="image/svg+xml" width="165"></object>
+          <object class="large-icon wow bounceIn" data-wow-delay="0.6s" data="/media/icons/scenario-aftershock.svg" type="image/svg+xml" width="165"></object>
 
           <div class="wow fadeInUp" data-wow-delay="0.6s">
             <span class="emph">Aftershocks</span>
@@ -317,7 +319,7 @@ title: The Really Big One
 
           <div class="row">
             <div class="medium-3 large-2 columns">
-              <object class="wow bounceIn small-icon" data-wow-delay="0.2s" data="/media/icons/quake-dogs.svg" type="image/svg+xml" width="100"></object>
+              <object class="small-icon wow bounceIn" data-wow-delay="0.2s" data="/media/icons/quake-dogs.svg" type="image/svg+xml" width="100"></object>
             </div>
             <div class="medium-9 large-10 columns">
               <p>Animals are able to sense the seismic waves before humans do. If you hear dogs starting to bark unusually loudly and intensely, <strong>take immediate action</strong>...</p>
@@ -328,25 +330,26 @@ title: The Really Big One
 
         <div class="wow fadeIn" data-wow-delay="0.5s">
 
-          <h1><img class="text-left" src="/media/icons/location-indoors.svg" width="140"/><br/> Indoors</h1>
+          <!-- TODO: turn into <object> -->
+          <h1><img class="large-icon" src="/media/icons/location-indoors.svg"/><br/> Indoors</h1>
 
           <!-- <h3>&ldquo; Earthquakes don’t kill people, buildings (and their contents) do.</h3> -->
 
           <div class="row icon-grid text-center">
-            <div class="columns medium-4 large-3 wow rollInx bounceIn" data-wow-delay="0.1s">
-              <object data="/media/icons/quake-drop.svg" type="image/svg+xml" width="90"></object>
+            <div class="columns small-4 large-3">
+              <object class="small-icon wow bounceIn" data-wow-delay="0.1s" data="/media/icons/quake-drop.svg" type="image/svg+xml"></object>
               <br/>
               <span class="emph wow">Drop</span>
               <br/>
             </div>
-            <div class="columns medium-4 large-3 wow rollInx bounceIn" data-wow-delay="0.2s">
-              <object data="/media/icons/quake-cover.svg" type="image/svg+xml" width="90"></object>
+            <div class="columns small-4 large-3">
+              <object class="small-icon wow bounceIn" data-wow-delay="0.1s" data="/media/icons/quake-cover.svg" type="image/svg+xml"></object>
               <br/>
               <span class="emph wow">Cover</span>
               <br/>
             </div>
-            <div class="columns medium-4 large-3 end wow rollInx bounceIn" data-wow-delay="0.3s">
-              <object data="/media/icons/quake-hold.svg" type="image/svg+xml" width="90"></object>
+            <div class="columns small-4 large-3 end">
+              <object class="small-icon wow bounceIn" data-wow-delay="0.1s" data="/media/icons/quake-hold.svg" type="image/svg+xml"></object>
               <br/>
               <span class="emph wow">Hold On</span>
               <br/>
@@ -365,9 +368,8 @@ title: The Really Big One
 
         <div class="wow fadeIn" data-wow-delay="0.5s">
 
-          <h1><img class="text-left" src="/media/icons/location-city.svg" width="140"/><br/> In the city</h1>
-
-          <br/>
+          <!-- TODO: turn into <object> -->
+          <h1><img class="large-icon" src="/media/icons/location-city.svg"/><br/> In the city</h1>
 
           <ul class="block-grid medium-block-grid-2">
             <li>Move to an open area, well away from buildings, streetlights and utility wires.</li>
@@ -380,9 +382,8 @@ title: The Really Big One
 
         <div class="wow fadeIn" data-wow-delay="0.5s">
 
-          <h1><img class="text-left" src="/media/icons/location-outdoors.svg" width="140"/><br/> Outdoors</h1>
-
-          <br/>
+          <!-- TODO: turn into <object> -->
+          <h1><img class="large-icon" src="/media/icons/location-outdoors.svg"/><br/> Outdoors</h1>
 
           <ul class="block-grid medium-block-grid-2">
             <li>Stay away from riverbeds: they carry a lot of debris and you'll be vulnerable to surges of water and mud.</li>
@@ -401,13 +402,10 @@ title: The Really Big One
 
         <div class="wow fadeIn" data-wow-delay="0.5s">
 
-          <h1><img class="text-left" src="/media/icons/location-coast.svg" width="140"/><br/> At the coast</h1>
-
-          <br/>
+          <!-- TODO: turn into <object> -->
+          <h1><img class="large-icon" src="/media/icons/location-coast.svg"/><br/> At the coast</h1>
 
           <p><span class="emph">Flee to high ground as quickly as possible</span></p>
-
-          <br/>
 
           <p>Once the shaking stops, you'll have only <span class="emph">15 minutes</span> before the tsunami hits the shore. Move fast!</p>
         </div>
@@ -434,10 +432,10 @@ title: The Really Big One
 
           <p style="opacity: 0.4;">TODO: Reduce animation duration by a lot, and remove the period separators in the numbers, replacing them with commas.</p>
 
-          <ul class="block-grid medium-block-grid-2 block-grid--facts">
+          <ul class="block-grid small-block-grid-2 block-grid--facts">
 
             <li class="text-center">
-              <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-rip.svg" type="image/svg+xml" width="100"></object>
+              <object class="large-icon wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-rip.svg" type="image/svg+xml"></object>
               <h3 class="fact fact--large">
                 <span class="js-quake-dead">0</span>
               </h3>
@@ -447,7 +445,7 @@ title: The Really Big One
             </li>
 
             <li class="text-center">
-              <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-injuries.svg" type="image/svg+xml" width="100"></object>
+              <object class="large-icon wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-injuries.svg" type="image/svg+xml"></object>
               <h3 class="fact fact--large">
                 <span class="js-quake-injured">0</span>
               </h3>
@@ -456,8 +454,8 @@ title: The Really Big One
 
             <li class="text-center">
               <br/>
-              <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-homes.svg" type="image/svg+xml" width="80"></object>
-              <h3 class="fact fact--largex fact--small">
+              <object class="small-icon wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-homes.svg" type="image/svg+xml"></object>
+              <h3 class="fact fact--small">
                 <span class="js-quake-misplaced">0</span>
               </h3>
               <span class="emph">misplaced</span>
@@ -465,8 +463,8 @@ title: The Really Big One
 
             <li class="text-center">
               <br/>
-              <object class="wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-supplies.svg" type="image/svg+xml" width="80"></object>
-              <h3 class="fact fact--largex fact--small">
+              <object class="small-icon wow bounceIn" data-wow-delay="0.25s" data="/media/icons/stats-supplies.svg" type="image/svg+xml"></object>
+              <h3 class="fact fact--small">
                 <span class="js-quake-nowater">0</span>
               </h3>
               <span class="emph">with no access<br/> to food or water</span>
