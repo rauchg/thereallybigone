@@ -155,10 +155,10 @@
     border-radius: 0 100% 100% 0 / 50%;
     background-color: inherit;
     transform-origin: left;
-    // animation: spin 50s linear infinite,
-    //            bg 100s step-end infinite;
-    // animation-play-state: paused;
-    // animation-delay: inherit;
+    animation: spin 50s linear infinite,
+               bg 100s step-end infinite;
+    animation-play-state: paused;
+    animation-delay: inherit;
   }
 
   @media #{$medium-up} {
@@ -191,12 +191,12 @@
   }
 }
 
-// @keyframes spin {
-//   to { transform: rotate(.5turn); }
-// }
-// @keyframes bg {
-//   50% { background: darken($juicy-orange, 7%); }
-// }
+@keyframes spin {
+  to { transform: rotate(.5turn); }
+}
+@keyframes bg {
+  50% { background: darken($juicy-orange, 7%); }
+}
 
 
 // Fact badges
