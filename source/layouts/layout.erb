@@ -51,20 +51,60 @@
     <meta name="msapplication-TileImage" content="/assets/images/favicon/trbo-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- inlining the pace styles, so they load really fast -->
+    <style>
 
-    <link href='https://fonts.googleapis.com/css?family=Anton|Rubik:400,700,500|Halant:400,500,600' rel='stylesheet' type='text/css'>
+      .js section, .js footer {
+        visibility: hidden; }
+
+      .js .pace-done section, .js .pace-done footer {
+        visibility: visible; }
+
+      .pace-inactive {
+        display: none; }
+
+      .pace {
+        pointer-events: none;
+        user-select: none;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 9999;
+        width: 100%;
+        height: 100%;
+        background: #161f29; }
+        @media only screen and (min-width: 64.0625em) {
+          .pace {
+            background: url(/media/banners/trbo-banner-low.jpg) center center no-repeat;
+            background-size: cover; } }
+        .pace .pace-progress {
+          background: #ffbf42;
+          background-image: linear-gradient(to right, #ff4e15 0%, #ff9b58 50%, #ffbf42 100%);
+          position: fixed;
+          z-index: 3000;
+          top: 0;
+          right: 100%;
+          width: 100%;
+          height: 8px; }
+
+    </style>
+
+    <!-- modernizr includes pace.js to show splash screen and pace's loading indicator asap -->
+    <%= javascript_include_tag "vendor/modernizr" %>
 
     <!-- TODO: cachebust -->
     <%= stylesheet_link_tag "app" %>
+    <link href='https://fonts.googleapis.com/css?family=Anton|Rubik:400,700,500|Halant:400,500,600' rel='stylesheet' type='text/css'>
 
-    <%= javascript_include_tag "vendor/modernizr" %>
   </head>
 
   <body class="<%= page_classes %>">
 
     <%= yield %>
 
-    <%= javascript_include_tag  "all" %>
+    <%= javascript_include_tag "all" %>
 
     <!-- Old JS Preloader
     <script type="text/javascript">
@@ -74,21 +114,6 @@
       // });
     </script>
     -->
-
-    <!-- Triggering animations with scrolling -->
-    <script src="/assets/javascripts/wow.min.js"></script>
-    <script>
-      wow = new WOW(
-        {
-          boxClass:     'wow',      // default
-          animateClass: 'animated', // default
-          offset:       0,          // default
-          mobile:       true,       // default
-          live:         true        // default
-        }
-      );
-      wow.init();
-    </script>
 
   </body>
 

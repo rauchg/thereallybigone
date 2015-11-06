@@ -26,7 +26,7 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // =======================================
 // Import stylesheets
 // =======================================
-@import "pace";
+// @import "pace"; //  inlining this
 @import "animate";
 @import "journey";
 @import "elements";
