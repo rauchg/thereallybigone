@@ -472,7 +472,7 @@ bold {
     margin: 0 auto 1.5rem;
 
     @media #{$medium-up} {
-      margin: 2rem auto;
+      margin: 3.5rem auto 2rem;
 
       // Blinking red halo
       &:before {
@@ -509,7 +509,7 @@ bold {
     }
 
     @media #{$large-up} {
-      margin: 3rem auto;
+      margin: 8rem auto 4rem;
     }
   }
 
@@ -575,13 +575,6 @@ bold {
       top: -60px;
       left: 175px;
       transform: rotate(-1deg);
-    }
-  }
-
-  h1 {
-
-    @media #{$medium-up} {
-      margin-top: 5rem;
     }
   }
 }
