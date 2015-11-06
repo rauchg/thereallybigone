@@ -79,7 +79,8 @@ section {
   }
 }
 
-section:not(.cascadia-journey) {
+section:not(.cascadia-journey),
+footer {
   background: $dark-blue;
   position: relative;
   z-index: 1501;
@@ -220,23 +221,17 @@ bold {
 .button {
   background: none;
   color: $juicy-orange;
-  // color: darken($juicy-orange, 35%);
-  // text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
   border: 2px solid $juicy-orange;
   border-radius: 5px;
   outline: 0;
-  // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.2), 0 0 4px 2px $juicy-blue;
   animation: blink 2s infinte ease-out;
   font-family: $header-font;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
 
   &:hover {
     color: #fff;
     background: $juicy-orange;
-    text-shadow: none;
-    // background: darken($juicy-blue, 10%);
-    // box-shadow: 0 0 20px 10px rgba($juicy-blue, 0.1), 0 0 4px 2px rgba($juicy-blue, 0.4);
   }
 
   &:focus,
@@ -335,12 +330,12 @@ bold {
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
     @media #{$medium-up} {
-      margin-top: 20vh;
+      margin-top: 18%;
       margin-bottom: 3vh;
     }
 
     @media #{$large-up} {
-      margin-top: 25vh;
+      margin-top: 24vh;
     }
   }
 
@@ -442,7 +437,11 @@ bold {
   padding-top: 0;
 
   ul {
-    margin-bottom: 10vw;
+    margin-bottom: 5vw;
+
+    @media #{$medium-up} {
+      margin-bottom: 10vw;
+    }
   }
 }
 
@@ -580,22 +579,29 @@ bold {
 }
 
 
+// TODO: Refactor
+
 .preparedness {
+  text-align: center;
 
   .row {
     position: relative;
     z-index: 1505;
   }
+
+  h1 {
+    margin-bottom: 1.25rem;
+  }
 }
 
 .at-risk {
   padding: 10vh 0 5vh;
+}
 
-  .area-safe,
-  .area-affected {
-    width: 110px;
-    margin-top: 1rem;
-  }
+.area-safe,
+.area-affected {
+  width: 110px;
+  margin-top: 1rem;
 }
 
 .alert-box--safe,
@@ -609,7 +615,7 @@ bold {
   }
 }
 
-.at-risk__CTA {
+.at-risk__cta {
   padding: 8rem 0;
   background-image: url(/media/trbo-CTA-bg.svg);
   background-repeat: no-repeat;
@@ -626,17 +632,41 @@ bold {
 .button--twitter,
 .button--facebook,
 .button--email {
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   width: 100%;
   transition: all 0.2s ease-in;
 
-  img {
-    width: 40px;
-    margin-right: 1rem;
+  @media #{$medium-only} {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  @media #{$large-up} {
+    font-size: 1.8rem;
+  }
+
+  object {
+    width: 25px;
+    height: 25px;
+    margin-bottom: -0.25rem;
+    margin-right: 0.5rem;
+
+    @media #{$medium-only} {
+      width: 18px;
+      height: 18px;
+      margin-bottom: -0.125rem;
+      margin-right: 0.125rem;
+    }
+
+    @media #{$large-up} {
+      width: 40px;
+      height: 40px;
+      margin-bottom: -0.5rem;
+    }
   }
 
   &:hover {
-    box-shadow: inset 0 0 7px 4px rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 7px 4px rgba(255, 255, 255, 0.05);
   }
 }
 
@@ -669,7 +699,7 @@ bold {
   background-color: $primary-color;
   box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
 
-      &:hover {
-      color: #621800;
-    }
+  &:hover {
+    color: #621800;
+  }
 }

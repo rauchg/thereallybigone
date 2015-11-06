@@ -113,8 +113,11 @@
   color: $light-orange;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 115%;
   letter-spacing: 1px;
+
+  @media #{$medium-up} {
+    font-size: 115%;
+  }
 }
 
 .emph--block {
@@ -125,25 +128,31 @@
 // Icons
 .small-icon {
   width: 65px;
+  height: 65px;
 
   @media #{$medium-up} {
     width: 85px;
+    height: 85px;
   }
 
   @media #{$large-up} {
     width: 100px;
+    height: 100px;
   }
 }
 
 .large-icon {
   width: 65px;
+  height: 65px;
 
   @media #{$medium-up} {
     width: 100px;
+    height: 100px;
   }
 
   @media #{$large-up} {
     width: 135px;
+    height: 135px;
   }
 }
 
@@ -151,9 +160,9 @@
 // Pie charts
 .pie {
   position: relative;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
   border-radius: 50%;
   margin: 0 auto 1rem;
   background: darken($juicy-orange, 15%);
@@ -179,9 +188,9 @@
   }
 
   @media #{$medium-up} {
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
   }
 
   @media #{$medium-up} {
@@ -197,7 +206,7 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: $header-font;
     color: darken($juicy-orange, 35%);
     text-shadow: 1px 1px 1px $juicy-orange;
@@ -219,9 +228,9 @@
 // Fact badges
 .fact-badge {
   display: inline-block;
-  margin: 0 auto 1rem;
-  padding: 0.625rem 1rem 0.575rem;
-  font-size: 1.75rem;
+  margin: 0 auto 0.5rem;
+  padding: 0.5rem 0.6125em 0.45rem;
+  font-size: 1.125rem;
   font-family: $header-font;
   color: darken($juicy-orange, 35%);
   text-transform: uppercase;
@@ -229,6 +238,12 @@
   background: $juicy-orange;
   box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
   border-radius: 5px;
+
+  @media #{$medium-up} {
+    margin-bottom: 1rem;
+    padding: 0.625rem 1rem 0.575rem;
+    font-size: 1.75rem;
+  }
 }
 
 
@@ -264,7 +279,7 @@
 
   .fact + .emph {
     display: block;
-    margin-top: -0.5rem;
+    margin-top: -1rem;
     color: #fff;
   }
 
@@ -276,16 +291,24 @@
   .fact--small {
 
     span {
-      font-size: 2.2125rem;
+      font-size: 1.6125rem;
+
+      @media #{$medium-up} {
+        font-size: 2.2125rem;
+      }
     }
 
     + .emph {
-      font-size: 70%;
+      font-size: 75%;
     }
   }
 
   .fact--large span {
-    font-size: 4.6125rem;
+    font-size: 2.875rem;
+
+    @media #{$medium-up} {
+      font-size: 4.6125rem;
+    }
   }
 
 
@@ -323,19 +346,23 @@
 
   .content {
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 50%;
     z-index: 10;
     -ms-transform: translate(-50%, 50%);
         transform: translate(-50%, 50%);
     text-align: center;
     font-family: $header-font;
-    font-size: 1em;
+    font-size: 1.5rem;
 
     @media #{$medium-up} {
-      top: 10%;
+      top: 0%;
       left: 50%;
-      font-size: 2em;
+      font-size: 2.5rem;
+    }
+
+    @media #{$large-up} {
+      top: 10%;
     }
   }
 

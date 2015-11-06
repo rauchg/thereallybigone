@@ -15,7 +15,7 @@
   height: 100%;
   background: $dark-blue;
 
-  @media #{$medium-up} {
+  @media #{$large-up} {
     background: url(/media/banners/trbo-banner-low.jpg) center center no-repeat;
     background-size: cover;
   }
