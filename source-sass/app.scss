@@ -15,8 +15,6 @@ $off-white: #c2d2de;
 $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 
 
-@import "pace";
-
 // =======================================
 // Foundation
 // =======================================
@@ -28,6 +26,7 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // =======================================
 // Import stylesheets
 // =======================================
+@import "pace";
 @import "animate";
 @import "journey";
 @import "elements";
@@ -250,27 +249,6 @@ bold {
 // =======================================
 // Header
 // =======================================
-
-// TODO: better style preloader
-.js #preloader {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 100%;
-  background: $dark-blue;
-  // overflow: visible;
-  text-align: center;
-
-  @media #{$medium-up} {
-    background: url(/media/banners/trbo-banner-low.jpg) center center no-repeat;
-    background-size: cover;
-  }
-}
-
 
 // Logos
 
