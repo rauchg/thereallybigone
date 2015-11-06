@@ -1,3 +1,11 @@
+.js section, .js footer {
+  visibility: none;
+}
+
+.js .pace-done section, .js .pace-done footer {
+  visibility: visible;
+}
+
 .pace-inactive {
   display: none;
 }

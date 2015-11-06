@@ -598,6 +598,22 @@ $(document).ready(function() {
 
   });
 
+  // when PACE is done, load the WOW animations
+  Pace.on('done', function() {
+
+    wow = new WOW(
+      {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+    );
+    wow.init();
+
+  });
+
   // PIE CHART
   function $$(selector, context) {
     context = context || document;
