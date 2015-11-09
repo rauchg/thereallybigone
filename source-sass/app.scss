@@ -36,6 +36,10 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // Globals
 // =======================================
 
+html {
+  overflow: auto;
+}
+
 body {
   text-rendering: optimizeLegibility;
 
@@ -94,17 +98,21 @@ footer {
 h1 {
   position: relative;
   left: -2px;
-  font-size: 2.5em;
+  font-size: 2.25em;
   font-family: $header-font;
   text-transform: uppercase;
   line-height: 1;
   color: #fff;
 
   @media #{$medium-up} {
-    font-size: 4.25em;
+    font-size: 3.25em;
   }
 
-  @media #{$medium-up} {
+  @media #{$large-up} {
+    font-size: 4.6125em;
+  }
+
+  @media screen and (min-width: 1369px) {
     font-size: 5.25em;
   }
 
@@ -144,7 +152,7 @@ h1 {
         font-size: 1.125rem;
       }
 
-      @media #{$medium-up} {
+      @media #{$large-up} {
         font-size: 1.25rem;
       }
     }
@@ -161,7 +169,7 @@ h2 {
   line-height: 1.3;
 
   @media #{$medium-up} {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   @media #{$large-up} {
@@ -185,15 +193,14 @@ h3 {
 
 p,
 li {
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.3;
   color: #8c949e;
 
 
   @media #{$medium-up} {
-    font-size: 1.275rem;
+    font-size: 1.025rem;
     margin-bottom: 1rem;
-
   }
 
   @media #{$large-up} {
@@ -542,7 +549,7 @@ bold {
     float: left;
     width: auto;
     margin: 0 0 0 10px;
-    padding: 5px 5px 20px;
+    padding: 4px 4px 24px;
     border-radius: 1px;
     text-align: center;
     text-decoration: none;
@@ -554,7 +561,7 @@ bold {
 
     @media #{$medium-up} {
       margin: 0 0 0 30px;
-      padding: 15px 15px 55px;
+      padding: 12px 12px 48px;
     }
 
     // Scatter the polaroids around
@@ -582,6 +589,7 @@ bold {
 // TODO: Refactor
 
 .preparedness {
+  padding-top: 12vw;
   text-align: center;
 
   .row {
@@ -616,11 +624,16 @@ bold {
 }
 
 .at-risk__cta {
-  padding: 8rem 0;
-  background-image: url(/media/trbo-CTA-bg.svg);
-  background-repeat: no-repeat;
-  background-size: 95%;
-  background-position: center center;
+  position: relative;
+  padding: 2rem 0;
+  background: url(/media/trbo-CTA-bg.svg) left center no-repeat;
+  background-size: 55%;
+
+  @media #{$medium-up} {
+    padding: 8rem 0;
+    // background-size: 95%;
+    background-size: 25%;
+  }
 }
 
 .button--risk {
@@ -628,6 +641,84 @@ bold {
   background: $dark-blue;
   box-shadow: 0 0 26px 5px $dark-blue;
 }
+
+
+// Loader
+.loading {
+  display: none;
+  background: url(../images/loading.gif) 0 4px no-repeat;
+  background-size: 8px 8px;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
+// Hide risk boxes until triggered
+.alert-box--risk {
+  display: none;
+}
+
+.alert-box {
+  margin: 0;
+  padding: 2rem;
+  background: none;
+  border: none !important;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: $off-white;
+  }
+
+  &.warning,
+  &.alert {
+    padding: 1rem 2rem 1.25rem;
+    background: rgba($yellow, 0.05);
+    border-radius: 5px;
+    line-height: 1.3;
+
+    p {
+      font-size: 2rem;
+      margin: 0;
+      line-height: 1;
+      color: lighten($yellow, 20%);
+
+      small {
+        font-size: 60%;
+        line-height: 1;
+      }
+    }
+  }
+
+  &.alert {
+    background: rgba(red, 0.05);
+
+    p {
+      color: lighten(red, 35%);
+    }
+  }
+
+}
+
+
+.alert-box--safe {
+  background: rgba(lightgreen, 0.05);
+
+  h2 {
+    color: lightgreen;
+  }
+}
+
+.alert-box--danger {
+  background: rgba($light-orange, 0.05);
+
+  h2 {
+    color: $juicy-orange;
+  }
+}
+
+
+
 
 .button--twitter,
 .button--facebook,
