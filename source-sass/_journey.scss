@@ -277,10 +277,5 @@
 .cities-trigger--redding    { top: 570vw; }
 
 // Trigger tsunami animations (distance from the top of the screen)
-.tsunamis-trigger--wave-1 { top: 270vw; }
-.tsunamis-trigger--wave-2 { top: 270vw; } // 300vw
-.tsunamis-trigger--wave-3 { top: 270vw; } // 350vw
-.tsunamis-trigger--wave-4 { top: 270vw; } // 410vw
-.tsunamis-trigger--wave-5 { top: 270vw; } // 450vw
-.tsunamis-trigger--wave-6 { top: 270vw; } // 510vw
-.tsunamis-trigger--wave-7 { top: 270vw; } // 540vw
+.tsunamis-trigger--wave-1,
+.tsunamis-trigger--wave-2 { top: 270vw; }

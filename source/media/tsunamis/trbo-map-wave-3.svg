@@ -115,7 +115,7 @@
 	.st107{fill:#50505E;}
 </style>
 
-<g id="Tsunami_waves" opacity="0">
+<g id="Tsunami_waves" opacity="0.6">
 
   <linearGradient id="_x33_rd_wave_1_" gradientUnits="userSpaceOnUse" x1="302.5073" y1="479.3476" x2="382.5073" y2="485.3476">
     <stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
@@ -123,46 +123,15 @@
   </linearGradient>
   <path id="_x33_rd_wave" class="st70" d="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
     s-160,312.1-160,312.1h-53V-0.1H285.7z">
-
-    <animate id="animation1" attributeName="d"
-      from="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
-    s-160,312.1-160,312.1h-53V-0.1H285.7z"
-      to="M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
-    s-160,312.1-160,312.1h-53V-0.1H285.7z"
-      begin="indefinite"
-      dur="4"
-      repeatCount="1"
-      fill="freeze"
-      values="M185.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
-    s-160,312.1-160,312.1h-53V-0.1H285.7z;
-      M285.7-0.1c0,0,41.7,86.2,99.7,148s106,135,56,224.7s86,183.2-84,248.9
-    s-160,312.1-160,312.1h-53V-0.1H285.7z"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-    />
   </path>
-
-  <animate id="animation2" attributeName="opacity"
-    from="0"
-    to="0"
-    begin="indefinite"
-    dur="4"
-    repeatCount="1"
-    fill="freeze"
-    values="0;0.8;1;0.4"
-    calcMode="spline"
-    keySplines="0.5 0 0.5 1;
-                0.5 0 0.5 1;
-                0.5 0 0.5 1"
-    />
 </g>
 
-<g id="Highgrounds" opacity="0">
+<g id="Highgrounds">
 	<path class="st76" d="M438.2,247.8c-22.8,2.4-27,34.7-17.7,46.7c9.3,12,11.7,11,6,19.3c-5.7,8.3-15,17.8-2,25.9
 		c13,8.1,15-32.6,24.3-40.6C458.2,291.2,454.2,246.2,438.2,247.8z"/>
 	<path class="st77" d="M415.9,350.8c-2.4-17.5-18.9,11-12.6,16.2C409.7,372.2,417.1,358.8,415.9,350.8z"/>
 	<path class="st78" d="M407.3,451.4c-11.2,8.8-4.4,47.5,3.1,50.5c7.5,3,3.2-4.8,5.2-23.5C417.7,459.8,418.8,442.4,407.3,451.4z"/>
-	<g id="Label_1_" opacity="0">
+	<g id="Label_1_">
 		<ellipse class="st46" cx="409" cy="357" rx="5" ry="3"/>
 		<path class="st81" d="M418,332h-18c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h4l5,5l5-5h4c1.1,0,2-0.9,2-2v-16
 			C420,332.9,419.1,332,418,332z"/>
@@ -198,31 +167,8 @@
 				c0.2,0,0.3,0,0.3-0.1c0-0.1,0.1-0.2,0.1-0.5v-1.7c0-0.2,0-0.3,0-0.4c0-0.1,0-0.1-0.1-0.1C416.7,345.8,416.6,345.8,416.5,345.8z"
 				/>
 		</g>
-
-    <animateTransform id="animation3" attributeName="transform"
-      type="translate"
-      values="0 -15;0 0"
-      begin="indefinite"
-      dur="0.2"
-      repeatCount="1"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.5 0 1 1"
-      />
-
-    <animate id="animation4" attributeName="opacity"
-      from="0"
-      to="0"
-      begin="indefinite"
-      dur="0.5"
-      repeatCount="1"
-      fill="freeze"
-      values="0;1"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-      />
 	</g>
-	<g id="Label_2_" opacity="0">
+	<g id="Label_2_">
 		<ellipse class="st46" cx="408.1" cy="472.5" rx="5" ry="3"/>
 		<path class="st81" d="M417.1,447.5h-18c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h4l5,5l5-5h4c1.1,0,2-0.9,2-2v-16
 			C419.1,448.4,418.2,447.5,417.1,447.5z"/>
@@ -258,31 +204,8 @@
 				c0.2,0,0.3,0,0.3-0.1c0-0.1,0.1-0.2,0.1-0.5v-1.7c0-0.2,0-0.3,0-0.4c0-0.1,0-0.1-0.1-0.1C415.8,461.3,415.7,461.3,415.5,461.3z"
 				/>
 		</g>
-
-    <animateTransform id="animation5" attributeName="transform"
-      type="translate"
-      values="0 -15;0 0"
-      begin="indefinite"
-      dur="0.2"
-      repeatCount="1"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.5 0 1 1"
-      />
-
-    <animate id="animation6" attributeName="opacity"
-      from="0"
-      to="0"
-      begin="indefinite"
-      dur="0.5"
-      repeatCount="1"
-      fill="freeze"
-      values="0;1"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-      />
 	</g>
-	<g id="Label_5_" opacity="0">
+	<g id="Label_5_">
 		<ellipse class="st46" cx="436.8" cy="272.3" rx="6.4" ry="3.9"/>
 		<path class="st81" d="M448.4,240.2h-23.1c-1.4,0-2.6,1.2-2.6,2.6v20.6c0,1.4,1.2,2.6,2.6,2.6h5.1l6.4,6.4l6.4-6.4h5.1
 			c1.4,0,2.6-1.2,2.6-2.6v-20.6C451,241.3,449.8,240.2,448.4,240.2z"/>
@@ -318,41 +241,6 @@
 				c0.2,0,0.3,0,0.4-0.1c0-0.1,0.1-0.3,0.1-0.7v-2.2c0-0.3,0-0.4,0-0.5c0-0.1-0.1-0.1-0.1-0.2C446.7,257.9,446.6,257.9,446.4,257.9z
 				"/>
 		</g>
-
-    <animateTransform id="animation7" attributeName="transform"
-      type="translate"
-      values="0 -15;0 0"
-      begin="indefinite"
-      dur="0.2"
-      repeatCount="1"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.5 0 1 1"
-      />
-
-    <animate id="animation8" attributeName="opacity"
-      from="0"
-      to="0"
-      begin="indefinite"
-      dur="0.5"
-      repeatCount="1"
-      fill="freeze"
-      values="0;1"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-      />
 	</g>
-
-  <animate id="animation9" attributeName="opacity"
-    from="0"
-    to="0"
-    begin="indefinite"
-    dur="0.5"
-    repeatCount="1"
-    fill="freeze"
-    values="0;1"
-    calcMode="spline"
-    keySplines="0.5 0 0.5 1"
-    />
 </g>
 </svg>
