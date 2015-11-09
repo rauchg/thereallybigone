@@ -36,6 +36,10 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // Globals
 // =======================================
 
+html {
+  overflow: auto;
+}
+
 body {
   text-rendering: optimizeLegibility;
 
