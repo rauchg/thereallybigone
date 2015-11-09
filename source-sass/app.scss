@@ -478,7 +478,7 @@ bold {
     margin: 0 auto 1.5rem;
 
     @media #{$medium-up} {
-      margin: 3.5rem auto 2rem;
+      margin: 8rem auto 4rem;
 
       // Blinking red halo
       &:before {
@@ -512,10 +512,6 @@ bold {
         left: 0;
         right: 0;
       }
-    }
-
-    @media #{$large-up} {
-      margin: 8rem auto 4rem;
     }
   }
 
@@ -625,14 +621,17 @@ bold {
 
 .at-risk__cta {
   position: relative;
-  padding: 2rem 0;
-  background: url(/media/trbo-CTA-bg.svg) left center no-repeat;
-  background-size: 55%;
+  padding: 0;
 
   @media #{$medium-up} {
-    padding: 8rem 0;
-    // background-size: 95%;
+    padding: 6rem 0;
+    background: url(/media/trbo-CTA-bg.svg) left center no-repeat;
     background-size: 25%;
+    // background-size: 95%;
+  }
+
+  @media #{$large-up} {
+    padding: 8rem 0;
   }
 }
 
@@ -646,6 +645,7 @@ bold {
 // Loader
 .loading {
   display: none;
+  clear: both;
   background: url(../images/loading.gif) 0 4px no-repeat;
   background-size: 8px 8px;
   padding-left: 16px;
@@ -661,9 +661,13 @@ bold {
 
 .alert-box {
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   background: none;
   border: none !important;
+
+  @media #{$large-up} {
+    padding: 2rem;
+  }
 
   h2 {
     margin-bottom: 1rem;

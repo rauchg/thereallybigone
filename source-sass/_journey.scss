@@ -151,7 +151,11 @@
     div.icon-grid {
       margin: 10% 0 8% -4% !important;
 
-      @media #{$medium-up} {
+      @media #{$medium-only} {
+        margin-left: -14% !important;
+      }
+
+      @media #{$large-up} {
         margin-left: -8% !important;
       }
 
