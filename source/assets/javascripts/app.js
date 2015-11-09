@@ -315,22 +315,22 @@ $(document).ready(function() {
 
     });
 
-    // trigger facts
-    $('.js-facts').waypoint({
-
-      handler: function() {
-
-        console.log("Trigger facts");
-
-        if ( ! quakeTimerRunning) {
-          quakeTimer();
-        }
-
-      },
-      offset: 'bottom-in-view'
-    });
-
   }
+
+  // trigger facts
+  $('.js-facts').waypoint({
+
+    handler: function() {
+
+      console.log("Trigger facts");
+
+      if ( ! quakeTimerRunning) {
+        quakeTimer();
+      }
+
+    },
+    offset: 'bottom-in-view'
+  });
 
   /* ---------- QUAKE TIMER ---------- */
   var quakeTimer = function() {

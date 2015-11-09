@@ -25,6 +25,20 @@
     z-index: 0;
   }
 
+  .cascadia-journey__background--mobile {
+
+  }
+
+  .cascadia-journey__fade-out {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0; padding: 150px 0;
+    background-image: linear-gradient(to bottom, transparent, #161f29)
+  }
+
   .helicopter {
     position: fixed;
     top: 25px;
