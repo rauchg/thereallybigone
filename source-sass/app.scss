@@ -109,6 +109,10 @@ h1 {
   }
 
   @media #{$large-up} {
+    font-size: 4.6125em;
+  }
+
+  @media screen and (min-width: 1369px) {
     font-size: 5.25em;
   }
 
