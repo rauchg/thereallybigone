@@ -116,6 +116,10 @@
   letter-spacing: 1px;
 
   @media #{$medium-up} {
+    font-size: 108%;
+  }
+
+  @media #{$large-up} {
     font-size: 115%;
   }
 }
@@ -132,8 +136,8 @@
   height: 45px;
 
   @media #{$medium-up} {
-    width: 85px;
-    height: 85px;
+    width: 65px;
+    height: 65px;
   }
 
   @media #{$large-up} {
@@ -155,8 +159,8 @@
   height: 55px;
 
   @media #{$medium-up} {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
   }
 
   @media #{$large-up} {
@@ -202,7 +206,7 @@
     line-height: 100px;
   }
 
-  @media #{$medium-up} {
+  @media #{$large-up} {
     width: 140px;
     height: 140px;
     line-height: 140px;
@@ -234,7 +238,7 @@
 }
 
 
-// Fact badges
+// Fact badge
 .fact-badge {
   display: inline-block;
   margin: 0 auto 0.5rem;
@@ -249,6 +253,12 @@
   border-radius: 5px;
 
   @media #{$medium-up} {
+    margin-bottom: 0.75rem;
+    padding: 0.575rem 0.75rem 0.5rem;
+    font-size: 1.375rem;
+  }
+
+  @media #{$large-up} {
     margin-bottom: 1rem;
     padding: 0.625rem 1rem 0.575rem;
     font-size: 1.75rem;
@@ -256,7 +266,10 @@
 }
 
 
-// Facts -- numbers/charts/infographics
+// Facts -- big pretty numbers
+
+// TODO: needs refactoring
+
 .fact {
   display: inline-block;
   margin: 0;
@@ -274,6 +287,10 @@
     line-height: 1;
 
     @media #{$medium-up} {
+      margin: 0.5rem auto;
+    }
+
+    @media #{$large-up} {
       margin: 1rem auto;
     }
   }
@@ -312,6 +329,10 @@
       font-size: 1.5rem;
 
       @media #{$medium-up} {
+        font-size: 1.875rem;
+      }
+
+      @media #{$large-up} {
         font-size: 2.2125rem;
       }
     }
@@ -325,6 +346,10 @@
     font-size: 2.5rem;
 
     @media #{$medium-up} {
+      font-size: 3.125rem;
+    }
+
+    @media #{$large-up} {
       font-size: 4.6125rem;
     }
   }

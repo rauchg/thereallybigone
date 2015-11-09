@@ -33,6 +33,12 @@
     width: 65px;
 
     @media #{$medium-up} {
+      top: 40px;
+      right: 25px;
+      width: 110px;
+    }
+
+    @media #{$large-up} {
       top: 65px;
       right: 65px;
       width: 150px;
@@ -112,25 +118,19 @@
       margin-bottom: 1rem;
       white-space: nowrap;
 
-      @media #{$medium-up} {
+      @media #{$large-up} {
         margin-bottom: 2rem;
       }
 
       object {
-
-        @media #{$small-only} {
-          display: inline-block;
-          width: 75px;
-          height: 55px;
-          margin: 0 0.25rem -0.5rem 0;
-        }
-
-        @media #{$medium-up} {
-          display: block;
-          margin-right: 0;
-        }
+        display: inline-block;
+        width: 75px;
+        height: 55px;
+        margin: 0 0.25rem -0.5rem 0;
 
         @media #{$large-up} {
+          display: block;
+          margin-right: 0;
           margin-bottom: -2rem;
         }
       }
@@ -143,10 +143,6 @@
         margin-bottom: 1.5rem;
       }
     }
-
-    // h1 + ul {
-    //   margin-bottom: 3rem;
-    // }
 
     div.icon-grid {
       margin: 10% 0 8% -4% !important;

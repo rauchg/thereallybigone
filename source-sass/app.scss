@@ -105,10 +105,10 @@ h1 {
   color: #fff;
 
   @media #{$medium-up} {
-    font-size: 4.25em;
+    font-size: 3.25em;
   }
 
-  @media #{$medium-up} {
+  @media #{$large-up} {
     font-size: 5.25em;
   }
 
@@ -148,7 +148,7 @@ h1 {
         font-size: 1.125rem;
       }
 
-      @media #{$medium-up} {
+      @media #{$large-up} {
         font-size: 1.25rem;
       }
     }
@@ -165,7 +165,7 @@ h2 {
   line-height: 1.3;
 
   @media #{$medium-up} {
-    font-size: 2.25em;
+    font-size: 2em;
   }
 
   @media #{$large-up} {
@@ -195,9 +195,8 @@ li {
 
 
   @media #{$medium-up} {
-    font-size: 1.275rem;
+    font-size: 1.025rem;
     margin-bottom: 1rem;
-
   }
 
   @media #{$large-up} {
