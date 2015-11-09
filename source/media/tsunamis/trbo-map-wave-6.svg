@@ -121,46 +121,14 @@
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		<stop  offset="1" style="stop-color:#FFFFFF"/>
 	</linearGradient>
-	<path id="_x36_th_wave" class="st67" d="M190-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
-		L288-0.4z">
-
-    <animate id="animation1" attributeName="d"
-      from="M288-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
-    L288-0.4z"
-      to="M288-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
-    L288-0.4z"
-      begin="indefinite"
-      dur="4"
-      repeatCount="1"
-      fill="freeze"
-      values="M190-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
-    L288-0.4z;
-      M288-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
-    L288-0.4z"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-    />
+	<path id="_x36_th_wave" class="st67" d="M288-0.4c23.2,91.2,97,126.1,84.6,215.2c-9.5,67.8-96.6,128.4-151.2,185.9h-34.8V0.3
+    L288-0.4z">
   </path>
-
-  <animate id="animation2" attributeName="opacity"
-    from="0"
-    to="0"
-    begin="indefinite"
-    dur="4"
-    repeatCount="1"
-    fill="freeze"
-    values="0;0.8;1;0.4"
-    calcMode="spline"
-    keySplines="0.5 0 0.5 1;
-                0.5 0 0.5 1;
-                0.5 0 0.5 1"
-    />
-
 </g>
-<g id="Highgrounds" opacity="0">
+<g id="Highgrounds">
 	<path class="st80" d="M337,121c-4,5-2,26,12,25S344.5,111.5,337,121z"/>
 	<path class="st80" d="M361,217.9c-15.5-9.8-26.3,37.9-16,49.1c10.3,11.2,21.1-14,23-23C370.2,233.5,371.3,224.4,361,217.9z"/>
-	<g id="Label_11_" opacity="0">
+	<g id="Label_11_">
 		<ellipse class="st46" cx="342" cy="127" rx="5" ry="3"/>
 		<path class="st81" d="M351,102h-18c-1.1,0-2,0.9-2,2v16c0,1.1,0.9,2,2,2h4l5,5l5-5h4c1.1,0,2-0.9,2-2v-16
 			C353,102.9,352.1,102,351,102z"/>
@@ -196,31 +164,8 @@
 				c0.2,0,0.3,0,0.3-0.1c0-0.1,0.1-0.2,0.1-0.5v-1.7c0-0.2,0-0.3,0-0.4c0-0.1,0-0.1-0.1-0.1C349.7,115.8,349.6,115.8,349.5,115.8z"
 				/>
 		</g>
-
-    <animateTransform id="animation3" attributeName="transform"
-      type="translate"
-      values="0 -15;0 0"
-      begin="indefinite"
-      dur="0.2"
-      repeatCount="1"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.5 0 1 1"
-      />
-
-    <animate id="animation4" attributeName="opacity"
-      from="0"
-      to="0"
-      begin="indefinite"
-      dur="0.5"
-      repeatCount="1"
-      fill="freeze"
-      values="0;1"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-      />
 	</g>
-	<g id="Label_12_" opacity="0">
+	<g id="Label_12_">
 		<ellipse class="st46" cx="356.9" cy="226" rx="6.4" ry="3.9"/>
 		<path class="st81" d="M368.4,193.9h-23.1c-1.4,0-2.6,1.2-2.6,2.6V217c0,1.4,1.2,2.6,2.6,2.6h5.1l6.4,6.4l6.4-6.4h5.1
 			c1.4,0,2.6-1.2,2.6-2.6v-20.6C371,195,369.8,193.9,368.4,193.9z"/>
@@ -256,41 +201,6 @@
 				c0.2,0,0.3,0,0.4-0.1c0-0.1,0.1-0.3,0.1-0.7v-2.2c0-0.3,0-0.4,0-0.5c0-0.1-0.1-0.1-0.1-0.2C366.7,211.6,366.6,211.6,366.4,211.6z
 				"/>
 		</g>
-
-    <animateTransform id="animation5" attributeName="transform"
-      type="translate"
-      values="0 -15;0 0"
-      begin="indefinite"
-      dur="0.2"
-      repeatCount="1"
-      fill="freeze"
-      calcMode="spline"
-      keySplines="0.5 0 1 1"
-      />
-
-    <animate id="animation6" attributeName="opacity"
-      from="0"
-      to="0"
-      begin="indefinite"
-      dur="0.5"
-      repeatCount="1"
-      fill="freeze"
-      values="0;1"
-      calcMode="spline"
-      keySplines="0.5 0 0.5 1"
-      />
 	</g>
-
-  <animate id="animation7" attributeName="opacity"
-    from="0"
-    to="0"
-    begin="indefinite"
-    dur="0.5"
-    repeatCount="1"
-    fill="freeze"
-    values="0;1"
-    calcMode="spline"
-    keySplines="0.5 0 0.5 1"
-    />
 </g>
 </svg>
