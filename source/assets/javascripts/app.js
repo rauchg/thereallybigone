@@ -383,12 +383,12 @@ $(document).ready(function() {
       return;
     }
 
-    $('.js-button-risk .js-loading').show();
+    $('.js-loading').show();
 
     // get coordinates, this will prompt user to give access
     navigator.geolocation.getCurrentPosition(function(position) {
 
-      $('.js-button-risk .js-loading').hide();
+      $('.js-loading').hide();
 
       // save user's latitude and longitude
       var lat = position.coords.latitude;
