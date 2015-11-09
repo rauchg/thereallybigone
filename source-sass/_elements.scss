@@ -126,9 +126,10 @@
 
 
 // Icons
+.xsmall-icon,
 .small-icon {
-  width: 65px;
-  height: 65px;
+  width: 45px;
+  height: 45px;
 
   @media #{$medium-up} {
     width: 85px;
@@ -141,9 +142,17 @@
   }
 }
 
+.small-icon {
+
+  @media #{$small-only} {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 .large-icon {
-  width: 65px;
-  height: 65px;
+  width: 55px;
+  height: 55px;
 
   @media #{$medium-up} {
     width: 100px;
@@ -250,19 +259,23 @@
 // Facts -- numbers/charts/infographics
 .fact {
   display: inline-block;
+  margin: 0;
   vertical-align: middle;
   color: #888;
   line-height: 1;
 
   span {
+    display: block;
+    margin: 0 auto 0.125rem;
     color: $juicy-orange;
     font-size: 2.5rem;
     font-family: $header-font;
     text-transform: uppercase;
     line-height: 1;
-    display: block;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+
+    @media #{$medium-up} {
+      margin: 1rem auto;
+    }
   }
 
   small {
@@ -279,19 +292,24 @@
 
   .fact + .emph {
     display: block;
-    margin-top: -1rem;
     color: #fff;
   }
 
   .fact span {
+    // TODO:
     color: $light-orange !important;
+  }
+
+  ul object {
+    // TODO:
+    margin-bottom: 0.25rem !important;
   }
 }
 
   .fact--small {
 
     span {
-      font-size: 1.6125rem;
+      font-size: 1.5rem;
 
       @media #{$medium-up} {
         font-size: 2.2125rem;
@@ -304,7 +322,7 @@
   }
 
   .fact--large span {
-    font-size: 2.875rem;
+    font-size: 2.5rem;
 
     @media #{$medium-up} {
       font-size: 4.6125rem;
