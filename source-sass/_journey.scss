@@ -23,6 +23,9 @@
     width: 100%;
     height: auto;
     z-index: 0;
+
+    // TODO: Marcel, move this onto a new div
+    background: linear-gradient(to top, $dark-blue 0%, rgba($dark-blue, 0) 8%);
   }
 
   .helicopter {
@@ -220,7 +223,7 @@
   position: relative;
   width: 100%;
   float: left;
-  background: linear-gradient(to bottom, $dark-blue 0%, rgba($dark-blue, 0) 7%);
+  background: linear-gradient(to bottom, $dark-blue 0%, rgba($dark-blue, 0) 8%);
 }
 
 
