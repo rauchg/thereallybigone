@@ -1,3 +1,17 @@
+[class*="block-grid-"] > li {
+
+  @media #{$small-only} {
+    float: none;
+  }
+}
+
+[class*="small-block-grid-"] > li {
+
+  @media #{$small-only} {
+    float: left;
+  }
+}
+
 // Orange bold text for emphasising facts
 .emph {
   font-family: $header-font;
@@ -64,9 +78,9 @@
 // Pie charts
 .pie {
   position: relative;
-  width: 70px;
-  height: 70px;
-  line-height: 70px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
   border-radius: 50%;
   margin: 0 auto 1rem;
   background: darken($juicy-orange, 15%);
@@ -110,10 +124,14 @@
     bottom: 0;
     left: 0;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     font-family: $header-font;
     color: darken($juicy-orange, 35%);
     text-shadow: 1px 1px 1px $juicy-orange;
+
+    @media #{$medium-up} {
+      font-size: 1.5rem;
+    }
 
     @media #{$large-up} {
       font-size: 3rem;
@@ -131,10 +149,11 @@
 
 // Fact badge
 .fact-badge {
+  clear: both;
   display: inline-block;
   margin: 0 auto 0.5rem;
   padding: 0.5rem 0.6125em 0.45rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-family: $header-font;
   color: darken($juicy-orange, 35%);
   text-transform: uppercase;
@@ -146,7 +165,7 @@
   @media #{$medium-up} {
     margin-bottom: 0.75rem;
     padding: 0.575rem 0.75rem 0.5rem;
-    font-size: 1.375rem;
+    font-size: 1.275rem;
   }
 
   @media #{$large-up} {
@@ -211,6 +230,17 @@
   ul object {
     // TODO:
     margin-bottom: 0.25rem !important;
+  }
+
+  li {
+
+    @media #{$small-only} {
+      padding: 0 0.125rem 0.475rem;
+
+      p {
+        font-size: 0.75rem;
+      }
+    }
   }
 }
 
