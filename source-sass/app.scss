@@ -26,7 +26,7 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // =======================================
 // Import stylesheets
 // =======================================
-@import "pace";
+// @import "pace"; //  inlining this
 @import "animate";
 @import "journey";
 @import "elements";
@@ -330,7 +330,7 @@ bold {
   }
 
   h1 {
-    margin-top: 35%;
+    margin-top: 32%;
     margin-bottom: 5vh;
     line-height: 1;
     color: #fff;

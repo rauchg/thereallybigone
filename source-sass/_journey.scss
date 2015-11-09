@@ -28,6 +28,20 @@
     background: linear-gradient(to top, $dark-blue 0%, rgba($dark-blue, 0) 8%);
   }
 
+  .cascadia-journey__background--mobile {
+
+  }
+
+  .cascadia-journey__fade-out {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    margin: 0; padding: 150px 0;
+    background-image: linear-gradient(to bottom, transparent, #161f29)
+  }
+
   .helicopter {
     position: fixed;
     top: 25px;
@@ -93,7 +107,7 @@
     }
 
     div.wow {
-      margin: 2% 0;
+      margin: 20% 0;
 
       @media #{$medium-up} {
         margin: 7% 0;
@@ -105,7 +119,7 @@
     }
 
     div.aftermath {
-      margin-top: 18%;
+      margin-top: 80%;
 
       @media #{$medium-up} {
         margin-top: 22%;

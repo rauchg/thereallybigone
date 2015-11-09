@@ -222,112 +222,115 @@ var tsunamis = [
 // on document load
 $(document).ready(function() {
 
-  // go through cities to trigger animations
-  cities.forEach(function(city, index) {
+  // don't do any animations on mobile
+  if ($(window).width() > 480) {
 
-    var $city = $('.js-cities-' + city.name + ' object');
-    var $trigger = $('.js-cities-trigger-' + city.name);
-    var hasTriggered = false;
+    // go through cities to trigger animations
+    cities.forEach(function(city, index) {
 
-    $city[0].addEventListener('load', function() {
+      var $city = $('.js-cities-' + city.name + ' object');
+      var $trigger = $('.js-cities-trigger-' + city.name);
+      var hasTriggered = false;
 
-      // check http://imakewebthings.com/waypoints/ for documentation
-      $trigger.waypoint({
+      $city[0].addEventListener('load', function() {
 
-        handler: function() {
+        // check http://imakewebthings.com/waypoints/ for documentation
+        $trigger.waypoint({
 
-          console.log("Trigger " + city.name);
+          handler: function() {
 
-          if (hasTriggered) return;
-          hasTriggered = true;
-          var svgDoc = $city.contents();
+            console.log("Trigger " + city.name);
 
-          // if animations array is not empty, use these...
-          if (city.animations.length) {
-            city.animations.forEach(function(animation) {
-              var el = svgDoc.find('#' + animation.id);
-              setTimeout(function() {
-                el[0].beginElement();
-              }, animation.begin);
+            if (hasTriggered) return;
+            hasTriggered = true;
+            var svgDoc = $city.contents();
+
+            // if animations array is not empty, use these...
+            if (city.animations.length) {
+              city.animations.forEach(function(animation) {
+                var el = svgDoc.find('#' + animation.id);
+                setTimeout(function() {
+                  el[0].beginElement();
+                }, animation.begin);
+              });
+              return;
+            }
+
+            // otherwise, loop over array elements and animate them
+            var animations = svgDoc.find('animate');
+            animations.each(function(index, animation) {
+              animation.beginElement();
             });
-            return;
-          }
 
-          // otherwise, loop over array elements and animate them
-          var animations = svgDoc.find('animate');
-          animations.each(function(index, animation) {
-            animation.beginElement();
-          });
+          },
+          offset: 'bottom-in-view'
+        });
 
-        },
-        offset: 'bottom-in-view'
       });
 
     });
 
-  });
+    // go through tsunamis to trigger animations
+    tsunamis.forEach(function(tsunami, index) {
 
-  // go through tsunamis to trigger animations
-  tsunamis.forEach(function(tsunami, index) {
+      var $tsunami = $('.js-tsunamis-' + tsunami.name + ' object');
+      var $trigger = $('.js-tsunamis-trigger-' + tsunami.name);
+      var hasTriggered = false;
 
-    var $tsunami = $('.js-tsunamis-' + tsunami.name + ' object');
-    var $trigger = $('.js-tsunamis-trigger-' + tsunami.name);
-    var hasTriggered = false;
+      $tsunami[0].addEventListener('load', function() {
 
-    $tsunami[0].addEventListener('load', function() {
+        // check http://imakewebthings.com/waypoints/ for documentation
+        $trigger.waypoint({
 
-      // check http://imakewebthings.com/waypoints/ for documentation
-      $trigger.waypoint({
+          handler: function() {
 
-        handler: function() {
+            console.log("Trigger " + tsunami.name);
 
-          console.log("Trigger " + tsunami.name);
+            if (hasTriggered) return;
+            hasTriggered = true;
+            var svgDoc = $tsunami.contents();
 
-          if (hasTriggered) return;
-          hasTriggered = true;
-          var svgDoc = $tsunami.contents();
+            // if animations array is not empty, use these...
+            if (tsunami.animations.length) {
+              tsunami.animations.forEach(function(animation) {
+                var el = svgDoc.find('#' + animation.id);
+                setTimeout(function() {
+                  el[0].beginElement();
+                }, animation.begin);
+              });
+              return;
+            }
 
-          // if animations array is not empty, use these...
-          if (tsunami.animations.length) {
-            tsunami.animations.forEach(function(animation) {
-              var el = svgDoc.find('#' + animation.id);
-              setTimeout(function() {
-                el[0].beginElement();
-              }, animation.begin);
+            // otherwise, loop over array elements and animate them
+            var animations = svgDoc.find('animate');
+            animations.each(function(index, animation) {
+              animation.beginElement();
             });
-            return;
-          }
 
-          // otherwise, loop over array elements and animate them
-          var animations = svgDoc.find('animate');
-          animations.each(function(index, animation) {
-            animation.beginElement();
-          });
+          },
+          offset: 'bottom-in-view'
+        });
 
-        },
-        offset: 'bottom-in-view'
       });
 
     });
 
-  });
+  }
 
-  // scroll position
-  $(window).scroll(function () {
+  // trigger facts
+  $('.js-facts').waypoint({
 
-    var topOfWindow = $(window).scrollTop();
-    // console.log(topOfWindow);
+    handler: function() {
 
-    /* ---------- > 1200px: Run quake timer ---------- */
-    // TODO: repurpose for the new timer
-    if (topOfWindow > 6560) {
+      console.log("Trigger facts");
+
       if ( ! quakeTimerRunning) {
         quakeTimer();
       }
-    }
 
+    },
+    offset: 'bottom-in-view'
   });
-
 
   /* ---------- QUAKE TIMER ---------- */
   var quakeTimer = function() {
@@ -414,6 +417,22 @@ $(document).ready(function() {
       }
 
     });
+
+  });
+
+  // when PACE is done, load the WOW animations
+  Pace.on('done', function() {
+
+    wow = new WOW(
+      {
+        boxClass:     'wow',      // default
+        animateClass: 'animated', // default
+        offset:       0,          // default
+        mobile:       true,       // default
+        live:         true        // default
+      }
+    );
+    wow.init();
 
   });
 
