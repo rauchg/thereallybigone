@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_25" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="-232 310 146 173" enable-background="new -232 310 146 173" xml:space="preserve">
+<script  type="text/ecmascript" xlink:href="/assets/javascripts/vendor/smil.user.js"></script>
+<path fill="#999999" d="M-143,431.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+	c0.3,0,0.5,0.2,0.5,0.5V431.5z"/>
+<path fill="#999999" d="M-174,431.5c0,0.3-0.2,0.5-0.5,0.5l0,0c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0
+	c0.3,0,0.5,0.2,0.5,0.5V431.5z"/>
+<g id="Bottomlight">
+	
+		<radialGradient id="SVGID_1_" cx="-159" cy="389" r="28" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<circle opacity="0.8" fill="url(#SVGID_1_)" enable-background="new    " cx="-159" cy="405" r="28"/>
+	
+		<radialGradient id="SVGID_2_" cx="-143.5" cy="383.5" r="15.2069" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<path opacity="0.8" fill="url(#SVGID_2_)" enable-background="new    " d="M-143,431.5c0,0.3-0.2,0.5-0.5,0.5l0,0
+		c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0c0.3,0,0.5,0.2,0.5,0.5V431.5z"/>
+	
+		<radialGradient id="SVGID_3_" cx="-174.5" cy="383.5" r="15.2069" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFC900"/>
+		<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+	</radialGradient>
+	<path opacity="0.8" fill="url(#SVGID_3_)" enable-background="new    " d="M-174,431.5c0,0.3-0.2,0.5-0.5,0.5l0,0
+		c-0.3,0-0.5-0.2-0.5-0.5v-42c0-0.3,0.2-0.5,0.5-0.5l0,0c0.3,0,0.5,0.2,0.5,0.5V431.5z"/>
+	
+		<animate  fill="remove" begin="0" attributeName="opacity" from="0" values="0;0;0;0;0;0;0;0;0;0;0;1;0;1;0;0;0;0;0;0;0;0;0;0;0;0;0;0;0" repeatCount="indefinite" dur="2" to="0" restart="always" calcMode="linear" additive="replace" accumulate="none">
+		</animate>
+</g>
+<linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-159.3482" y1="349.8959" x2="-159.0391" y2="327.794" gradientTransform="matrix(1 0 0 -1 0 794)">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</linearGradient>
+<polygon opacity="0.15" fill="url(#SVGID_4_)" enable-background="new    " points="-159,443 -185,469 -133,469 "/>
+<linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-159.5628" y1="351.2421" x2="-159.0628" y2="315.4921" gradientTransform="matrix(1 0 0 -1 0 794)">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</linearGradient>
+<polygon opacity="0.15" fill="url(#SVGID_5_)" enable-background="new    " points="-157,441 -159,441 -161,441 -203,483 -159,483 
+	-115,483 "/>
+<radialGradient id="SVGID_6_" cx="-159" cy="345" r="28" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#FFC900"/>
+	<stop  offset="1" style="stop-color:#FFAF00;stop-opacity:0"/>
+</radialGradient>
+<circle opacity="0.3" fill="url(#SVGID_6_)" enable-background="new    " cx="-159" cy="449" r="28"/>
+<rect x="-151" y="423" fill="#72777F" width="7" height="1"/>
+<rect x="-151" y="397" fill="#72777F" width="7" height="1"/>
+<rect x="-174" y="423" fill="#72777F" width="7" height="1"/>
+<rect x="-174" y="397" fill="#72777F" width="7" height="1"/>
+<g>
+	<path fill="#6E6E6E" d="M-150.3,430.5c-2.5,1-5.1,1.5-7.7,1.5v12c2.5,0,4.8-1.2,6.2-3.3l1.8-2.7l0,0c0.3-2.3,0.7-5,1-8
+		L-150.3,430.5z"/>
+	<path fill="#FF784C" d="M-154.2,372.9c-0.5-1.1-1.6-1.9-2.8-1.9h-2v78h3c2.4,0,4.4-1.7,4.8-4c0.3-1.8,0.8-4.2,1.2-7
+		c0.3-2.3,0.7-5,1-8c0.6-5.7,1-12.5,1-20C-148,391.7-152.4,377.8-154.2,372.9z"/>
+</g>
+<path fill="#DE470C" d="M-163.8,372.9c0.4-1.2,1.5-1.9,2.8-1.9h2v78h-3c-2.4,0-4.4-1.7-4.8-4c-0.3-1.8-0.8-4.2-1.2-7
+	c-0.3-2.3-0.7-5-1-8c-0.6-5.7-1-12.5-1-20C-170,391.7-165.6,377.8-163.8,372.9z"/>
+<rect x="-157" y="337" fill="#DE470C" width="14" height="2"/>
+<rect x="-157" y="339" fill="#FF784C" width="14" height="2"/>
+<rect x="-175" y="337" fill="#DE470C" width="14" height="2"/>
+<rect x="-175" y="339" fill="#FF784C" width="14" height="2"/>
+<g>
+	<path fill="#5B646F" d="M-158,432v2l6.4,6.4l1.2-1.8l-6.6-6.6C-157.4,432-157.7,432-158,432z"/>
+	<path fill="#283442" d="M-158,444c2.5,0,4.8-1.2,6.2-3.3l0.2-0.3l-6.4-6.4V444z"/>
+	<path fill="#283442" d="M-149,430l-1.3,0.5c-0.8,0.3-1.6,0.6-2.4,0.8l3.2,3.2C-149.3,433.1-149.2,431.6-149,430z"/>
+	<path fill="#5B646F" d="M-149.5,434.5l-3.2-3.2c-0.5,0.1-1.1,0.3-1.6,0.4l4.6,4.6C-149.7,435.7-149.6,435.1-149.5,434.5z"/>
+	<path fill="#283442" d="M-150,438c0.1-0.5,0.2-1.1,0.2-1.7l-4.6-4.6c-0.9,0.2-1.8,0.2-2.7,0.3l6.6,6.6L-150,438L-150,438z"/>
+</g>
+<g>
+	<path fill="#414B57" d="M-160,432v2l-6.4,6.4l-1.2-1.8l6.6-6.6C-160.6,432-160.3,432-160,432z"/>
+	<path fill="#192534" d="M-160,444c-2.5,0-4.8-1.2-6.2-3.3l-0.2-0.3l6.4-6.4V444z"/>
+	<path fill="#192534" d="M-169,430l1.3,0.5c0.8,0.3,1.6,0.6,2.4,0.8l-3.2,3.2C-168.7,433.1-168.8,431.6-169,430z"/>
+	<path fill="#414B57" d="M-168.5,434.5l3.2-3.2c0.5,0.1,1.1,0.3,1.6,0.4l-4.6,4.6C-168.3,435.7-168.4,435.1-168.5,434.5z"/>
+	<path fill="#192534" d="M-168,438c-0.1-0.5-0.2-1.1-0.2-1.7l4.6-4.6c0.9,0.2,1.8,0.2,2.7,0.3l-6.6,6.6L-168,438L-168,438z"/>
+</g>
+<g id="Greenlight">
+	<circle fill="#35AF30" cx="-175" cy="342" r="1"/>
+	
+		<radialGradient id="SVGID_7_" cx="-175" cy="452" r="10" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</radialGradient>
+	<circle opacity="0.5" fill="url(#SVGID_7_)" enable-background="new    " cx="-175" cy="342" r="10"/>
+	
+		<radialGradient id="SVGID_8_" cx="-160" cy="449.5" r="18.7517" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</radialGradient>
+	<path opacity="0.5" fill="url(#SVGID_8_)" enable-background="new    " d="M-160.1,319l-0.5,5.2c-0.3,2.6-0.4,5.1-0.4,7.7V371h2
+		v-53C-159.6,318-160,318.4-160.1,319z"/>
+	
+		<linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="-174" y1="454" x2="-161" y2="454" gradientTransform="matrix(1 0 0 -1 0 794)">
+		<stop  offset="0" style="stop-color:#37CC42"/>
+		<stop  offset="1" style="stop-color:#37CC42;stop-opacity:0"/>
+	</linearGradient>
+	<rect x="-174" y="339" opacity="0.5" fill="url(#SVGID_9_)" enable-background="new    " width="13" height="2"/>
+</g>
+<g id="Blur2" display="none">
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-229.2,386.2c-1.6,6-2.5,12.3-2.5,18.8
+		s0.9,12.8,2.5,18.8L-159,405L-229.2,386.2z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-177.8,334.8c-25,6.7-44.7,26.4-51.4,51.4
+		L-159,405L-177.8,334.8z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-140.2,334.8c-6-1.6-12.3-2.5-18.8-2.5
+		s-12.8,0.9-18.8,2.5L-159,405L-140.2,334.8z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-88.8,386.2c-6.7-25-26.4-44.7-51.4-51.4
+		L-159,405L-88.8,386.2z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-177.8,475.2c6,1.6,12.3,2.5,18.8,2.5
+		s12.8-0.9,18.8-2.5L-159,405L-177.8,475.2z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-88.8,386.2L-159,405l70.2,18.8
+		c1.6-6,2.5-12.3,2.5-18.8S-87.2,392.2-88.8,386.2z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-140.2,475.2c25-6.7,44.7-26.4,51.4-51.4
+		L-159,405L-140.2,475.2z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-229.2,423.8c6.7,25,26.4,44.7,51.4,51.4
+		L-159,405L-229.2,423.8z"/>
+	
+		<animateTransform  type="rotate" fill="remove" begin="0" attributeName="transform" from="0 73,95 0" repeatCount="indefinite" dur="1.6" to="360 73,95 0" restart="always" calcMode="linear" additive="replace" accumulate="none">
+		</animateTransform>
+</g>
+<g id="Blur" display="none">
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-197.7,344.1c-5.2,3.3-10.1,7.3-14.4,12.1
+		c-4.3,4.8-8,10-10.8,15.4L-159,405L-197.7,344.1z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-125.6,341c-22.8-11.9-50.4-10.7-72.1,3.1
+		L-159,405L-125.6,341z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-98.1,366.3c-3.3-5.2-7.3-10.1-12.1-14.4
+		c-4.8-4.3-10-8-15.4-10.8L-159,405L-98.1,366.3z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-95,438.4c11.9-22.8,10.7-50.4-3.1-72.1
+		L-159,405L-95,438.4z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-219.9,443.7c3.3,5.2,7.3,10.1,12.1,14.4
+		c4.8,4.4,10,8,15.4,10.8L-159,405L-219.9,443.7z"/>
+	<path display="inline" opacity="0.1" fill="#999999" enable-background="new    " d="M-95,438.4l-64-33.4l38.7,60.9
+		c5.2-3.3,10.1-7.3,14.4-12.1C-101.5,449-97.9,443.8-95,438.4z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-192.4,469c22.8,11.9,50.4,10.7,72.1-3.1
+		L-159,405L-192.4,469z"/>
+	<path display="inline" opacity="0.19" fill="#999999" enable-background="new    " d="M-223,371.6c-11.9,22.8-10.7,50.4,3.1,72.1
+		L-159,405L-223,371.6z"/>
+	
+		<animateTransform  type="rotate" fill="remove" begin="0" attributeName="transform" from="0 73,95 0" repeatCount="indefinite" dur="1.2" to="-360 73,95 0" restart="always" calcMode="linear" additive="replace" accumulate="none">
+		</animateTransform>
+</g>
+<g id="Wings" display="none">
+	
+		<radialGradient id="SVGID_10_" cx="-158.8125" cy="388.0345" r="11.3739" gradientTransform="matrix(1 0 0 -1 0 794)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#283442"/>
+		<stop  offset="1" style="stop-color:#283442;stop-opacity:0"/>
+	</radialGradient>
+	<polygon display="inline" opacity="0.4" fill="url(#SVGID_10_)" enable-background="new    " points="-149,410 -149,422 -155,416 
+		-155,413 -159,409 -163,413 -163,416 -169,422 -169,410 -168,409 -166,409 -163,406 -167,402 -168,402 -169,402 -168,391 -163,396 
+		-163,398 -159,402 -155,398 -155,396 -150,391 -149,402 -150,402 -151,402 -155,406 -152,409 -150,409 	"/>
+	<polygon display="inline" fill="#999999" points="-159,405 -159,403 -157,405 	"/>
+	<polygon display="inline" fill="#999999" points="-159,407 -157,405 -159,405 	"/>
+	<polygon display="inline" fill="#999999" points="-161,405 -159,403 -159,405 	"/>
+	<polygon display="inline" fill="#999999" points="-159,407 -161,405 -159,405 	"/>
+	
+		<rect x="-159.1" y="400.1" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -329.4834 7.6277)" display="inline" fill="#636370" width="7.1" height="2.8"/>
+	<polygon display="inline" opacity="0.2" fill="#BFBFBF" enable-background="new    " points="-152,400 -151,400 -107,356 -108,354 
+		-153,399 	"/>
+	<polygon display="inline" opacity="0.2" fill="#999999" enable-background="new    " points="-153,399 -154,398 -154,397 -110,353 
+		-108,354 	"/>
+	
+		<rect x="-154.9" y="398.8" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -544.5291 573.4465)" display="inline" fill="#50505E" width="2.8" height="1.4"/>
+	
+		<rect x="-159.1" y="407.1" transform="matrix(0.7071 0.7071 -0.7071 0.7071 243.2737 229.6171)" display="inline" fill="#636370" width="7.1" height="2.8"/>
+	<polygon display="inline" opacity="0.2" fill="#BFBFBF" enable-background="new    " points="-154,412 -154,413 -110,457 -108,456 
+		-153,411 	"/>
+	<polygon display="inline" opacity="0.2" fill="#999999" enable-background="new    " points="-153,411 -152,410 -151,410 -107,454 
+		-108,456 	"/>
+	
+		<rect x="-154.9" y="409.8" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -335.2262 11.6927)" display="inline" fill="#50505E" width="2.8" height="1.4"/>
+	
+		<rect x="-166" y="407.1" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 11.4816 812.173)" display="inline" fill="#636370" width="7.1" height="2.8"/>
+	<polygon display="inline" opacity="0.2" fill="#999999" enable-background="new    " points="-166,410 -167,410 -211,454 -210,456 
+		-165,411 	"/>
+	<polygon display="inline" opacity="0.2" fill="#BFBFBF" enable-background="new    " points="-165,411 -164,412 -164,413 -208,457 
+		-210,456 	"/>
+	
+		<rect x="-165.9" y="409.8" transform="matrix(0.7071 0.7071 -0.7071 0.7071 242.0871 236.5522)" display="inline" fill="#50505E" width="2.8" height="1.4"/>
+	
+		<rect x="-166" y="400.1" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 -561.2717 570.5822)" display="inline" fill="#636370" width="7.1" height="2.8"/>
+	<polygon display="inline" opacity="0.2" fill="#BFBFBF" enable-background="new    " points="-164,398 -164,397 -208,353 -210,354 
+		-165,399 	"/>
+	<polygon display="inline" opacity="0.2" fill="#999999" enable-background="new    " points="-165,399 -166,400 -167,400 -211,356 
+		-210,354 	"/>
+	
+		<rect x="-165.9" y="398.8" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 1.6681 798.3087)" display="inline" fill="#50505E" width="2.8" height="1.4"/>
+	
+		<animateTransform  type="rotate" fill="remove" begin="0" attributeName="transform" from="0 73,95 0" repeatCount="indefinite" dur="0.6" to="-360 73,95 0" restart="always" calcMode="linear" additive="replace" accumulate="none">
+		</animateTransform>
+</g>
+</svg>

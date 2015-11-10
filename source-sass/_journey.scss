@@ -42,7 +42,7 @@
     background-image: linear-gradient(to bottom, transparent, #161f29)
   }
 
-  .helicopter {
+  .helicopter, .helicopter-blades {
     position: fixed;
     top: 25px;
     right: 15px;
@@ -59,6 +59,43 @@
       top: 65px;
       right: 65px;
       width: 150px;
+    }
+  }
+
+  .helicopter {
+    animation-name: drift;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+
+  .helicopter-blades {
+    top: 22px;
+    left: 0;
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes drift {
+    0% {
+      transform: translateX(0px) rotate(5deg);
+    }
+    50% {
+      transform: translateX(-80px) rotate(-5deg);
+    }
+    100% {
+      transform: translateX(0px) rotate(5deg);
+    }
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
     }
   }
 
