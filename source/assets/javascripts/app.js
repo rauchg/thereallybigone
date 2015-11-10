@@ -23,6 +23,7 @@ if (Modernizr.geolocation) {
   geolocationAvailable = true;
 }
 
+// cities SVGs with animation configuration
 var cities = [
   {
     name: 'vancouver',
@@ -158,6 +159,7 @@ var cities = [
   }
 ];
 
+// tsunamis SVGs with animation configuration
 var tsunamis = [
   {
     name: 'wave-1',
@@ -420,6 +422,8 @@ $(document).ready(function() {
 
   });
 
+  var wow;
+
   // when PACE is done, load the WOW animations
   Pace.on('done', function() {
 
@@ -446,6 +450,38 @@ $(document).ready(function() {
   $$('.pie').forEach(function(pie) {
     var p = pie.textContent;
     pie.style.animationDelay = '-' + parseFloat(p) + 's';
+  });
+
+  // BACK-TO-TOP button
+
+  // browser window scroll (in pixels) after which the "back to top" link is shown
+  var offset = 300,
+    //browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+    offset_opacity = 1200,
+    //duration of the top scrolling animation (in ms)
+    scroll_top_duration = 700,
+    //grab the "back to top" link
+    $back_to_top = $('.cd-top');
+
+  // hide or show the "back to top" link
+  $(window).scroll(function(){
+    ( $(this).scrollTop() > offset ) ? $back_to_top.addClass('cd-is-visible') : $back_to_top.removeClass('cd-is-visible cd-fade-out');
+    if( $(this).scrollTop() > offset_opacity ) {
+      $back_to_top.addClass('cd-fade-out');
+    }
+  });
+
+  //smooth scroll to top
+  $back_to_top.on('click', function(event){
+    event.preventDefault();
+    $('body,html').animate({
+      scrollTop: 0 ,
+      },
+      scroll_top_duration,
+      function() {
+        wow.init(); // reinitiliase WOW animations
+      }
+    );
   });
 
 });
