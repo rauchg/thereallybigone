@@ -283,19 +283,27 @@ bold {
 
 .credit-logo {
   position: absolute;
-  width: 150px;
+  width: 140px;
   opacity: 0.25;
 }
 
   .credit-logo--left {
-    width: 175px;
+    width: 166px;
     top: 3.15rem;
-    left: 3rem;
+    left: 1.25rem;
+
+    @media #{$large-up} {
+      left: 3rem;
+    }
   }
 
   .credit-logo--right {
-    top: 2.3rem;
-    right: 3rem;
+    top: 2.175rem;
+    right: 1.25rem
+
+    @media #{$large-up} {
+      right: 3rem;
+    }
   }
 
 
@@ -318,6 +326,15 @@ bold {
     z-index: 1502;
     margin: 0 auto;
     width: 100%;
+    max-width: 800px;
+
+    @media #{$medium-up} {
+      top: 10%;
+    }
+
+    @media #{$large-up} {
+      top: 75px;
+    }
   }
 
   .row {
@@ -337,7 +354,7 @@ bold {
     text-shadow: 0 0 15px rgba($dark-blue, 0.75);
 
     @media #{$medium-up} {
-      margin-top: 18%;
+      margin-top: 40%;
       margin-bottom: 3vh;
     }
 
