@@ -97,7 +97,7 @@
       .row {
         margin: 0;
 
-        @media #{$small-only} {
+        @media screen and (max-width: 64em) {
 
           .columns {
             padding-left: 0;
@@ -175,14 +175,18 @@
     }
 
     div.aftermath {
-      margin-top: 80%;
+      margin-top: 2.5rem;
 
       @media #{$medium-up} {
-        margin-top: 22%;
+        margin-top: 4rem;
       }
 
       @media #{$large-up} {
-        margin-top: 24%;
+        margin-top: 6rem;
+
+        ul {
+          margin-top: 2.5rem;
+        }
       }
     }
 
@@ -221,11 +225,7 @@
     div.icon-grid {
       margin: 10% 0 8% -4% !important;
 
-      @media #{$medium-only} {
-        margin-left: -14% !important;
-      }
-
-      @media #{$large-up} {
+      @media #{$medium-up} {
         margin-left: -8% !important;
       }
 

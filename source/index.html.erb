@@ -232,7 +232,7 @@ title: The Really Big One
 
       <p class="wow fadeIn">It’s not a question of if, but when.</p>
 
-      <!-- TODO: -->
+      <!-- TODO: Position absolutely at the bottom of the screen -->
       <a style="display: block; margin: 0 auto; margin-top: 7vh; color: red;" class="wow fadeIn"href="#subduction"><span class="blink">&darr;</span></a>
 
     </div>
@@ -245,13 +245,13 @@ title: The Really Big One
 <section id="subduction" class="subduction">
 
   <div class="row">
-    <div class="medium-11 medium-centered large-5 large-uncentered columns">
+    <div class="medium-8 medium-centered large-5 large-uncentered columns">
 
-      <h1 class="wow fadeInUp"><small class="subtitle">Meet The</small>Cascadia <small class="subtitle subtitle--bottom">Subduction Zone</small></h1>
+      <h1 class="wow fadeIn"><small class="subtitle">Meet The</small> Cascadia <small class="subtitle subtitle--bottom">Subduction Zone</small></h1>
 
       <object class="hide-for-large-up wow fadeIn" data="/media/subduction-zone.svg" type="image/svg+xml" width="100%"></object>
 
-      <div class="wow fadeIn">
+      <div class="wow fadeIn" data-wow-delay="0.3s">
         <p>You might think that San Andreas is the only thing we have to worry about. You’d be wrong: There’s a 700 mile fault line stretching from Vancouver to Northern California off the Pacific coast.</p>
 
         <p><strong>Cascadia has the potential to create <span class="emph">30 times</span> the energy of the San Andreas fault.</strong></p>
@@ -260,7 +260,7 @@ title: The Really Big One
     </div>
     <div class="large-7 columns show-for-large-up text-right">
 
-      <object class="wow fadeIn" data="/media/subduction-zone.svg" type="image/svg+xml" width="780"></object>
+      <object class="wow fadeInUp" data="/media/subduction-zone.svg" type="image/svg+xml" width="780"></object>
 
     </div>
   </div>
@@ -283,6 +283,8 @@ title: The Really Big One
   <div class="row text-center">
     <div class="medium-8 medium-centered large-6 columns">
 
+      <!-- TODO: tidy up -->
+
       <ul class="block-grid small-block-grid-2">
         <li>
           <!-- <span class="circle-container wow bounceIn">
@@ -292,7 +294,8 @@ title: The Really Big One
           <!-- <h3 class="fact fact--large wow bounceIn">
             <span>1 in 3</span>
           </h3> -->
-          <h3 class="fact-badge wow bounceIn">1 in 3</h3>
+          <h3 class="fact-badge wow bounceIn" data-wow-delay="0.35s">1 in 3</h3>
+          <!-- <div class="pie"><span>30%</span></div> -->
           <p class="wow fadeInUp">Chance of a <span class="emph emph--block">magnitude 8.5+</span> earthquake</p>
         </li>
         <li>
@@ -300,7 +303,8 @@ title: The Really Big One
             <span class="content wow fadeIn">10%</span>
             <div class="dot"></div>
           </span> -->
-          <div class="pie"><span>10%</span></div>
+          <h3 class="fact-badge wow bounceIn" data-wow-delay="0.35s">1 in 10</h3>
+          <!-- <div class="pie"><span>10%</span></div> -->
           <p class="wow fadeInUp">Chance of a <span class="emph emph--block">magnitude 9+</span> earthquake</p>
         </li>
       </ul>
@@ -520,17 +524,16 @@ title: The Really Big One
     <div class="row">
 
       <div class="small-9 large-7 large-offset-1 columns">
-      <!-- <div class="small-12 medium-8 medium-offset-1 large-7 columns"> -->
 
         <!-- <h2>TODO: Timer starts</h2> -->
 
         <div class="wow fadeIn hide-for-small">
 
           <div class="row">
-            <div class="medium-3 large-2 columns">
+            <div class="medium-2 columns">
               <object class="small-icon wow bounceIn" data="/media/icons/quake-dogs.svg" type="image/svg+xml" width="100"></object>
             </div>
-            <div class="medium-9 large-10 columns">
+            <div class="medium-10 columns">
               <p>Animals are able to sense the seismic waves before humans do. If you hear dogs starting to bark unusually loudly and intensely, <strong>take immediate action</strong>...</p>
             </div>
           </div>
@@ -541,18 +544,18 @@ title: The Really Big One
 
           <h1><object class="large-icon" data="/media/icons/location-indoors.svg" type="image/svg+xml"></object> Indoors</h1>
 
-          <!-- <h3>&ldquo; Earthquakes don’t kill people, buildings (and their contents) do.</h3> -->
+          <!-- <h3>TODO: use or remove: &ldquo; Earthquakes don’t kill people, buildings (and their contents) do.</h3> -->
 
           <div class="row icon-grid text-center">
-            <div class="columns small-4 large-3">
+            <div class="columns small-4 medium-3">
               <object class="xsmall-icon wow bounceIn" data="/media/icons/quake-drop.svg" type="image/svg+xml"></object>
               <span class="emph emph--block">Drop</span>
             </div>
-            <div class="columns small-4 large-3">
+            <div class="columns small-4 medium-3">
               <object class="xsmall-icon wow bounceIn" data="/media/icons/quake-cover.svg" type="image/svg+xml"></object>
               <span class="emph emph--block">Cover</span>
             </div>
-            <div class="columns small-4 large-3 end">
+            <div class="columns small-4 medium-3 end">
               <object class="xsmall-icon wow bounceIn" data="/media/icons/quake-hold.svg" type="image/svg+xml"></object>
               <span class="emph emph--block">Hold On</span>
             </div>
@@ -746,20 +749,20 @@ title: The Really Big One
             <p class="js-animate-risk wow fadeIn text-center">
               <button class="button large button--risk js-button-risk">
                 Am I at risk?
+                <br/><span class="loading js-loading">Checking your location...</span>
               </button>
-
-              <div class="loading js-loading">Checking your location...</div>
             </p>
 
           </div>
-          <div class="medium-8 large-9 columns">
+          <div class="medium-7 large-9 columns">
 
             <div class="alert-box alert-box--danger alert-box--risk js-alert-box-danger">
               <div class="row">
-                <div class="medium-2 columns">
-                  <object class="small-icon area-affected" data="/media/icons/area-affected.svg" type="image/svg+xml"></object>
+                <div class="large-3 columns show-for-large-up text-left">
+                  <object class="large-icon area-affected" data="/media/icons/area-affected.svg" type="image/svg+xml"></object>
                 </div>
-                <div class="medium-10 columns">
+                <div class="large-9 columns">
+                  <object class="large-icon area-affected hide-for-large-up" data="/media/icons/area-affected.svg" type="image/svg+xml"></object>
                   <h2>You’re in the affected area</h2>
                   <p>It’s super important for you to pay attention to the following information: it might save the lives of you and your family.</p>
                 </div>
@@ -768,10 +771,11 @@ title: The Really Big One
 
             <div class="alert-box alert-box--safe alert-box--risk js-alert-box-safe">
               <div class="row">
-                <div class="medium-2 columns">
-                  <object class="small-icon area-safe" data="/media/icons/area-safe.svg" type="image/svg+xml"></object>
+                <div class="large-3 columns show-for-large-up text-left">
+                  <object class="large-icon area-safe" data="/media/icons/area-safe.svg" type="image/svg+xml"></object>
                 </div>
-                <div class="medium-10 columns">
+                <div class="large-9 columns">
+                  <object class="large-icon area-safe hide-for-large-up" data="/media/icons/area-safe.svg" type="image/svg+xml"></object>
                   <h2>You’re not in the affected area.</h2>
                   <p>Phew! It looks like you’re outside the risk zone. But please share this information with people you know who live in Pacific Northwest!</p>
                 </div>
@@ -809,7 +813,7 @@ title: The Really Big One
         <p>Put together a kit to help you get out of trouble: and store it somewhere you can grab it in a hurry:</p>
 
         <!-- TODO: add checkboxes (Arnas) or interactive check list with localStorage (Marcel) -->
-        <ul class="block-grid medium-block-grid-2 large-block-grid-3">
+        <ul class="block-grid small-block-grid-2 medium-block-grid-3">
           <li>
             <img src="/media/icons/checklist/emergency-info.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/emergency-info.gif'">
             Emergency-contact information

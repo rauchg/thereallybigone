@@ -26,7 +26,6 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // =======================================
 // Import stylesheets
 // =======================================
-// @import "pace"; //  inlining this
 @import "animate";
 @import "journey";
 @import "elements";
@@ -74,7 +73,7 @@ section {
   }
 
   @media #{$medium-up} {
-    min-height: 100%;
+    // min-height: 100%;
     padding: 3rem 0;
   }
 
@@ -299,7 +298,7 @@ bold {
 
   .credit-logo--right {
     top: 2.175rem;
-    right: 1.25rem
+    right: 1.25rem;
 
     @media #{$large-up} {
       right: 3rem;
@@ -619,10 +618,6 @@ bold {
     }
   }
 
-  // p {
-  //   color: #fff;
-  // }
-
   ul {
     margin-top: 5vw;
   }
@@ -640,7 +635,7 @@ bold {
 }
 
 .at-risk {
-  padding: 10vh 0 5vh;
+  padding: 10% 0 5%;
 }
 
 .area-safe,
@@ -651,7 +646,6 @@ bold {
 
 .alert-box--safe,
 .alert-box--danger {
-  // background: rgba(255, 255, 255, 0.05);
   border-radius: 5px;
   margin-top: 5rem;
 
@@ -665,14 +659,13 @@ bold {
   padding: 0;
 
   @media #{$medium-up} {
-    padding: 6rem 0;
+    padding: 5rem 0 3.25rem;
     background: url(/media/trbo-CTA-bg.svg) left center no-repeat;
     background-size: 25%;
-    // background-size: 95%;
   }
 
   @media #{$large-up} {
-    padding: 8rem 0;
+    padding: 9rem 0 7rem;
   }
 }
 
@@ -686,13 +679,15 @@ bold {
 // Loader
 .loading {
   display: none;
-  clear: both;
   background: url(../images/loading.gif) 0 4px no-repeat;
   background-size: 8px 8px;
   padding-left: 16px;
   color: #fff;
   font-size: 0.9rem;
   opacity: 0.7;
+  font-family: $body-font-family;
+  font-style: normal;
+  text-transform: none;
 }
 
 // Hide risk boxes until triggered
@@ -708,11 +703,16 @@ bold {
 
   @media #{$large-up} {
     padding: 2rem;
+    text-align: left;
   }
 
   h2 {
     margin-bottom: 1rem;
     color: $off-white;
+  }
+
+  object {
+    margin: 0 auto 1rem;
   }
 
   &.warning,
@@ -764,7 +764,11 @@ bold {
 
 
 .preparedness__sharing {
-  margin-top: 5vw;
+  margin-top: 2.5rem;
+
+  @media #{$large-up} {
+    margin-top: 5rem;
+  }
 }
 
 .button--twitter,

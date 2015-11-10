@@ -374,7 +374,7 @@ $(document).ready(function() {
       seconds++;
       ticks++;
 
-    }, 10);
+    }, 2);
   };
 
   /* ---------- RISK BUTTON ---------- */
