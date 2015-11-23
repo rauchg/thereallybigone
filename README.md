@@ -1,7 +1,7 @@
 The Really Big One
 =================
 
-[trbo.builtbyhanno.co](http://trbo.builtbyhanno.co)
+[104.236.226.66](104.236.226.66)
 
 [ ![Codeship Status for wearehanno/thereallybigone](https://codeship.io/projects/62ff1160-09e4-0132-177d-4af473c3e2ac/status?branch=master)](TODO)
 
