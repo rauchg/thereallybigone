@@ -1,43 +1,36 @@
 .cd-top {
   display: inline-block;
   z-index: 9999;
-
-  height: 40px;
-  width: 40px;
-
+  height: 36px;
+  width: 36px;
   position: fixed;
-  bottom: 40px;
+  bottom: 36px;
   right: 10px;
-
-  box-shadow: 0 0 10px rgba(#000, .05);
-
-  /* image replacement properties */
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-
-  background: rgba(#e86256, .8) url(/assets/images/arrows/cd-top-arrow.svg) no-repeat center 50%;
-
+  background: rgba($juicy-orange, 0.8) url(/assets/images/arrows/cd-top-arrow.svg) no-repeat center 50%;
+  border-radius: 15px;
   visibility: hidden;
   opacity: 0;
 
-  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
-  -moz-transition: opacity .3s 0s, visibility 0s .3s;
-  transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s;
 
-  &.cd-is-visible, &.cd-fade-out, .no-touch &:hover {
-    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
-    -moz-transition: opacity .3s 0s, visibility 0s 0s;
-    transition: opacity .3s 0s, visibility 0s 0s;
+  &.cd-is-visible,
+  &.cd-fade-out,
+  .no-touch &:hover {
+    transition: opacity 0.3s 0s, visibility 0s 0s;
   }
 
-  &.cd-is-visible { /* the button becomes visible */
+  /* the button becomes visible */
+  &.cd-is-visible {
     visibility: visible;
     opacity: 1;
   }
 
-  &.cd-fade-out { /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
-    opacity: .5;
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  &.cd-fade-out {
+    opacity: 0.25;
   }
 
   .no-touch &:hover {
@@ -46,15 +39,14 @@
   }
 
   @media #{$medium-up} {
-    right: 20px;
-    bottom: 20px;
+    right: 24px;
+    bottom: 36px;
   }
 
   @media #{$large-up} {
-    height: 60px;
-    width: 60px;
-    right: 30px;
-    bottom: 30px;
+    height: 48px;
+    width: 48px;
+    right: 48px;
+    bottom: 48px;
   }
-
 }
