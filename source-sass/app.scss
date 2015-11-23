@@ -37,7 +37,8 @@ $header-font: Anton, Impact, "Helvetica Neue", "Helvetica", Helvetica, Arial, sa
 // =======================================
 
 html {
-  overflow: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 body {
@@ -118,7 +119,7 @@ h1 {
 
   small {
     display: block;
-    margin: 1rem 0 0.75rem;
+    margin: 0.5rem 0 0.25rem;
     font-family: $body-font-family;
     text-transform: none;
     font-size: 1.125rem;
@@ -145,7 +146,7 @@ h1 {
       font-size: 1rem;
       font-family: $header-font;
       text-transform: uppercase;
-      letter-spacing: 6px;
+      letter-spacing: 4px;
       font-weight: normal;
 
       @media #{$medium-up} {
@@ -193,8 +194,8 @@ h3 {
 
 p,
 li {
-  font-size: 0.9rem;
-  line-height: 1.3;
+  font-size: 1rem;
+  line-height: 1.35;
   color: #8c949e;
 
 
@@ -224,7 +225,6 @@ bold {
 // Links and buttons
 // =======================================
 
-// TODO: style buttons
 .button {
   background: none;
   color: $juicy-orange;
@@ -436,6 +436,10 @@ bold {
 
 .prediction {
 
+  @media #{$medium-up} {
+    box-shadow: 0 50px 50px 0 $dark-blue;
+  }
+
   h1 {
     overflow: hidden;
   }
@@ -454,11 +458,17 @@ bold {
 }
 
 .prediction--chance {
-  padding-top: 0;
+
+  @media #{$small-only} {
+    padding-top: 0;
+  }
 }
 
 .prediction--scenario {
-  padding-top: 0;
+
+  @media #{$small-only} {
+    padding-top: 0;
+  }
 
   ul {
     margin-bottom: 5vw;
@@ -599,11 +609,17 @@ bold {
 }
 
 
-// TODO: Refactor
+// =======================================
+// Let's Get Prepared & Protected
+// =======================================
 
 .preparedness {
-  padding-top: 12vw;
+  padding-top: 6vw;
   text-align: center;
+
+  @media #{$medium-up} {
+    box-shadow: 0 -50px 50px 0 $dark-blue;
+  }
 
   .row {
     position: relative;
@@ -611,11 +627,27 @@ bold {
   }
 
   h1 {
-    margin-top: 8vw;
-    margin-bottom: 2vw;
+    margin-top: 10vw;
+    margin-bottom: 0;
 
     span {
       color: $light-orange;
+    }
+  }
+
+  p:first-of-type {
+    margin-top: 1.25rem;
+
+    @media #{$large-up} {
+      margin-top: 1.75rem;
+    }
+  }
+
+  p {
+    margin-bottom: 0.75rem;
+
+    @media #{$large-up} {
+      margin-bottom: 1.25rem;
     }
   }
 
@@ -635,10 +667,111 @@ bold {
   }
 }
 
+
+// At Risk?
+
 .at-risk {
   padding: 10% 0 5%;
 }
 
+  .at-risk__cta {
+    position: relative;
+    padding: 0;
+    background: url(/media/trbo-CTA-bg.svg) left top no-repeat;
+    background-size: 30%;
+
+    @media #{$medium-up} {
+      padding: 5rem 0 3.25rem;
+      background-position: left center;
+      background-size: 25%;
+    }
+
+    @media #{$large-up} {
+      padding: 9rem 0 7rem;
+    }
+  }
+
+    .button--risk {
+      margin-top: 1.5rem;
+      background: $dark-blue;
+      box-shadow: 0 0 26px 5px $dark-blue;
+    }
+
+    .at-risk__cta__disclaimer {
+      position: relative;
+      max-width: 660px;
+      padding: 0.75rem 0.75rem 0.7125rem;
+      text-align: center;
+      border: 2px solid $dirty-blue;
+      background: $dark-blue;
+      border-radius: 8px;
+
+      @media #{$medium-up} {
+        padding: 2rem 3rem;
+        text-align: left;
+      }
+
+      &:after,
+      &:before {
+        left: 50%;
+        bottom: 100%;
+        border: solid transparent;
+        content: '';
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+
+        @media #{$medium-up} {
+          left: auto;
+          bottom: auto;
+          right: 100%;
+          top: 50%;
+        }
+      }
+
+      &:after {
+        border-color: transparent;
+        border-bottom-color: $dark-blue;
+        border-width: 12px;
+        margin-left: -12px;
+
+        @media #{$medium-up} {
+          border-bottom-color: transparent;
+          border-right-color: $dark-blue;
+          margin-top: -12px;
+        }
+      }
+
+      &:before {
+        border-color: transparent;
+        border-bottom-color: $dirty-blue;
+        border-width: 15px;
+        margin-left: -15px;
+
+        @media #{$medium-up} {
+          border-bottom-color: transparent;
+          border-right-color: $dirty-blue;
+          margin-top: -15px;
+        }
+      }
+    }
+
+// Loader
+.loading {
+  display: none;
+  background: url(../images/loading.gif) 0 4px no-repeat;
+  background-size: 8px 8px;
+  padding-left: 16px;
+  color: #fff;
+  font-size: 0.9rem;
+  opacity: 0.7;
+  font-family: $body-font-family;
+  font-style: normal;
+  text-transform: none;
+}
+
+// Response boxes
 .area-safe,
 .area-affected {
   width: 110px;
@@ -653,42 +786,6 @@ bold {
   p {
     color: #fff;
   }
-}
-
-.at-risk__cta {
-  position: relative;
-  padding: 0;
-
-  @media #{$medium-up} {
-    padding: 5rem 0 3.25rem;
-    background: url(/media/trbo-CTA-bg.svg) left center no-repeat;
-    background-size: 25%;
-  }
-
-  @media #{$large-up} {
-    padding: 9rem 0 7rem;
-  }
-}
-
-.button--risk {
-  margin-top: 1.5rem;
-  background: $dark-blue;
-  box-shadow: 0 0 26px 5px $dark-blue;
-}
-
-
-// Loader
-.loading {
-  display: none;
-  background: url(../images/loading.gif) 0 4px no-repeat;
-  background-size: 8px 8px;
-  padding-left: 16px;
-  color: #fff;
-  font-size: 0.9rem;
-  opacity: 0.7;
-  font-family: $body-font-family;
-  font-style: normal;
-  text-transform: none;
 }
 
 // Hide risk boxes until triggered
@@ -715,60 +812,46 @@ bold {
   object {
     margin: 0 auto 1rem;
   }
+}
 
-  &.warning,
-  &.alert {
-    padding: 1rem 2rem 1.25rem;
-    background: rgba($yellow, 0.05);
-    border-radius: 5px;
-    line-height: 1.3;
+  .alert-box--safe {
+    background: rgba(lightgreen, 0.05);
 
-    p {
-      font-size: 2rem;
-      margin: 0;
-      line-height: 1;
-      color: lighten($yellow, 20%);
-
-      small {
-        font-size: 60%;
-        line-height: 1;
-      }
+    h2 {
+      color: lightgreen;
     }
   }
 
-  &.alert {
-    background: rgba(red, 0.05);
+  .alert-box--danger {
+    background: rgba($light-orange, 0.05);
 
-    p {
-      color: lighten(red, 35%);
+    h2 {
+      color: $juicy-orange;
     }
   }
 
-}
+// Emergency Kit
+.checklist {
 
+  img {
+    display: block;
+    margin: 0 auto 0.5rem;
+  }
 
-.alert-box--safe {
-  background: rgba(lightgreen, 0.05);
+  small {
 
-  h2 {
-    color: lightgreen;
+    @media #{$small-only} {
+      font-size: 85%;
+    }
   }
 }
 
-.alert-box--danger {
-  background: rgba($light-orange, 0.05);
-
-  h2 {
-    color: $juicy-orange;
-  }
-}
-
-
+// Sharing
 .preparedness__sharing {
-  margin-top: 2.5rem;
+  padding-top: 2.5rem;
 
   @media #{$large-up} {
-    margin-top: 5rem;
+    padding-top: 5rem;
   }
 }
 
@@ -831,18 +914,63 @@ bold {
   background-color: #3b5998;
   box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
 
-    &:hover {
-      background-color: #3b5998;
-      color: #fff;
-    }
+  &:hover {
+    background-color: #3b5998;
+    color: #fff;
+  }
 }
 
 .button--email {
-  color: #621800;
+  // color: #621800;
+  color: #fff;
   background-color: $primary-color;
-  box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.3);
+  box-shadow: inset 0 0 7px 4px rgba(22, 31, 41, 0.2);
 
   &:hover {
-    color: #621800;
+    // color: #621800;
+    color: #fff;
   }
+}
+
+
+// =======================================
+// Footer
+// =======================================
+
+footer {
+  padding-top: 4vh;
+  border-top: 1px solid rgba($dirty-blue, 0.3);
+  text-align: center;
+
+  h1 {
+    margin-top: 7vh;
+    margin-bottom: 3vh;
+    text-align: center;
+
+    &:first-of-type {
+      margin-top: 5vh;
+    }
+  }
+
+  h4 {
+    margin: 4vh 0;
+
+    a.emph {
+      display: block;
+
+      @media #{$large-up} {
+        display: inline;
+      }
+    }
+  }
+
+  li {
+    margin-bottom: 0.375rem;
+  }
+}
+
+.hanno-logo {
+  position: relative;
+  top: -1px;
+  margin-right: 0.25rem;
 }

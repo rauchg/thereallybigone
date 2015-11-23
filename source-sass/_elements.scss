@@ -12,6 +12,7 @@
   }
 }
 
+
 // Orange bold text for emphasising facts
 .emph {
   font-family: $header-font;
@@ -29,9 +30,14 @@
   }
 }
 
-.emph--block {
-  display: block;
-}
+  .emph--block {
+    display: block;
+  }
+
+  .emph--basic {
+    font-style: normal;
+    color: $light-orange;
+  }
 
 
 // Icons
@@ -147,39 +153,7 @@
 }
 
 
-// Fact badge
-.fact-badge {
-  clear: both;
-  display: inline-block;
-  margin: 0 auto 0.5rem;
-  padding: 0.5rem 0.6125em 0.45rem;
-  font-size: 1rem;
-  font-family: $header-font;
-  color: darken($juicy-orange, 35%);
-  text-transform: uppercase;
-  text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
-  background: $juicy-orange;
-  box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
-  border-radius: 5px;
-
-  @media #{$medium-up} {
-    margin-bottom: 0.75rem;
-    padding: 0.575rem 0.75rem 0.5rem;
-    font-size: 1.275rem;
-  }
-
-  @media #{$large-up} {
-    margin-bottom: 1rem;
-    padding: 0.625rem 1rem 0.575rem;
-    font-size: 1.75rem;
-  }
-}
-
-
 // Facts -- big pretty numbers
-
-// TODO: needs refactoring
-
 .fact {
   display: inline-block;
   margin: 0;
@@ -214,21 +188,22 @@
   }
 }
 
-
 .block-grid--facts {
 
   .fact + .emph {
     display: block;
+    margin-top: 0.25rem;
     color: #fff;
+    font-family: $body-font-family;
+    text-transform: none;
+    letter-spacing: 0;
   }
 
   .fact span {
-    // TODO:
     color: $light-orange !important;
   }
 
   ul object {
-    // TODO:
     margin-bottom: 0.25rem !important;
   }
 
@@ -238,33 +213,26 @@
       padding: 0 0.125rem 0.475rem;
 
       p {
-        font-size: 0.75rem;
+        font-size: 0.8125rem;
       }
     }
   }
 }
 
-  .fact--small {
+  .fact--small span {
+    font-size: 1.5rem;
 
-    span {
-      font-size: 1.5rem;
-
-      @media #{$medium-up} {
-        font-size: 1.875rem;
-      }
-
-      @media #{$large-up} {
-        font-size: 2.2125rem;
-      }
+    @media #{$medium-up} {
+      font-size: 2.125rem;
     }
 
-    + .emph {
-      font-size: 75%;
+    @media #{$large-up} {
+      font-size: 3.125rem;
     }
   }
 
   .fact--large span {
-    font-size: 2.5rem;
+    font-size: 2.125rem;
 
     @media #{$medium-up} {
       font-size: 3.125rem;
@@ -276,86 +244,151 @@
   }
 
 
-// Orange circles with ripple/pulse effect
-.circle-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 0 auto;
+// Fact badge
+.fact-badge {
+  clear: both;
+  display: inline-block;
+  margin: 0 auto 0.5rem;
+  padding: 0.5rem 0.6125em 0.45rem;
+  font-size: 1rem;
+  font-family: $header-font;
   color: darken($juicy-orange, 35%);
+  text-transform: uppercase;
   text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+  background: $juicy-orange;
+  box-shadow: inset 0 0 10px 2px darken($juicy-orange, 10%);
+  border-radius: 5px;
 
   @media #{$medium-up} {
-    width: 50%;
+    margin-bottom: 0.75rem;
+    padding: 0.575rem 0.75rem 0.5rem;
+    font-size: 1.275rem;
   }
 
-  &:after {
-    content: "";
-    display: block;
+  @media #{$large-up} {
+    margin-bottom: 1rem;
+    padding: 0.625rem 1rem 0.575rem;
+    font-size: 1.75rem;
+  }
+}
+
+
+// Tooltips
+.has-tip {
+  text-decoration: none;
+  border: none;
+  color: $light-orange;
+
+  &:hover {
+    color: $juicy-orange;
+    border: none;
+  }
+
+  &.open {
     position: relative;
-    z-index: 8;
-    width: 50%;
-    height: 0;
-    margin: 0 auto;
-    padding-bottom: 50%;
-    border-radius: 50%;
-    background: $juicy-orange;
-    box-shadow: inset 0 0 10px 10px darken($juicy-orange, 10%);
-
-    @media #{$medium-up} {
-      width: 100%;
-      padding-bottom: 100%;
-    }
+    z-index: 9999;
   }
+}
 
-  .content {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    z-index: 10;
-    -ms-transform: translate(-50%, 50%);
-        transform: translate(-50%, 50%);
-    text-align: center;
-    font-family: $header-font;
-    font-size: 1.5rem;
+.block-grid--tips {
 
-    @media #{$medium-up} {
-      top: 0%;
-      left: 50%;
-      font-size: 2.5rem;
-    }
+  li {
+    position: relative;
+    padding-bottom: 0.5rem;
 
-    @media #{$large-up} {
-      top: 10%;
-    }
-  }
-
-  .dot {
-    border: 5px solid $light-orange;
-    background: transparent;
-    border-radius: 50%;
-    height: 175px;
-    width: 175px;
-    position: absolute;
-    top: -50%;
-    left: 0;
-    z-index: 1;
-    animation: pulse 3s ease-out infinite;
-    opacity: 0;
-
-    @media #{$medium-up} {
-      width: 150%;
-      height: 150%;
-      top: -25%;
-      left: -25%;
-      border-width: 7px;
+    &:before {
+      content: '—';
+      margin-right: 0.25rem;
+      font-family: $header-font;
+      color: $light-orange;
     }
   }
 }
 
-.checklist img {
+
+// Pulsing arrow at the bottom of a section
+.scroll-hint {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 0.5rem;
-  width: 40px;
+  margin: 7vh auto;
+  color: $light-orange;
 }
+
+
+// Orange circles with ripple/pulse effect
+// (Used to be the prediction odds graphics)
+
+// .circle-container {
+//   position: relative;
+//   display: block;
+//   width: 100%;
+//   margin: 0 auto;
+//   color: darken($juicy-orange, 35%);
+//   text-shadow: 1px 1px 2px lighten($juicy-orange, 12%);
+
+//   @media #{$medium-up} {
+//     width: 50%;
+//   }
+
+//   &:after {
+//     content: "";
+//     display: block;
+//     position: relative;
+//     z-index: 8;
+//     width: 50%;
+//     height: 0;
+//     margin: 0 auto;
+//     padding-bottom: 50%;
+//     border-radius: 50%;
+//     background: $juicy-orange;
+//     box-shadow: inset 0 0 10px 10px darken($juicy-orange, 10%);
+
+//     @media #{$medium-up} {
+//       width: 100%;
+//       padding-bottom: 100%;
+//     }
+//   }
+
+//   .content {
+//     position: absolute;
+//     top: 15%;
+//     left: 50%;
+//     z-index: 10;
+//     -ms-transform: translate(-50%, 50%);
+//         transform: translate(-50%, 50%);
+//     text-align: center;
+//     font-family: $header-font;
+//     font-size: 1.5rem;
+
+//     @media #{$medium-up} {
+//       top: 0%;
+//       left: 50%;
+//       font-size: 2.5rem;
+//     }
+
+//     @media #{$large-up} {
+//       top: 10%;
+//     }
+//   }
+
+//   .dot {
+//     border: 5px solid $light-orange;
+//     background: transparent;
+//     border-radius: 50%;
+//     height: 175px;
+//     width: 175px;
+//     position: absolute;
+//     top: -50%;
+//     left: 0;
+//     z-index: 1;
+//     animation: pulse 3s ease-out infinite;
+//     opacity: 0;
+
+//     @media #{$medium-up} {
+//       width: 150%;
+//       height: 150%;
+//       top: -25%;
+//       left: -25%;
+//       border-width: 7px;
+//     }
+//   }
+// }

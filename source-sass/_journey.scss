@@ -6,7 +6,7 @@
 
   &:after {
     z-index: 1005;
-    background: linear-gradient(to right, $dark-blue 0, rgba($dark-blue, 0) 100%);
+    background: linear-gradient(to right, $dark-blue 15%, rgba($dark-blue, 0.4) 100%);
 
     @media #{$medium-up} {
       background: linear-gradient(to right, $dark-blue 0, rgba($dark-blue, 0.88) 30%, rgba($dark-blue, 0.5) 65%, rgba($dark-blue, 0) 100%);
@@ -23,26 +23,26 @@
     width: 100%;
     height: auto;
     z-index: 0;
-
-    // TODO: Marcel, move this onto a new div
-    background: linear-gradient(to top, $dark-blue 0%, rgba($dark-blue, 0) 8%);
   }
 
-  .cascadia-journey__background--mobile {
+    .cascadia-journey__background--mobile {
+      height: 100%;
+    }
 
-  }
-
+  // Fade out the Journey background image at the bottom
   .cascadia-journey__fade-out {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     z-index: 999;
-    margin: 0; padding: 150px 0;
-    background-image: linear-gradient(to bottom, transparent, #161f29)
+    margin: 0;
+    padding: 500px 0 0;
+    background-image: linear-gradient(to top, #161f29 25%, rgba(0, 0, 0, 0) 100%);
   }
 
-  .helicopter, .helicopter-blades {
+  .helicopter,
+  .helicopter-blades {
     position: fixed;
     top: 25px;
     right: 15px;
@@ -99,36 +99,25 @@
     }
   }
 
-  .cascadia-journey__timer {
 
-    // TODO:
-    display: none;
-
-    width: 20rem;
-    position: fixed;
-    bottom: 50px;
-    right: 50px;
-    z-index: 999;
-    padding: 0.5rem;
-    background: rgba($dark-blue, 0.85);
-    border: 2px solid $yellow;
-    text-align: center;
-  }
-
-
+  // Main Content
   .cascadia-journey__content {
     position: relative;
     z-index: 1010;
 
     .row {
-      margin: 2% 0 3%;
+      margin: 2% auto 3% 0;
 
       @media #{$medium-up} {
-        margin: 5% 0 8%;
+        margin: 5% auto 8% 0;
       }
 
       @media #{$large-up} {
-        margin: 10% 0 14%;
+        margin: 10% auto 14% 0;
+      }
+
+      &:last-of-type {
+        margin-bottom: 0;
       }
 
       .row {
@@ -143,72 +132,45 @@
       }
     }
 
+    // Give plenty of vertical spacing to main content blocks
     div.wow {
-      margin: 20% 0;
+      margin: 18% 0;
 
-      @media #{$medium-up} {
-        margin: 21% 0;
-      }
+      @media #{$medium-up} { margin: 21% 0; }
 
-      @media only screen and (min-width: 660px) {
-        margin: 22% 0;
-      }
+      @media only screen and (min-width: 660px) { margin: 22% 0; }
 
-      @media only screen and (min-width: 680px) {
-        margin: 24% 0;
-      }
+      @media only screen and (min-width: 680px) { margin: 24% 0; }
 
-      @media only screen and (min-width: 710px) {
-        margin: 26% 0;
-      }
+      @media only screen and (min-width: 710px) { margin: 26% 0; }
 
-      @media only screen and (min-width: 740px) {
-        margin: 28% 0;
-      }
+      @media only screen and (min-width: 740px) { margin: 28% 0; }
 
-      @media only screen and (min-width: 800px) {
-        margin: 33% 0;
-      }
+      @media only screen and (min-width: 800px) { margin: 33% 0; }
 
-      @media only screen and (min-width: 830px) {
-        margin: 36% 0;
-      }
+      @media only screen and (min-width: 830px) { margin: 36% 0; }
 
-      @media only screen and (min-width: 870px) {
-        margin: 39% 0;
-      }
+      @media only screen and (min-width: 870px) { margin: 39% 0; }
 
-      @media only screen and (min-width: 920px) {
-        margin: 41% 0;
-      }
+      @media only screen and (min-width: 920px) { margin: 41% 0; }
 
-      @media only screen and (min-width: 980px) {
-        margin: 43% 0;
-      }
+      @media only screen and (min-width: 980px) { margin: 43% 0; }
 
-      @media #{$large-up} {
-        margin: 28% 0;
-      }
+      @media #{$large-up} { margin: 28% 0; }
 
-      @media only screen and (min-width: 1080px) {
-        margin: 30% 0;
-      }
+      @media only screen and (min-width: 1080px) { margin: 30% 0; }
 
-      @media only screen and (min-width: 1120px) {
-        margin: 33% 0;
-      }
+      @media only screen and (min-width: 1120px) { margin: 33% 0; }
 
-      @media only screen and (min-width: 1160px) {
-        margin: 36% 0;
-      }
+      @media only screen and (min-width: 1160px) { margin: 36% 0; }
 
-      @media only screen and (min-width: 1200px) {
-        margin: 39% 0;
-      }
+      @media only screen and (min-width: 1200px) { margin: 39% 0; }
 
-      @media only screen and (min-width: 1230px) {
-        margin: 56% 0;
-      }
+      @media only screen and (min-width: 1230px) { margin: 56% 0; }
+    }
+
+    > .row:last-of-type div.wow {
+      margin-bottom: 35%;
     }
 
     div.aftermath {
@@ -299,27 +261,66 @@
       margin: 10% 0;
       padding: 0;
       border: none;
-      color: $light-orange;
+      color: #fff;
       font-size: 1.125rem;
-      line-height: 1.2;
+      line-height: 1.3;
+
+      &:before {
+        content: '“';
+        position: relative;
+        top: -0.875rem;
+        left: 50%;
+        transform: translateX(-25px);
+        display: block;
+        width: 50px;
+        height: 50px;
+        line-height: 1.375;
+        font-size: 4rem;
+        font-family: georgia, serif;
+        color: $light-orange;
+        background: $juicy-orange;
+        border-radius: 50%;
+        z-index: 10;
+      }
 
       @media #{$medium-up} {
         font-size: 2rem;
+        line-height: 1.25;
       }
 
       @media #{$large-up} {
-        font-size: 2.75rem;
+        font-size: 3.125rem;
+        line-height: 1.2;
+
+        &:before {
+          top: -1.25rem;
+          transform: translateX(-50px);
+          display: block;
+          width: 100px;
+          height: 100px;
+          font-size: 8rem;
+        }
       }
 
       cite {
         display: block;
-        margin-top: 0.375rem;
+        margin-top: 0.5rem;
         font-style: normal;
-        font-size: 0.5em;
-        color: $dirty-blue;
+        font-size: 0.875rem;
+        line-height: 1.4;
+        color: lighten($grey, 30%);
+
+        @media #{$medium-up} {
+          font-size: 1rem;
+        }
+
+        @media #{$large-up} {
+          margin-top: 0.75rem;
+          font-size: 1.125rem;
+        }
 
         a {
-          color: lighten($dirty-blue, 22%);
+          color: $light-orange;
 
           &:hover {
             color: #fff;
@@ -338,7 +339,8 @@
 }
 
 
-/* cities svgs and trigger lines */
+// Cities SVGs position & trigger lines
+
 .cities,
 .tsunamis {
   position: absolute;
@@ -365,20 +367,21 @@
 .cities--grantspass { top: 427.2vw; }
 .cities--redding    { top: 536.2vw; }
 
-// TODO: hide (remove colours) before ship
+
+// Helper lines marking animation threshold
 .cities-trigger,
 .tsunamis-trigger {
-  border-top: 1px solid #f00;
+  // border-top: 1px solid #f00;
   position: absolute;
   top: 0;
   width: 100%;
   height: 1px;
 }
 
-// TODO: hide (remove colours) before ship
-.tsunamis-trigger {
-  border-top: 1px solid #0f0;
-}
+// .tsunamis-trigger {
+//   border-top: 1px solid #0f0;
+// }
+
 
 // Trigger city animations (distance from the top of the screen)
 .cities-trigger--vancouver  { top: 80vw; }

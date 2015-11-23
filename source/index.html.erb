@@ -232,8 +232,7 @@ title: The Really Big One
 
       <p class="wow fadeIn">It’s not a question of if, but when.</p>
 
-      <!-- TODO: Position absolutely at the bottom of the screen -->
-      <a style="display: block; margin: 0 auto; margin-top: 7vh; color: red;" class="wow fadeIn"href="#subduction"><span class="blink">&darr;</span></a>
+      <a class="scroll-hint wow fadeIn" href="#subduction"><span class="blink">&darr;</span></a>
 
     </div>
   </div>
@@ -247,11 +246,15 @@ title: The Really Big One
   <div class="row">
     <div class="medium-8 medium-centered large-5 large-uncentered columns">
 
-      <h1 class="wow fadeIn"><small class="subtitle">Meet The</small> Cascadia <small class="subtitle subtitle--bottom">Subduction Zone</small></h1>
+      <h1 class="wow fadeIn">
+        <small class="subtitle">Meet The</small>
+        Cascadia
+        <small class="subtitle subtitle--bottom">Subduction Zone</small>
+      </h1>
 
       <object class="hide-for-large-up wow fadeIn" data="/media/subduction-zone.svg" type="image/svg+xml" width="100%"></object>
 
-      <div class="wow fadeIn" data-wow-delay="0.3s">
+      <div class="wow fadeIn">
         <p>You might think that San Andreas is the only thing we have to worry about. You’d be wrong: There’s a 700 mile fault line stretching from Vancouver to Northern California off the Pacific coast.</p>
 
         <p><strong>Cascadia has the potential to create <span class="emph">30 times</span> the energy of the San Andreas fault.</strong></p>
@@ -283,28 +286,13 @@ title: The Really Big One
   <div class="row text-center">
     <div class="medium-8 medium-centered large-6 columns">
 
-      <!-- TODO: tidy up -->
-
       <ul class="block-grid small-block-grid-2">
         <li>
-          <!-- <span class="circle-container wow bounceIn">
-            <span class="content wow fadeIn">30%</span>
-            <div class="dot"></div>
-          </span> -->
-          <!-- <h3 class="fact fact--large wow bounceIn">
-            <span>1 in 3</span>
-          </h3> -->
-          <h3 class="fact-badge wow bounceIn" data-wow-delay="0.35s">1 in 3</h3>
-          <!-- <div class="pie"><span>30%</span></div> -->
+          <h3 class="fact-badge wow bounceIn">1 in 3</h3>
           <p class="wow fadeInUp">Chance of a <span class="emph emph--block">magnitude 8.5+</span> earthquake</p>
         </li>
         <li>
-          <!-- <span class="circle-container wow bounceIn">
-            <span class="content wow fadeIn">10%</span>
-            <div class="dot"></div>
-          </span> -->
-          <h3 class="fact-badge wow bounceIn" data-wow-delay="0.35s">1 in 10</h3>
-          <!-- <div class="pie"><span>10%</span></div> -->
+          <h3 class="fact-badge wow bounceIn">1 in 10</h3>
           <p class="wow fadeInUp">Chance of a <span class="emph emph--block">magnitude 9+</span> earthquake</p>
         </li>
       </ul>
@@ -319,23 +307,25 @@ title: The Really Big One
 <section id="js-japan" class="japan text-center">
 
   <div class="row japan__polaroids">
-
     <div class="columns medium-4 hide-for-small">
+
       <a class="wow fadeInx rollIn">
         <img alt="Japan 2011, fire at the nuclear plant, where a 9.0 mangitude earthquake caused meltdown" src="/media/japan/japan-1.jpg" width="244">
       </a>
+
       <a class="wow fadeInx rollIn">
         <img alt="Japan 2011, large ships washed up in the city, wrecked by a devastating tsunami" src="/media/japan/japan-2.jpg" width="244">
       </a>
+
       <a class="wow fadeInx rollIn">
         <img alt="Japan 2011, man walking amongst what’s left of the city after the horrific natural disaster" src="/media/japan/japan-3.jpg" width="244">
       </a>
-    </div>
 
-    <div class="columns medium-5 medium-offset-3 large-offset-1 left">
+    </div>
+    <div class="columns medium-5 medium-offset-3 large-5 large-offset-2 left">
 
       <h1 class="wow fadeInUp">
-        <small class="hide-for-small">Okay, so let’s put that into context...</small>
+        <small class="hide-for-smallx">Okay, so let’s put that into context...</small>
         Remember Japan<br>in 2011?
       </h1>
 
@@ -344,16 +334,16 @@ title: The Really Big One
       </div>
 
       <div class="row">
-        <div class="medium-11 medium-centered columns">
+        <div class="medium-11 medium-centered large-8 columns">
 
           <p class="wow fadeInUp">That quake was of magnitude <span class="emph">9.0</span> and unleashed a devastating tsunami.</p>
+
           <p class="wow fadeInUp">We’re at real risk of an even more powerful quake from Cascadia.</p>
 
         </div>
       </div>
 
     </div>
-
   </div>
 
 </section>
@@ -423,112 +413,116 @@ title: The Really Big One
   <div class="cities-trigger cities-trigger--grantspass js-cities-trigger-grantspass hide-for-small"></div>
   <div class="cities-trigger cities-trigger--redding js-cities-trigger-redding hide-for-small"></div>
 
-  <!-- cities -->
-  <div class="cities cities--vancouver js-cities-vancouver hide-for-small">
-    <object data="/media/cities/trbo-map-vancouver.svg" type="image/svg+xml"></object>
+  <!-- Cities animations -->
+  <!-- Hiding this on small for performance's sake -->
+  <div class="hide-for-small">
+
+    <div class="cities cities--vancouver js-cities-vancouver">
+      <object data="/media/cities/trbo-map-vancouver.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--seattle js-cities-seattle">
+      <object data="/media/cities/trbo-map-seattle.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--olympia js-cities-olympia">
+      <object data="/media/cities/trbo-map-olympia.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--portland js-cities-portland">
+      <object data="/media/cities/trbo-map-portland.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--salem js-cities-salem">
+      <object data="/media/cities/trbo-map-salem.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--eugene js-cities-eugene">
+      <object data="/media/cities/trbo-map-eugene.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--grantspass js-cities-grantspass">
+      <object data="/media/cities/trbo-map-grantspass.svg" type="image/svg+xml"></object>
+    </div>
+
+    <div class="cities cities--redding js-cities-redding">
+      <object data="/media/cities/trbo-map-redding.svg" type="image/svg+xml"></object>
+    </div>
+
   </div>
 
-  <div class="cities cities--seattle js-cities-seattle hide-for-small">
-    <object data="/media/cities/trbo-map-seattle.svg" type="image/svg+xml"></object>
+  <!-- Tsunami trigger points -->
+  <!-- Hiding this on small for performance's sake -->
+  <div class="hide-for-small">
+
+    <div class="tsunamis-trigger tsunamis-trigger--wave-1 js-tsunamis-trigger-wave-1"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-2 js-tsunamis-trigger-wave-2"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-3 js-tsunamis-trigger-wave-3"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-4 js-tsunamis-trigger-wave-4"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-5 js-tsunamis-trigger-wave-5"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-6 js-tsunamis-trigger-wave-6"></div>
+    <div class="tsunamis-trigger tsunamis-trigger--wave-7 js-tsunamis-trigger-wave-7"></div>
+
   </div>
 
-  <div class="cities cities--olympia js-cities-olympia hide-for-small">
-    <object data="/media/cities/trbo-map-olympia.svg" type="image/svg+xml"></object>
-  </div>
+  <!-- Tsunami animations -->
+  <!-- Hiding this on small for performance's sake -->
 
-  <div class="cities cities--portland js-cities-portland hide-for-small">
-    <object data="/media/cities/trbo-map-portland.svg" type="image/svg+xml"></object>
-  </div>
+  <div class="hide-for-small">
 
-  <div class="cities cities--salem js-cities-salem hide-for-small">
-    <object data="/media/cities/trbo-map-salem.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-1">
+      <object data="/media/tsunamis/trbo-map-wave-1.svg" type="image/svg+xml"></object>
+    </div>
 
-  <div class="cities cities--eugene js-cities-eugene hide-for-small">
-    <object data="/media/cities/trbo-map-eugene.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-2">
+      <object data="/media/tsunamis/trbo-map-wave-2.svg" type="image/svg+xml"></object>
+    </div>
 
-  <div class="cities cities--grantspass js-cities-grantspass hide-for-small">
-    <object data="/media/cities/trbo-map-grantspass.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-3">
+      <object data="/media/tsunamis/trbo-map-wave-3.svg" type="image/svg+xml"></object>
+    </div>
 
-  <div class="cities cities--redding js-cities-redding hide-for-small">
-    <object data="/media/cities/trbo-map-redding.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-4">
+      <object data="/media/tsunamis/trbo-map-wave-4.svg" type="image/svg+xml"></object>
+    </div>
 
-  <!-- tsunamis trigger points -->
-  <!-- TODO: Clean this up if we don’t need it anymore? -->
-  <div class="tsunamis-trigger tsunamis-trigger--wave-1 js-tsunamis-trigger-wave-1 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-2 js-tsunamis-trigger-wave-2 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-3 js-tsunamis-trigger-wave-3 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-4 js-tsunamis-trigger-wave-4 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-5 js-tsunamis-trigger-wave-5 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-6 js-tsunamis-trigger-wave-6 hide-for-small"></div>
-  <div class="tsunamis-trigger tsunamis-trigger--wave-7 js-tsunamis-trigger-wave-7 hide-for-small"></div>
+    <div class="tsunamis js-tsunamis-wave-5">
+      <object data="/media/tsunamis/trbo-map-wave-5.svg" type="image/svg+xml"></object>
+    </div>
 
-  <!-- tsunamis -->
-  <!-- TODO: Clean this up if we don’t need it anymore? -->
-  <div class="tsunamis js-tsunamis-wave-1 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-1.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-6">
+      <object data="/media/tsunamis/trbo-map-wave-6.svg" type="image/svg+xml"></object>
+    </div>
 
-  <div class="tsunamis js-tsunamis-wave-2 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-2.svg" type="image/svg+xml"></object>
-  </div>
+    <div class="tsunamis js-tsunamis-wave-7">
+      <object data="/media/tsunamis/trbo-map-wave-7.svg" type="image/svg+xml"></object>
+    </div>
 
-  <div class="tsunamis js-tsunamis-wave-3 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-3.svg" type="image/svg+xml"></object>
-  </div>
-
-  <div class="tsunamis js-tsunamis-wave-4 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-4.svg" type="image/svg+xml"></object>
-  </div>
-
-  <div class="tsunamis js-tsunamis-wave-5 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-5.svg" type="image/svg+xml"></object>
-  </div>
-
-  <div class="tsunamis js-tsunamis-wave-6 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-6.svg" type="image/svg+xml"></object>
-  </div>
-
-  <div class="tsunamis js-tsunamis-wave-7 hide-for-small">
-    <object data="/media/tsunamis/trbo-map-wave-7.svg" type="image/svg+xml"></object>
   </div>
 
 
   <!-- Journey background image -->
   <object class="cascadia-journey__background hide-for-small" data="/media/map/trbo-map-base.svg" type="image/svg+xml"></object>
-  <div class="cascadia-journey__fade-out hide-for-small"></div>
 
   <!-- Journey background image - mobile -->
-  <img class="cascadia-journey__background cascadia-journey__background--mobile show-for-small" src="/media/map/trbo-map-base-fade-out-small.jpg" />
+  <img class="cascadia-journey__background cascadia-journey__background--mobile show-for-small" src="/media/map/trbo-map-full-mobile.jpg">
+
+  <!-- Fade out the Journey background image at the bottom -->
+  <div class="cascadia-journey__fade-out"></div>
 
   <!-- Helicopter -->
+  <!-- Hiding this on small for performance's sake -->
   <div class="helicopter hide-for-small">
-    <object class="" data="/media/map/helicopter-no-blades.svg" type="image/svg+xml"></object>
-    <img class="helicopter-blades" src="/media/map/helicopter-blades.png" />
+    <object data="/media/map/helicopter-no-blades.svg" type="image/svg+xml"></object>
+    <img class="helicopter-blades" src="/media/map/helicopter-blades.png">
   </div>
 
   <!-- Journey Content -->
   <div class="cascadia-journey__content cascadia-journey__quake">
 
-    <!-- <div class="cascadia-journey__timer">
-      <h1 class="js-quake-counter">0:00</h1>
-
-      <div class="progress radius alert">
-        <span class="meter custom-meter" style="width: 0%;"></span>
-      </div>
-
-      <small>TODO: should be visible only until you get to Olympia</small>
-      <small>TODO: ideally this would change colour from yellow to red</small>
-    </div> -->
-
     <div class="row">
 
-      <div class="small-9 large-7 large-offset-1 columns">
-
-        <!-- <h2>TODO: Timer starts</h2> -->
+      <div class="small-10 large-7 large-offset-1 columns">
 
         <div class="wow fadeIn hide-for-small">
 
@@ -547,8 +541,6 @@ title: The Really Big One
 
           <h1><object class="large-icon" data="/media/icons/location-indoors.svg" type="image/svg+xml"></object> Indoors</h1>
 
-          <!-- <h3>TODO: use or remove: &ldquo; Earthquakes don’t kill people, buildings (and their contents) do.</h3> -->
-
           <div class="row icon-grid text-center">
             <div class="columns small-4 medium-3">
               <object class="xsmall-icon wow bounceIn" data="/media/icons/quake-drop.svg" type="image/svg+xml"></object>
@@ -564,8 +556,7 @@ title: The Really Big One
             </div>
           </div>
 
-          <p><span class="emph">Don’t rush to the exit!</span></p>
-          <p>Hide under a sturdy table, cover your head &amp; neck and wait until the shaking stops.</p>
+          <p><em class="emph--basic">Don’t rush to the exit!</em> Hide under a sturdy table, cover your head &amp; neck and wait until the shaking stops.</p>
           <p>If there’s no table nearby, go to an interior wall, the corner of the room, or lie down alongside a couch.</p>
 
         </div>
@@ -575,10 +566,10 @@ title: The Really Big One
           <h1><object class="large-icon" data="/media/icons/location-city.svg" type="image/svg+xml"></object> In the city</h1>
 
           <ul class="block-grid medium-block-grid-2">
-            <li>Move to an open area, well away from buildings, streetlights and utility wires.</li>
-            <li>If you’re in a densely built area, shelter inside the lobby of the nearest building.</li>
-            <li>If you’re in a car, stop and set the parking brake. Stay in the car until shaking stops.</li>
-            <li>Avoid danger zones: bridges, underpasses and parking garages.</li>
+            <li><em class="emph--basic">Move to an open area</em>, well away from buildings, streetlights and utility wires.</li>
+            <li><em class="emph--basic">If you’re in a densely built area</em>, shelter inside the lobby of the nearest building.</li>
+            <li><em class="emph--basic">If you’re in a car</em>, stop and set the parking brake. Stay in the car until shaking stops.</li>
+            <li><em class="emph--basic">Avoid danger zones</em>: bridges, underpasses and parking garages.</li>
           </ul>
 
         </div>
@@ -588,13 +579,11 @@ title: The Really Big One
           <h1><object class="large-icon" data="/media/icons/location-outdoors.svg" type="image/svg+xml"></object> Outdoors</h1>
 
           <ul class="block-grid medium-block-grid-2">
-            <li>Stay away from riverbeds: they carry a lot of debris and you’ll be vulnerable to surges of water and mud.</li>
-            <li>To avoid landslides, move away from cliffs and steep embankments.</li>
+            <li><em class="emph--basic">Stay away from riverbeds</em>: they carry a lot of debris and you’ll be vulnerable to surges of water and mud.</li>
+            <li><em class="emph--basic">To avoid landslides</em>, move away from cliffs and steep embankments.</li>
           </ul>
 
         </div>
-
-        <!-- <h2>TODO: Timer Stops</h2> -->
 
         <div class="wow fadeIn">
 
@@ -604,16 +593,20 @@ title: The Really Big One
 
           <p>Once the shaking stops, you’ll have only <span class="emph">15 minutes</span> before the tsunami hits the shore. Move fast!</p>
 
-          <p class="wow fadeIn">The closer to high tide the quake strikes, the further inland the waves will travel: up to <span class="emph">3 miles</span> in some parts.
+          <p class="wow fadeIn">The closer to high tide the quake strikes, the further inland the waves will travel: up to <span class="emph">3 miles</span> in some parts.</p>
 
           <p class="wow fadeIn">Waves will be as high as <span class="emph">30-40 feet</span> and we can expect <span class="emph">multiple waves</span> to strike over a period of several hours.</p>
         </div>
 
+      </div>
+
+      <div class="small-10 medium-9 medium-uncentered large-7 large-offset-1 left columns">
 
         <div class="wow fadeIn text-center aftermath">
+
           <h1>The Aftermath</h1>
 
-          <p>By the time the shaking has ceased and the tsunami has receded, the region will be unrecognizable. The human toll will be astronomical.</p>
+          <p>By the time the shaking has ceased and the tsunami has receded, the region will be unrecognizable. The human toll will be astronomical:</p>
 
           <ul class="block-grid small-block-grid-2 block-grid--facts js-facts">
 
@@ -624,10 +617,6 @@ title: The Really Big One
                 <span class="show-for-small">13,000</span>
               </h3>
               <span class="emph">dead</span>
-
-              <!-- Of the almost thirteen thousand people expected to die in the Cascadia event, one thousand will perish in the earthquake,” Schulz writes. “The others will be killed by the tsunami -->
-
-              <!-- TODO: put this in a tooltip next to the 13k number, or plain text saying '12k killed by the tsunami' -->
             </li>
 
             <li class="text-center">
@@ -665,7 +654,7 @@ title: The Really Big One
 
         <blockquote class="text-center wow fadeIn">
 
-          &ldquo; Our operating assumption is that everything west of Interstate 5 will be toast. &rdquo;
+          <!-- &ldquo; --> Our operating assumption is that everything west of Interstate 5 will be toast <!-- &rdquo; -->
 
           <cite class="wow fadeIn">
             Kenneth Murphy, <a href="http://www.fema.gov/" title="Federal Emergency Management Agency" target="_blank">FEMA</a> Region X director
@@ -717,7 +706,7 @@ title: The Really Big One
         </div>
 
         <div class="wow fadeIn text-center hide-for-small">
-          <p>These estimates are based on <a href="http://www.fema.gov/" title="Federal Emergency Management Agency" target="_blank">FEMA’s</a> official planning scenario, which has the earthquake striking at 9:41 A.M. on February 6th. If it strikes in the summer instead (when the beaches will be full), those numbers could be off by a horrifying margin.</p>
+          <p>These estimates are based on <a href="http://www.fema.gov/" title="Federal Emergency Management Agency" target="_blank">FEMA’s</a> official planning scenario, which has the earthquake striking in the morning of a winter day. If it strikes in the summer instead (when the beaches will be full), those numbers could be off by a horrifying margin.</p>
         </div>
 
       </div>
@@ -744,7 +733,6 @@ title: The Really Big One
       <div id="js-risk" class="at-risk wow fadeIn">
 
         <h1><span>1</span> Check to see if you’re in the danger zone</h1>
-        <p>If you’re at home in the Pacific Northwest right now, click here to allow us to check your location.</p>
 
         <div class="row at-risk__cta">
           <div class="medium-5 large-3 columns">
@@ -759,7 +747,10 @@ title: The Really Big One
           </div>
           <div class="medium-7 large-9 columns">
 
-            <div class="alert-box alert-box--danger alert-box--risk js-alert-box-danger">
+            <p class="at-risk__cta__disclaimer">If you’re at home in the Pacific Northwest right now, click here to allow us to check your location.</p>
+
+            <div class="alert-box alert-box--risk alert-box--danger js-alert-box-danger">
+
               <div class="row">
                 <div class="large-3 columns show-for-large-up text-left">
                   <object class="large-icon area-affected" data="/media/icons/area-affected.svg" type="image/svg+xml"></object>
@@ -770,9 +761,11 @@ title: The Really Big One
                   <p>It’s super important for you to pay attention to the following information: it might save the lives of you and your family.</p>
                 </div>
               </div>
+
             </div>
 
-            <div class="alert-box alert-box--safe alert-box--risk js-alert-box-safe">
+            <div class="alert-box alert-box--risk alert-box--safe js-alert-box-safe">
+
               <div class="row">
                 <div class="large-3 columns show-for-large-up text-left">
                   <object class="large-icon area-safe" data="/media/icons/area-safe.svg" type="image/svg+xml"></object>
@@ -783,6 +776,7 @@ title: The Really Big One
                   <p>Phew! It looks like you’re outside the risk zone. But please share this information with people you know who live in Pacific Northwest!</p>
                 </div>
               </div>
+
             </div>
 
           </div>
@@ -794,104 +788,105 @@ title: The Really Big One
 
         <h1><span>2</span> Secure your home</h1>
 
-        <p>Don’t let your home become your enemy! A few simple changes can make a huge difference:</p>
+        <p class="emph--basic">Don’t let your home become your enemy! A few simple changes can make a huge difference:</p>
 
-        <ul class="block-grid medium-block-grid-2 large-block-grid-3">
+        <ul class="block-grid medium-block-grid-2 large-block-grid-3 block-grid--tips text-left">
           <li>Bolt your house to its foundation and heavy furniture (like bookcases) to the walls and floor.</li>
           <li>Secure dangerous equipment like your water heater. Turn off utilities when not in use.</li>
           <li>Keep beds, couches and tables away from windows.</li>
           <li>Remove heavy, sharp objects from the walls. Secure mirrors.</li>
           <li>Store your alchohol and bottles below waist level. Install latches on your cupboard doors.</li>
           <li>Have a fire extinguisher (or five) handy.</li>
-
         </ul>
 
       </div>
-
 
       <div class="checklist wow fadeIn">
 
         <h1><span>3</span> Prepare an emergency kit</h1>
 
-        <p>Put together a kit to help you get out of trouble: and store it somewhere you can grab it in a hurry:</p>
+        <p class="emph--basic">Put together a kit to help you get out of trouble: and store it somewhere you can grab it in a hurry:</p>
 
-        <!-- TODO: add checkboxes (Arnas) or interactive check list with localStorage (Marcel) -->
         <ul class="block-grid small-block-grid-2 medium-block-grid-3">
           <li>
-            <img src="/media/icons/checklist/emergency-info.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/emergency-info.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/emergency-info.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/emergency-info.gif'">
             Emergency-contact information
           </li>
           <li>
-            <img src="/media/icons/checklist/copies.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/copies.gif'">
-            Copies of important documents <small>(birth certificates, passports, driver’s licenses and wills)</small>
+            <img class="xsmall-icon" src="/media/icons/checklist/copies.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/copies.gif'">
+            Copies of important documents <small class="show-for-medium-up">(birth certificates, passports, driver’s licenses and wills)</small>
           </li>
           <li>
-            <img src="/media/icons/checklist/cash.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/cash.gif'">
-            Cash <small>(A.T.M.s won’t work after the quake)</small>
+            <img class="xsmall-icon" src="/media/icons/checklist/cash.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/cash.gif'">
+            Cash <small class="show-for-medium-up">(A.T.M.s won’t work after the quake)</small>
           </li>
           <li>
-            <img src="/media/icons/checklist/drugs.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/drugs.gif'">
-            Prescription drugs <small>(these expire, so, as with food, you’ll have to periodically replace them)</small>
+            <img class="xsmall-icon" src="/media/icons/checklist/drugs.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/drugs.gif'">
+            Prescription drugs <small class="show-for-medium-up">(these expire, so, as with food, you’ll have to periodically replace them)</small>
           </li>
           <li>
-            <img src="/media/icons/checklist/flashlight.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/flashlight.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/flashlight.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/flashlight.gif'">
             Flashlights and extra batteries
           </li>
           <li>
-            <img src="/media/icons/checklist/glasses.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/glasses.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/glasses.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/glasses.gif'">
             Spare eyeglasses
           </li>
           <li>
-            <img src="/media/icons/checklist/whistle.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/whistle.gif'">
-            A whistle <small>Attach one to your key chain, too, in case you wind up trapped somewhere</small>
+            <img class="xsmall-icon" src="/media/icons/checklist/whistle.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/whistle.gif'">
+            A whistle <small class="show-for-medium-up">Attach one to your key chain, too, in case you wind up trapped somewhere</small>
           </li>
           <li>
-            <img src="/media/icons/checklist/first-aid.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/first-aid.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/first-aid.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/first-aid.gif'">
             Basic first-aid supplies
           </li>
           <li>
-            <img src="/media/icons/checklist/clothes.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/clothes.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/clothes.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/clothes.gif'">
             Warm clothing, sturdy shoes
           </li>
           <li>
-            <img src="/media/icons/checklist/waterproof.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/waterproof.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/waterproof.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/waterproof.gif'">
             Rain gear, sleeping bags, a tent
           </li>
           <li>
-            <img src="/media/icons/checklist/food.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/food.gif'">
+            <img class="xsmall-icon" src="/media/icons/checklist/food.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/food.gif'">
             Water, food for 2&ndash;3 weeks
           </li>
           <li>
-            <img src="/media/icons/checklist/water-tablets.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/water-tablets.gif'">
-            Water-purification tablets <small>Or a back-country filtering device. Both are helpful if water supplies become contaminated</small>
+            <img class="xsmall-icon" src="/media/icons/checklist/water-tablets.svg" onerror="this.onerror=null; this.src='/media/icons/checklist/water-tablets.gif'">
+            Water-purification tablets <small class="show-for-medium-up">Or a back-country filtering device. Both are helpful if water supplies become contaminated</small>
           </li>
         </ul>
 
       </div>
 
-
       <div class="wowUp fadeIn">
 
-        <h1><span>4</span> Look up and learn the evacuation plan for your area</h1>
+        <h1><span>4</span> Make an emergency plan for your family</h1>
 
-        <p>Learn the route to the nearest gathering point, safe zone or evacuation point.</p>
-
-        <p>TODO: Where can this route be found?</p>
+        <p>Refer to <a href="http://www.ready.gov/evacuating-yourself-and-your-family" target="_blank">Evacuation Guidelines</a> and create a <a href="http://www.ready.gov/make-a-plan" target="_blank">Family Emergency Plan</a> for yourself.</p>
 
       </div>
 
-
       <div class="wow fadeIn">
 
-        <h1><span>5</span> Demand better seismic safety!</h1>
-        <p>TODO: Explain where this information can be found. Contact your local representative?</p>
+        <h1><span>5</span> Demand better seismic safety</h1>
+
+        <p class="emph--basic">No amount of individual preparedness can keep you safe if the bridge you’re on collapses.</p>
+
+        <div class="row">
+          <div class="medium-10 medium-centered large-8 columns">
+
+            <p>If you’re alarmed by seismic issues that exceed your own capacity to solve them, find the person who should be handling it and make some noise.</p>
+
+          </div>
+        </div>
 
       </div>
 
-
       <div class="wow fadeIn">
 
-        <h1><span>6</span> Share this website.</h1>
+        <h1><span>6</span> Share this website</h1>
 
         <div class="row">
           <div class="medium-10 medium-centered large-8 columns">
@@ -904,19 +899,19 @@ title: The Really Big One
         <div class="row preparedness__sharing">
 
           <div class="medium-4 columns">
-            <a href="TODO" class="button button--twitter wow zoomIn">
+            <a href="TODO: twitter share link" class="button button--twitter wow zoomIn" target="_blank">
               <object data="/media/icons/media-twitter.svg" type="image/svg+xml"></object>
               Tweet This
             </a>
           </div>
           <div class="medium-4 columns">
-            <a href="TODO" class="button button--facebook wow zoomIn">
+            <a href="TODO facebook share link" class="button button--facebook wow zoomIn" target="_blank">
               <object data="/media/icons/media-facebook.svg" type="image/svg+xml"></object>
               FB Share This
             </a>
           </div>
           <div class="medium-4 columns">
-            <a href="TODO" class="button button--email wow zoomIn">
+            <a href="TODO email forward link" class="button button--email wow zoomIn" target="_blank">
               <object data="/media/icons/media-email.svg" type="image/svg+xml"></object>
               Email This
             </a>
@@ -935,36 +930,41 @@ title: The Really Big One
 <footer class="wow fadeIn">
 
   <div class="row">
-    <div class="columns">
+    <div class="medium-10 medium-centered columns">
 
-      <h2>Credits &amp; Further Reading</h2>
+      <h1>Credits</h1>
 
-      <ul>
-        <li>This site is unaffiliated but heavily inspired by the <a href="http://www.newyorker.com/magazine/2015/07/20/the-really-big-one">New Yorker article</a> which gained popularity last summer. The <a href="http://www.newyorker.com/tech/elements/how-to-stay-safe-when-the-big-one-comes">follow-up article</a> (which includes safety tips) is also worth reading.</li>
-        <li>The University of Oregon’s <a href="http://earthquake.uoregon.edu/">Pacific Northwest earthquake forum</a>.</li>
-        <li>The <a href="http://crew.org/">Cascadia Region Earthquake Workgroup</a> and their <a href="http://crew.org/sites/default/files/cascadia_subduction_scenario_2013.pdf">Subduction Scenario</a>.</li>
-        <li>TODO: <a href="http://pnsn.org/outreach/hazard-maps-and-scenarios/eq-hazard-maps/tsunami">Tsunami Hazard Maps</a></li>
-        <li>TODO: <a href="http://www.ezsystemspdx.com/san-andreas-fault-vs-cascadia-subduction-zone/">
-          San Andreas vs Cascadia</a> &mdash; Don't let Hollywood brainwash us</li>
-        <li>The Really Big One earthquake and tsunami explained by hands: <a href="https://www.youtube.com/watch?v=9n_hP9o2lf8">Watch the video</a></li>
-      </ul>
+      <h4>
+        <a href="http://thereallybig.one">Thereallybig.one</a>
+        was initiated by
+        <a class="emph" href="https://twitter.com/rauchg" target="_blank">Guillermo Rauch</a>
+      </h4>
 
-      <hr>
+      <h4>
+        and designed &amp; built by
+        <a class="emph" href="https://hanno.co" target="_blank"><img class="hanno-logo" src="/media/hanno-logo.svg" onerror="this.onerror=null; this.src='/media/hanno-logo.gif'" width="30">Hanno</a>
+      </h4>
 
-      <h4>Photos of the Japan 2011 disaster are &copy; copyright <a href="https://www.flickr.com/photos/dugspr/">Douglas Sprott</a></h4>
-      <p>Used under Creative Commons Attribution-NonCommercial 2.0 Generic <a href="https://creativecommons.org/licenses/by-nc/2.0/">(CC BY-NC 2.0)</a> license, adapted to suit the design of this website.</p>
-      <ul>
-        <li><a href="https://flic.kr/p/9s4zXS">Nuclear plant fire photo</a></li>
-        <li><a href="https://flic.kr/p/9th8uF">Ships photo</a></li>
-        <li><a href="https://flic.kr/p/9sRyKf">Man amongst the ruins photo</a></li>
-      </ul>
+      <p>With financial support from <a href="http://www.redcross.org/" target="_blank">American Red Cross</a> and media support from <a href="http://www.newyorker.com/" target="_blank">The New Yorker magazine</a>.</p>
 
-    </div>
-  </div>
+      <p>This site is unaffiliated with but heavily inspired by the <a href="http://www.newyorker.com/magazine/2015/07/20/the-really-big-one" target="_blank">New Yorker article</a> which gained popularity last summer. The <a href="http://www.newyorker.com/tech/elements/how-to-stay-safe-when-the-big-one-comes" target="_blank">follow-up article</a> (which includes safety tips) is also worth reading. Both articles authored by <a href="https://twitter.com/kathrynschulz" target="_blank">Kathryn Schulz</a>. This site is using excerpts from Kathryn's amazingly written articles, either straight up unedited or adapted to fit the narrative.</p>
 
-  <div class="row credits wow fadeIn">
-    <div class="columns">
-      <p>Project initiated by <a href="https://twitter.com/rauchg">Guillermo Rauch</a>, designed and built by <a href="https://hanno.co">Hanno</a>, with support from <a href="TODO red cross">American Red Cross</a>.</p>
+      <p>Photos of the Japan 2011 disaster are &copy; copyright <a href="https://www.flickr.com/photos/dugspr/" target="_blank">Douglas Sprott</a>. Used under Creative Commons Attribution-NonCommercial 2.0 Generic <a href="https://creativecommons.org/licenses/by-nc/2.0/" target="_blank">(CC BY-NC 2.0)</a> license, adapted to fit the polaroid image format. <a href="https://flic.kr/p/9s4zXS" target="_blank">Nuclear plant fire photo</a>, <a href="https://flic.kr/p/9th8uF" target="_blank">Ships photo</a>, <a href="https://flic.kr/p/9sRyKf" target="_blank">Man amongst the ruins photo</a>.</p>
+
+      <h1>More Resources</h1>
+
+      <ol>
+        <li>The University of Oregon’s <a href="http://earthquake.uoregon.edu/" target="_blank">Pacific Northwest earthquake forum</a></li>
+        <li>The <a href="http://crew.org/" target="_blank">Cascadia Region Earthquake Workgroup</a> and their <a href="http://crew.org/sites/default/files/cascadia_subduction_scenario_2013.pdf" target="_blank">Subduction Scenario</a></li>
+        <li>Red Cross disaster readiness manual: <a href="http://www.redcross.org/images/MEDIA_CustomProductCatalog/m4240190_Be_Red_Cross_Ready.pdf" target="_blank">Be Red Cross ready</a></li>
+
+        <!-- TODO: Let's not create a link overload, feel free to remove these: -->
+
+        <!-- <li><a href="http://pnsn.org/outreach/hazard-maps-and-scenarios/eq-hazard-maps/tsunami" target="_blank">Tsunami Hazard Maps</a></li> -->
+        <!-- <li><a href="http://www.ezsystemspdx.com/san-andreas-fault-vs-cascadia-subduction-zone/" target="_blank">San Andreas vs Cascadia</a> &mdash; Don't let Hollywood brainwash us</li> -->
+        <!-- <li>The Really Big One earthquake and tsunami explained by hands: <a href="https://www.youtube.com/watch?v=9n_hP9o2lf8" target="_blank">Watch the video</a></li> -->
+      </ol>
+
     </div>
   </div>
 
