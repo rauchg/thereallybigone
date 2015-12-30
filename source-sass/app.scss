@@ -566,6 +566,11 @@ bold {
     left: -125px;
   }
 
+  @media #{$small-only} {
+    width: 450px;
+    margin: 0 auto;
+  }
+
   a {
     background: #fff;
     display: inline-block;
@@ -587,23 +592,45 @@ bold {
       padding: 12px 12px 48px;
     }
 
+    @media #{$small-only} {
+      width: 120px;
+    }
+
     // Scatter the polaroids around
     &:first-of-type {
       top: -100px;
       left: 160px;
       transform: rotate(1deg);
+
+      @media #{$small-only} {
+        left: 20px;
+        top: -40px;
+        transform: rotate(-5deg);
+      }
     }
 
     &:nth-of-type(2) {
       top: -80px;
       left: 145px;
       transform: rotate(-2deg);
+
+      @media #{$small-only} {
+        left: 100px;
+        top: -40px;
+        transform: rotate(15deg);
+      }
     }
 
     &:last-of-type {
       top: -60px;
       left: 175px;
       transform: rotate(-1deg);
+
+      @media #{$small-only} {
+        left: -130px;
+        top: -50px;
+        transform: rotate(0deg) scale(1.1);
+      }
     }
   }
 }
