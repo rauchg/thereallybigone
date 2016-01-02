@@ -83,6 +83,12 @@ configure :development do
     ]
 end
 
+# Appcache configuration
+activate :app_cache do |config|
+  config.cache_manifest = 'manifest.appcache'
+  config.cache = %w(index.html favicon.ico media/*.png media/*.svg media/*.gif media/*/*.svg media/*/*.png  media/*/*.gif media/*/*.jpg media/icons/checklist/* assets/stylesheets/*.css assets/javascripts/*.js assets/javascripts/vendor/*.js images/*)
+end
+
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment

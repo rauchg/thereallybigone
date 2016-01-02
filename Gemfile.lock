@@ -60,6 +60,8 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-appcache (1.0.1)
+      middleman-core (>= 3.3.6)
     middleman-core (3.4.0)
       activesupport (~> 4.1)
       bundler (~> 1.1)
@@ -130,9 +132,10 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (= 3.4.0)
+  middleman-appcache (~> 1.0.1)
   middleman-livereload (~> 3.4.3)
   ruby18_source_location
   wdm (~> 0.1.0)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

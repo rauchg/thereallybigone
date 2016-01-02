@@ -6,6 +6,7 @@ ruby "2.2.1"
 
 gem "middleman", "3.4.0"
 gem "middleman-livereload", "~> 3.4.3"
+gem "middleman-appcache", "~> 1.0.1"
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
