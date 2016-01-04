@@ -225,7 +225,7 @@ var tsunamis = [
 $(document).ready(function() {
 
   // don't do any animations on mobile
-  if ($(window).width() > 480) {
+  if ($(window).width() > 480 && !Modernizr.touch) {
 
     // go through cities to trigger animations
     cities.forEach(function(city, index) {
@@ -319,21 +319,6 @@ $(document).ready(function() {
 
   }
 
-  // trigger facts
-  $('.js-facts').waypoint({
-
-    handler: function() {
-
-      console.log("Trigger facts");
-
-      if ( ! quakeTimerRunning) {
-        quakeTimer();
-      }
-
-    },
-    offset: 'bottom-in-view'
-  });
-
   /* ---------- QUAKE TIMER ---------- */
   var quakeTimer = function() {
     quakeTimerRunning = true;
@@ -378,6 +363,29 @@ $(document).ready(function() {
 
     }, 2);
   };
+
+  if(Modernizr.touch) {
+    if ( ! quakeTimerRunning) {
+      quakeTimer();
+    }
+  } else {
+    // trigger facts
+    $('.js-facts').waypoint({
+
+      handler: function() {
+
+        console.log("Trigger facts");
+
+        if ( ! quakeTimerRunning) {
+          quakeTimer();
+        }
+
+      },
+      offset: 'bottom-in-view'
+    });
+  }
+
+
 
   /* ---------- RISK BUTTON ---------- */
   // risk button check if user is within affected area
@@ -427,6 +435,7 @@ $(document).ready(function() {
   // when PACE is done, load the WOW animations
   Pace.on('done', function() {
 
+    if(Modernizr.touch) return $('.wow').css('visibility', 'visible');
     wow = new WOW(
       {
         boxClass:     'wow',      // default
