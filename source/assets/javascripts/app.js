@@ -408,12 +408,13 @@ $(document).ready(function() {
       var lng = position.coords.longitude;
 
       // north west bounds
-      var nwBoundLat = 48.392738;
-      var nwBoundLng = -124.727783;
+      var nwBoundLat = 49.460984;
+      var nwBoundLng = -127.96875;
+
 
       // south east bounds
-      var seBoundLat = 46.141783;
-      var seBoundLng = -122.904053;
+      var seBoundLat = 30.779598;
+      var seBoundLng = -107.666016;
 
       // if geolocation is within bounds, show warning
       if ((nwBoundLat > lat) && (lat > seBoundLat) &&
