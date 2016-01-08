@@ -416,8 +416,8 @@ $(document).ready(function() {
       var seBoundLng = -122.904053;
 
       // if geolocation is within bounds, show warning
-      if (nwBoundLat > lat > seBoundLat &&
-          nwBoundLng < lng < seBoundLng) {
+      if ((nwBoundLat > lat) && (lat > seBoundLat) &&
+          (nwBoundLng < lng) && (lng < seBoundLng)) {
         $('.js-alert-box-danger').show().css('display', 'inline-block');
       }
 
