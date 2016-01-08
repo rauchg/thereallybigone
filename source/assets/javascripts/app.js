@@ -413,8 +413,8 @@ $(document).ready(function() {
 
 
       // south east bounds
-      var seBoundLat = 30.779598;
-      var seBoundLng = -107.666016;
+      var seBoundLat = 34.795762;
+      var seBoundLng = -114.785156;
 
       // if geolocation is within bounds, show warning
       if ((nwBoundLat > lat) && (lat > seBoundLat) &&
