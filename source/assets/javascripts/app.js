@@ -493,7 +493,7 @@ $(document).ready(function() {
       },
       scroll_top_duration,
       function() {
-        wow.init(); // reinitiliase WOW animations
+        wow && wow.init(); // reinitiliase WOW animations only if its defined
       }
     );
   });
