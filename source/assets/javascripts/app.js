@@ -393,6 +393,7 @@ $(document).ready(function() {
 
     if ( ! geolocationAvailable) {
       // message that user's browser doesn't support geolocation
+      $('.js-alert-box-failed').show().css('display', 'block');
       return;
     }
 
@@ -427,6 +428,9 @@ $(document).ready(function() {
         $('.js-alert-box-safe').show().css('display', 'inline-block');
       }
 
+    }, function() {
+      // Show geolocation failed message on error
+      $('.js-alert-box-failed').show().css('display', 'block');
     });
 
   });

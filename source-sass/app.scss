@@ -807,7 +807,8 @@ bold {
 }
 
 .alert-box--safe,
-.alert-box--danger {
+.alert-box--danger,
+.alert-box--failed {
   border-radius: 5px;
   margin-top: 5rem;
 
@@ -855,6 +856,14 @@ bold {
 
     h2 {
       color: $juicy-orange;
+    }
+  }
+
+  .alert-box--failed {
+    background: rgba($grey, 0.05);
+
+    h2 {
+      color: $grey;
     }
   }
 
