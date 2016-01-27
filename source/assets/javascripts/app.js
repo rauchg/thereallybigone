@@ -1,4 +1,5 @@
 // Initialise Foundation
+Foundation.global.namespace = '';
 $(document).foundation();
 // -----------------------------------------------------------------------------
 
