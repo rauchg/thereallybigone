@@ -431,6 +431,7 @@ $(document).ready(function() {
 
     }, function() {
       // Show geolocation failed message on error
+      $('.js-loading').hide();
       $('.js-alert-box-failed').show().css('display', 'block');
     });
 
