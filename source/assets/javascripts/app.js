@@ -390,7 +390,7 @@ $(document).ready(function() {
 
   /* ---------- RISK BUTTON ---------- */
   // risk button check if user is within affected area
-  $('.js-button-risk').on('click', function() {
+  $('.js-button-risk').one('click', function() {
 
     if ( ! geolocationAvailable) {
       // message that user's browser doesn't support geolocation
@@ -428,6 +428,9 @@ $(document).ready(function() {
       else {
         $('.js-alert-box-safe').show().css('display', 'inline-block');
       }
+
+      // Send location to google analytics
+      ga('send', 'event', 'Location', 'retrieve', lat + ',' + lng);
 
     }, function() {
       // Show geolocation failed message on error
