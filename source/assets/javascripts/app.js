@@ -443,8 +443,8 @@ $(document).ready(function() {
   var wow;
 
   // when PACE is done, load the WOW animations
+  console.log('asd')
   Pace.on('done', function() {
-
     if(Modernizr.touch) return $('.wow').css('visibility', 'visible');
     wow = new WOW(
       {

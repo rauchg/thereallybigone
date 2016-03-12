@@ -8,7 +8,8 @@
     "gulp-sourcemaps": "^1.5.2"
   },
   "scripts": {
-    "build": "middleman build",
-    "prebuild": "gulp dist # also runs npm run pretest"
+    "build": "gulp",
+    "postinstall": "bower install",
+    "start": " serve -p 3000 source"
   }
 }
