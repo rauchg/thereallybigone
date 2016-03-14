@@ -22,7 +22,7 @@ Get the app-specific stuff set up:
 ### Reflect changes to the website
 
 1. `$ npm run build` to build the site
-2. `$ npm start` to start the Middleman server
+2. `$ npm start` to start the http server
 3. Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
 ###  
