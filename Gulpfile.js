@@ -1,5 +1,5 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var sass = require('gulp-scss');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
@@ -8,7 +8,7 @@ var autoprefixer = require('gulp-autoprefixer');
 gulp.task('styles-devdebug', function() {
     gulp.src('source-sass/app.scss')
       .pipe(sourcemaps.init())
-      .pipe(sass().on('error', sass.logError))
+      .pipe(sass())
       .pipe(autoprefixer())
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest('./source/assets/stylesheets/'));
@@ -20,7 +20,7 @@ gulp.task('debug',function() {
 // This is stripped back with minimal debugging so that it's faster to compile
 gulp.task('default', function() {
     gulp.src('source-sass/app.scss')
-      .pipe(sass().on('error', sass.logError))
+      .pipe(sass())
       .pipe(gulp.dest('./source/assets/stylesheets/'));
 });
 //Call it with 'gulp watch' on the command line to start a watcher
@@ -31,7 +31,7 @@ gulp.task('watch',function() {
 // This is the dist task, for the live server. Call it with 'gulp dist'
 gulp.task('dist', function() {
     gulp.src('source-sass/app.scss')
-      .pipe(sass().on('error', sass.logError))
+      .pipe(sass())
       .pipe(autoprefixer())
       .pipe(gulp.dest('./source/assets/stylesheets/'));
 });
