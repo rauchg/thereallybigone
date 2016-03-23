@@ -10,6 +10,6 @@
   },
   "scripts": {
     "build": "gulp",
-    "start": "./node_modules/serve/bin/serve -p 3000 source"
+    "start": "serve -p 3000 source"
   }
 }
