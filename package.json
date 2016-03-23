@@ -2,11 +2,13 @@
   "name": "reallybigone",
   "version": "0.0.1",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-autoprefixer": "^2.3.1",
-    "gulp-sourcemaps": "^1.5.2",
-    "node-sass": "^3.4.2",
-    "serve": "^1.4.0"
+    "gulp": "3.9.0",
+    "gulp-autoprefixer": "2.3.1",
+    "gulp-sourcemaps": "1.5.2",
+    "serve": "1.4.0"
+  },
+  "optionalDependencies": {
+    "node-sass": "3.4.2"
   },
   "scripts": {
     "build": "gulp",
