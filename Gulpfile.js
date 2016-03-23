@@ -1,7 +1,7 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var sass = require('gulp-sass');
 
 // A detailed debugging task to get more output
 // Call it with 'gulp debug' to start a watcher
