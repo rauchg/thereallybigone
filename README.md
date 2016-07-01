@@ -7,7 +7,7 @@ The Really Big One
 
 An earthquake will destroy a sizable portion of the pacific northwest. It’s not a question of if, but when.
 
-This repository contains the code for [The Really Big One](https://threallybig.one) website.
+This repository contains the code for [The Really Big One](https://thereallybig.one) website.
 
 ## Development
 
